@@ -1,0 +1,363 @@
+import { generateMetadata as genMeta } from "@/lib/metadata";
+import {
+  SchemaScript,
+  generateLocalBusinessSchema,
+  generateBreadcrumbSchema,
+} from "@/lib/schema";
+import SectionHeading from "@/components/ui/SectionHeading";
+import Button from "@/components/ui/Button";
+
+export const metadata = genMeta({
+  title: "Contact Us | Data Center TALNT | Get Staffing Solutions",
+  description:
+    "Contact Data Center TALNT for data center, mission critical, construction, and utilities staffing solutions. Reach our team to discuss your hiring needs or explore career opportunities.",
+  path: "/contact",
+  keywords: [
+    "contact data center staffing",
+    "staffing agency contact",
+    "hire data center workers",
+    "construction staffing inquiry",
+    "staffing solutions contact form",
+  ],
+});
+
+/* ------------------------------------------------------------------ */
+/*  Data                                                               */
+/* ------------------------------------------------------------------ */
+
+const industries = [
+  "Data Center Construction",
+  "Mission Critical Facilities",
+  "Commercial Construction",
+  "Utilities & Energy",
+  "Other",
+];
+
+/* ------------------------------------------------------------------ */
+/*  Page Component                                                     */
+/* ------------------------------------------------------------------ */
+
+export default function ContactPage() {
+  const breadcrumbs = [
+    { name: "Home", url: "/" },
+    { name: "Contact", url: "/contact" },
+  ];
+
+  const localBusinessSchema = {
+    "@context": "https://schema.org",
+    "@type": "EmploymentAgency",
+    "@id": "https://www.datacentertalnt.com/#organization",
+    name: "Data Center TALNT",
+    url: "https://www.datacentertalnt.com",
+    logo: "https://www.datacentertalnt.com/images/logo.png",
+    description:
+      "Specialized staffing and recruitment firm for data center, mission critical, construction, and utilities industries.",
+    telephone: "+1-555-DC-TALNT",
+    email: "info@datacentertalnt.com",
+    address: {
+      "@type": "PostalAddress",
+      streetAddress: "123 Infrastructure Drive, Suite 400",
+      addressLocality: "Ashburn",
+      addressRegion: "VA",
+      postalCode: "20147",
+      addressCountry: "US",
+    },
+    openingHoursSpecification: [
+      {
+        "@type": "OpeningHoursSpecification",
+        dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+        opens: "08:00",
+        closes: "18:00",
+      },
+    ],
+    areaServed: {
+      "@type": "Country",
+      name: "United States",
+    },
+    priceRange: "$$",
+  };
+
+  return (
+    <>
+      <SchemaScript
+        schema={[localBusinessSchema, generateBreadcrumbSchema(breadcrumbs)]}
+      />
+
+      {/* Hero */}
+      <section className="bg-navy py-20 sm:py-28">
+        <div className="container-page text-center">
+          <h1 className="text-4xl font-bold tracking-tight text-white sm:text-5xl lg:text-6xl text-balance">
+            Contact Data Center TALNT
+          </h1>
+          <p className="mx-auto mt-6 max-w-2xl text-lg leading-relaxed text-gray-300 sm:text-xl">
+            Ready to find exceptional talent or your next career move? Fill out
+            the form below and our team will respond within one business day.
+          </p>
+        </div>
+      </section>
+
+      {/* Contact Section */}
+      <section className="py-16 sm:py-24">
+        <div className="container-page">
+          <div className="grid gap-12 lg:grid-cols-5">
+            {/* Contact Form */}
+            <div className="lg:col-span-3">
+              <h2 className="text-2xl font-bold text-navy sm:text-3xl">
+                Send Us a Message
+              </h2>
+              <p className="mt-2 text-gray-600">
+                Tell us about your staffing needs or career goals and we will
+                connect you with the right team member.
+              </p>
+
+              <form className="mt-8 space-y-6" action="#" method="POST">
+                {/* Name & Email */}
+                <div className="grid gap-6 sm:grid-cols-2">
+                  <div>
+                    <label
+                      htmlFor="name"
+                      className="block text-sm font-medium text-gray-700"
+                    >
+                      Full Name <span className="text-red-500">*</span>
+                    </label>
+                    <input
+                      type="text"
+                      id="name"
+                      name="name"
+                      required
+                      autoComplete="name"
+                      className="mt-1 block w-full rounded-lg border border-gray-300 px-4 py-2.5 text-gray-800 shadow-sm placeholder:text-gray-400 focus:border-green focus:outline-none focus:ring-2 focus:ring-green/30"
+                      placeholder="Jane Smith"
+                    />
+                  </div>
+                  <div>
+                    <label
+                      htmlFor="email"
+                      className="block text-sm font-medium text-gray-700"
+                    >
+                      Email Address <span className="text-red-500">*</span>
+                    </label>
+                    <input
+                      type="email"
+                      id="email"
+                      name="email"
+                      required
+                      autoComplete="email"
+                      className="mt-1 block w-full rounded-lg border border-gray-300 px-4 py-2.5 text-gray-800 shadow-sm placeholder:text-gray-400 focus:border-green focus:outline-none focus:ring-2 focus:ring-green/30"
+                      placeholder="jane@company.com"
+                    />
+                  </div>
+                </div>
+
+                {/* Phone & Company */}
+                <div className="grid gap-6 sm:grid-cols-2">
+                  <div>
+                    <label
+                      htmlFor="phone"
+                      className="block text-sm font-medium text-gray-700"
+                    >
+                      Phone Number
+                    </label>
+                    <input
+                      type="tel"
+                      id="phone"
+                      name="phone"
+                      autoComplete="tel"
+                      className="mt-1 block w-full rounded-lg border border-gray-300 px-4 py-2.5 text-gray-800 shadow-sm placeholder:text-gray-400 focus:border-green focus:outline-none focus:ring-2 focus:ring-green/30"
+                      placeholder="(555) 123-4567"
+                    />
+                  </div>
+                  <div>
+                    <label
+                      htmlFor="company"
+                      className="block text-sm font-medium text-gray-700"
+                    >
+                      Company
+                    </label>
+                    <input
+                      type="text"
+                      id="company"
+                      name="company"
+                      autoComplete="organization"
+                      className="mt-1 block w-full rounded-lg border border-gray-300 px-4 py-2.5 text-gray-800 shadow-sm placeholder:text-gray-400 focus:border-green focus:outline-none focus:ring-2 focus:ring-green/30"
+                      placeholder="Acme Construction"
+                    />
+                  </div>
+                </div>
+
+                {/* Dropdowns */}
+                <div className="grid gap-6 sm:grid-cols-2">
+                  <div>
+                    <label
+                      htmlFor="looking-to"
+                      className="block text-sm font-medium text-gray-700"
+                    >
+                      I&apos;m Looking To <span className="text-red-500">*</span>
+                    </label>
+                    <select
+                      id="looking-to"
+                      name="looking-to"
+                      required
+                      className="mt-1 block w-full rounded-lg border border-gray-300 bg-white px-4 py-2.5 text-gray-800 shadow-sm focus:border-green focus:outline-none focus:ring-2 focus:ring-green/30"
+                      defaultValue=""
+                    >
+                      <option value="" disabled>
+                        Select one...
+                      </option>
+                      <option value="hire">Hire Talent</option>
+                      <option value="find-job">Find a Job</option>
+                    </select>
+                  </div>
+                  <div>
+                    <label
+                      htmlFor="industry"
+                      className="block text-sm font-medium text-gray-700"
+                    >
+                      Industry Interest
+                    </label>
+                    <select
+                      id="industry"
+                      name="industry"
+                      className="mt-1 block w-full rounded-lg border border-gray-300 bg-white px-4 py-2.5 text-gray-800 shadow-sm focus:border-green focus:outline-none focus:ring-2 focus:ring-green/30"
+                      defaultValue=""
+                    >
+                      <option value="" disabled>
+                        Select an industry...
+                      </option>
+                      {industries.map((ind) => (
+                        <option key={ind} value={ind.toLowerCase().replace(/\s+/g, "-")}>
+                          {ind}
+                        </option>
+                      ))}
+                    </select>
+                  </div>
+                </div>
+
+                {/* Message */}
+                <div>
+                  <label
+                    htmlFor="message"
+                    className="block text-sm font-medium text-gray-700"
+                  >
+                    Message <span className="text-red-500">*</span>
+                  </label>
+                  <textarea
+                    id="message"
+                    name="message"
+                    required
+                    rows={5}
+                    className="mt-1 block w-full rounded-lg border border-gray-300 px-4 py-2.5 text-gray-800 shadow-sm placeholder:text-gray-400 focus:border-green focus:outline-none focus:ring-2 focus:ring-green/30"
+                    placeholder="Tell us about your staffing needs or the role you are looking for..."
+                  />
+                </div>
+
+                {/* Submit */}
+                <div>
+                  <Button type="submit" size="lg" className="w-full sm:w-auto">
+                    Send Message
+                  </Button>
+                </div>
+              </form>
+            </div>
+
+            {/* Contact Info Sidebar */}
+            <aside className="lg:col-span-2">
+              <div className="rounded-xl border border-gray-200 bg-gray-50 p-6 sm:p-8">
+                <h2 className="text-xl font-bold text-navy">
+                  Contact Information
+                </h2>
+
+                {/* Address */}
+                <div className="mt-6">
+                  <h3 className="text-sm font-semibold uppercase tracking-wider text-gray-500">
+                    Office Address
+                  </h3>
+                  <address className="mt-2 not-italic leading-relaxed text-gray-700">
+                    123 Infrastructure Drive, Suite 400
+                    <br />
+                    Ashburn, VA 20147
+                  </address>
+                </div>
+
+                {/* Phone */}
+                <div className="mt-6">
+                  <h3 className="text-sm font-semibold uppercase tracking-wider text-gray-500">
+                    Phone
+                  </h3>
+                  <p className="mt-2">
+                    <a
+                      href="tel:+15553282568"
+                      className="text-green font-medium hover:underline"
+                    >
+                      (555) DC-TALNT
+                    </a>
+                  </p>
+                </div>
+
+                {/* Email */}
+                <div className="mt-6">
+                  <h3 className="text-sm font-semibold uppercase tracking-wider text-gray-500">
+                    Email
+                  </h3>
+                  <p className="mt-2">
+                    <a
+                      href="mailto:info@datacentertalnt.com"
+                      className="text-green font-medium hover:underline"
+                    >
+                      info@datacentertalnt.com
+                    </a>
+                  </p>
+                </div>
+
+                {/* Office Hours */}
+                <div className="mt-6">
+                  <h3 className="text-sm font-semibold uppercase tracking-wider text-gray-500">
+                    Office Hours
+                  </h3>
+                  <ul className="mt-2 space-y-1 text-gray-700">
+                    <li>Monday - Friday: 8:00 AM - 6:00 PM ET</li>
+                    <li>Saturday: By appointment</li>
+                    <li>Sunday: Closed</li>
+                  </ul>
+                </div>
+
+                {/* Quick Links */}
+                <div className="mt-8 border-t border-gray-200 pt-6">
+                  <h3 className="text-sm font-semibold uppercase tracking-wider text-gray-500">
+                    Quick Links
+                  </h3>
+                  <ul className="mt-3 space-y-2">
+                    <li>
+                      <a
+                        href="/employers"
+                        className="text-sm font-medium text-green hover:underline"
+                      >
+                        For Employers
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="/candidates"
+                        className="text-sm font-medium text-green hover:underline"
+                      >
+                        For Job Seekers
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="/jobs"
+                        className="text-sm font-medium text-green hover:underline"
+                      >
+                        View Open Positions
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </aside>
+          </div>
+        </div>
+      </section>
+    </>
+  );
+}
