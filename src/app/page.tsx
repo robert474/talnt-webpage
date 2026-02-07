@@ -398,14 +398,11 @@ export default function HomePage() {
           <p className="text-center text-sm font-semibold uppercase tracking-widest text-gray-400">
             Our Talent Builds for the World&rsquo;s Leading Hyperscalers
           </p>
-          <div className="mt-8 flex flex-wrap items-center justify-center gap-x-12 gap-y-8 sm:gap-x-16 lg:gap-x-20">
+          <div className="mt-10 flex flex-wrap items-center justify-center gap-x-16 gap-y-10 sm:gap-x-20 lg:gap-x-28">
             {[
-              { name: "AWS", src: "/images/logos/aws.svg", width: 100, height: 60 },
-              { name: "OpenAI", src: "/images/logos/openai.svg", width: 200, height: 60 },
-              { name: "Oracle", src: "/images/logos/oracle.svg", width: 180, height: 60 },
-              { name: "Microsoft", src: "/images/logos/microsoft.svg", width: 220, height: 60 },
-              { name: "Google", src: "/images/logos/google.svg", width: 160, height: 60 },
-              { name: "Meta", src: "/images/logos/meta.svg", width: 140, height: 60 },
+              { name: "Amazon Web Services", src: "/images/logos/aws.svg", width: 160, height: 80 },
+              { name: "OpenAI", src: "/images/logos/openai.svg", width: 260, height: 80 },
+              { name: "Oracle", src: "/images/logos/oracle.svg", width: 240, height: 80 },
             ].map((logo) => (
               <Link key={logo.name} href="/industries/hyperscalers" className="transition-opacity hover:opacity-70">
                 <Image
@@ -413,7 +410,7 @@ export default function HomePage() {
                   alt={logo.name}
                   width={logo.width}
                   height={logo.height}
-                  className="h-10 w-auto sm:h-12 object-contain"
+                  className="h-14 w-auto sm:h-16 lg:h-20 object-contain"
                 />
               </Link>
             ))}

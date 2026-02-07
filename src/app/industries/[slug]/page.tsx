@@ -14,12 +14,9 @@ import {
 /* ========================================================================== */
 
 const hyperscalerLogos = [
-  { name: "AWS", src: "/images/logos/aws.svg", width: 100, height: 60 },
-  { name: "OpenAI", src: "/images/logos/openai.svg", width: 200, height: 60 },
-  { name: "Oracle", src: "/images/logos/oracle.svg", width: 180, height: 60 },
-  { name: "Microsoft", src: "/images/logos/microsoft.svg", width: 220, height: 60 },
-  { name: "Google", src: "/images/logos/google.svg", width: 160, height: 60 },
-  { name: "Meta", src: "/images/logos/meta.svg", width: 140, height: 60 },
+  { name: "Amazon Web Services", src: "/images/logos/aws.svg", width: 200, height: 100 },
+  { name: "OpenAI", src: "/images/logos/openai.svg", width: 320, height: 100 },
+  { name: "Oracle", src: "/images/logos/oracle.svg", width: 280, height: 100 },
 ];
 
 function HyperscalerLogos() {
@@ -33,7 +30,7 @@ function HyperscalerLogos() {
           Our talent is trusted on the biggest data center builds in the country — projects
           commissioned by the world&rsquo;s leading hyperscalers and AI companies.
         </p>
-        <div className="mt-12 grid grid-cols-2 items-center gap-8 sm:grid-cols-3 lg:grid-cols-6">
+        <div className="mt-14 flex flex-wrap items-center justify-center gap-x-20 gap-y-12 lg:gap-x-28">
           {hyperscalerLogos.map((logo) => (
             <div key={logo.name} className="flex items-center justify-center">
               <Image
@@ -41,7 +38,7 @@ function HyperscalerLogos() {
                 alt={logo.name}
                 width={logo.width}
                 height={logo.height}
-                className="h-14 w-auto object-contain"
+                className="h-16 w-auto sm:h-20 lg:h-24 object-contain"
               />
             </div>
           ))}
@@ -645,9 +642,9 @@ const industriesData: Record<string, IndustryData> = {
     slug: "hyperscalers",
     title: "Hyperscalers",
     metaTitle:
-      "Hyperscaler Data Center Staffing | AWS, Microsoft, Google, Meta, Oracle, OpenAI | Data Center TALNT",
+      "Hyperscaler Data Center Staffing | AWS, OpenAI, Oracle | Data Center TALNT",
     metaDescription:
-      "DC TALNT provides specialized staffing for hyperscale data center construction projects built for AWS, Microsoft Azure, Google, Meta, Oracle, and OpenAI. We place project managers, commissioning agents, MEP engineers, and superintendents on the largest campus builds in the country.",
+      "DC TALNT provides specialized staffing for hyperscale data center construction projects built for AWS, OpenAI, Oracle, and other leading hyperscalers. We place project managers, commissioning agents, MEP engineers, and superintendents on the largest campus builds in the country.",
     heroTitle: "Hyperscaler Data Center Staffing",
     heroSubtitle:
       "The world's largest cloud and AI companies are building data center campuses at an unprecedented pace. DC TALNT places the project managers, commissioning agents, MEP engineers, and superintendents who deliver these mission critical builds on schedule.",
@@ -666,7 +663,7 @@ const industriesData: Record<string, IndustryData> = {
       {
         name: "Commissioning Agent (CxA)",
         description:
-          "Level 1 through Level 5 commissioning agents experienced in hyperscaler commissioning scripts, integrated systems testing (IST), and the documentation standards required by AWS, Microsoft, Google, and Meta for facility acceptance.",
+          "Level 1 through Level 5 commissioning agents experienced in hyperscaler commissioning scripts, integrated systems testing (IST), and the documentation standards required by AWS, OpenAI, Oracle, and other hyperscalers for facility acceptance.",
         href: "/roles/commissioning-agents",
       },
       {
@@ -735,7 +732,7 @@ const industriesData: Record<string, IndustryData> = {
         question:
           "Which hyperscaler projects does DC TALNT staff?",
         answer:
-          "DC TALNT provides staffing for data center construction projects built for all major hyperscalers, including Amazon Web Services (AWS), Microsoft Azure, Google Cloud, Meta (Facebook), Oracle Cloud Infrastructure (OCI), and OpenAI. We work with the general contractors, commissioning authorities, and owner's representatives who execute these builds across the United States.",
+          "DC TALNT provides staffing for data center construction projects built for leading hyperscalers and AI companies, including Amazon Web Services (AWS), OpenAI, and Oracle Cloud Infrastructure (OCI). We work with the general contractors, commissioning authorities, and owner's representatives who execute these builds across the United States.",
       },
       {
         question:

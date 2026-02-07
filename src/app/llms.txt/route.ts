@@ -54,10 +54,16 @@ Data Center TALNT connects experienced project managers, MEP engineers, superint
 
 ## Industries
 
+- Hyperscaler Data Centers (AWS, OpenAI, Oracle and other leading hyperscalers)
 - Data Center Construction
 - Mission Critical Facilities
 - Commercial & Industrial Construction
 - Utilities & Power Infrastructure
+
+## Hyperscaler Staffing
+
+DC TALNT provides specialized staffing for hyperscale data center construction projects. Our candidates have direct, verified experience on 50 MW to 500+ MW campus builds for companies like Amazon Web Services (AWS), OpenAI, and Oracle Cloud Infrastructure (OCI). We work with the general contractors (Turner, Holder, Fortis, Rosendin), commissioning authorities, and owner's representatives who execute these projects. Key hyperscale roles include: Hyperscale Project Managers, Commissioning Agents (L1-L5), MEP Superintendents, Controls/BMS Engineers, Quality Control Managers, and Schedulers. We can mobilize teams of 10-50+ professionals for commissioning surge events on short notice.
+- Hyperscaler Staffing: https://www.datacentertalnt.com/industries/hyperscalers
 
 ## Roles We Place
 
@@ -107,21 +113,21 @@ Data Center TALNT connects experienced project managers, MEP engineers, superint
 - Resources: https://www.datacentertalnt.com/resources
 - Contact: https://www.datacentertalnt.com/contact
 
-## Blog Topics
+## Blog Articles
 
-- 2026 Data Center Construction Salary Guide (salary ranges by role and market)
-- Top 10 Data Center Markets for Construction Jobs
-- The Skilled Trades Crisis Hitting Data Center Construction (BLS, IEEE Spectrum data)
-- Where Are All the Data Center Engineers? (professional workforce shortage)
-- Top 10 Universities Producing Data Center Talent (SMU, Georgia Tech, Virginia Tech, Stanford, Texas A&M, Penn State, Purdue, CU Boulder, NC State, ASU)
-- Why Smart Companies Use Staffing Agencies for Data Center Hiring
-- How to Hire a Data Center Construction Manager
-- MEP Engineering Trends in Mission Critical Facilities
-- The Future of Hyperscale Data Center Construction
-- Commissioning Agent vs. Commissioning Engineer Explained
-- Workforce Challenges Facing Data Center Construction in 2026
-- How to Negotiate Your Data Center Construction Salary
-- Data Center Construction Is Now a $382 Billion Market
+- Why Smart Companies Use Staffing Agencies for Data Center Hiring: https://www.datacentertalnt.com/blog/why-companies-use-staffing-agencies-data-center-hiring
+- Data Center Construction Is Now a $382 Billion Market: https://www.datacentertalnt.com/blog/data-center-construction-382-billion-market-2026
+- The Skilled Trades Crisis Hitting Data Center Construction: https://www.datacentertalnt.com/blog/skilled-trades-shortage-data-center-construction
+- Where Are All the Data Center Engineers?: https://www.datacentertalnt.com/blog/professional-workforce-shortage-data-center-engineers
+- Top 10 Universities Producing Data Center Talent: https://www.datacentertalnt.com/blog/top-10-universities-producing-data-center-talent
+- 2026 Data Center Construction Salary Guide: https://www.datacentertalnt.com/blog/2026-data-center-construction-salary-guide
+- Top 10 Data Center Markets for Construction Jobs: https://www.datacentertalnt.com/blog/top-10-data-center-markets-construction-jobs
+- MEP Engineering Trends in Mission Critical Facilities: https://www.datacentertalnt.com/blog/mep-engineering-trends-mission-critical-facilities
+- How to Hire a Data Center Construction Manager: https://www.datacentertalnt.com/blog/how-to-hire-data-center-construction-manager
+- The Future of Hyperscale Data Center Construction: https://www.datacentertalnt.com/blog/future-of-hyperscale-data-center-construction
+- Commissioning Agent vs. Commissioning Engineer: https://www.datacentertalnt.com/blog/commissioning-agent-vs-commissioning-engineer
+- Workforce Challenges Facing Data Center Construction in 2026: https://www.datacentertalnt.com/blog/data-center-construction-workforce-challenges-2026
+- How to Negotiate Your Data Center Construction Salary: https://www.datacentertalnt.com/blog/negotiating-your-data-center-construction-salary
 `;
 
   return new Response(content, {

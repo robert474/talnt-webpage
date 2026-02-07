@@ -21,7 +21,19 @@ export default function robots(): MetadataRoute.Robots {
         allow: '/',
       },
       {
+        userAgent: 'Anthropic-AI',
+        allow: '/',
+      },
+      {
         userAgent: 'Google-Extended',
+        allow: '/',
+      },
+      {
+        userAgent: 'PerplexityBot',
+        allow: '/',
+      },
+      {
+        userAgent: 'Cohere-AI',
         allow: '/',
       },
     ],
