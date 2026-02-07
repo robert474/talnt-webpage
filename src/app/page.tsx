@@ -354,73 +354,7 @@ export default function HomePage() {
       </AnimatedHero>
 
       {/* ------------------------------------------------------------------ */}
-      {/*  Industries We Serve                                                */}
-      {/* ------------------------------------------------------------------ */}
-      <section
-        aria-labelledby="industries-heading"
-        className="bg-sky-50 py-20 md:py-28"
-      >
-        <div className="container-page">
-          <SectionHeading
-            title="Industries We Serve"
-            subtitle="Every sector we staff has one thing in common: there's no room for error. Here's where we focus our recruiting muscle."
-          />
-
-          <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
-            {industries.map((industry) => (
-              <article
-                key={industry.slug}
-                className="group relative flex flex-col rounded-xl border border-gray-200 bg-white p-8 shadow-sm transition-shadow hover:shadow-md"
-              >
-                <div className="mb-4 flex size-14 items-center justify-center rounded-xl bg-blue/10 text-blue">
-                  {industry.icon}
-                </div>
-                <h3 className="text-xl font-semibold text-navy">
-                  {industry.title}
-                </h3>
-                <p className="mt-3 flex-1 text-sm leading-relaxed text-gray-600">
-                  {industry.description}
-                </p>
-                <div className="mt-6">
-                  <Link
-                    href={`/industries/${industry.slug}`}
-                    className="inline-flex items-center gap-1 text-sm font-semibold text-blue transition-colors group-hover:text-blue-dark"
-                  >
-                    Learn More <span aria-hidden="true">&rarr;</span>
-                    {/* Stretch link to cover entire card */}
-                    <span className="absolute inset-0" />
-                  </Link>
-                </div>
-              </article>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* ------------------------------------------------------------------ */}
-      {/*  Image Break — Construction Crew                                    */}
-      {/* ------------------------------------------------------------------ */}
-      <section className="relative h-64 overflow-hidden sm:h-80 lg:h-96">
-        <Image
-          src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?auto=format&fit=crop&w=2400&q=80"
-          alt="Construction crew working on a large-scale building project at sunrise"
-          fill
-          className="object-cover"
-          sizes="100vw"
-        />
-        <div className="absolute inset-0 bg-gradient-to-r from-navy/80 via-navy/40 to-transparent" />
-        <div className="relative z-10 flex h-full items-center">
-          <div className="container-page">
-            <p className="max-w-lg text-2xl font-bold leading-tight text-white sm:text-3xl lg:text-4xl drop-shadow-lg">
-              The right people make the difference between a project that
-              delivers and one that doesn&rsquo;t.
-            </p>
-          </div>
-        </div>
-      </section>
-
-      {/* ------------------------------------------------------------------ */}
-      {/*  Three Differentiators                                              */}
+      {/*  Three Differentiators — Why DC TALNT                               */}
       {/* ------------------------------------------------------------------ */}
       <section
         aria-labelledby="why-heading"
@@ -539,75 +473,23 @@ export default function HomePage() {
       </section>
 
       {/* ------------------------------------------------------------------ */}
-      {/*  Roles We Place                                                     */}
+      {/*  Image Break — "The Right People"                                   */}
       {/* ------------------------------------------------------------------ */}
-      <section
-        aria-labelledby="roles-heading"
-        className="bg-white py-20 md:py-28"
-      >
-        <div className="container-page">
-          <SectionHeading
-            title="Roles We Place"
-            subtitle="From field leadership to technical specialists, we recruit the professionals that data center and mission critical projects depend on."
-          />
-
-          <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-            {roles.map((role) => (
-              <Link
-                key={role.slug}
-                href={`/roles/${role.slug}`}
-                className="group flex flex-col rounded-xl border border-gray-200 bg-white p-7 shadow-sm transition-shadow hover:shadow-md"
-              >
-                <h3 className="text-lg font-semibold text-navy group-hover:text-blue transition-colors duration-200">
-                  {role.title}
-                </h3>
-                <p className="mt-2 flex-1 text-sm leading-relaxed text-gray-600">
-                  {role.description}
-                </p>
-                <p className="mt-4 inline-flex items-center gap-2 text-sm font-semibold text-blue-dark">
-                  <span aria-label="Salary range">{role.salary}</span>
-                  <span
-                    aria-hidden="true"
-                    className="transition-transform group-hover:translate-x-1"
-                  >
-                    &rarr;
-                  </span>
-                </p>
-              </Link>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* ------------------------------------------------------------------ */}
-      {/*  Top Markets — Interactive Map                                      */}
-      {/* ------------------------------------------------------------------ */}
-      <section
-        aria-labelledby="markets-heading"
-        className="bg-sky-50 py-20 md:py-28"
-      >
-        <div className="container-page">
-          <SectionHeading
-            title="Top Data Center Markets"
-            subtitle="We maintain active talent pipelines in the markets experiencing the highest data center construction demand. Hover over a pin to learn more."
-          />
-
-          <USMarketMap />
-
-          {/* Quick-link grid below the map */}
-          <div className="mt-10 grid gap-3 sm:grid-cols-2 md:grid-cols-5">
-            {topMarkets.map((market) => (
-              <Link
-                key={market.slug}
-                href={`/locations/${market.slug}`}
-                className="group rounded-lg border border-gray-200 bg-white px-4 py-3 text-center shadow-sm transition-shadow hover:shadow-md"
-              >
-                <h3 className="text-sm font-semibold text-navy group-hover:text-blue transition-colors duration-200">
-                  {market.city}
-                </h3>
-                <p className="text-xs text-gray-500">{market.state}</p>
-              </Link>
-            ))}
+      <section className="relative h-64 overflow-hidden sm:h-80 lg:h-96">
+        <Image
+          src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?auto=format&fit=crop&w=2400&q=80"
+          alt="Construction crew working on a large-scale building project at sunrise"
+          fill
+          className="object-cover"
+          sizes="100vw"
+        />
+        <div className="absolute inset-0 bg-gradient-to-r from-navy/80 via-navy/40 to-transparent" />
+        <div className="relative z-10 flex h-full items-center">
+          <div className="container-page">
+            <p className="max-w-lg text-2xl font-bold leading-tight text-white sm:text-3xl lg:text-4xl drop-shadow-lg">
+              The right people make the difference between a project that
+              delivers and one that doesn&rsquo;t.
+            </p>
           </div>
         </div>
       </section>
@@ -751,6 +633,124 @@ export default function HomePage() {
                 </div>
               </div>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* ------------------------------------------------------------------ */}
+      {/*  Industries We Serve                                                */}
+      {/* ------------------------------------------------------------------ */}
+      <section
+        aria-labelledby="industries-heading"
+        className="bg-sky-50 py-20 md:py-28"
+      >
+        <div className="container-page">
+          <SectionHeading
+            title="Industries We Serve"
+            subtitle="Every sector we staff has one thing in common: there's no room for error. Here's where we focus our recruiting muscle."
+          />
+
+          <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
+            {industries.map((industry) => (
+              <article
+                key={industry.slug}
+                className="group relative flex flex-col rounded-xl border border-gray-200 bg-white p-8 shadow-sm transition-shadow hover:shadow-md"
+              >
+                <div className="mb-4 flex size-14 items-center justify-center rounded-xl bg-blue/10 text-blue">
+                  {industry.icon}
+                </div>
+                <h3 className="text-xl font-semibold text-navy">
+                  {industry.title}
+                </h3>
+                <p className="mt-3 flex-1 text-sm leading-relaxed text-gray-600">
+                  {industry.description}
+                </p>
+                <div className="mt-6">
+                  <Link
+                    href={`/industries/${industry.slug}`}
+                    className="inline-flex items-center gap-1 text-sm font-semibold text-blue transition-colors group-hover:text-blue-dark"
+                  >
+                    Learn More <span aria-hidden="true">&rarr;</span>
+                    {/* Stretch link to cover entire card */}
+                    <span className="absolute inset-0" />
+                  </Link>
+                </div>
+              </article>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* ------------------------------------------------------------------ */}
+      {/*  Top Markets — Interactive Map                                      */}
+      {/* ------------------------------------------------------------------ */}
+      <section
+        aria-labelledby="markets-heading"
+        className="bg-white py-20 md:py-28"
+      >
+        <div className="container-page">
+          <SectionHeading
+            title="Top Data Center Markets"
+            subtitle="We maintain active talent pipelines in the markets experiencing the highest data center construction demand. Hover over a pin to learn more."
+          />
+
+          <USMarketMap />
+
+          {/* Quick-link grid below the map */}
+          <div className="mt-10 grid gap-3 sm:grid-cols-2 md:grid-cols-5">
+            {topMarkets.map((market) => (
+              <Link
+                key={market.slug}
+                href={`/locations/${market.slug}`}
+                className="group rounded-lg border border-gray-200 bg-white px-4 py-3 text-center shadow-sm transition-shadow hover:shadow-md"
+              >
+                <h3 className="text-sm font-semibold text-navy group-hover:text-blue transition-colors duration-200">
+                  {market.city}
+                </h3>
+                <p className="text-xs text-gray-500">{market.state}</p>
+              </Link>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* ------------------------------------------------------------------ */}
+      {/*  Roles We Place                                                     */}
+      {/* ------------------------------------------------------------------ */}
+      <section
+        aria-labelledby="roles-heading"
+        className="bg-sky-50 py-20 md:py-28"
+      >
+        <div className="container-page">
+          <SectionHeading
+            title="Roles We Place"
+            subtitle="From field leadership to technical specialists, we recruit the professionals that data center and mission critical projects depend on."
+          />
+
+          <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+            {roles.map((role) => (
+              <Link
+                key={role.slug}
+                href={`/roles/${role.slug}`}
+                className="group flex flex-col rounded-xl border border-gray-200 bg-white p-7 shadow-sm transition-shadow hover:shadow-md"
+              >
+                <h3 className="text-lg font-semibold text-navy group-hover:text-blue transition-colors duration-200">
+                  {role.title}
+                </h3>
+                <p className="mt-2 flex-1 text-sm leading-relaxed text-gray-600">
+                  {role.description}
+                </p>
+                <p className="mt-4 inline-flex items-center gap-2 text-sm font-semibold text-blue-dark">
+                  <span aria-label="Salary range">{role.salary}</span>
+                  <span
+                    aria-hidden="true"
+                    className="transition-transform group-hover:translate-x-1"
+                  >
+                    &rarr;
+                  </span>
+                </p>
+              </Link>
+            ))}
           </div>
         </div>
       </section>

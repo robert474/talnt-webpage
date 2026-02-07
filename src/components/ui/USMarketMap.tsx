@@ -136,47 +136,62 @@ export default function USMarketMap() {
           return (
             <div
               key={market.slug}
-              className="absolute -translate-x-1/2 -translate-y-1/2"
+              className="absolute"
               style={{
                 left: `${pos.x}%`,
                 top: `${pos.y}%`,
-                /* staggered drop-in */
-                opacity: loaded ? 1 : 0,
+                /* anchor at the bottom tip of the teardrop */
                 transform: loaded
-                  ? "translate(-50%, -50%) translateY(0)"
-                  : "translate(-50%, -50%) translateY(-30px)",
+                  ? "translate(-50%, -100%) translateY(0)"
+                  : "translate(-50%, -100%) translateY(-30px)",
+                opacity: loaded ? 1 : 0,
                 transition: `opacity 0.4s ease ${i * 0.08}s, transform 0.5s cubic-bezier(0.34, 1.56, 0.64, 1) ${i * 0.08}s`,
               }}
               onMouseEnter={() => setActive(market.slug)}
               onMouseLeave={() => setActive(null)}
             >
-              {/* Pulse ring */}
-              <div className="absolute inset-0 flex items-center justify-center">
-                <div
-                  className={`rounded-full bg-blue/20 transition-transform duration-300 ${
-                    isActive ? "h-10 w-10 scale-150" : "h-8 w-8 scale-100"
-                  }`}
-                />
-              </div>
-
-              {/* Pin dot */}
+              {/* Teardrop pin with DC logo */}
               <Link
                 href={`/locations/${market.slug}`}
-                className={`relative z-10 flex items-center justify-center rounded-full border-2 border-white shadow-lg transition-all duration-200 ${
-                  isActive
-                    ? "h-5 w-5 bg-blue-dark"
-                    : "h-4 w-4 bg-blue"
+                className={`relative z-10 block transition-transform duration-200 ${
+                  isActive ? "scale-125" : "scale-100"
                 }`}
                 aria-label={`${market.city}, ${market.state}`}
               >
-                <span className="sr-only">
-                  {market.city}, {market.state}
-                </span>
+                <svg
+                  width="32"
+                  height="42"
+                  viewBox="0 0 32 42"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="drop-shadow-lg"
+                >
+                  {/* Teardrop shape */}
+                  <path
+                    d="M16 0C7.163 0 0 7.163 0 16c0 8.837 16 26 16 26s16-17.163 16-26C32 7.163 24.837 0 16 0z"
+                    className={isActive ? "fill-blue-dark" : "fill-blue"}
+                    style={{ transition: "fill 0.2s" }}
+                  />
+                  {/* White circle inside */}
+                  <circle cx="16" cy="15" r="9" fill="white" />
+                  {/* DC text (brand logo) */}
+                  <text
+                    x="16"
+                    y="18.5"
+                    textAnchor="middle"
+                    className="fill-blue"
+                    fontSize="10"
+                    fontWeight="900"
+                    fontFamily="system-ui, sans-serif"
+                  >
+                    DC
+                  </text>
+                </svg>
               </Link>
 
               {/* Tooltip */}
               <div
-                className={`pointer-events-none absolute bottom-full left-1/2 z-20 mb-3 -translate-x-1/2 transition-all duration-200 ${
+                className={`pointer-events-none absolute bottom-full left-1/2 z-20 mb-1 -translate-x-1/2 transition-all duration-200 ${
                   isActive
                     ? "opacity-100 translate-y-0"
                     : "opacity-0 translate-y-1"
