@@ -29,6 +29,7 @@ const categories = [
   "Salary Guides",
   "Career Advice",
   "Market Reports",
+  "Workforce Development",
 ];
 
 interface BlogPost {
@@ -42,6 +43,61 @@ interface BlogPost {
 }
 
 const posts: BlogPost[] = [
+  {
+    slug: "why-companies-use-staffing-agencies-data-center-hiring",
+    title: "Why Smart Companies Use Staffing Agencies for Data Center Hiring",
+    excerpt:
+      "You have an HR department. You have job boards. So why are the most successful data center builders outsourcing their recruiting? Because the math works. We break down the real ROI of staffing partnerships — faster hires, better retention, and access to candidates you'll never find on Indeed.",
+    date: "February 6, 2026",
+    category: "Career Advice",
+    readTime: "7 min read",
+    image:
+      "https://images.unsplash.com/photo-1521791136064-7986c2920216?auto=format&fit=crop&w=800&q=80",
+  },
+  {
+    slug: "data-center-construction-382-billion-market-2026",
+    title: "Data Center Construction Is Now a $382 Billion Market. Here's What That Means for Hiring.",
+    excerpt:
+      "The numbers are staggering: $88 billion in U.S. data center starts tracked for just the first half of 2026, hyperscalers committing $400 billion this year alone, and 82% of firms struggling to fill roles. We unpack the growth, who's building, and why every GC in America is fighting for the same 50 superintendents.",
+    date: "February 4, 2026",
+    category: "Market Reports",
+    readTime: "8 min read",
+    image:
+      "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=800&q=80",
+  },
+  {
+    slug: "skilled-trades-shortage-data-center-construction",
+    title: "The Skilled Trades Crisis Hitting Data Center Construction",
+    excerpt:
+      "The BLS projects 400,000 more construction workers needed by 2033 — and the biggest gaps are in exactly the trades data centers need: electricians, HVAC techs, and plumbers. With 58% of data center operators already struggling to source talent, the trades pipeline is the industry's most urgent problem.",
+    date: "January 28, 2026",
+    category: "Industry Trends",
+    readTime: "9 min read",
+    image:
+      "https://images.unsplash.com/photo-1581092160562-40aa08e78837?auto=format&fit=crop&w=800&q=80",
+  },
+  {
+    slug: "professional-workforce-shortage-data-center-engineers",
+    title: "Where Are All the Data Center Engineers? Inside the Professional Talent Shortage",
+    excerpt:
+      "The data center industry added 4.7 million jobs to the U.S. economy — a 60% jump since 2017. But engineering programs can't keep up. From commissioning agents to power systems designers, we examine why the professional talent pool is running dry and what community colleges, universities, and employers are doing about it.",
+    date: "January 22, 2026",
+    category: "Workforce Development",
+    readTime: "10 min read",
+    image:
+      "https://images.unsplash.com/photo-1581094794329-c8112a89af12?auto=format&fit=crop&w=800&q=80",
+  },
+  {
+    slug: "top-10-universities-producing-data-center-talent",
+    title: "Top 10 Universities Producing Data Center Talent in 2026",
+    excerpt:
+      "From SMU's one-of-a-kind MS in Datacenter Systems Engineering to Georgia Tech's powerhouse electrical engineering program, we ranked the 10 universities whose graduates are most likely to end up designing, building, or operating the facilities that power the AI economy. Plus: the community college programs quietly filling the trades gap.",
+    date: "January 18, 2026",
+    category: "Workforce Development",
+    readTime: "11 min read",
+    image:
+      "https://images.unsplash.com/photo-1562774053-701939374585?auto=format&fit=crop&w=800&q=80",
+  },
   {
     slug: "2026-data-center-construction-salary-guide",
     title: "2026 Data Center Construction Salary Guide",

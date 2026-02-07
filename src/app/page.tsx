@@ -358,17 +358,17 @@ export default function HomePage() {
       {/* ------------------------------------------------------------------ */}
       <section
         aria-labelledby="why-heading"
-        className="bg-navy text-white py-20 md:py-28"
+        className="bg-gray-50 py-20 md:py-28"
       >
         <div className="container-page">
           <div className="text-center mb-10 md:mb-14">
             <h2
               id="why-heading"
-              className="text-3xl font-bold tracking-tight sm:text-4xl lg:text-5xl text-balance"
+              className="text-3xl font-bold tracking-tight text-navy sm:text-4xl lg:text-5xl text-balance"
             >
               Why Data Center TALNT
             </h2>
-            <p className="mx-auto mt-4 max-w-2xl text-lg leading-relaxed text-gray-300 sm:text-xl">
+            <p className="mx-auto mt-4 max-w-2xl text-lg leading-relaxed text-gray-600 sm:text-xl">
               Three things separate us from every other staffing agency in this
               space. And they&rsquo;re not things you can spin up overnight.
             </p>
@@ -378,7 +378,7 @@ export default function HomePage() {
             {/* Card 1 — Veteran Recruiters */}
             <Link
               href="/veteran-recruiters"
-              className="group relative flex flex-col overflow-hidden rounded-2xl border border-white/10 bg-white/5 transition-all duration-300 hover:bg-white/10"
+              className="group relative flex flex-col overflow-hidden rounded-2xl border border-gray-200 bg-white shadow-sm transition-all duration-300 hover:shadow-lg"
             >
               <div className="relative h-48 overflow-hidden">
                 <Image
@@ -388,20 +388,20 @@ export default function HomePage() {
                   className="object-cover transition-transform duration-300 group-hover:scale-105"
                   sizes="(min-width: 1024px) 33vw, 100vw"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-navy via-navy/50 to-transparent" />
+                <div className="absolute inset-0 bg-gradient-to-t from-white via-white/40 to-transparent" />
               </div>
               <div className="flex flex-1 flex-col p-6">
-                <p className="text-sm font-semibold uppercase tracking-widest text-blue-light">
+                <p className="text-sm font-semibold uppercase tracking-widest text-blue">
                   Our Recruiters
                 </p>
-                <h3 className="mt-2 text-2xl font-bold">15+ Year Veterans</h3>
-                <p className="mt-3 flex-1 text-sm leading-relaxed text-gray-300">
+                <h3 className="mt-2 text-2xl font-bold text-navy">15+ Year Veterans</h3>
+                <p className="mt-3 flex-1 text-sm leading-relaxed text-gray-600">
                   Our recruiters average 15+ years in data center and
                   construction staffing. They&rsquo;ve walked job sites, built
                   networks across every major market, and know the difference
                   between a resume padder and a real operator.
                 </p>
-                <span className="mt-4 inline-flex items-center gap-1 text-sm font-semibold text-blue-light group-hover:gap-2 transition-all">
+                <span className="mt-4 inline-flex items-center gap-1 text-sm font-semibold text-blue group-hover:gap-2 transition-all">
                   Learn More <span aria-hidden="true">&rarr;</span>
                 </span>
               </div>
@@ -410,7 +410,7 @@ export default function HomePage() {
             {/* Card 2 — Talent Network */}
             <Link
               href="/talent-network"
-              className="group relative flex flex-col overflow-hidden rounded-2xl border border-white/10 bg-white/5 transition-all duration-300 hover:bg-white/10"
+              className="group relative flex flex-col overflow-hidden rounded-2xl border border-gray-200 bg-white shadow-sm transition-all duration-300 hover:shadow-lg"
             >
               <div className="relative h-48 overflow-hidden">
                 <Image
@@ -420,19 +420,19 @@ export default function HomePage() {
                   className="object-cover transition-transform duration-300 group-hover:scale-105"
                   sizes="(min-width: 1024px) 33vw, 100vw"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-navy via-navy/50 to-transparent" />
+                <div className="absolute inset-0 bg-gradient-to-t from-white via-white/40 to-transparent" />
               </div>
               <div className="flex flex-1 flex-col p-6">
-                <p className="text-sm font-semibold uppercase tracking-widest text-blue-light">
+                <p className="text-sm font-semibold uppercase tracking-widest text-blue">
                   Our Database
                 </p>
-                <h3 className="mt-2 text-2xl font-bold">10+ Years of Intel</h3>
-                <p className="mt-3 flex-1 text-sm leading-relaxed text-gray-300">
+                <h3 className="mt-2 text-2xl font-bold text-navy">10+ Years of Intel</h3>
+                <p className="mt-3 flex-1 text-sm leading-relaxed text-gray-600">
                   Every interview, every placement, every reference — logged and
                   searchable across a decade. We know about candidates before
                   they apply, and we find people that other agencies can&rsquo;t.
                 </p>
-                <span className="mt-4 inline-flex items-center gap-1 text-sm font-semibold text-blue-light group-hover:gap-2 transition-all">
+                <span className="mt-4 inline-flex items-center gap-1 text-sm font-semibold text-blue group-hover:gap-2 transition-all">
                   Learn More <span aria-hidden="true">&rarr;</span>
                 </span>
               </div>
@@ -441,7 +441,7 @@ export default function HomePage() {
             {/* Card 3 — Technology */}
             <Link
               href="/technology"
-              className="group relative flex flex-col overflow-hidden rounded-2xl border border-white/10 bg-white/5 transition-all duration-300 hover:bg-white/10"
+              className="group relative flex flex-col overflow-hidden rounded-2xl border border-gray-200 bg-white shadow-sm transition-all duration-300 hover:shadow-lg"
             >
               <div className="relative h-48 overflow-hidden">
                 <Image
@@ -451,19 +451,19 @@ export default function HomePage() {
                   className="object-cover transition-transform duration-300 group-hover:scale-105"
                   sizes="(min-width: 1024px) 33vw, 100vw"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-navy via-navy/50 to-transparent" />
+                <div className="absolute inset-0 bg-gradient-to-t from-white via-white/40 to-transparent" />
               </div>
               <div className="flex flex-1 flex-col p-6">
-                <p className="text-sm font-semibold uppercase tracking-widest text-blue-light">
+                <p className="text-sm font-semibold uppercase tracking-widest text-blue">
                   Our Systems
                 </p>
-                <h3 className="mt-2 text-2xl font-bold">Built for Speed</h3>
-                <p className="mt-3 flex-1 text-sm leading-relaxed text-gray-300">
+                <h3 className="mt-2 text-2xl font-bold text-navy">Built for Speed</h3>
+                <p className="mt-3 flex-1 text-sm leading-relaxed text-gray-600">
                   Job posts in minutes. Candidate interviews in hours. Offers in
                   days. Our tech stack eliminates the bottlenecks that make
                   traditional staffing agencies slow.
                 </p>
-                <span className="mt-4 inline-flex items-center gap-1 text-sm font-semibold text-blue-light group-hover:gap-2 transition-all">
+                <span className="mt-4 inline-flex items-center gap-1 text-sm font-semibold text-blue group-hover:gap-2 transition-all">
                   Learn More <span aria-hidden="true">&rarr;</span>
                 </span>
               </div>
@@ -497,42 +497,33 @@ export default function HomePage() {
       {/* ------------------------------------------------------------------ */}
       {/*  Speed and Execution — Explanation + Chart                          */}
       {/* ------------------------------------------------------------------ */}
-      <section className="relative bg-navy py-16 sm:py-24 overflow-hidden">
-        <div className="absolute inset-0 opacity-10">
-          <Image
-            src="https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?auto=format&fit=crop&w=2400&q=80"
-            alt=""
-            fill
-            className="object-cover"
-            sizes="100vw"
-          />
-        </div>
-        <div className="relative container-page">
+      <section className="bg-white py-16 sm:py-24">
+        <div className="container-page">
           <div className="grid gap-10 lg:grid-cols-[1fr_1.4fr] lg:items-center">
             {/* Left — Explanation */}
             <div>
-              <p className="text-sm font-semibold uppercase tracking-widest text-blue-light">
+              <p className="text-sm font-semibold uppercase tracking-widest text-blue">
                 Speed and Execution
               </p>
-              <h2 className="mt-3 text-3xl font-bold tracking-tight text-white sm:text-4xl lg:text-5xl">
+              <h2 className="mt-3 text-3xl font-bold tracking-tight text-navy sm:text-4xl lg:text-5xl">
                 <a
                   href="https://thebirmgroup.com/the-data-center-construction-boom-hiring-surge-in-2026/"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-gray-400 line-through decoration-gray-500 hover:text-gray-300 transition-colors"
+                  className="text-gray-400 line-through decoration-gray-400 hover:text-gray-500 transition-colors"
                 >
                   126 days
                 </a>
                 {" "}
-                <span className="text-blue-light">40 days.</span>
+                <span className="text-blue">40 days.</span>
               </h2>
-              <p className="mt-4 max-w-lg text-lg leading-relaxed text-gray-300">
+              <p className="mt-4 max-w-lg text-lg leading-relaxed text-gray-600">
                 The industry averages{" "}
                 <a
                   href="https://thebirmgroup.com/the-data-center-construction-boom-hiring-surge-in-2026/"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="underline decoration-gray-500 hover:decoration-blue-light transition-colors"
+                  className="underline decoration-gray-400 hover:decoration-blue transition-colors"
                 >
                   126 days
                 </a>{" "}
@@ -551,9 +542,9 @@ export default function HomePage() {
                 ].map((stat) => (
                   <div
                     key={stat.label}
-                    className="rounded-xl border border-white/10 bg-white/5 p-4 text-center"
+                    className="rounded-xl border border-gray-200 bg-gray-50 p-4 text-center"
                   >
-                    <p className="text-2xl font-bold text-blue-light sm:text-3xl">
+                    <p className="text-2xl font-bold text-navy sm:text-3xl">
                       {stat.value}
                       {stat.unit && (
                         <span className="ml-1 text-sm font-medium text-gray-400">
@@ -561,7 +552,7 @@ export default function HomePage() {
                         </span>
                       )}
                     </p>
-                    <p className="mt-1 text-xs text-gray-400">{stat.label}</p>
+                    <p className="mt-1 text-xs text-gray-500">{stat.label}</p>
                   </div>
                 ))}
               </div>
@@ -574,8 +565,8 @@ export default function HomePage() {
             </div>
 
             {/* Right — Bar Chart */}
-            <div className="rounded-2xl border border-white/10 bg-white/5 p-4 sm:p-6">
-              <h3 className="text-center text-sm font-semibold uppercase tracking-widest text-gray-400">
+            <div className="rounded-2xl border border-gray-200 bg-gray-50 p-4 sm:p-6">
+              <h3 className="text-center text-sm font-semibold uppercase tracking-widest text-gray-500">
                 Days to Fill — Month by Month
               </h3>
 
@@ -601,14 +592,14 @@ export default function HomePage() {
                         style={{ height: "100%" }}
                       >
                         {/* Hover tooltip */}
-                        <div className="pointer-events-none absolute bottom-full mb-2 rounded bg-white px-2 py-1 text-xs font-bold text-navy opacity-0 shadow-lg transition-opacity group-hover:opacity-100 whitespace-nowrap z-20">
+                        <div className="pointer-events-none absolute bottom-full mb-2 rounded bg-navy px-2 py-1 text-xs font-bold text-white opacity-0 shadow-lg transition-opacity group-hover:opacity-100 whitespace-nowrap z-20">
                           {item.days} days
                         </div>
 
                         {/* Bar */}
                         <div className="flex h-full w-full items-end">
                           <div
-                            className="w-full rounded-t bg-blue transition-all duration-300 hover:bg-blue-light"
+                            className="w-full rounded-t bg-blue transition-all duration-300 hover:bg-blue-dark"
                             style={{ height: `${heightPct}%` }}
                           />
                         </div>
@@ -641,11 +632,11 @@ export default function HomePage() {
               <div className="mt-4 flex items-center justify-center gap-5 text-xs">
                 <div className="flex items-center gap-1.5">
                   <div className="h-2.5 w-5 rounded bg-blue" />
-                  <span className="text-gray-400">DC TALNT</span>
+                  <span className="text-gray-500">DC TALNT</span>
                 </div>
                 <div className="flex items-center gap-1.5">
                   <div className="h-0.5 w-5 border-t-2 border-dashed border-red-400" />
-                  <span className="text-gray-400">Industry Avg (126d)</span>
+                  <span className="text-gray-500">Industry Avg (126d)</span>
                 </div>
               </div>
             </div>
@@ -658,7 +649,7 @@ export default function HomePage() {
       {/* ------------------------------------------------------------------ */}
       <section
         aria-labelledby="industries-heading"
-        className="bg-sky-50 py-20 md:py-28"
+        className="bg-gray-50 py-20 md:py-28"
       >
         <div className="container-page">
           <SectionHeading
