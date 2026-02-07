@@ -402,47 +402,6 @@ export default function HomePage() {
       </section>
 
       {/* ------------------------------------------------------------------ */}
-      {/*  Roles We Place                                                     */}
-      {/* ------------------------------------------------------------------ */}
-      <section
-        aria-labelledby="roles-heading"
-        className="bg-white py-20 md:py-28"
-      >
-        <div className="container-page">
-          <SectionHeading
-            title="Roles We Place"
-            subtitle="From field leadership to technical specialists, we recruit the professionals that data center and mission critical projects depend on."
-          />
-
-          <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-            {roles.map((role) => (
-              <Link
-                key={role.slug}
-                href={`/roles/${role.slug}`}
-                className="group flex flex-col rounded-xl border border-gray-200 bg-white p-7 shadow-sm transition-shadow hover:shadow-md"
-              >
-                <h3 className="text-lg font-semibold text-navy group-hover:text-blue transition-colors duration-200">
-                  {role.title}
-                </h3>
-                <p className="mt-2 flex-1 text-sm leading-relaxed text-gray-600">
-                  {role.description}
-                </p>
-                <p className="mt-4 inline-flex items-center gap-2 text-sm font-semibold text-blue-dark">
-                  <span aria-label="Salary range">{role.salary}</span>
-                  <span
-                    aria-hidden="true"
-                    className="transition-transform group-hover:translate-x-1"
-                  >
-                    &rarr;
-                  </span>
-                </p>
-              </Link>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* ------------------------------------------------------------------ */}
       {/*  Three Differentiators                                              */}
       {/* ------------------------------------------------------------------ */}
       <section
@@ -557,6 +516,47 @@ export default function HomePage() {
                 </span>
               </div>
             </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* ------------------------------------------------------------------ */}
+      {/*  Roles We Place                                                     */}
+      {/* ------------------------------------------------------------------ */}
+      <section
+        aria-labelledby="roles-heading"
+        className="bg-white py-20 md:py-28"
+      >
+        <div className="container-page">
+          <SectionHeading
+            title="Roles We Place"
+            subtitle="From field leadership to technical specialists, we recruit the professionals that data center and mission critical projects depend on."
+          />
+
+          <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+            {roles.map((role) => (
+              <Link
+                key={role.slug}
+                href={`/roles/${role.slug}`}
+                className="group flex flex-col rounded-xl border border-gray-200 bg-white p-7 shadow-sm transition-shadow hover:shadow-md"
+              >
+                <h3 className="text-lg font-semibold text-navy group-hover:text-blue transition-colors duration-200">
+                  {role.title}
+                </h3>
+                <p className="mt-2 flex-1 text-sm leading-relaxed text-gray-600">
+                  {role.description}
+                </p>
+                <p className="mt-4 inline-flex items-center gap-2 text-sm font-semibold text-blue-dark">
+                  <span aria-label="Salary range">{role.salary}</span>
+                  <span
+                    aria-hidden="true"
+                    className="transition-transform group-hover:translate-x-1"
+                  >
+                    &rarr;
+                  </span>
+                </p>
+              </Link>
+            ))}
           </div>
         </div>
       </section>
