@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import Button from "@/components/ui/Button";
 import SectionHeading from "@/components/ui/SectionHeading";
@@ -35,56 +36,69 @@ interface RoleCard {
   salaryRange: string;
   description: string;
   industries: string[];
+  image: string;
 }
 
 const roles: RoleCard[] = [
   {
     title: "Project Managers",
     slug: "project-managers",
-    salaryRange: "$95,000 - $165,000",
+    salaryRange: "$110,000 - $185,000",
     description:
-      "Seasoned project managers who drive data center builds, tenant improvements, and mission critical construction projects from pre-construction through turnover on time and within budget.",
+      "The person who keeps a $300M data center build from going sideways. We place PMs who've delivered hyperscale campuses and know what IST means before you have to explain it.",
     industries: ["Data Centers", "Mission Critical", "Construction"],
+    image:
+      "https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=800&q=80",
   },
   {
     title: "Construction Managers",
     slug: "construction-managers",
-    salaryRange: "$105,000 - $175,000",
+    salaryRange: "$120,000 - $190,000",
     description:
-      "Hands-on construction managers experienced in ground-up data center builds, critical facility renovations, and large-scale commercial construction with multi-trade coordination expertise.",
+      "First on site, last to leave. Our CMs manage 20+ trades at once and know how to keep a data center build moving without cutting corners on safety or quality.",
     industries: ["Data Centers", "Construction", "Utilities"],
+    image:
+      "https://images.unsplash.com/photo-1541888946425-d81bb19240f5?auto=format&fit=crop&w=800&q=80",
   },
   {
     title: "MEP Engineers",
     slug: "mep-engineers",
-    salaryRange: "$90,000 - $160,000",
+    salaryRange: "$100,000 - $165,000",
     description:
-      "Mechanical, electrical, and plumbing engineers who design and oversee the complex building systems that keep data centers, hospitals, and critical facilities operating at peak performance.",
+      "The people who design the guts of the building — power distribution, cooling plants, fire suppression. If the PUE target matters to you, these hires matter more.",
     industries: ["Data Centers", "Mission Critical", "Construction", "Utilities"],
+    image:
+      "https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?auto=format&fit=crop&w=800&q=80",
   },
   {
     title: "Schedulers & Planners",
     slug: "schedulers",
-    salaryRange: "$80,000 - $135,000",
+    salaryRange: "$90,000 - $140,000",
     description:
-      "Expert schedulers and planning professionals who build and maintain CPM schedules, manage resource allocation, and keep data center and construction programs on track across multiple phases.",
+      "Primavera P6 experts who actually understand data center construction sequences. They'll tell you where your schedule is going to slip before it does.",
     industries: ["Data Centers", "Construction", "Utilities"],
+    image:
+      "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=800&q=80",
   },
   {
     title: "Superintendents",
     slug: "superintendents",
-    salaryRange: "$100,000 - $170,000",
+    salaryRange: "$115,000 - $175,000",
     description:
-      "Field-proven superintendents who manage day-to-day construction operations on data center sites, enforce safety standards, coordinate subcontractors, and ensure quality at every phase.",
+      "Field generals who command respect from every trade on site. We find supers who've run clean build protocols and managed phased energization without a hitch.",
     industries: ["Data Centers", "Mission Critical", "Construction"],
+    image:
+      "https://images.unsplash.com/photo-1581094794329-c8112a89af12?auto=format&fit=crop&w=800&q=80",
   },
   {
     title: "Commissioning Agents",
     slug: "commissioning-agents",
-    salaryRange: "$85,000 - $150,000",
+    salaryRange: "$105,000 - $160,000",
     description:
-      "Certified commissioning authorities who verify that critical MEP systems perform as designed, ensuring data centers and mission critical facilities meet Tier III/IV reliability standards.",
+      "The last line of defense before your facility goes live. CxA-certified professionals who've led IST events on Tier III and Tier IV data centers.",
     industries: ["Data Centers", "Mission Critical", "Utilities"],
+    image:
+      "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=800&q=80",
   },
 ];
 
@@ -128,33 +142,37 @@ export default function RolesPage() {
     <>
       <SchemaScript data={breadcrumbSchema} />
 
-      {/* ------------------------------------------------------------------ */}
-      {/*  Hero / Intro                                                       */}
-      {/* ------------------------------------------------------------------ */}
-      <section className="bg-navy py-16 sm:py-20 lg:py-24">
-        <div className="container-page text-center">
+      {/* Hero */}
+      <section className="relative bg-navy py-16 sm:py-20 lg:py-24 overflow-hidden">
+        <div className="absolute inset-0 opacity-15">
+          <Image
+            src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=2400&q=80"
+            alt=""
+            fill
+            className="object-cover"
+            sizes="100vw"
+            priority
+          />
+        </div>
+        <div className="relative container-page text-center">
           <h1 className="text-3xl font-bold tracking-tight text-white sm:text-4xl lg:text-5xl text-balance">
-            Specialized Roles We Place
+            The Roles That Build Critical Infrastructure
           </h1>
           <p className="mx-auto mt-6 max-w-3xl text-lg leading-relaxed text-gray-300 sm:text-xl">
-            Data Center TALNT recruits across the full spectrum of mission
-            critical and heavy construction disciplines. Whether you need a
-            single commissioning agent or an entire project delivery team, our
-            deep industry network connects you with professionals who understand
-            the unique demands of data center, critical facility, and
-            infrastructure construction.
+            Data center and mission critical construction runs on specialized
+            talent. Whether you need a single commissioning agent or an entire
+            project delivery team, we recruit the professionals who&rsquo;ve
+            done this work before — not people who are still figuring it out.
           </p>
         </div>
       </section>
 
-      {/* ------------------------------------------------------------------ */}
-      {/*  Role Cards Grid                                                    */}
-      {/* ------------------------------------------------------------------ */}
+      {/* Role Cards Grid */}
       <section className="bg-sky-50 py-16 sm:py-20 lg:py-24" aria-labelledby="roles-grid-heading">
         <div className="container-page">
           <SectionHeading
             title="Data Center & Construction Staffing Specialties"
-            subtitle="Every role we recruit for is grounded in real-world project experience. We evaluate candidates on technical ability, safety culture, and leadership—not just resumes."
+            subtitle="Every role we recruit for is grounded in real-world project experience. We evaluate candidates on technical ability, safety culture, and leadership — not just resumes."
           />
 
           <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
@@ -163,26 +181,18 @@ export default function RolesPage() {
                 key={role.slug}
                 className="group flex flex-col overflow-hidden rounded-xl border border-gray-200 bg-white shadow-sm transition-shadow duration-300 hover:shadow-md"
               >
-                <div className="flex flex-1 flex-col p-6">
-                  {/* Icon */}
-                  <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-lg bg-blue/10 text-blue">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      strokeWidth={1.5}
-                      stroke="currentColor"
-                      className="h-6 w-6"
-                      aria-hidden="true"
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 21.75c-2.676 0-5.216-.584-7.499-1.632Z"
-                      />
-                    </svg>
-                  </div>
+                {/* Image */}
+                <div className="relative aspect-[16/9]">
+                  <Image
+                    src={role.image}
+                    alt={role.title}
+                    fill
+                    className="object-cover transition-transform duration-300 group-hover:scale-105"
+                    sizes="(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw"
+                  />
+                </div>
 
+                <div className="flex flex-1 flex-col p-6">
                   {/* Title */}
                   <h3 className="text-xl font-semibold text-navy group-hover:text-blue transition-colors duration-200">
                     {role.title}
@@ -238,14 +248,12 @@ export default function RolesPage() {
         </div>
       </section>
 
-      {/* ------------------------------------------------------------------ */}
-      {/*  Why DC TALNT                                                       */}
-      {/* ------------------------------------------------------------------ */}
+      {/* Why DC TALNT */}
       <section className="py-16 sm:py-20 lg:py-24" aria-labelledby="why-dctalnt-heading">
         <div className="container-page">
           <SectionHeading
             title="Why Employers and Candidates Choose DC TALNT"
-            subtitle="We are not a generalist staffing agency. Our recruiters have direct experience in the data center, mission critical, and construction sectors, and every placement reflects that expertise."
+            subtitle="We're not a generalist staffing agency. Our recruiters have direct experience in data center, mission critical, and construction — and every placement reflects it."
           />
 
           <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
@@ -256,11 +264,11 @@ export default function RolesPage() {
               },
               {
                 heading: "Pre-Vetted Talent Pipeline",
-                text: "Every candidate undergoes technical screening, reference verification, and certification validation. We present only professionals ready to contribute on day one.",
+                text: "Every candidate undergoes technical screening, reference verification, and certification validation. We present only professionals ready to contribute on day one — no warm bodies.",
               },
               {
                 heading: "National Reach, Local Knowledge",
-                text: "From Northern Virginia's Data Center Alley to Phoenix's expanding hyperscale corridor, we maintain relationships with top talent in every major data center market.",
+                text: "From Northern Virginia's Data Center Alley to Phoenix's expanding hyperscale corridor, we maintain active relationships with top talent in every major data center market.",
               },
             ].map((item) => (
               <div key={item.heading} className="rounded-xl border border-gray-200 bg-white p-6 shadow-sm">
@@ -272,9 +280,7 @@ export default function RolesPage() {
         </div>
       </section>
 
-      {/* ------------------------------------------------------------------ */}
-      {/*  Bottom CTA                                                         */}
-      {/* ------------------------------------------------------------------ */}
+      {/* Bottom CTA */}
       <section className="bg-navy py-16 sm:py-20" aria-labelledby="roles-cta-heading">
         <div className="container-page text-center">
           <h2
@@ -284,9 +290,9 @@ export default function RolesPage() {
             Ready to Build Your Team or Find Your Next Role?
           </h2>
           <p className="mx-auto mt-4 max-w-2xl text-lg leading-relaxed text-gray-300">
-            Whether you are an employer seeking experienced construction and
-            data center professionals or a candidate looking for your next
-            career-defining opportunity, DC TALNT is your partner.
+            Whether you&rsquo;re an employer looking for experienced data
+            center and construction professionals, or a candidate ready for
+            your next career-defining project, DC TALNT is your partner.
           </p>
           <div className="mt-8 flex flex-col items-center justify-center gap-4 sm:flex-row">
             <Button variant="primary" size="lg" href="/employers">

@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { generateMetadata as genMeta } from "@/lib/metadata";
 import {
   generateOrganizationSchema,
@@ -8,6 +9,7 @@ import {
 } from "@/lib/schema";
 import SectionHeading from "@/components/ui/SectionHeading";
 import Button from "@/components/ui/Button";
+import AnimatedHero from "@/components/ui/AnimatedHero";
 
 /* -------------------------------------------------------------------------- */
 /*  SEO Metadata                                                              */
@@ -59,7 +61,7 @@ const industries = [
     ),
     title: "Data Center Construction & Staffing",
     description:
-      "Specialized recruitment for hyperscale, colocation, and enterprise data center construction projects. We source electricians, MEP engineers, project managers, and commissioning agents who understand Tier III and Tier IV requirements.",
+      "The crews pouring foundations in Ashburn this morning need a PM who's delivered 60MW before. We find that person — along with the electricians, commissioning agents, and MEP leads who keep hyperscale builds on schedule.",
   },
   {
     slug: "mission-critical-facilities",
@@ -82,7 +84,7 @@ const industries = [
     ),
     title: "Mission Critical Facilities",
     description:
-      "Talent acquisition for facilities where uptime is non-negotiable: financial trading floors, hospital infrastructure, telecom hubs, and government installations requiring 99.999% availability.",
+      "When a hospital can't lose power and a trading floor can't afford a blink, the people maintaining those systems had better know what they're doing. We make sure they do.",
   },
   {
     slug: "construction-staffing",
@@ -105,7 +107,7 @@ const industries = [
     ),
     title: "Commercial & Industrial Construction",
     description:
-      "Experienced project managers, superintendents, schedulers, and safety professionals for ground-up construction, tenant improvement, and large-scale renovation projects nationwide.",
+      "Ground-up builds don't wait for candidates to update their resumes. We keep a bench of superintendents, schedulers, and safety pros ready to mobilize when you need boots on the ground.",
   },
   {
     slug: "utilities-staffing",
@@ -128,7 +130,7 @@ const industries = [
     ),
     title: "Utilities & Power Infrastructure",
     description:
-      "Recruitment for power generation, transmission and distribution, substation construction, renewable energy, and grid modernization projects across the United States.",
+      "Substations, T&D lines, solar farms, battery storage — the grid is getting a massive upgrade. We recruit the relay techs, lineworkers, and power engineers making it happen.",
   },
 ];
 
@@ -137,42 +139,42 @@ const roles = [
     slug: "project-managers",
     title: "Project Managers",
     description:
-      "Lead data center and mission critical construction projects from pre-construction through closeout. PMP and LEED credentials preferred.",
+      "The person who keeps a $300M build from going sideways. We place PMs who've delivered hyperscale campuses, not ones still learning what IST means.",
     salary: "$110K \u2013 $180K",
   },
   {
     slug: "construction-managers",
     title: "Construction Managers",
     description:
-      "Oversee daily field operations, subcontractor coordination, and quality control on large-scale data center builds.",
+      "First on site, last to leave. Our CMs manage 20+ trades at once and know how to keep a data center build moving without cutting corners.",
     salary: "$120K \u2013 $190K",
   },
   {
     slug: "mep-engineers",
     title: "MEP Engineers",
     description:
-      "Design, review, and commission mechanical, electrical, and plumbing systems in critical facility environments.",
+      "The people who design the guts of the building — power distribution, cooling plants, fire suppression. If the PUE target matters to you, these hires matter more.",
     salary: "$100K \u2013 $165K",
   },
   {
     slug: "schedulers",
     title: "Schedulers & Planners",
     description:
-      "Develop and maintain CPM schedules using Primavera P6 or Microsoft Project for complex construction programs.",
+      "Primavera P6 experts who actually understand data center construction sequences. They'll tell you where your schedule is going to slip before it does.",
     salary: "$90K \u2013 $140K",
   },
   {
     slug: "superintendents",
     title: "Superintendents",
     description:
-      "Direct on-site construction activities, enforce safety protocols, and ensure milestone delivery on mission critical projects.",
+      "Field generals who command respect from every trade on site. We find supers who've run clean build protocols and managed phased energization without a hitch.",
     salary: "$115K \u2013 $175K",
   },
   {
     slug: "commissioning-agents",
     title: "Commissioning Agents",
     description:
-      "Verify and document that data center MEP systems perform per design intent. CxA and NETA certifications valued.",
+      "The last line of defense before your facility goes live. CxA-certified professionals who've led IST events on Tier III and Tier IV data centers.",
     salary: "$105K \u2013 $160K",
   },
 ] as const;
@@ -198,7 +200,7 @@ const whyChoose = [
       </svg>
     ),
     description:
-      "Our recruiters have deep, hands-on knowledge of mission critical and data center construction. We understand Tier classifications, commissioning workflows, and the technical vocabulary your hiring managers expect.",
+      "Our recruiters know the difference between a Tier III and Tier IV build. They've walked job sites, sat through IST events, and can tell when a candidate is padding their resume. That matters when you're hiring for a $200M campus.",
   },
   {
     title: "Speed to Hire",
@@ -220,7 +222,7 @@ const whyChoose = [
       </svg>
     ),
     description:
-      "We deliver qualified, pre-vetted candidate submittals within 24 to 48 hours. Our proprietary talent network means your open requisition gets filled faster, with less back-and-forth.",
+      "You called us Tuesday morning, you're reviewing resumes Wednesday afternoon. We maintain a live pipeline so we're not starting from scratch when your phone rings.",
   },
   {
     title: "Nationwide Coverage",
@@ -247,7 +249,7 @@ const whyChoose = [
       </svg>
     ),
     description:
-      "We place talent across all 50 states, with concentrated expertise in top data center markets like Northern Virginia, Dallas, Phoenix, Chicago, and Silicon Valley.",
+      "Northern Virginia, Phoenix, Dallas, Chicago, the Pacific Northwest — wherever the cranes are going up, we've already got candidates in the area. No scrambling, no relocation delays.",
   },
   {
     title: "Verified Talent",
@@ -269,7 +271,7 @@ const whyChoose = [
       </svg>
     ),
     description:
-      "Every candidate is pre-screened, reference-checked, and background-verified before submittal. We confirm certifications, project history, and cultural fit so you can hire with confidence.",
+      "We don't forward resumes and hope for the best. Every candidate gets a technical screen, reference calls, cert verification, and a project history review before you ever see their name.",
   },
 ] as const;
 
@@ -384,56 +386,49 @@ export default function HomePage() {
       />
 
       {/* ------------------------------------------------------------------ */}
-      {/*  Hero Section                                                       */}
+      {/*  Hero Section — Animated Drone Shot                                 */}
       {/* ------------------------------------------------------------------ */}
-      <section aria-label="Hero" className="bg-navy text-white">
-        <div className="container-page py-20 md:py-28 lg:py-36">
-          <div className="max-w-3xl">
-            <h1 className="text-4xl font-extrabold leading-tight tracking-tight md:text-5xl lg:text-6xl text-balance">
-              Data Center &amp; Mission Critical Staffing Experts
-            </h1>
-            <p className="mt-6 text-lg leading-relaxed text-gray-300 md:text-xl lg:max-w-2xl">
-              Data Center TALNT is a specialized staffing and recruitment firm
-              that connects top-tier talent with the companies building and
-              operating America&rsquo;s critical infrastructure. From data center
-              construction and MEP engineering to project management and
-              commissioning, we deliver pre-vetted professionals who keep mission
-              critical projects on schedule and on budget.
-            </p>
-
-            <div className="mt-10 flex flex-wrap gap-4">
-              <Button href="/employers" variant="primary" size="lg">
-                Find Talent
-              </Button>
-              <Button
-                href="/jobs"
-                variant="outline"
-                size="lg"
-                className="border-white/30 text-white hover:border-white hover:bg-white/10 hover:text-white"
-              >
-                View Open Roles
-              </Button>
-            </div>
-          </div>
-
-          {/* Stats Bar */}
-          <div className="mt-16 grid grid-cols-2 gap-6 border-t border-white/15 pt-10 sm:grid-cols-4">
-            {[
-              { value: "500+", label: "Placements" },
-              { value: "50 States", label: "Nationwide Coverage" },
-              { value: "24hr", label: "Response Time" },
-              { value: "98%", label: "Retention Rate" },
-            ].map((stat) => (
-              <div key={stat.label}>
-                <p className="text-3xl font-bold text-blue-light md:text-4xl">
-                  {stat.value}
-                </p>
-                <p className="mt-1 text-sm text-gray-400">{stat.label}</p>
-              </div>
-            ))}
-          </div>
+      <AnimatedHero
+        imageUrl="https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=2400&q=80"
+        title={
+          <>
+            We Staff the Teams That Build{" "}
+            <span className="text-blue-light">America&rsquo;s Data Centers</span>
+          </>
+        }
+        subtitle="Your next hyperscale campus needs people who've done it before. DC TALNT places project managers, MEP engineers, superintendents, and commissioning agents on mission critical builds from Ashburn to Phoenix — and everywhere the concrete is still curing."
+      >
+        <div className="flex flex-wrap gap-4">
+          <Button href="/employers" variant="primary" size="lg">
+            Hire for Your Next Build
+          </Button>
+          <Button
+            href="/jobs"
+            variant="outline"
+            size="lg"
+            className="border-white/30 text-white hover:border-white hover:bg-white/10 hover:text-white"
+          >
+            Browse Open Roles
+          </Button>
         </div>
-      </section>
+
+        {/* Stats Bar */}
+        <div className="mt-14 grid grid-cols-2 gap-6 border-t border-white/15 pt-8 sm:grid-cols-4">
+          {[
+            { value: "500+", label: "Professionals Placed" },
+            { value: "20+", label: "Markets Covered" },
+            { value: "48hr", label: "Avg. First Shortlist" },
+            { value: "98%", label: "First-Year Retention" },
+          ].map((stat) => (
+            <div key={stat.label}>
+              <p className="text-3xl font-bold text-blue-light md:text-4xl">
+                {stat.value}
+              </p>
+              <p className="mt-1 text-sm text-gray-300/80">{stat.label}</p>
+            </div>
+          ))}
+        </div>
+      </AnimatedHero>
 
       {/* ------------------------------------------------------------------ */}
       {/*  Industries We Serve                                                */}
@@ -445,7 +440,7 @@ export default function HomePage() {
         <div className="container-page">
           <SectionHeading
             title="Industries We Serve"
-            subtitle="We specialize in staffing for the sectors that keep critical infrastructure running. Our recruiters understand the unique demands of each industry."
+            subtitle="Every sector we staff has one thing in common: there's no room for error. Here's where we focus our recruiting muscle."
           />
 
           <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
@@ -475,6 +470,28 @@ export default function HomePage() {
                 </div>
               </article>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* ------------------------------------------------------------------ */}
+      {/*  Image Break — Construction Crew                                    */}
+      {/* ------------------------------------------------------------------ */}
+      <section className="relative h-64 overflow-hidden sm:h-80 lg:h-96">
+        <Image
+          src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?auto=format&fit=crop&w=2400&q=80"
+          alt="Construction crew working on a large-scale building project at sunrise"
+          fill
+          className="object-cover"
+          sizes="100vw"
+        />
+        <div className="absolute inset-0 bg-gradient-to-r from-navy/80 via-navy/40 to-transparent" />
+        <div className="relative z-10 flex h-full items-center">
+          <div className="container-page">
+            <p className="max-w-lg text-2xl font-bold leading-tight text-white sm:text-3xl lg:text-4xl drop-shadow-lg">
+              The right people make the difference between a project that
+              delivers and one that doesn&rsquo;t.
+            </p>
           </div>
         </div>
       </section>
@@ -597,13 +614,13 @@ export default function HomePage() {
       <section aria-label="Call to action" className="bg-blue py-20 md:py-28">
         <div className="container-page text-center">
           <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl lg:text-5xl text-balance">
-            Ready to Build Your Team?
+            Your Next Project Won&rsquo;t Staff Itself
           </h2>
           <p className="mx-auto mt-6 max-w-2xl text-lg leading-relaxed text-white/90">
-            Whether you need a single commissioning agent or an entire project
-            team, Data Center TALNT delivers qualified, pre-vetted professionals
-            fast. Tell us about your staffing needs and we&rsquo;ll have
-            candidates in your inbox within 24 hours.
+            One commissioning agent or a full project team — tell us what you
+            need and we&rsquo;ll have vetted candidates in front of you before
+            the end of the week. No long intake meetings. No generic resumes.
+            Just people who&rsquo;ve built exactly what you&rsquo;re building.
           </p>
 
           <div className="mt-10 flex flex-col items-center gap-4 sm:flex-row sm:justify-center">

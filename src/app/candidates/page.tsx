@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import { generateMetadata as genMeta } from "@/lib/metadata";
 import {
@@ -31,34 +32,34 @@ export const metadata = genMeta({
 
 const benefits = [
   {
-    title: "Access to Exclusive Roles",
+    title: "Roles You Won't Find on Job Boards",
     description:
-      "Many of our positions are not posted publicly. By working with Data Center TALNT, you gain access to opportunities with top general contractors, owners, and operators before they hit the job boards.",
+      "A lot of the best positions never get posted publicly. The hiring manager calls us, we call the right person. Working with DC TALNT puts you in that loop before everyone else.",
   },
   {
-    title: "Industry-Expert Recruiters",
+    title: "Recruiters Who Speak Your Language",
     description:
-      "Our recruiters understand the difference between a Tier III and Tier IV facility, between LEED and WELL certifications, between a critical path schedule and a lookahead. That expertise means better matches for you.",
+      "When you tell our team you've led Level 4 commissioning on a Tier III+ facility, they know exactly what that means. No explaining your resume to someone who's never set foot on a job site.",
   },
   {
-    title: "Career Guidance",
+    title: "Honest Career Guidance",
     description:
-      "We do not just place you in a job. We help you navigate salary negotiations, evaluate project opportunities, and build a career trajectory in the data center and construction industries.",
+      "We'll tell you if a role isn't the right fit, help you negotiate comp, and give you a straight read on where the market is heading. We're not just filling a seat — we want you to land somewhere you'll stay.",
   },
   {
-    title: "Competitive Compensation",
+    title: "Top-of-Market Compensation",
     description:
-      "We advocate for market-leading pay rates and benefits packages. Our deep knowledge of compensation trends across every data center market ensures you get what you are worth.",
+      "We track comp data across every major data center market and know what your skills are worth. Our job is to get you the best possible package — salary, per diem, relocation, the whole picture.",
   },
   {
     title: "Fast Placement",
     description:
-      "When you are ready to make a move, we move fast. Our pre-existing relationships with hiring managers and streamlined process means less time waiting and more time working.",
+      "When you're ready to move, we move. Our existing relationships with hiring managers and a streamlined interview process mean less waiting and more working. Some placements happen in under a week.",
   },
   {
-    title: "Nationwide Opportunities",
+    title: "Coast-to-Coast Opportunities",
     description:
-      "Whether you want to work in Northern Virginia, Dallas, Phoenix, or any of the 40+ markets we serve, we have opportunities ready for experienced professionals.",
+      "Ashburn, Dallas, Phoenix, Chicago, Portland, Columbus — wherever the builds are happening, we have roles. Want to stay local? We'll find something close. Open to travel? Even better.",
   },
 ];
 
@@ -66,53 +67,59 @@ const roleTypes = [
   {
     title: "Project Managers",
     href: "/roles/project-managers",
-    description: "Lead data center and construction projects from planning through turnover.",
+    description:
+      "Lead data center and construction projects from pre-con through turnover.",
   },
   {
     title: "Construction Managers",
     href: "/roles/construction-managers",
-    description: "Oversee field operations, subcontractors, and daily construction activities.",
+    description:
+      "Run daily field operations, manage trades, and keep the schedule honest.",
   },
   {
     title: "MEP Engineers",
     href: "/roles/mep-engineers",
-    description: "Design and coordinate mechanical, electrical, and plumbing systems.",
+    description:
+      "Design and coordinate the mechanical, electrical, and plumbing systems that keep facilities running.",
   },
   {
     title: "Superintendents",
     href: "/roles/superintendents",
-    description: "Manage on-site crews, safety, quality, and schedule compliance.",
+    description:
+      "Manage on-site crews, enforce safety, and drive quality from foundation to turnover.",
   },
   {
     title: "Schedulers",
     href: "/roles/schedulers",
-    description: "Develop and maintain critical path schedules using P6 and MS Project.",
+    description:
+      "Build and maintain CPM schedules in P6 — and know data center construction sequences cold.",
   },
   {
     title: "Commissioning Agents",
     href: "/roles/commissioning-agents",
-    description: "Verify systems performance from IST through Level 5 integrated testing.",
+    description:
+      "Execute IST events, verify system performance, and sign off before the facility goes live.",
   },
 ];
 
 const steps = [
   {
     number: "01",
-    title: "Submit Your Resume",
+    title: "Send Us Your Resume",
     description:
-      "Share your resume and career preferences with our team. We will review your background and match you to relevant opportunities.",
+      "Share your background and what you're looking for — role type, location preference, salary range, whatever matters to you. No cover letter needed.",
   },
   {
     number: "02",
-    title: "Recruiter Consultation",
+    title: "Talk to a Recruiter",
     description:
-      "A specialist recruiter will connect with you to understand your experience, skills, salary expectations, and ideal project types.",
+      "One of our industry-specialist recruiters will connect with you to dig into your project history, certifications, and career goals. It's a conversation, not an interrogation.",
   },
   {
     number: "03",
-    title: "Get Matched & Hired",
+    title: "Get Matched and Hired",
     description:
-      "We present you to hiring managers with a strong recommendation. Once you accept an offer, we support your onboarding and first day.",
+      "We present you directly to hiring managers with a strong recommendation. When you accept an offer, we help with onboarding and make sure you're set up to succeed on day one.",
   },
 ];
 
@@ -141,21 +148,36 @@ export default function CandidatesPage() {
       />
 
       {/* Hero */}
-      <section className="bg-navy py-20 sm:py-28">
-        <div className="container-page text-center">
+      <section className="relative bg-navy py-20 sm:py-28 overflow-hidden">
+        <div className="absolute inset-0 opacity-15">
+          <Image
+            src="https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?auto=format&fit=crop&w=2400&q=80"
+            alt=""
+            fill
+            className="object-cover"
+            sizes="100vw"
+            priority
+          />
+        </div>
+        <div className="relative container-page text-center">
           <h1 className="text-4xl font-bold tracking-tight text-white sm:text-5xl lg:text-6xl text-balance">
-            Find Your Next Data Center or Construction Role
+            Your Next Role Should Be Worth the Move
           </h1>
           <p className="mx-auto mt-6 max-w-2xl text-lg leading-relaxed text-gray-300 sm:text-xl">
-            Whether you are a project manager, MEP engineer, superintendent, or
-            commissioning agent, we connect you with the best employers and
-            projects in the industry.
+            You&rsquo;ve delivered hyperscale campuses, commissioned Tier IV
+            facilities, and kept multi-trade projects on schedule. Let us find
+            the role that matches your experience — and pays like it.
           </p>
           <div className="mt-8 flex flex-col items-center gap-4 sm:flex-row sm:justify-center">
             <Button href="/contact" variant="primary" size="lg">
               Submit Your Resume
             </Button>
-            <Button href="/jobs" variant="outline" size="lg" className="border-white text-white hover:bg-white hover:text-navy">
+            <Button
+              href="/jobs"
+              variant="outline"
+              size="lg"
+              className="border-white text-white hover:bg-white hover:text-navy"
+            >
               Browse Open Positions
             </Button>
           </div>
@@ -166,8 +188,8 @@ export default function CandidatesPage() {
       <section className="py-16 sm:py-24">
         <div className="container-page">
           <SectionHeading
-            title="Why Work with Data Center TALNT"
-            subtitle="We are more than a staffing agency. We are your career partner in critical infrastructure."
+            title="Why Candidates Work With Us"
+            subtitle="We're not just another staffing agency blasting your resume around. Here's what's actually different."
           />
           <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
             {benefits.map((benefit) => (
@@ -187,12 +209,32 @@ export default function CandidatesPage() {
         </div>
       </section>
 
+      {/* Image Break */}
+      <section className="relative h-56 overflow-hidden sm:h-72 lg:h-80">
+        <Image
+          src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=2400&q=80"
+          alt="Construction site with cranes and workers at golden hour"
+          fill
+          className="object-cover"
+          sizes="100vw"
+        />
+        <div className="absolute inset-0 bg-gradient-to-r from-navy/75 via-navy/35 to-transparent" />
+        <div className="relative z-10 flex h-full items-center">
+          <div className="container-page">
+            <p className="max-w-md text-2xl font-bold leading-tight text-white sm:text-3xl drop-shadow-lg">
+              Data center construction talent is in demand. Make sure
+              you&rsquo;re getting what you&rsquo;re worth.
+            </p>
+          </div>
+        </div>
+      </section>
+
       {/* Roles */}
       <section className="bg-sky-50 py-16 sm:py-24">
         <div className="container-page">
           <SectionHeading
-            title="Types of Roles We Place"
-            subtitle="We specialize in the roles that build and operate critical infrastructure."
+            title="Roles We Place"
+            subtitle="These are the positions we fill every day. If your title is on this list, we should talk."
           />
           <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
             {roleTypes.map((role) => (
@@ -211,19 +253,7 @@ export default function CandidatesPage() {
                   className="mt-3 inline-flex items-center gap-1 text-sm font-medium text-blue"
                   aria-hidden="true"
                 >
-                  View roles
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 20 20"
-                    fill="currentColor"
-                    className="h-4 w-4 transition-transform duration-200 group-hover:translate-x-1"
-                  >
-                    <path
-                      fillRule="evenodd"
-                      d="M3 10a.75.75 0 0 1 .75-.75h10.638l-3.96-3.96a.75.75 0 1 1 1.06-1.06l5.25 5.25a.75.75 0 0 1 0 1.06l-5.25 5.25a.75.75 0 1 1-1.06-1.06l3.96-3.96H3.75A.75.75 0 0 1 3 10Z"
-                      clipRule="evenodd"
-                    />
-                  </svg>
+                  View roles &rarr;
                 </span>
               </Link>
             ))}
@@ -236,7 +266,7 @@ export default function CandidatesPage() {
         <div className="container-page">
           <SectionHeading
             title="How to Get Started"
-            subtitle="Three simple steps to your next career move."
+            subtitle="Three steps. No 10-page application."
           />
           <div className="grid gap-8 sm:grid-cols-3">
             {steps.map((step) => (
@@ -262,12 +292,12 @@ export default function CandidatesPage() {
       <section className="bg-blue py-16 sm:py-20">
         <div className="container-page text-center">
           <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl">
-            Submit Your Resume
+            Ready for Your Next Move?
           </h2>
           <p className="mx-auto mt-4 max-w-xl text-lg text-blue-100">
-            Take the first step toward your next opportunity. Our recruiting
-            team will review your background and connect you with roles that
-            match your skills and career goals.
+            Send us your resume and tell us what matters to you. Our recruiters
+            will connect you with roles that fit your experience, location, and
+            career goals — often within the same week.
           </p>
           <div className="mt-8 flex flex-col items-center gap-4 sm:flex-row sm:justify-center">
             <Button href="/contact" variant="secondary" size="lg">

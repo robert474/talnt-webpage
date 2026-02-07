@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { generateMetadata as genMeta } from "@/lib/metadata";
 import { SchemaScript, generateBreadcrumbSchema } from "@/lib/schema";
 import SectionHeading from "@/components/ui/SectionHeading";
@@ -182,15 +183,25 @@ export default function ResourcesPage() {
       <SchemaScript schema={generateBreadcrumbSchema(breadcrumbs)} />
 
       {/* Hero */}
-      <section className="bg-navy py-20 sm:py-28">
-        <div className="container-page text-center">
+      <section className="relative bg-navy py-20 sm:py-28 overflow-hidden">
+        <div className="absolute inset-0 opacity-15">
+          <Image
+            src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=2400&q=80"
+            alt=""
+            fill
+            className="object-cover"
+            sizes="100vw"
+            priority
+          />
+        </div>
+        <div className="relative container-page text-center">
           <h1 className="text-4xl font-bold tracking-tight text-white sm:text-5xl lg:text-6xl text-balance">
             Data Center Staffing Resources
           </h1>
           <p className="mx-auto mt-6 max-w-2xl text-lg leading-relaxed text-gray-300 sm:text-xl">
-            Free salary guides, market reports, and whitepapers to help you make
-            smarter hiring decisions and advance your career in critical
-            infrastructure.
+            Salary guides, market reports, and whitepapers — all free, all based
+            on real placement data. Use them to benchmark compensation, plan
+            hiring, or prep for your next negotiation.
           </p>
         </div>
       </section>

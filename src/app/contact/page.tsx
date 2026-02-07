@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { generateMetadata as genMeta } from "@/lib/metadata";
 import {
   SchemaScript,
@@ -84,14 +85,25 @@ export default function ContactPage() {
       />
 
       {/* Hero */}
-      <section className="bg-navy py-20 sm:py-28">
-        <div className="container-page text-center">
+      <section className="relative bg-navy py-20 sm:py-28 overflow-hidden">
+        <div className="absolute inset-0 opacity-15">
+          <Image
+            src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=2400&q=80"
+            alt=""
+            fill
+            className="object-cover"
+            sizes="100vw"
+            priority
+          />
+        </div>
+        <div className="relative container-page text-center">
           <h1 className="text-4xl font-bold tracking-tight text-white sm:text-5xl lg:text-6xl text-balance">
-            Contact Data Center TALNT
+            Let&rsquo;s Talk
           </h1>
           <p className="mx-auto mt-6 max-w-2xl text-lg leading-relaxed text-gray-300 sm:text-xl">
-            Ready to find exceptional talent or your next career move? Fill out
-            the form below and our team will respond within one business day.
+            Whether you need to staff a hyperscale build or you&rsquo;re a PM
+            looking for your next project, fill out the form and someone on our
+            team will get back to you within one business day.
           </p>
         </div>
       </section>

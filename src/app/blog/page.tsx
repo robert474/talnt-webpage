@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import { generateMetadata as genMeta } from "@/lib/metadata";
 import { SchemaScript, generateBreadcrumbSchema } from "@/lib/schema";
@@ -37,6 +38,7 @@ interface BlogPost {
   date: string;
   category: string;
   readTime: string;
+  image: string;
 }
 
 const posts: BlogPost[] = [
@@ -44,73 +46,89 @@ const posts: BlogPost[] = [
     slug: "2026-data-center-construction-salary-guide",
     title: "2026 Data Center Construction Salary Guide",
     excerpt:
-      "Comprehensive salary data for project managers, superintendents, MEP engineers, and commissioning agents across every major data center market. See how compensation has shifted as demand for hyperscale construction talent continues to outpace supply.",
+      "We pulled comp data from over 1,200 placements to build the most comprehensive salary guide in the industry. See how PMs, supers, CxAs, and MEP engineers are being paid across every major market — and where the biggest jumps happened this year.",
     date: "January 15, 2026",
     category: "Salary Guides",
     readTime: "8 min read",
+    image:
+      "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=800&q=80",
   },
   {
     slug: "top-10-data-center-markets-construction-jobs",
-    title: "Top 10 Data Center Markets for Construction Jobs",
+    title: "Top 10 Data Center Markets for Construction Jobs in 2026",
     excerpt:
-      "From Northern Virginia's Data Center Alley to the booming Phoenix corridor, we rank the top markets for data center construction professionals based on active projects, salary premiums, and long-term growth potential.",
+      "Ashburn is still king, but Phoenix is closing the gap fast and Columbus came out of nowhere. We ranked the top markets by active projects, salary premiums, and long-term growth potential for construction professionals.",
     date: "January 8, 2026",
     category: "Market Reports",
     readTime: "6 min read",
+    image:
+      "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=800&q=80",
   },
   {
     slug: "mep-engineering-trends-mission-critical-facilities",
     title: "MEP Engineering Trends in Mission Critical Facilities",
     excerpt:
-      "Liquid cooling, high-density power distribution, and AI-driven BMS systems are reshaping the MEP landscape. We explore the skills and certifications that matter most for engineers working in mission critical environments.",
+      "Liquid cooling, high-density power distribution, and AI-driven BMS — the MEP landscape is shifting fast. Here's what engineers need to know to stay relevant and what employers should be looking for in their next hire.",
     date: "December 20, 2025",
     category: "Industry Trends",
     readTime: "7 min read",
+    image:
+      "https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?auto=format&fit=crop&w=800&q=80",
   },
   {
     slug: "how-to-hire-data-center-construction-manager",
     title: "How to Hire a Data Center Construction Manager",
     excerpt:
-      "Finding a construction manager with genuine data center experience is one of the hardest hires in the industry. This guide covers what to look for, where to find candidates, compensation benchmarks, and interview questions that reveal real expertise.",
+      "Finding a CM with genuine data center experience is one of the hardest hires in the industry. We break down what to look for, where to find candidates, comp benchmarks, and interview questions that separate the real deal from the resume puffers.",
     date: "December 12, 2025",
     category: "Career Advice",
     readTime: "10 min read",
+    image:
+      "https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=800&q=80",
   },
   {
     slug: "future-of-hyperscale-data-center-construction",
     title: "The Future of Hyperscale Data Center Construction",
     excerpt:
-      "AI workloads are driving unprecedented demand for hyperscale capacity. We examine the pipeline of announced projects, the labor shortages threatening timelines, and how modular construction and prefabrication are changing the game.",
+      "AI workloads are driving unprecedented demand for hyperscale capacity. We look at the pipeline of announced projects, the labor shortages threatening timelines, and how modular construction is starting to change the game.",
     date: "December 5, 2025",
     category: "Industry Trends",
     readTime: "9 min read",
+    image:
+      "https://images.unsplash.com/photo-1541888946425-d81bb19240f5?auto=format&fit=crop&w=800&q=80",
   },
   {
     slug: "commissioning-agent-vs-commissioning-engineer",
     title: "Commissioning Agent vs. Commissioning Engineer: What's the Difference?",
     excerpt:
-      "The terms are often used interchangeably, but commissioning agents and commissioning engineers serve distinct roles on a data center project. We break down the responsibilities, qualifications, salary expectations, and career paths for each.",
+      "The titles get used interchangeably, but they're not the same role. We break down the responsibilities, qualifications, salary expectations, and career paths for each — and explain why it matters for your hiring process.",
     date: "November 28, 2025",
     category: "Career Advice",
     readTime: "5 min read",
+    image:
+      "https://images.unsplash.com/photo-1581094794329-c8112a89af12?auto=format&fit=crop&w=800&q=80",
   },
   {
     slug: "data-center-construction-workforce-challenges-2026",
     title: "Workforce Challenges Facing Data Center Construction in 2026",
     excerpt:
-      "With over 5GW of new capacity under construction, the data center industry is facing a critical talent shortage. We analyze the bottleneck roles, geographic hot spots, and strategies employers are using to attract and retain skilled workers.",
+      "With over 5GW of new capacity under construction, the talent shortage isn't theoretical anymore. We analyze the bottleneck roles, geographic hot spots, and strategies employers are using to attract and retain skilled workers.",
     date: "November 20, 2025",
     category: "Market Reports",
     readTime: "7 min read",
+    image:
+      "https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?auto=format&fit=crop&w=800&q=80",
   },
   {
     slug: "negotiating-your-data-center-construction-salary",
     title: "How to Negotiate Your Data Center Construction Salary",
     excerpt:
-      "Data center construction professionals are in high demand, which gives you leverage in salary negotiations. Learn how to benchmark your market value, time your ask, and negotiate total compensation including per diem, bonuses, and relocation packages.",
+      "You're in demand. Use it. We walk through how to benchmark your market value, time your ask, and negotiate total comp — salary, per diem, bonus, relocation — not just base pay.",
     date: "November 12, 2025",
     category: "Salary Guides",
     readTime: "6 min read",
+    image:
+      "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=800&q=80",
   },
 ];
 
@@ -132,12 +150,12 @@ export default function BlogPage() {
       <section className="bg-navy py-20 sm:py-28">
         <div className="container-page text-center">
           <h1 className="text-4xl font-bold tracking-tight text-white sm:text-5xl lg:text-6xl text-balance">
-            Data Center Staffing Insights &amp; Industry News
+            Insights from the Field
           </h1>
           <p className="mx-auto mt-6 max-w-2xl text-lg leading-relaxed text-gray-300 sm:text-xl">
-            Expert analysis on hiring trends, salary benchmarks, and career
-            advice for data center, mission critical, and construction
-            professionals.
+            Salary data, market analysis, and career advice written by people
+            who actually work in data center and construction staffing — not a
+            content team that Googled it.
           </p>
         </div>
       </section>
@@ -154,21 +172,15 @@ export default function BlogPage() {
                     key={post.slug}
                     className="group flex flex-col rounded-xl border border-gray-200 bg-white shadow-sm transition-shadow duration-200 hover:shadow-md overflow-hidden"
                   >
-                    {/* Placeholder image area */}
-                    <div className="aspect-[16/9] bg-gray-100 flex items-center justify-center">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        viewBox="0 0 24 24"
-                        fill="currentColor"
-                        className="h-12 w-12 text-gray-300"
-                        aria-hidden="true"
-                      >
-                        <path
-                          fillRule="evenodd"
-                          d="M1.5 6a2.25 2.25 0 0 1 2.25-2.25h16.5A2.25 2.25 0 0 1 22.5 6v12a2.25 2.25 0 0 1-2.25 2.25H3.75A2.25 2.25 0 0 1 1.5 18V6ZM3 16.06V18c0 .414.336.75.75.75h16.5A.75.75 0 0 0 21 18v-1.94l-2.69-2.689a1.5 1.5 0 0 0-2.12 0l-.88.879.97.97a.75.75 0 1 1-1.06 1.06l-5.16-5.159a1.5 1.5 0 0 0-2.12 0L3 16.061Zm10.125-7.81a1.125 1.125 0 1 1 2.25 0 1.125 1.125 0 0 1-2.25 0Z"
-                          clipRule="evenodd"
-                        />
-                      </svg>
+                    {/* Post Image */}
+                    <div className="relative aspect-[16/9]">
+                      <Image
+                        src={post.image}
+                        alt={post.title}
+                        fill
+                        className="object-cover transition-transform duration-300 group-hover:scale-105"
+                        sizes="(min-width: 1024px) 25vw, (min-width: 640px) 50vw, 100vw"
+                      />
                     </div>
 
                     <div className="flex flex-1 flex-col p-5">
@@ -251,11 +263,11 @@ export default function BlogPage() {
               {/* Newsletter CTA */}
               <div className="mt-8 rounded-xl border border-gray-200 bg-navy p-6 shadow-sm">
                 <h2 className="text-lg font-semibold text-white">
-                  Stay Informed
+                  Stay in the Loop
                 </h2>
                 <p className="mt-2 text-sm text-gray-300">
-                  Get the latest data center staffing insights and salary data
-                  delivered to your inbox.
+                  Get salary data, market updates, and hiring insights delivered
+                  straight to your inbox. No fluff.
                 </p>
                 <form className="mt-4 space-y-3" action="#" method="POST">
                   <input
