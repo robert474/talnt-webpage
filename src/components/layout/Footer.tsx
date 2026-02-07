@@ -11,6 +11,7 @@ interface FooterLink {
 }
 
 const industriesLinks: FooterLink[] = [
+  { label: "Hyperscalers", href: "/industries/hyperscalers" },
   { label: "Data Centers", href: "/industries/data-centers" },
   { label: "Mission Critical", href: "/industries/mission-critical" },
   { label: "Construction", href: "/industries/construction" },

@@ -354,6 +354,64 @@ export default function HomePage() {
       </AnimatedHero>
 
       {/* ------------------------------------------------------------------ */}
+      {/*  Hyperscaler Logo Bar                                               */}
+      {/* ------------------------------------------------------------------ */}
+      <section className="bg-white py-12 sm:py-16 border-b border-gray-100">
+        <div className="container-page">
+          <p className="text-center text-sm font-semibold uppercase tracking-widest text-gray-400">
+            Our Talent Builds for the World&rsquo;s Leading Hyperscalers
+          </p>
+          <div className="mt-8 flex flex-wrap items-center justify-center gap-x-12 gap-y-8 sm:gap-x-16 lg:gap-x-20">
+            {/* AWS */}
+            <Link href="/industries/hyperscalers" className="group transition-opacity hover:opacity-80">
+              <svg viewBox="0 0 120 40" className="h-10 w-auto sm:h-12" aria-label="Amazon Web Services">
+                <text x="0" y="28" fontFamily="Arial, Helvetica, sans-serif" fontWeight="bold" fontSize="22" fill="#232F3E">AWS</text>
+                <path d="M50 32 C55 35, 62 36, 70 35" stroke="#FF9900" strokeWidth="2.5" fill="none" strokeLinecap="round" />
+              </svg>
+            </Link>
+            {/* OpenAI */}
+            <Link href="/industries/hyperscalers" className="group transition-opacity hover:opacity-80">
+              <svg viewBox="0 0 160 40" className="h-10 w-auto sm:h-12" aria-label="OpenAI">
+                <text x="0" y="28" fontFamily="Arial, Helvetica, sans-serif" fontWeight="bold" fontSize="22" fill="#0D0D0D">OpenAI</text>
+              </svg>
+            </Link>
+            {/* Oracle */}
+            <Link href="/industries/hyperscalers" className="group transition-opacity hover:opacity-80">
+              <svg viewBox="0 0 160 40" className="h-10 w-auto sm:h-12" aria-label="Oracle">
+                <text x="0" y="28" fontFamily="Arial, Helvetica, sans-serif" fontWeight="bold" fontSize="22" fill="#C74634">Oracle</text>
+              </svg>
+            </Link>
+            {/* Microsoft */}
+            <Link href="/industries/hyperscalers" className="group transition-opacity hover:opacity-80">
+              <svg viewBox="0 0 200 40" className="h-10 w-auto sm:h-12" aria-label="Microsoft">
+                <text x="0" y="28" fontFamily="Arial, Helvetica, sans-serif" fontWeight="bold" fontSize="22" fill="#737373">Microsoft</text>
+              </svg>
+            </Link>
+            {/* Google */}
+            <Link href="/industries/hyperscalers" className="group transition-opacity hover:opacity-80">
+              <svg viewBox="0 0 160 40" className="h-10 w-auto sm:h-12" aria-label="Google">
+                <text x="0" y="28" fontFamily="Arial, Helvetica, sans-serif" fontWeight="bold" fontSize="22" fill="#4285F4">Google</text>
+              </svg>
+            </Link>
+            {/* Meta */}
+            <Link href="/industries/hyperscalers" className="group transition-opacity hover:opacity-80">
+              <svg viewBox="0 0 120 40" className="h-10 w-auto sm:h-12" aria-label="Meta">
+                <text x="0" y="28" fontFamily="Arial, Helvetica, sans-serif" fontWeight="bold" fontSize="22" fill="#0668E1">Meta</text>
+              </svg>
+            </Link>
+          </div>
+          <div className="mt-8 text-center">
+            <Link
+              href="/industries/hyperscalers"
+              className="inline-flex items-center gap-1 text-sm font-semibold text-blue hover:text-blue-dark transition-colors"
+            >
+              See How We Staff Hyperscale Projects <span aria-hidden="true">&rarr;</span>
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* ------------------------------------------------------------------ */}
       {/*  Three Differentiators — Why DC TALNT                               */}
       {/* ------------------------------------------------------------------ */}
       <section

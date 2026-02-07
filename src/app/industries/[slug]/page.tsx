@@ -9,6 +9,65 @@ import {
 } from "@/lib/schema";
 
 /* ========================================================================== */
+/*  Hyperscaler Logos Component                                               */
+/* ========================================================================== */
+
+function HyperscalerLogos() {
+  return (
+    <section className="bg-white py-16 sm:py-20">
+      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <h2 className="text-center text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl">
+          We Staff the Teams That Build For
+        </h2>
+        <p className="mx-auto mt-4 max-w-2xl text-center text-lg text-slate-600">
+          Our talent is trusted on the biggest data center builds in the country — projects
+          commissioned by the world&rsquo;s leading hyperscalers and AI companies.
+        </p>
+        <div className="mt-12 grid grid-cols-2 items-center gap-8 sm:grid-cols-3 lg:grid-cols-6">
+          {/* AWS */}
+          <div className="flex items-center justify-center">
+            <svg viewBox="0 0 120 50" className="h-14 w-auto" aria-label="Amazon Web Services">
+              <text x="50%" y="32" textAnchor="middle" fontFamily="Arial, Helvetica, sans-serif" fontWeight="bold" fontSize="26" fill="#232F3E">AWS</text>
+              <path d="M30 42 C45 48, 60 49, 90 44" stroke="#FF9900" strokeWidth="3" fill="none" strokeLinecap="round" />
+            </svg>
+          </div>
+          {/* OpenAI */}
+          <div className="flex items-center justify-center">
+            <svg viewBox="0 0 160 50" className="h-14 w-auto" aria-label="OpenAI">
+              <text x="50%" y="33" textAnchor="middle" fontFamily="Arial, Helvetica, sans-serif" fontWeight="bold" fontSize="26" fill="#0D0D0D">OpenAI</text>
+            </svg>
+          </div>
+          {/* Oracle */}
+          <div className="flex items-center justify-center">
+            <svg viewBox="0 0 160 50" className="h-14 w-auto" aria-label="Oracle">
+              <text x="50%" y="33" textAnchor="middle" fontFamily="Arial, Helvetica, sans-serif" fontWeight="bold" fontSize="26" fill="#C74634">Oracle</text>
+            </svg>
+          </div>
+          {/* Microsoft */}
+          <div className="flex items-center justify-center">
+            <svg viewBox="0 0 210 50" className="h-14 w-auto" aria-label="Microsoft">
+              <text x="50%" y="33" textAnchor="middle" fontFamily="Arial, Helvetica, sans-serif" fontWeight="bold" fontSize="26" fill="#737373">Microsoft</text>
+            </svg>
+          </div>
+          {/* Google */}
+          <div className="flex items-center justify-center">
+            <svg viewBox="0 0 160 50" className="h-14 w-auto" aria-label="Google">
+              <text x="50%" y="33" textAnchor="middle" fontFamily="Arial, Helvetica, sans-serif" fontWeight="bold" fontSize="26" fill="#4285F4">Google</text>
+            </svg>
+          </div>
+          {/* Meta */}
+          <div className="flex items-center justify-center">
+            <svg viewBox="0 0 120 50" className="h-14 w-auto" aria-label="Meta">
+              <text x="50%" y="33" textAnchor="middle" fontFamily="Arial, Helvetica, sans-serif" fontWeight="bold" fontSize="26" fill="#0668E1">Meta</text>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+}
+
+/* ========================================================================== */
 /*  Industry Data Types                                                       */
 /* ========================================================================== */
 
@@ -595,6 +654,153 @@ const industriesData: Record<string, IndustryData> = {
       },
     ],
   },
+  /* ---------------------------------------------------------------------- */
+  /*  HYPERSCALERS                                                          */
+  /* ---------------------------------------------------------------------- */
+  "hyperscalers": {
+    slug: "hyperscalers",
+    title: "Hyperscalers",
+    metaTitle:
+      "Hyperscaler Data Center Staffing | AWS, Microsoft, Google, Meta, Oracle, OpenAI | Data Center TALNT",
+    metaDescription:
+      "DC TALNT provides specialized staffing for hyperscale data center construction projects built for AWS, Microsoft Azure, Google, Meta, Oracle, and OpenAI. We place project managers, commissioning agents, MEP engineers, and superintendents on the largest campus builds in the country.",
+    heroTitle: "Hyperscaler Data Center Staffing",
+    heroSubtitle:
+      "The world's largest cloud and AI companies are building data center campuses at an unprecedented pace. DC TALNT places the project managers, commissioning agents, MEP engineers, and superintendents who deliver these mission critical builds on schedule.",
+    description: [
+      "Hyperscale data center construction represents the largest and most complex builds in the industry. Companies like Amazon Web Services (AWS), Microsoft Azure, Google Cloud, Meta, Oracle Cloud Infrastructure (OCI), and OpenAI are investing hundreds of billions of dollars in new data center campuses across the United States. These projects range from 50 MW single-building facilities to 500 MW+ multi-phase campuses that take years to complete and employ thousands of construction professionals at peak activity.",
+      "The staffing demands of hyperscale projects are fundamentally different from standard commercial construction. These builds require professionals who understand concurrent maintainability, N+1 and 2N redundancy architectures, phased energization sequences, and the rigorous commissioning protocols that hyperscalers mandate before accepting a facility. A project manager who has delivered a 100 MW campus for AWS operates in a different league than one who has managed office buildings — and hyperscaler clients know the difference immediately.",
+      "DC TALNT has built deep relationships across the hyperscaler ecosystem — with the general contractors, commissioning authorities, and owner's representatives who execute these projects. When a new campus breaks ground in Ashburn, Phoenix, Dallas, or Columbus, the teams managing those builds turn to us because our recruiters understand the specific requirements, certifications, and experience levels that hyperscale construction demands. We don't just fill seats — we place professionals who've been through the hyperscale process before and can contribute from day one.",
+    ],
+    keyRoles: [
+      {
+        name: "Hyperscale Project Manager",
+        description:
+          "Project managers with direct experience delivering 50 MW+ data center campuses for hyperscaler clients. They manage $100M+ budgets, coordinate dozens of subcontractors, and navigate the demanding owner approval processes that hyperscalers require.",
+        href: "/roles/project-managers",
+      },
+      {
+        name: "Commissioning Agent (CxA)",
+        description:
+          "Level 1 through Level 5 commissioning agents experienced in hyperscaler commissioning scripts, integrated systems testing (IST), and the documentation standards required by AWS, Microsoft, Google, and Meta for facility acceptance.",
+        href: "/roles/commissioning-agents",
+      },
+      {
+        name: "MEP Superintendent",
+        description:
+          "Field superintendents specializing in the mechanical, electrical, and plumbing systems that define hyperscale data centers — including medium-voltage switchgear, chilled water plants, and generator paralleling systems.",
+        href: "/roles/superintendents",
+      },
+      {
+        name: "MEP Engineer",
+        description:
+          "Mechanical and electrical engineers who design and oversee the critical power and cooling infrastructure for hyperscale facilities, including 2N power distribution, indirect evaporative cooling, and battery energy storage systems.",
+        href: "/roles/mep-engineers",
+      },
+      {
+        name: "Quality Control Manager",
+        description:
+          "QC professionals enforcing the stringent quality standards hyperscalers require across structural, mechanical, electrical, and fire protection systems throughout multi-phase campus builds.",
+        href: "/roles/quality-control-manager",
+      },
+      {
+        name: "Safety Manager",
+        description:
+          "Site safety managers implementing the elevated safety protocols required on hyperscaler projects, including owner-specific safety orientations, daily audits, and incident investigation procedures that go well beyond OSHA minimums.",
+        href: "/roles/safety-manager",
+      },
+      {
+        name: "Controls / BMS Engineer",
+        description:
+          "Engineers who program and commission the building management systems, EPMS platforms, and DCIM tools that hyperscalers rely on for real-time monitoring and automated failover of critical infrastructure.",
+        href: "/roles/controls-technician",
+      },
+      {
+        name: "Scheduler / Planner",
+        description:
+          "Primavera P6 experts who build and maintain the master schedules for multi-phase hyperscale campuses, tracking thousands of activities across concurrent construction and commissioning phases.",
+        href: "/roles/schedulers",
+      },
+    ],
+    marketStats: [
+      {
+        value: "$500B+",
+        label: "Announced hyperscaler data center investment through 2030",
+      },
+      {
+        value: "5 GW+",
+        label: "New hyperscale data center capacity under construction in the U.S.",
+      },
+      {
+        value: "300+",
+        label: "Active hyperscale data center campuses in the United States",
+      },
+      {
+        value: "60%",
+        label: "Of all new U.S. data center construction driven by hyperscalers",
+      },
+    ],
+    faqs: [
+      {
+        question:
+          "What is a hyperscaler and why do they need specialized staffing?",
+        answer:
+          "Hyperscalers are companies that operate massive-scale cloud and computing infrastructure — including AWS, Microsoft Azure, Google Cloud, Meta, Oracle, and OpenAI. Their data center construction projects are significantly larger and more complex than typical builds, often spanning 50 MW to 500 MW+ across multi-building campuses. These projects require professionals with specific experience in hyperscale commissioning protocols, redundancy architectures, and the demanding quality and safety standards these companies enforce.",
+      },
+      {
+        question:
+          "Which hyperscaler projects does DC TALNT staff?",
+        answer:
+          "DC TALNT provides staffing for data center construction projects built for all major hyperscalers, including Amazon Web Services (AWS), Microsoft Azure, Google Cloud, Meta (Facebook), Oracle Cloud Infrastructure (OCI), and OpenAI. We work with the general contractors, commissioning authorities, and owner's representatives who execute these builds across the United States.",
+      },
+      {
+        question:
+          "What experience do DC TALNT candidates have with hyperscale construction?",
+        answer:
+          "Our candidates have direct, verified experience on hyperscale data center projects. This includes professionals who have managed phased energization on 100 MW+ campuses, led integrated systems testing (IST) events for hyperscaler acceptance, and coordinated MEP installations across concurrent construction phases. We verify project history and confirm hyperscaler-specific experience before presenting any candidate.",
+      },
+      {
+        question:
+          "How quickly can DC TALNT staff a hyperscale data center project?",
+        answer:
+          "For hyperscale projects, we typically present qualified candidates within 48 to 72 hours. For commissioning surge events or rapid ramp-ups, we can mobilize teams of 10 to 50+ professionals on short notice because we maintain active relationships with experienced hyperscale construction professionals across all major U.S. markets.",
+      },
+      {
+        question:
+          "What markets does DC TALNT cover for hyperscaler staffing?",
+        answer:
+          "We provide hyperscaler staffing in every major U.S. data center market, including Northern Virginia (Ashburn), Dallas-Fort Worth, Phoenix (Mesa, Goodyear), Chicago, Columbus (Ohio), Portland/Hillsboro (Oregon), Atlanta, Salt Lake City, Reno, and emerging markets wherever hyperscalers are breaking ground. Our national recruiting reach means we can source talent for any geography.",
+      },
+      {
+        question:
+          "Does DC TALNT work directly with hyperscalers or with their contractors?",
+        answer:
+          "We work across the hyperscaler ecosystem. Our clients include the general contractors building hyperscale campuses (Turner, Holder, Fortis, Rosendin, etc.), the commissioning authorities validating facility performance, the owner's representatives managing the build on behalf of the hyperscaler, and in some cases the hyperscalers' own internal construction teams.",
+      },
+    ],
+    valueProps: [
+      {
+        title: "Hyperscale-Specific Expertise",
+        description:
+          "Our recruiters understand the difference between standard data center construction and hyperscale builds. We screen for experience with specific hyperscaler commissioning protocols, multi-phase campus logistics, and the elevated quality standards these clients demand.",
+      },
+      {
+        title: "Deep Contractor Relationships",
+        description:
+          "We work with the general contractors, commissioning firms, and owner's reps who build for every major hyperscaler. This gives us visibility into upcoming projects and staffing needs before they hit the open market.",
+      },
+      {
+        title: "Surge and Scale Capability",
+        description:
+          "Hyperscale projects ramp up fast. Whether you need 5 commissioning agents or 50, we maintain the bench depth and recruiting infrastructure to mobilize experienced professionals on compressed timelines.",
+      },
+      {
+        title: "Verified Hyperscale Experience",
+        description:
+          "Every candidate we present for hyperscale roles has verified project history on similar builds. We confirm MW capacity delivered, specific hyperscaler experience, and the commissioning or construction phases they've led.",
+      },
+    ],
+  },
 };
 
 /* ========================================================================== */
@@ -733,6 +939,11 @@ export default async function IndustryPage({
           </div>
         </div>
       </section>
+
+      {/* ================================================================== */}
+      {/*  HYPERSCALER LOGOS (only on hyperscalers page)                     */}
+      {/* ================================================================== */}
+      {slug === "hyperscalers" && <HyperscalerLogos />}
 
       {/* ================================================================== */}
       {/*  ABOUT / DESCRIPTION SECTION                                       */}
