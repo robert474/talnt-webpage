@@ -11,7 +11,7 @@ export const siteConfig = {
   defaultOGImage: "/images/og-default.jpg",
   twitterHandle: "@datacentertalnt",
   locale: "en_US",
-  themeColor: "#0F172A",
+  themeColor: "#0d1b2a",
   keywords: [
     "data center staffing",
     "mission critical recruitment",

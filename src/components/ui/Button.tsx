@@ -6,11 +6,11 @@ import { type ButtonHTMLAttributes, type AnchorHTMLAttributes } from "react";
  */
 const variants = {
   primary:
-    "bg-green text-white hover:bg-green-dark focus-visible:ring-green/50",
+    "bg-blue text-white hover:bg-blue-dark focus-visible:ring-blue/50",
   secondary:
     "bg-navy text-white hover:bg-navy-light focus-visible:ring-navy/50",
   outline:
-    "border-2 border-green text-green hover:bg-green hover:text-white focus-visible:ring-green/50",
+    "border-2 border-blue text-blue hover:bg-blue hover:text-white focus-visible:ring-blue/50",
   ghost:
     "text-navy hover:bg-gray-100 focus-visible:ring-navy/50",
 } as const;

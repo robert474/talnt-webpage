@@ -188,7 +188,7 @@ export default function CandidatesPage() {
       </section>
 
       {/* Roles */}
-      <section className="bg-gray-50 py-16 sm:py-24">
+      <section className="bg-sky-50 py-16 sm:py-24">
         <div className="container-page">
           <SectionHeading
             title="Types of Roles We Place"
@@ -201,14 +201,14 @@ export default function CandidatesPage() {
                 href={role.href}
                 className="group rounded-xl border border-gray-200 bg-white p-6 shadow-sm transition-shadow duration-200 hover:shadow-md"
               >
-                <h3 className="text-lg font-semibold text-navy group-hover:text-green transition-colors duration-200">
+                <h3 className="text-lg font-semibold text-navy group-hover:text-blue transition-colors duration-200">
                   {role.title}
                 </h3>
                 <p className="mt-2 text-sm leading-relaxed text-gray-600">
                   {role.description}
                 </p>
                 <span
-                  className="mt-3 inline-flex items-center gap-1 text-sm font-medium text-green"
+                  className="mt-3 inline-flex items-center gap-1 text-sm font-medium text-blue"
                   aria-hidden="true"
                 >
                   View roles
@@ -241,8 +241,8 @@ export default function CandidatesPage() {
           <div className="grid gap-8 sm:grid-cols-3">
             {steps.map((step) => (
               <div key={step.number} className="text-center">
-                <div className="mx-auto flex h-14 w-14 items-center justify-center rounded-full bg-green/10">
-                  <span className="text-xl font-bold text-green">
+                <div className="mx-auto flex h-14 w-14 items-center justify-center rounded-full bg-blue/10">
+                  <span className="text-xl font-bold text-blue">
                     {step.number}
                   </span>
                 </div>
@@ -259,12 +259,12 @@ export default function CandidatesPage() {
       </section>
 
       {/* CTA */}
-      <section className="bg-green py-16 sm:py-20">
+      <section className="bg-blue py-16 sm:py-20">
         <div className="container-page text-center">
           <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl">
             Submit Your Resume
           </h2>
-          <p className="mx-auto mt-4 max-w-xl text-lg text-green-100">
+          <p className="mx-auto mt-4 max-w-xl text-lg text-blue-100">
             Take the first step toward your next opportunity. Our recruiting
             team will review your background and connect you with roles that
             match your skills and career goals.
@@ -277,7 +277,7 @@ export default function CandidatesPage() {
               href="/jobs"
               variant="outline"
               size="lg"
-              className="border-white text-white hover:bg-white hover:text-green"
+              className="border-white text-white hover:bg-white hover:text-blue"
             >
               View Open Positions
             </Button>

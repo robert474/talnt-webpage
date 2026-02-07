@@ -175,7 +175,7 @@ export default function AboutPage() {
           <div className="grid grid-cols-2 gap-8 sm:grid-cols-4">
             {stats.map((stat) => (
               <div key={stat.label} className="text-center">
-                <p className="text-3xl font-bold text-green sm:text-4xl lg:text-5xl">
+                <p className="text-3xl font-bold text-blue sm:text-4xl lg:text-5xl">
                   {stat.value}
                 </p>
                 <p className="mt-2 text-sm font-medium text-gray-300 sm:text-base">
@@ -201,7 +201,7 @@ export default function AboutPage() {
                 href={item.href}
                 className="group rounded-xl border border-gray-200 bg-white p-6 shadow-sm transition-shadow duration-200 hover:shadow-md"
               >
-                <h3 className="text-lg font-semibold text-navy group-hover:text-green transition-colors duration-200">
+                <h3 className="text-lg font-semibold text-navy group-hover:text-blue transition-colors duration-200">
                   {item.title}
                 </h3>
                 <p className="mt-2 text-sm leading-relaxed text-gray-600">
@@ -214,7 +214,7 @@ export default function AboutPage() {
       </section>
 
       {/* Values / Differentiators */}
-      <section className="bg-gray-50 py-16 sm:py-24">
+      <section className="bg-sky-50 py-16 sm:py-24">
         <div className="container-page">
           <SectionHeading
             title="Why Choose Data Center TALNT"
@@ -270,7 +270,7 @@ export default function AboutPage() {
                 <h3 className="text-lg font-semibold text-navy">
                   {person.name}
                 </h3>
-                <p className="text-sm font-medium text-green">{person.role}</p>
+                <p className="text-sm font-medium text-blue">{person.role}</p>
                 <p className="mt-3 text-sm leading-relaxed text-gray-600">
                   {person.bio}
                 </p>
@@ -281,12 +281,12 @@ export default function AboutPage() {
       </section>
 
       {/* CTA */}
-      <section className="bg-green py-16 sm:py-20">
+      <section className="bg-blue py-16 sm:py-20">
         <div className="container-page text-center">
           <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl">
             Partner with Us
           </h2>
-          <p className="mx-auto mt-4 max-w-xl text-lg text-green-100">
+          <p className="mx-auto mt-4 max-w-xl text-lg text-blue-100">
             Whether you need to hire top-tier talent or find your next career
             opportunity, Data Center TALNT is ready to help.
           </p>
@@ -298,7 +298,7 @@ export default function AboutPage() {
               href="/candidates"
               variant="outline"
               size="lg"
-              className="border-white text-white hover:bg-white hover:text-green"
+              className="border-white text-white hover:bg-white hover:text-blue"
             >
               I Am Looking for a Job
             </Button>

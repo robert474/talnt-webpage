@@ -32,10 +32,10 @@ const quickLinks = [
 
 export default function NotFound() {
   return (
-    <main className="min-h-screen flex flex-col items-center justify-center bg-gray-50 px-4 py-20 sm:px-6 lg:px-8">
+    <main className="min-h-screen flex flex-col items-center justify-center bg-sky-50 px-4 py-20 sm:px-6 lg:px-8">
       <div className="mx-auto max-w-2xl text-center">
         {/* Status indicator */}
-        <p className="text-sm font-semibold uppercase tracking-widest text-green">
+        <p className="text-sm font-semibold uppercase tracking-widest text-blue">
           404 Error
         </p>
 
@@ -75,12 +75,12 @@ export default function NotFound() {
               href={link.href}
               className="group rounded-xl border border-gray-200 bg-white p-5 shadow-sm transition-shadow duration-200 hover:shadow-md"
             >
-              <h3 className="font-semibold text-navy group-hover:text-green transition-colors duration-200">
+              <h3 className="font-semibold text-navy group-hover:text-blue transition-colors duration-200">
                 {link.label}
               </h3>
               <p className="mt-1 text-sm text-gray-600">{link.description}</p>
               <span
-                className="mt-3 inline-flex items-center gap-1 text-sm font-medium text-green"
+                className="mt-3 inline-flex items-center gap-1 text-sm font-medium text-blue"
                 aria-hidden="true"
               >
                 Visit page

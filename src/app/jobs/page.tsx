@@ -203,7 +203,7 @@ export default function JobsPage() {
               </label>
               <select
                 id="filter-industry"
-                className="w-full rounded-lg border border-gray-300 bg-white px-4 py-2 text-sm text-gray-700 focus:border-green focus:outline-none focus:ring-2 focus:ring-green/30"
+                className="w-full rounded-lg border border-gray-300 bg-white px-4 py-2 text-sm text-gray-700 focus:border-blue focus:outline-none focus:ring-2 focus:ring-blue/30"
                 defaultValue=""
               >
                 <option value="">All Industries</option>
@@ -219,7 +219,7 @@ export default function JobsPage() {
               </label>
               <select
                 id="filter-role"
-                className="w-full rounded-lg border border-gray-300 bg-white px-4 py-2 text-sm text-gray-700 focus:border-green focus:outline-none focus:ring-2 focus:ring-green/30"
+                className="w-full rounded-lg border border-gray-300 bg-white px-4 py-2 text-sm text-gray-700 focus:border-blue focus:outline-none focus:ring-2 focus:ring-blue/30"
                 defaultValue=""
               >
                 <option value="">All Role Types</option>
@@ -238,7 +238,7 @@ export default function JobsPage() {
               </label>
               <select
                 id="filter-location"
-                className="w-full rounded-lg border border-gray-300 bg-white px-4 py-2 text-sm text-gray-700 focus:border-green focus:outline-none focus:ring-2 focus:ring-green/30"
+                className="w-full rounded-lg border border-gray-300 bg-white px-4 py-2 text-sm text-gray-700 focus:border-blue focus:outline-none focus:ring-2 focus:ring-blue/30"
                 defaultValue=""
               >
                 <option value="">All Locations</option>
@@ -279,7 +279,7 @@ export default function JobsPage() {
                       {job.location.city}, {job.location.stateCode}
                     </p>
                   </div>
-                  <span className="inline-flex items-center rounded-full bg-green/10 px-3 py-1 text-xs font-medium text-green whitespace-nowrap">
+                  <span className="inline-flex items-center rounded-full bg-blue/10 px-3 py-1 text-xs font-medium text-blue whitespace-nowrap">
                     {employmentTypeLabel(job.employmentType)}
                   </span>
                 </div>
@@ -316,7 +316,7 @@ export default function JobsPage() {
       </section>
 
       {/* Bottom CTA */}
-      <section className="bg-gray-50 py-16 sm:py-20">
+      <section className="bg-sky-50 py-16 sm:py-20">
         <div className="container-page text-center">
           <h2 className="text-3xl font-bold tracking-tight text-navy sm:text-4xl">
             Don&apos;t See the Right Role?

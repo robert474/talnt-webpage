@@ -113,12 +113,12 @@ function ResourceCard({
   return (
     <div className="flex flex-col rounded-xl border border-gray-200 bg-white p-6 shadow-sm transition-shadow duration-200 hover:shadow-md">
       {/* Icon */}
-      <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-lg bg-green/10">
+      <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-lg bg-blue/10">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 24 24"
           fill="currentColor"
-          className="h-6 w-6 text-green"
+          className="h-6 w-6 text-blue"
           aria-hidden="true"
         >
           <path
@@ -148,7 +148,7 @@ function ResourceCard({
       <div className="mt-4 pt-4 border-t border-gray-100">
         <button
           type="button"
-          className="inline-flex w-full items-center justify-center gap-2 rounded-lg border-2 border-green px-4 py-2 text-sm font-semibold text-green transition-colors duration-200 hover:bg-green hover:text-white"
+          className="inline-flex w-full items-center justify-center gap-2 rounded-lg border-2 border-blue px-4 py-2 text-sm font-semibold text-blue transition-colors duration-200 hover:bg-blue hover:text-white"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -212,7 +212,7 @@ export default function ResourcesPage() {
       </section>
 
       {/* Market Reports */}
-      <section className="bg-gray-50 py-16 sm:py-24">
+      <section className="bg-sky-50 py-16 sm:py-24">
         <div className="container-page">
           <SectionHeading
             title="Market Reports"
@@ -269,7 +269,7 @@ export default function ResourcesPage() {
                 name="email"
                 placeholder="you@company.com"
                 required
-                className="rounded-lg border border-gray-600 bg-navy-light px-5 py-3 text-white placeholder:text-gray-400 focus:border-green focus:outline-none focus:ring-2 focus:ring-green/30 sm:min-w-[320px]"
+                className="rounded-lg border border-gray-600 bg-navy-light px-5 py-3 text-white placeholder:text-gray-400 focus:border-blue focus:outline-none focus:ring-2 focus:ring-blue/30 sm:min-w-[320px]"
               />
               <Button type="submit" variant="primary" size="lg">
                 Subscribe

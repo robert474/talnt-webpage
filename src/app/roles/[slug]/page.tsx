@@ -840,7 +840,7 @@ export default async function RolePage({ params }: PageProps) {
       {/* ---------------------------------------------------------------- */}
       {/*  Breadcrumb Navigation                                           */}
       {/* ---------------------------------------------------------------- */}
-      <nav aria-label="Breadcrumb" className="bg-gray-50 border-b border-gray-200">
+      <nav aria-label="Breadcrumb" className="bg-sky-50 border-b border-gray-200">
         <div className="container-page py-3">
           <ol className="flex flex-wrap items-center gap-1.5 text-sm text-gray-500">
             {breadcrumbs.map((crumb, index) => (
@@ -867,7 +867,7 @@ export default async function RolePage({ params }: PageProps) {
                 ) : (
                   <Link
                     href={crumb.url}
-                    className="hover:text-green transition-colors duration-150"
+                    className="hover:text-blue transition-colors duration-150"
                   >
                     {crumb.name}
                   </Link>
@@ -885,7 +885,7 @@ export default async function RolePage({ params }: PageProps) {
         <div className="container-page">
           <div className="mx-auto max-w-4xl text-center">
             {/* Salary Badge */}
-            <span className="inline-flex items-center gap-2 rounded-full bg-green/20 px-4 py-1.5 text-sm font-semibold text-green-light">
+            <span className="inline-flex items-center gap-2 rounded-full bg-blue/20 px-4 py-1.5 text-sm font-semibold text-blue-light">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 20 20"
@@ -960,7 +960,7 @@ export default async function RolePage({ params }: PageProps) {
       {/*  Key Responsibilities                                             */}
       {/* ---------------------------------------------------------------- */}
       <section
-        className="bg-gray-50 py-16 sm:py-20 lg:py-24"
+        className="bg-sky-50 py-16 sm:py-20 lg:py-24"
         aria-labelledby="responsibilities-heading"
       >
         <div className="container-page">
@@ -976,7 +976,7 @@ export default async function RolePage({ params }: PageProps) {
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 20 20"
                     fill="currentColor"
-                    className="mt-0.5 h-5 w-5 shrink-0 text-green"
+                    className="mt-0.5 h-5 w-5 shrink-0 text-blue"
                     aria-hidden="true"
                   >
                     <path
@@ -1018,7 +1018,7 @@ export default async function RolePage({ params }: PageProps) {
                   viewBox="0 0 24 24"
                   strokeWidth={1.5}
                   stroke="currentColor"
-                  className="h-6 w-6 text-green"
+                  className="h-6 w-6 text-blue"
                   aria-hidden="true"
                 >
                   <path
@@ -1032,7 +1032,7 @@ export default async function RolePage({ params }: PageProps) {
               <ul className="mt-4 space-y-3" role="list">
                 {role.qualifications.map((item, index) => (
                   <li key={index} className="flex gap-3">
-                    <span className="mt-1.5 h-2 w-2 shrink-0 rounded-full bg-green" aria-hidden="true" />
+                    <span className="mt-1.5 h-2 w-2 shrink-0 rounded-full bg-blue" aria-hidden="true" />
                     <span className="text-sm leading-relaxed text-gray-700">
                       {item}
                     </span>
@@ -1050,7 +1050,7 @@ export default async function RolePage({ params }: PageProps) {
                   viewBox="0 0 24 24"
                   strokeWidth={1.5}
                   stroke="currentColor"
-                  className="h-6 w-6 text-green"
+                  className="h-6 w-6 text-blue"
                   aria-hidden="true"
                 >
                   <path
@@ -1068,7 +1068,7 @@ export default async function RolePage({ params }: PageProps) {
                       xmlns="http://www.w3.org/2000/svg"
                       viewBox="0 0 20 20"
                       fill="currentColor"
-                      className="mt-0.5 h-5 w-5 shrink-0 text-green"
+                      className="mt-0.5 h-5 w-5 shrink-0 text-blue"
                       aria-hidden="true"
                     >
                       <path
@@ -1092,7 +1092,7 @@ export default async function RolePage({ params }: PageProps) {
       {/*  Industries Hiring                                                */}
       {/* ---------------------------------------------------------------- */}
       <section
-        className="bg-gray-50 py-16 sm:py-20 lg:py-24"
+        className="bg-sky-50 py-16 sm:py-20 lg:py-24"
         aria-labelledby="industries-heading"
       >
         <div className="container-page">
@@ -1106,7 +1106,7 @@ export default async function RolePage({ params }: PageProps) {
               <Link
                 key={industry.slug}
                 href={`/industries/${industry.slug}`}
-                className="group flex items-center gap-2 rounded-xl border border-gray-200 bg-white px-6 py-4 shadow-sm transition-all duration-200 hover:border-green hover:shadow-md"
+                className="group flex items-center gap-2 rounded-xl border border-gray-200 bg-white px-6 py-4 shadow-sm transition-all duration-200 hover:border-blue hover:shadow-md"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -1114,7 +1114,7 @@ export default async function RolePage({ params }: PageProps) {
                   viewBox="0 0 24 24"
                   strokeWidth={1.5}
                   stroke="currentColor"
-                  className="h-5 w-5 text-green"
+                  className="h-5 w-5 text-blue"
                   aria-hidden="true"
                 >
                   <path
@@ -1123,14 +1123,14 @@ export default async function RolePage({ params }: PageProps) {
                     d="M2.25 21h19.5m-18-18v18m10.5-18v18m6-13.5V21M6.75 6.75h.75m-.75 3h.75m-.75 3h.75m3-6h.75m-.75 3h.75m-.75 3h.75M6.75 21v-3.375c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21M3 3h12m-.75 4.5H21m-3.75 3.75h.008v.008h-.008v-.008Zm0 3h.008v.008h-.008v-.008Zm0 3h.008v.008h-.008v-.008Z"
                   />
                 </svg>
-                <span className="text-base font-semibold text-navy group-hover:text-green transition-colors duration-200">
+                <span className="text-base font-semibold text-navy group-hover:text-blue transition-colors duration-200">
                   {industry.name}
                 </span>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 20 20"
                   fill="currentColor"
-                  className="h-4 w-4 text-gray-400 group-hover:text-green transition-colors duration-200"
+                  className="h-4 w-4 text-gray-400 group-hover:text-blue transition-colors duration-200"
                   aria-hidden="true"
                 >
                   <path
@@ -1179,7 +1179,7 @@ export default async function RolePage({ params }: PageProps) {
                   <p className="text-sm font-medium uppercase tracking-wider text-gray-500">
                     Median Salary
                   </p>
-                  <p className="text-2xl font-bold text-green">
+                  <p className="text-2xl font-bold text-blue">
                     ${Math.round((role.salaryMin + role.salaryMax) / 2).toLocaleString()}
                   </p>
                 </div>
@@ -1193,7 +1193,7 @@ export default async function RolePage({ params }: PageProps) {
                 </div>
                 <div className="mt-1 h-3 w-full overflow-hidden rounded-full bg-gray-100">
                   <div
-                    className="h-full rounded-full bg-gradient-to-r from-green to-green-light"
+                    className="h-full rounded-full bg-gradient-to-r from-blue to-blue-light"
                     style={{ width: "100%" }}
                   />
                 </div>
@@ -1209,7 +1209,7 @@ export default async function RolePage({ params }: PageProps) {
                   viewBox="0 0 24 24"
                   strokeWidth={1.5}
                   stroke="currentColor"
-                  className="h-5 w-5 text-green"
+                  className="h-5 w-5 text-blue"
                   aria-hidden="true"
                 >
                   <path
@@ -1232,7 +1232,7 @@ export default async function RolePage({ params }: PageProps) {
       {/*  FAQ Section                                                      */}
       {/* ---------------------------------------------------------------- */}
       <section
-        className="bg-gray-50 py-16 sm:py-20 lg:py-24"
+        className="bg-sky-50 py-16 sm:py-20 lg:py-24"
         aria-labelledby="faq-heading"
       >
         <div className="container-page">
@@ -1248,7 +1248,7 @@ export default async function RolePage({ params }: PageProps) {
                   key={index}
                   className="group rounded-xl border border-gray-200 bg-white shadow-sm"
                 >
-                  <summary className="flex cursor-pointer items-center justify-between gap-4 p-5 text-base font-semibold text-navy hover:text-green transition-colors duration-200 sm:p-6 sm:text-lg [&::-webkit-details-marker]:hidden">
+                  <summary className="flex cursor-pointer items-center justify-between gap-4 p-5 text-base font-semibold text-navy hover:text-blue transition-colors duration-200 sm:p-6 sm:text-lg [&::-webkit-details-marker]:hidden">
                     {faq.question}
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -1296,16 +1296,16 @@ export default async function RolePage({ params }: PageProps) {
               <Link
                 key={related.slug}
                 href={`/roles/${related.slug}`}
-                className="group flex flex-col rounded-xl border border-gray-200 bg-white p-6 shadow-sm transition-all duration-200 hover:border-green hover:shadow-md"
+                className="group flex flex-col rounded-xl border border-gray-200 bg-white p-6 shadow-sm transition-all duration-200 hover:border-blue hover:shadow-md"
               >
-                <h3 className="text-lg font-semibold text-navy group-hover:text-green transition-colors duration-200">
+                <h3 className="text-lg font-semibold text-navy group-hover:text-blue transition-colors duration-200">
                   {related.title}
                 </h3>
                 <p className="mt-2 flex-1 text-sm leading-relaxed text-gray-600">
                   {related.brief}
                 </p>
                 <span
-                  className="mt-4 inline-flex items-center gap-1 text-sm font-semibold text-green"
+                  className="mt-4 inline-flex items-center gap-1 text-sm font-semibold text-blue"
                   aria-hidden="true"
                 >
                   View Role Details

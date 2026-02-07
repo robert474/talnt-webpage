@@ -356,7 +356,7 @@ const faqs: FAQItem[] = [
   {
     question: "What geographic areas does Data Center TALNT cover?",
     answer:
-      "We serve clients across all 50 United States with concentrated expertise in the top data center markets: Northern Virginia (Ashburn), Dallas-Fort Worth, Phoenix, Chicago, Silicon Valley, Atlanta, Portland, Columbus, Reno, and Salt Lake City. Whether your project is in a major metro or a rural greenfield site, our nationwide network ensures talent availability where you need it.",
+      "We serve clients across all 50 United States with concentrated expertise in the top data center markets: Northern Virginia (Ashburn), Dallas-Fort Worth, Phoenix, Chicago, Silicon Valley, Atlanta, Portland, Columbus, Reno, and Salt Lake City. Whether your project is in a major metro or a rural bluefield site, our nationwide network ensures talent availability where you need it.",
   },
   {
     question:
@@ -425,7 +425,7 @@ export default function HomePage() {
               { value: "98%", label: "Retention Rate" },
             ].map((stat) => (
               <div key={stat.label}>
-                <p className="text-3xl font-bold text-green-light md:text-4xl">
+                <p className="text-3xl font-bold text-blue-light md:text-4xl">
                   {stat.value}
                 </p>
                 <p className="mt-1 text-sm text-gray-400">{stat.label}</p>
@@ -440,7 +440,7 @@ export default function HomePage() {
       {/* ------------------------------------------------------------------ */}
       <section
         aria-labelledby="industries-heading"
-        className="bg-gray-50 py-20 md:py-28"
+        className="bg-sky-50 py-20 md:py-28"
       >
         <div className="container-page">
           <SectionHeading
@@ -454,7 +454,7 @@ export default function HomePage() {
                 key={industry.slug}
                 className="group relative flex flex-col rounded-xl border border-gray-200 bg-white p-8 shadow-sm transition-shadow hover:shadow-md"
               >
-                <div className="mb-4 flex size-14 items-center justify-center rounded-xl bg-green/10 text-green">
+                <div className="mb-4 flex size-14 items-center justify-center rounded-xl bg-blue/10 text-blue">
                   {industry.icon}
                 </div>
                 <h3 className="text-xl font-semibold text-navy">
@@ -466,7 +466,7 @@ export default function HomePage() {
                 <div className="mt-6">
                   <Link
                     href={`/industries/${industry.slug}`}
-                    className="inline-flex items-center gap-1 text-sm font-semibold text-green transition-colors group-hover:text-green-dark"
+                    className="inline-flex items-center gap-1 text-sm font-semibold text-blue transition-colors group-hover:text-blue-dark"
                   >
                     Learn More <span aria-hidden="true">&rarr;</span>
                     {/* Stretch link to cover entire card */}
@@ -499,13 +499,13 @@ export default function HomePage() {
                 href={`/roles/${role.slug}`}
                 className="group flex flex-col rounded-xl border border-gray-200 bg-white p-7 shadow-sm transition-shadow hover:shadow-md"
               >
-                <h3 className="text-lg font-semibold text-navy group-hover:text-green transition-colors duration-200">
+                <h3 className="text-lg font-semibold text-navy group-hover:text-blue transition-colors duration-200">
                   {role.title}
                 </h3>
                 <p className="mt-2 flex-1 text-sm leading-relaxed text-gray-600">
                   {role.description}
                 </p>
-                <p className="mt-4 inline-flex items-center gap-2 text-sm font-semibold text-green-dark">
+                <p className="mt-4 inline-flex items-center gap-2 text-sm font-semibold text-blue-dark">
                   <span aria-label="Salary range">{role.salary}</span>
                   <span
                     aria-hidden="true"
@@ -545,7 +545,7 @@ export default function HomePage() {
           <div className="grid gap-10 sm:grid-cols-2 lg:grid-cols-4">
             {whyChoose.map((feature) => (
               <div key={feature.title} className="text-center">
-                <div className="mx-auto mb-4 flex size-14 items-center justify-center rounded-xl bg-white/10 text-green-light">
+                <div className="mx-auto mb-4 flex size-14 items-center justify-center rounded-xl bg-white/10 text-blue-light">
                   {feature.icon}
                 </div>
                 <h3 className="text-xl font-semibold">{feature.title}</h3>
@@ -563,7 +563,7 @@ export default function HomePage() {
       {/* ------------------------------------------------------------------ */}
       <section
         aria-labelledby="markets-heading"
-        className="bg-gray-50 py-20 md:py-28"
+        className="bg-sky-50 py-20 md:py-28"
       >
         <div className="container-page">
           <SectionHeading
@@ -578,7 +578,7 @@ export default function HomePage() {
                 href={`/locations/${market.slug}`}
                 className="group rounded-lg border border-gray-200 bg-white px-5 py-6 text-center shadow-sm transition-shadow hover:shadow-md"
               >
-                <h3 className="text-lg font-semibold text-navy group-hover:text-green transition-colors duration-200">
+                <h3 className="text-lg font-semibold text-navy group-hover:text-blue transition-colors duration-200">
                   {market.city}
                 </h3>
                 <p className="text-sm text-gray-500">{market.state}</p>
@@ -594,7 +594,7 @@ export default function HomePage() {
       {/* ------------------------------------------------------------------ */}
       {/*  CTA Section                                                        */}
       {/* ------------------------------------------------------------------ */}
-      <section aria-label="Call to action" className="bg-green py-20 md:py-28">
+      <section aria-label="Call to action" className="bg-blue py-20 md:py-28">
         <div className="container-page text-center">
           <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl lg:text-5xl text-balance">
             Ready to Build Your Team?
@@ -614,7 +614,7 @@ export default function HomePage() {
               href="/employers"
               variant="outline"
               size="lg"
-              className="border-white text-white hover:bg-white hover:text-green"
+              className="border-white text-white hover:bg-white hover:text-blue"
             >
               Submit a Job Order
             </Button>
@@ -641,7 +641,7 @@ export default function HomePage() {
                 key={faq.question}
                 className="group py-6 [&_summary::-webkit-details-marker]:hidden"
               >
-                <summary className="flex cursor-pointer items-start justify-between gap-4 text-left text-lg font-semibold text-navy transition-colors hover:text-green">
+                <summary className="flex cursor-pointer items-start justify-between gap-4 text-left text-lg font-semibold text-navy transition-colors hover:text-blue">
                   <span>{faq.question}</span>
                   <span
                     aria-hidden="true"

@@ -169,8 +169,8 @@ export default function EmployersPage() {
           <div className="grid gap-8 sm:grid-cols-3">
             {steps.map((step) => (
               <div key={step.number} className="text-center">
-                <div className="mx-auto flex h-14 w-14 items-center justify-center rounded-full bg-green/10">
-                  <span className="text-xl font-bold text-green">
+                <div className="mx-auto flex h-14 w-14 items-center justify-center rounded-full bg-blue/10">
+                  <span className="text-xl font-bold text-blue">
                     {step.number}
                   </span>
                 </div>
@@ -187,7 +187,7 @@ export default function EmployersPage() {
       </section>
 
       {/* Service Models */}
-      <section className="bg-gray-50 py-16 sm:py-24">
+      <section className="bg-sky-50 py-16 sm:py-24">
         <div className="container-page">
           <SectionHeading
             title="Flexible Staffing Models"
@@ -215,7 +215,7 @@ export default function EmployersPage() {
                         xmlns="http://www.w3.org/2000/svg"
                         viewBox="0 0 20 20"
                         fill="currentColor"
-                        className="mt-0.5 h-4 w-4 flex-shrink-0 text-green"
+                        className="mt-0.5 h-4 w-4 flex-shrink-0 text-blue"
                         aria-hidden="true"
                       >
                         <path
@@ -248,7 +248,7 @@ export default function EmployersPage() {
                 href={ind.href}
                 className="group rounded-xl border border-gray-200 bg-white p-6 shadow-sm transition-shadow duration-200 hover:shadow-md"
               >
-                <h3 className="text-lg font-semibold text-navy group-hover:text-green transition-colors duration-200">
+                <h3 className="text-lg font-semibold text-navy group-hover:text-blue transition-colors duration-200">
                   {ind.title}
                 </h3>
                 <p className="mt-2 text-sm leading-relaxed text-gray-600">
@@ -261,7 +261,7 @@ export default function EmployersPage() {
       </section>
 
       {/* Testimonial */}
-      <section className="bg-gray-50 py-16 sm:py-24">
+      <section className="bg-sky-50 py-16 sm:py-24">
         <div className="container-page">
           <div className="mx-auto max-w-3xl text-center">
             <blockquote>
@@ -283,12 +283,12 @@ export default function EmployersPage() {
       </section>
 
       {/* CTA */}
-      <section className="bg-green py-16 sm:py-20">
+      <section className="bg-blue py-16 sm:py-20">
         <div className="container-page text-center">
           <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl">
             Submit a Job Order
           </h2>
-          <p className="mx-auto mt-4 max-w-xl text-lg text-green-100">
+          <p className="mx-auto mt-4 max-w-xl text-lg text-blue-100">
             Tell us what you need and we will start sourcing qualified candidates
             immediately. Most clients receive their first shortlist within 48
             hours.

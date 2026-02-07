@@ -174,14 +174,14 @@ export default function BlogPage() {
                     <div className="flex flex-1 flex-col p-5">
                       {/* Category & Date */}
                       <div className="flex items-center gap-3 text-xs text-gray-500">
-                        <span className="inline-flex items-center rounded-full bg-green/10 px-2.5 py-0.5 text-xs font-medium text-green">
+                        <span className="inline-flex items-center rounded-full bg-blue/10 px-2.5 py-0.5 text-xs font-medium text-blue">
                           {post.category}
                         </span>
                         <time dateTime={post.date}>{post.date}</time>
                       </div>
 
                       {/* Title */}
-                      <h2 className="mt-3 text-lg font-semibold text-navy group-hover:text-green transition-colors duration-200">
+                      <h2 className="mt-3 text-lg font-semibold text-navy group-hover:text-blue transition-colors duration-200">
                         <Link href={`/blog/${post.slug}`} className="hover:underline">
                           {post.title}
                         </Link>
@@ -196,7 +196,7 @@ export default function BlogPage() {
                       <div className="mt-4 flex items-center justify-between">
                         <Link
                           href={`/blog/${post.slug}`}
-                          className="inline-flex items-center gap-1 text-sm font-medium text-green hover:underline"
+                          className="inline-flex items-center gap-1 text-sm font-medium text-blue hover:underline"
                         >
                           Read More
                           <svg
@@ -235,7 +235,7 @@ export default function BlogPage() {
                       <li key={cat}>
                         <button
                           type="button"
-                          className="flex w-full items-center justify-between rounded-lg px-3 py-2 text-sm text-gray-700 transition-colors duration-200 hover:bg-gray-50 hover:text-green"
+                          className="flex w-full items-center justify-between rounded-lg px-3 py-2 text-sm text-gray-700 transition-colors duration-200 hover:bg-gray-50 hover:text-blue"
                         >
                           <span>{cat}</span>
                           <span className="inline-flex h-5 w-5 items-center justify-center rounded-full bg-gray-100 text-xs font-medium text-gray-500">
@@ -261,12 +261,12 @@ export default function BlogPage() {
                   <input
                     type="email"
                     placeholder="Your email address"
-                    className="w-full rounded-lg border border-gray-600 bg-navy-light px-4 py-2 text-sm text-white placeholder:text-gray-400 focus:border-green focus:outline-none focus:ring-2 focus:ring-green/30"
+                    className="w-full rounded-lg border border-gray-600 bg-navy-light px-4 py-2 text-sm text-white placeholder:text-gray-400 focus:border-blue focus:outline-none focus:ring-2 focus:ring-blue/30"
                     required
                   />
                   <button
                     type="submit"
-                    className="w-full rounded-lg bg-green px-4 py-2 text-sm font-semibold text-white transition-colors duration-200 hover:bg-green-dark"
+                    className="w-full rounded-lg bg-blue px-4 py-2 text-sm font-semibold text-white transition-colors duration-200 hover:bg-blue-dark"
                   >
                     Subscribe
                   </button>
@@ -291,7 +291,7 @@ export default function BlogPage() {
                   ].map((topic) => (
                     <span
                       key={topic}
-                      className="inline-flex items-center rounded-full border border-gray-200 px-3 py-1 text-xs font-medium text-gray-600 hover:border-green hover:text-green transition-colors duration-200 cursor-pointer"
+                      className="inline-flex items-center rounded-full border border-gray-200 px-3 py-1 text-xs font-medium text-gray-600 hover:border-blue hover:text-blue transition-colors duration-200 cursor-pointer"
                     >
                       {topic}
                     </span>

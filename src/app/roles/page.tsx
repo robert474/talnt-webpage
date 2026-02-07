@@ -94,7 +94,7 @@ const roles: RoleCard[] = [
 
 function SalaryBadge({ range }: { range: string }) {
   return (
-    <span className="inline-flex items-center gap-1.5 rounded-full bg-green/10 px-3 py-1 text-xs font-semibold text-green">
+    <span className="inline-flex items-center gap-1.5 rounded-full bg-blue/10 px-3 py-1 text-xs font-semibold text-blue">
       <svg
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 20 20"
@@ -150,7 +150,7 @@ export default function RolesPage() {
       {/* ------------------------------------------------------------------ */}
       {/*  Role Cards Grid                                                    */}
       {/* ------------------------------------------------------------------ */}
-      <section className="bg-gray-50 py-16 sm:py-20 lg:py-24" aria-labelledby="roles-grid-heading">
+      <section className="bg-sky-50 py-16 sm:py-20 lg:py-24" aria-labelledby="roles-grid-heading">
         <div className="container-page">
           <SectionHeading
             title="Data Center & Construction Staffing Specialties"
@@ -165,7 +165,7 @@ export default function RolesPage() {
               >
                 <div className="flex flex-1 flex-col p-6">
                   {/* Icon */}
-                  <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-lg bg-green/10 text-green">
+                  <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-lg bg-blue/10 text-blue">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       fill="none"
@@ -184,7 +184,7 @@ export default function RolesPage() {
                   </div>
 
                   {/* Title */}
-                  <h3 className="text-xl font-semibold text-navy group-hover:text-green transition-colors duration-200">
+                  <h3 className="text-xl font-semibold text-navy group-hover:text-blue transition-colors duration-200">
                     {role.title}
                   </h3>
 
@@ -213,7 +213,7 @@ export default function RolesPage() {
                   {/* Link */}
                   <Link
                     href={`/roles/${role.slug}`}
-                    className="mt-auto inline-flex items-center gap-1.5 pt-5 text-sm font-semibold text-green hover:text-green-dark transition-colors duration-200"
+                    className="mt-auto inline-flex items-center gap-1.5 pt-5 text-sm font-semibold text-blue hover:text-blue-dark transition-colors duration-200"
                     aria-label={`View ${role.title} role details`}
                   >
                     View Role Details
