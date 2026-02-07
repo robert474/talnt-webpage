@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { generateMetadata as genMeta } from "@/lib/metadata";
-import { SchemaScript, generateBreadcrumbSchema } from "@/lib/schema";
+import { SchemaScript, generateBreadcrumbSchema, generateFAQSchema } from "@/lib/schema";
 import Button from "@/components/ui/Button";
 
 export const metadata = genMeta({
@@ -51,6 +51,29 @@ const stats = [
   { value: "40+", label: "States Covered" },
 ];
 
+const recruiterFaqs = [
+  {
+    question: "How experienced are DC TALNT recruiters?",
+    answer:
+      "Every recruiter at DC TALNT averages more than 15 years of specialized experience in data center, mission critical, and construction staffing. They've made over 2,500 combined placements across 40+ states.",
+  },
+  {
+    question: "Why does recruiter experience matter for data center hiring?",
+    answer:
+      "Data center construction requires specialized knowledge — Tier III/IV classifications, concurrent maintainability, IST protocols, and MEP coordination. Experienced recruiters can vet candidates' technical claims in a single call, saving weeks of interviewing unqualified candidates. They also have networks of passive candidates who won't respond to generic recruiters.",
+  },
+  {
+    question: "What is DC TALNT's candidate retention rate?",
+    answer:
+      "Our first-year retention rate is 96%. This is because our experienced recruiters don't just match resumes to job descriptions — they assess cultural fit, project scope alignment, and long-term career goals to ensure placements that last.",
+  },
+  {
+    question: "How is DC TALNT different from generalist staffing agencies?",
+    answer:
+      "Generalist agencies staff across every industry from admin to warehouse. DC TALNT exclusively focuses on data center, mission critical, and construction roles. Our recruiters understand ASHRAE standards, NCCER certifications, and the difference between a commissioning agent and a commissioning engineer — knowledge that generalist recruiters simply don't have.",
+  },
+];
+
 /* ------------------------------------------------------------------ */
 /*  Page Component                                                     */
 /* ------------------------------------------------------------------ */
@@ -63,7 +86,7 @@ export default function VeteranRecruitersPage() {
 
   return (
     <>
-      <SchemaScript schema={generateBreadcrumbSchema(breadcrumbs)} />
+      <SchemaScript schema={[generateBreadcrumbSchema(breadcrumbs), generateFAQSchema(recruiterFaqs)]} />
 
       {/* Hero */}
       <section className="relative bg-navy py-20 sm:py-28 overflow-hidden">
@@ -202,6 +225,29 @@ export default function VeteranRecruitersPage() {
               Your recruiter already has a shortlist in their head before they
               hang up the phone.
             </p>
+          </div>
+        </div>
+      </section>
+
+      {/* FAQ Section */}
+      <section className="py-16 sm:py-24">
+        <div className="container-page">
+          <div className="mx-auto max-w-3xl">
+            <h2 className="text-center text-2xl font-bold text-navy sm:text-3xl">
+              Frequently Asked Questions
+            </h2>
+            <div className="mt-10 divide-y divide-gray-200">
+              {recruiterFaqs.map((faq) => (
+                <div key={faq.question} className="py-6">
+                  <h3 className="text-lg font-semibold text-navy">
+                    {faq.question}
+                  </h3>
+                  <p className="mt-3 leading-relaxed text-gray-600">
+                    {faq.answer}
+                  </p>
+                </div>
+              ))}
+            </div>
           </div>
         </div>
       </section>

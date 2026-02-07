@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { generateMetadata as genMeta } from "@/lib/metadata";
-import { SchemaScript, generateBreadcrumbSchema } from "@/lib/schema";
+import { SchemaScript, generateBreadcrumbSchema, generateFAQSchema } from "@/lib/schema";
 import Button from "@/components/ui/Button";
 
 export const metadata = genMeta({
@@ -64,6 +64,34 @@ const whatWeTrack = [
   "Availability timeline and notice period",
 ];
 
+const networkFaqs = [
+  {
+    question: "What is DC TALNT's talent database?",
+    answer:
+      "DC TALNT's proprietary talent database is a decade-long intelligence system containing detailed records on thousands of data center and construction professionals. Unlike resume databases that go stale, every candidate has logged interview notes, technical assessments, verified project history, and performance feedback from previous placements.",
+  },
+  {
+    question: "How many candidates are in DC TALNT's network?",
+    answer:
+      "Our database spans 10+ years of specialized recruiting across 40+ U.S. markets. We have deep coverage in every top data center market including Northern Virginia, Phoenix, Dallas-Fort Worth, Chicago, Columbus, Atlanta, and Salt Lake City.",
+  },
+  {
+    question: "What percentage of DC TALNT's candidates are passive candidates?",
+    answer:
+      "Approximately 70% of the candidates in our database are passive — meaning they're currently employed and not actively searching job boards. These professionals are reachable because our recruiters have built trusted relationships over years of working in the industry.",
+  },
+  {
+    question: "What information does DC TALNT track on each candidate?",
+    answer:
+      "We track technical certifications and licenses (PMP, CxA, PE, NETA, OSHA), specific data center tier and MW experience, verified project history with references, detailed interview notes, compensation history and expectations, geographic preferences, performance feedback from placements, and availability timelines.",
+  },
+  {
+    question: "How does DC TALNT find candidates that other agencies can't?",
+    answer:
+      "Most agencies search LinkedIn and job boards — the same pool everyone else is fishing in. Our 10+ year database gives us direct access to professionals who've been interviewed, assessed, and relationship-managed by our recruiters over time. When we need a senior superintendent with hyperscale experience, we're pulling up people we already know.",
+  },
+];
+
 /* ------------------------------------------------------------------ */
 /*  Page Component                                                     */
 /* ------------------------------------------------------------------ */
@@ -76,7 +104,7 @@ export default function TalentNetworkPage() {
 
   return (
     <>
-      <SchemaScript schema={generateBreadcrumbSchema(breadcrumbs)} />
+      <SchemaScript schema={[generateBreadcrumbSchema(breadcrumbs), generateFAQSchema(networkFaqs)]} />
 
       {/* Hero */}
       <section className="relative bg-navy py-20 sm:py-28 overflow-hidden">
@@ -228,6 +256,29 @@ export default function TalentNetworkPage() {
             comes along, they take our call — because we&rsquo;ve been a
             trusted partner throughout their career.
           </p>
+        </div>
+      </section>
+
+      {/* FAQ Section */}
+      <section className="py-16 sm:py-24">
+        <div className="container-page">
+          <div className="mx-auto max-w-3xl">
+            <h2 className="text-center text-2xl font-bold text-navy sm:text-3xl">
+              Frequently Asked Questions
+            </h2>
+            <div className="mt-10 divide-y divide-gray-200">
+              {networkFaqs.map((faq) => (
+                <div key={faq.question} className="py-6">
+                  <h3 className="text-lg font-semibold text-navy">
+                    {faq.question}
+                  </h3>
+                  <p className="mt-3 leading-relaxed text-gray-600">
+                    {faq.answer}
+                  </p>
+                </div>
+              ))}
+            </div>
+          </div>
         </div>
       </section>
 

@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { generateMetadata as genMeta } from "@/lib/metadata";
-import { SchemaScript, generateBreadcrumbSchema } from "@/lib/schema";
+import { SchemaScript, generateBreadcrumbSchema, generateFAQSchema } from "@/lib/schema";
 import Button from "@/components/ui/Button";
 
 export const metadata = genMeta({
@@ -70,6 +70,29 @@ const bottlenecks = [
   },
 ];
 
+const techFaqs = [
+  {
+    question: "How quickly does DC TALNT post and distribute job orders?",
+    answer:
+      "Within minutes. The moment we receive your job order, our system generates a targeted posting, pushes it to relevant channels, and simultaneously searches our internal database for matching candidates. There's no manual data entry or waiting for an account manager.",
+  },
+  {
+    question: "How long does candidate screening take at DC TALNT?",
+    answer:
+      "Technical screenings happen within hours — the same day we identify matching candidates. Our recruiters get instant alerts when high-match candidates are identified, and interview scheduling is coordinated directly without email back-and-forth.",
+  },
+  {
+    question: "What bottlenecks does DC TALNT's technology eliminate?",
+    answer:
+      "Our tech stack eliminates six common bottlenecks: manual job posting across multiple boards (automated in minutes), searching for candidates from scratch (instant matching against our 10+ year database), days of email tag for scheduling (same-day coordination), weeks for reference checks (pre-verified candidates), slow offer processes (same-week offers), and onboarding paperwork delays (digital onboarding ready before day one).",
+  },
+  {
+    question: "What is DC TALNT's average time from job order to hire?",
+    answer:
+      "Our average time to fill is 40 days, compared to the industry average of 126 days. That's 86 fewer days of schedule risk on every hire. The first shortlist of qualified candidates is typically delivered within 48 hours.",
+  },
+];
+
 /* ------------------------------------------------------------------ */
 /*  Page Component                                                     */
 /* ------------------------------------------------------------------ */
@@ -82,7 +105,7 @@ export default function TechnologyPage() {
 
   return (
     <>
-      <SchemaScript schema={generateBreadcrumbSchema(breadcrumbs)} />
+      <SchemaScript schema={[generateBreadcrumbSchema(breadcrumbs), generateFAQSchema(techFaqs)]} />
 
       {/* Hero */}
       <section className="relative bg-navy py-20 sm:py-28 overflow-hidden">
@@ -258,6 +281,29 @@ export default function TechnologyPage() {
             <Button href="/speed" variant="outline" size="lg">
               See the Full Speed Breakdown
             </Button>
+          </div>
+        </div>
+      </section>
+
+      {/* FAQ Section */}
+      <section className="py-16 sm:py-24">
+        <div className="container-page">
+          <div className="mx-auto max-w-3xl">
+            <h2 className="text-center text-2xl font-bold text-navy sm:text-3xl">
+              Frequently Asked Questions
+            </h2>
+            <div className="mt-10 divide-y divide-gray-200">
+              {techFaqs.map((faq) => (
+                <div key={faq.question} className="py-6">
+                  <h3 className="text-lg font-semibold text-navy">
+                    {faq.question}
+                  </h3>
+                  <p className="mt-3 leading-relaxed text-gray-600">
+                    {faq.answer}
+                  </p>
+                </div>
+              ))}
+            </div>
           </div>
         </div>
       </section>

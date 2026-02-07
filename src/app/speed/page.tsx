@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { generateMetadata as genMeta } from "@/lib/metadata";
-import { SchemaScript, generateBreadcrumbSchema } from "@/lib/schema";
+import { SchemaScript, generateBreadcrumbSchema, generateFAQSchema } from "@/lib/schema";
 import Button from "@/components/ui/Button";
 
 export const metadata = genMeta({
@@ -92,6 +92,34 @@ const howWeDoIt = [
   },
 ];
 
+const speedFaqs = [
+  {
+    question: "How fast can DC TALNT fill a data center construction role?",
+    answer:
+      "Our average time to fill is 40 days — 68% faster than the industry average of 126 days. Most clients receive their first shortlist of technically screened, reference-checked candidates within 48 hours of submitting a job order.",
+  },
+  {
+    question: "What is the industry average time to hire for data center construction?",
+    answer:
+      "According to The Birm Group's 2026 analysis, the average time to fill a data center construction role is 126 days (over 4 months). This accounts for the highly specialized skills, limited talent pool, and intense market competition for qualified professionals.",
+  },
+  {
+    question: "How much does an unfilled construction role cost per week?",
+    answer:
+      "An unfilled project manager or superintendent position costs approximately $15,000+ per week in schedule delays, idle crew costs, and contractor penalties. Over the 126-day industry average, that totals over $250,000 in lost productivity per vacancy.",
+  },
+  {
+    question: "Why is hiring for data center construction so slow?",
+    answer:
+      "Three factors drive slow hiring: 82% of construction firms report difficulty filling positions (AGC data), the BLS projects 340,000 unfilled construction positions by end of 2026, and 23,000 experienced workers retire annually. The specialized skills required for data center construction further limit the candidate pool.",
+  },
+  {
+    question: "How does DC TALNT achieve faster placements?",
+    answer:
+      "We maintain a pre-vetted, active pipeline of data center and construction professionals. Our 15+ year veteran recruiters have deep industry networks, our proprietary database spans 10+ years of candidate intelligence, and our technology stack eliminates manual bottlenecks in job posting, screening, and scheduling.",
+  },
+];
+
 /* ------------------------------------------------------------------ */
 /*  Page Component                                                     */
 /* ------------------------------------------------------------------ */
@@ -104,7 +132,7 @@ export default function SpeedPage() {
 
   return (
     <>
-      <SchemaScript schema={generateBreadcrumbSchema(breadcrumbs)} />
+      <SchemaScript schema={[generateBreadcrumbSchema(breadcrumbs), generateFAQSchema(speedFaqs)]} />
 
       {/* Hero — The Big Number */}
       <section className="relative bg-navy py-20 sm:py-28 overflow-hidden">
@@ -445,6 +473,29 @@ export default function SpeedPage() {
                 </p>
               </div>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* FAQ Section */}
+      <section className="py-16 sm:py-24">
+        <div className="container-page">
+          <div className="mx-auto max-w-3xl">
+            <h2 className="text-center text-2xl font-bold text-navy sm:text-3xl">
+              Frequently Asked Questions
+            </h2>
+            <div className="mt-10 divide-y divide-gray-200">
+              {speedFaqs.map((faq) => (
+                <div key={faq.question} className="py-6">
+                  <h3 className="text-lg font-semibold text-navy">
+                    {faq.question}
+                  </h3>
+                  <p className="mt-3 leading-relaxed text-gray-600">
+                    {faq.answer}
+                  </p>
+                </div>
+              ))}
+            </div>
           </div>
         </div>
       </section>
