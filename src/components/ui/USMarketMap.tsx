@@ -19,16 +19,16 @@ interface MarketPin {
 }
 
 const markets: MarketPin[] = [
-  { slug: "ashburn-va", city: "Ashburn", state: "Virginia", stat: "Largest data center market globally", coords: [-77.487, 39.044] },
-  { slug: "dallas-tx", city: "Dallas", state: "Texas", stat: "Fastest-growing capacity in the South", coords: [-96.797, 32.777] },
-  { slug: "phoenix-az", city: "Phoenix", state: "Arizona", stat: "Major hyperscale expansion hub", coords: [-112.074, 33.449] },
-  { slug: "chicago-il", city: "Chicago", state: "Illinois", stat: "Central U.S. network interconnection hub", coords: [-87.63, 41.878] },
-  { slug: "silicon-valley-ca", city: "Silicon Valley", state: "California", stat: "Heart of tech-driven data demand", coords: [-121.89, 37.335] },
-  { slug: "atlanta-ga", city: "Atlanta", state: "Georgia", stat: "Southeast\u2019s premier connectivity market", coords: [-84.388, 33.749] },
-  { slug: "portland-or", city: "Portland", state: "Oregon", stat: "Low-cost power and fiber-rich region", coords: [-122.676, 45.523] },
-  { slug: "columbus-oh", city: "Columbus", state: "Ohio", stat: "Emerging Midwest data center corridor", coords: [-82.999, 39.961] },
-  { slug: "reno-nv", city: "Reno", state: "Nevada", stat: "Growing hyperscale destination", coords: [-119.814, 39.53] },
-  { slug: "salt-lake-city-ut", city: "Salt Lake City", state: "Utah", stat: "Mountain West expansion market", coords: [-111.891, 40.761] },
+  { slug: "northern-virginia", city: "Northern Virginia", state: "Virginia", stat: "Largest data center market globally", coords: [-77.487, 39.044] },
+  { slug: "dallas-fort-worth", city: "Dallas-Fort Worth", state: "Texas", stat: "Fastest-growing capacity in the South", coords: [-96.797, 32.777] },
+  { slug: "phoenix", city: "Phoenix", state: "Arizona", stat: "Major hyperscale expansion hub", coords: [-112.074, 33.449] },
+  { slug: "chicago", city: "Chicago", state: "Illinois", stat: "Central U.S. network interconnection hub", coords: [-87.63, 41.878] },
+  { slug: "silicon-valley", city: "Silicon Valley", state: "California", stat: "Heart of tech-driven data demand", coords: [-121.89, 37.335] },
+  { slug: "atlanta", city: "Atlanta", state: "Georgia", stat: "Southeast\u2019s premier connectivity market", coords: [-84.388, 33.749] },
+  { slug: "portland-oregon", city: "Portland", state: "Oregon", stat: "Low-cost power and fiber-rich region", coords: [-122.676, 45.523] },
+  { slug: "columbus-ohio", city: "Columbus", state: "Ohio", stat: "Emerging Midwest data center corridor", coords: [-82.999, 39.961] },
+  { slug: "reno", city: "Reno", state: "Nevada", stat: "Growing hyperscale destination", coords: [-119.814, 39.53] },
+  { slug: "salt-lake-city", city: "Salt Lake City", state: "Utah", stat: "Mountain West expansion market", coords: [-111.891, 40.761] },
 ];
 
 /* -------------------------------------------------------------------------- */
