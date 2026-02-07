@@ -3,9 +3,10 @@ import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { generateMetadata as genMeta } from "@/lib/metadata";
-import { SchemaScript, generateBreadcrumbSchema } from "@/lib/schema";
+import { SchemaScript, generateBreadcrumbSchema, generateFAQSchema, generateSpeakableSchema } from "@/lib/schema";
 import { posts } from "@/lib/blog-data";
 import type { BlogPost } from "@/lib/blog-data";
+import { blogFaqs } from "@/lib/blog-faqs";
 
 /* -------------------------------------------------------------------------- */
 /*  Static params                                                              */
@@ -1824,10 +1825,17 @@ export default async function BlogPostPage({ params }: Props) {
     },
   };
 
+  const postFaqs = blogFaqs[post.slug] ?? [];
+
   return (
     <>
       <SchemaScript
-        schema={[generateBreadcrumbSchema(breadcrumbs), articleSchema]}
+        schema={[
+          generateBreadcrumbSchema(breadcrumbs),
+          articleSchema,
+          ...(postFaqs.length > 0 ? [generateFAQSchema(postFaqs)] : []),
+          generateSpeakableSchema(`/blog/${post.slug}`, [".prose-custom", "[aria-labelledby='faq-heading']"]),
+        ]}
       />
 
       {/* Hero */}
@@ -1898,6 +1906,36 @@ export default async function BlogPostPage({ params }: Props) {
             {/* Article body */}
             <article className="prose-custom">{content}</article>
 
+            {/* FAQ Section */}
+            {postFaqs.length > 0 && (
+              <div className="mt-12">
+                <h2 id="faq-heading" className="text-2xl font-bold text-navy mb-6">
+                  Frequently Asked Questions
+                </h2>
+                <div className="divide-y divide-gray-200 rounded-xl border border-gray-200 bg-gray-50">
+                  {postFaqs.map((faq) => (
+                    <details
+                      key={faq.question}
+                      className="group px-6 py-5 [&_summary::-webkit-details-marker]:hidden"
+                    >
+                      <summary className="flex cursor-pointer items-start justify-between gap-4 text-left font-semibold text-navy transition-colors hover:text-blue">
+                        <span>{faq.question}</span>
+                        <span
+                          aria-hidden="true"
+                          className="mt-0.5 shrink-0 text-gray-400 transition-transform group-open:rotate-45"
+                        >
+                          +
+                        </span>
+                      </summary>
+                      <p className="mt-3 text-sm leading-relaxed text-gray-600">
+                        {faq.answer}
+                      </p>
+                    </details>
+                  ))}
+                </div>
+              </div>
+            )}
+
             {/* Author / CTA */}
             <div className="mt-12 rounded-xl border border-gray-200 bg-gray-50 p-6 sm:p-8">
               <div className="flex items-start gap-4">
@@ -1930,6 +1968,25 @@ export default async function BlogPostPage({ params }: Props) {
               </div>
             </div>
           </div>
+
+            {/* Cross-links */}
+            <div className="mt-8 rounded-xl border border-gray-200 bg-white p-6">
+              <h3 className="text-lg font-semibold text-navy mb-4">Explore More from DC TALNT</h3>
+              <div className="grid gap-3 sm:grid-cols-2">
+                <Link href="/speed" className="flex items-center gap-2 rounded-lg border border-gray-100 bg-gray-50 px-4 py-3 text-sm font-medium text-navy hover:bg-blue hover:text-white transition-colors">
+                  <span aria-hidden="true">&rarr;</span> Speed &amp; Execution
+                </Link>
+                <Link href="/veteran-recruiters" className="flex items-center gap-2 rounded-lg border border-gray-100 bg-gray-50 px-4 py-3 text-sm font-medium text-navy hover:bg-blue hover:text-white transition-colors">
+                  <span aria-hidden="true">&rarr;</span> Our Veteran Recruiters
+                </Link>
+                <Link href="/talent-network" className="flex items-center gap-2 rounded-lg border border-gray-100 bg-gray-50 px-4 py-3 text-sm font-medium text-navy hover:bg-blue hover:text-white transition-colors">
+                  <span aria-hidden="true">&rarr;</span> 10+ Year Talent Database
+                </Link>
+                <Link href="/industries/hyperscalers" className="flex items-center gap-2 rounded-lg border border-gray-100 bg-gray-50 px-4 py-3 text-sm font-medium text-navy hover:bg-blue hover:text-white transition-colors">
+                  <span aria-hidden="true">&rarr;</span> Hyperscaler Staffing
+                </Link>
+              </div>
+            </div>
 
           {/* Related Posts */}
           {related.length > 0 && (

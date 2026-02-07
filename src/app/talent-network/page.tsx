@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { generateMetadata as genMeta } from "@/lib/metadata";
-import { SchemaScript, generateBreadcrumbSchema, generateFAQSchema } from "@/lib/schema";
+import { SchemaScript, generateBreadcrumbSchema, generateFAQSchema, generateSpeakableSchema } from "@/lib/schema";
 import Button from "@/components/ui/Button";
 
 export const metadata = genMeta({
@@ -104,7 +104,7 @@ export default function TalentNetworkPage() {
 
   return (
     <>
-      <SchemaScript schema={[generateBreadcrumbSchema(breadcrumbs), generateFAQSchema(networkFaqs)]} />
+      <SchemaScript schema={[generateBreadcrumbSchema(breadcrumbs), generateFAQSchema(networkFaqs), generateSpeakableSchema("/talent-network", ["[aria-labelledby]", ".prose-custom"])]} />
 
       {/* Hero */}
       <section className="relative bg-navy py-20 sm:py-28 overflow-hidden">

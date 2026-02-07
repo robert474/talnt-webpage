@@ -1,6 +1,14 @@
 import Image from "next/image";
 import { generateMetadata as genMeta } from "@/lib/metadata";
-import { SchemaScript, generateBreadcrumbSchema, generateFAQSchema } from "@/lib/schema";
+import {
+  SchemaScript,
+  generateBreadcrumbSchema,
+  generateFAQSchema,
+  generateHowToSchema,
+  generateClaimSchema,
+  generateSpeakableSchema,
+} from "@/lib/schema";
+import type { ClaimData, HowToData } from "@/lib/schema";
 import Button from "@/components/ui/Button";
 
 export const metadata = genMeta({
@@ -92,6 +100,52 @@ const howWeDoIt = [
   },
 ];
 
+const speedHowTo: HowToData = {
+  name: "How DC TALNT Fills Data Center Roles in 40 Days",
+  description:
+    "Our four-step process for filling data center construction positions 68% faster than the industry average.",
+  totalTime: "P40D",
+  steps: [
+    {
+      name: "Receive Job Order and Post Immediately",
+      text: "We receive your job order and post it across targeted channels within hours, not days. Our existing talent database is searched simultaneously for pre-qualified matches.",
+    },
+    {
+      name: "Screen and Submit Qualified Candidates",
+      text: "Within 24-48 hours, our industry-veteran recruiters screen candidates against your specific requirements — Tier level experience, certifications, market knowledge — and submit a shortlist.",
+    },
+    {
+      name: "Coordinate Interviews and Negotiate Offers",
+      text: "We handle all scheduling, prep candidates on your project specifics, gather feedback in real time, and negotiate competitive offers that close.",
+    },
+    {
+      name: "Onboard and Ensure Retention",
+      text: "Post-placement, we check in at 30, 60, and 90 days to ensure fit and address any issues early, achieving a 96% first-year retention rate.",
+    },
+  ],
+};
+
+const speedClaims: ClaimData[] = [
+  {
+    claimText:
+      "The data center construction industry averages 126 days to fill a role.",
+    source: "The Birm Group",
+    sourceUrl:
+      "https://thebirmgroup.com/the-data-center-construction-boom-hiring-surge-in-2026/",
+    datePublished: "2026-01-15",
+  },
+  {
+    claimText:
+      "DC TALNT achieves an average time-to-fill of 40 days, 68% faster than industry average.",
+    source: "Data Center TALNT Internal Data",
+  },
+  {
+    claimText:
+      "Each week a data center construction role goes unfilled costs employers $15,000 or more in project delays.",
+    source: "Data Center TALNT Analysis",
+  },
+];
+
 const speedFaqs = [
   {
     question: "How fast can DC TALNT fill a data center construction role?",
@@ -132,7 +186,15 @@ export default function SpeedPage() {
 
   return (
     <>
-      <SchemaScript schema={[generateBreadcrumbSchema(breadcrumbs), generateFAQSchema(speedFaqs)]} />
+      <SchemaScript
+        schema={[
+          generateBreadcrumbSchema(breadcrumbs),
+          generateFAQSchema(speedFaqs),
+          generateHowToSchema(speedHowTo),
+          ...generateClaimSchema(speedClaims),
+          generateSpeakableSchema("/speed", ["[aria-labelledby='speed-heading']", ".prose-custom"]),
+        ]}
+      />
 
       {/* Hero — The Big Number */}
       <section className="relative bg-navy py-20 sm:py-28 overflow-hidden">

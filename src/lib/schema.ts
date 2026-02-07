@@ -350,6 +350,119 @@ export function generateFAQSchema(faqs: FAQItem[]) {
 }
 
 /* -------------------------------------------------------------------------- */
+/*  Additional GEO Schema Types                                               */
+/* -------------------------------------------------------------------------- */
+
+export interface ClaimData {
+  claimText: string;
+  source?: string;
+  sourceUrl?: string;
+  datePublished?: string;
+}
+
+export interface HowToStep {
+  name: string;
+  text: string;
+}
+
+export interface HowToData {
+  name: string;
+  description: string;
+  steps: HowToStep[];
+  totalTime?: string; // ISO 8601 duration e.g. "P40D"
+}
+
+export interface ItemListData {
+  name: string;
+  description?: string;
+  items: { name: string; url?: string; description?: string }[];
+}
+
+/**
+ * Generates JSON-LD for a Claim / ClaimReview.
+ * Use on pages that cite specific statistics or facts.
+ */
+export function generateClaimSchema(claims: ClaimData[]) {
+  return claims.map((claim) => ({
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    text: claim.claimText,
+    ...(claim.source && {
+      appearance: {
+        "@type": "CreativeWork",
+        name: claim.source,
+        ...(claim.sourceUrl && { url: claim.sourceUrl }),
+        ...(claim.datePublished && { datePublished: claim.datePublished }),
+      },
+    }),
+  }));
+}
+
+/**
+ * Generates JSON-LD for a HowTo guide.
+ * Use on pages with step-by-step processes.
+ */
+export function generateHowToSchema(howTo: HowToData) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "HowTo",
+    name: howTo.name,
+    description: howTo.description,
+    ...(howTo.totalTime && { totalTime: howTo.totalTime }),
+    step: howTo.steps.map((step, i) => ({
+      "@type": "HowToStep",
+      position: i + 1,
+      name: step.name,
+      text: step.text,
+    })),
+  };
+}
+
+/**
+ * Generates JSON-LD for an ItemList.
+ * Use on pages listing roles, markets, services, etc.
+ */
+export function generateItemListSchema(list: ItemListData) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    name: list.name,
+    ...(list.description && { description: list.description }),
+    numberOfItems: list.items.length,
+    itemListElement: list.items.map((item, i) => ({
+      "@type": "ListItem",
+      position: i + 1,
+      name: item.name,
+      ...(item.url && {
+        url: item.url.startsWith("http")
+          ? item.url
+          : `${siteConfig.siteUrl}${item.url}`,
+      }),
+      ...(item.description && { description: item.description }),
+    })),
+  };
+}
+
+/**
+ * Generates JSON-LD for Speakable content.
+ * Tells AI assistants which sections of a page to read aloud.
+ */
+export function generateSpeakableSchema(
+  url: string,
+  cssSelectors: string[],
+) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    url: url.startsWith("http") ? url : `${siteConfig.siteUrl}${url}`,
+    speakable: {
+      "@type": "SpeakableSpecification",
+      cssSelector: cssSelectors,
+    },
+  };
+}
+
+/* -------------------------------------------------------------------------- */
 /*  SchemaScript Component                                                    */
 /* -------------------------------------------------------------------------- */
 

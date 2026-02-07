@@ -4,6 +4,9 @@ import { generateMetadata as genMeta } from "@/lib/metadata";
 import {
   generateOrganizationSchema,
   generateFAQSchema,
+  generateItemListSchema,
+  generateClaimSchema,
+  generateSpeakableSchema,
   SchemaScript,
   type FAQItem,
 } from "@/lib/schema";
@@ -296,6 +299,33 @@ const faqs: FAQItem[] = [
   },
 ];
 
+const rolesItemList = {
+  name: "Data Center Construction Roles We Place",
+  description: "Specialized data center and mission critical facility roles staffed by Data Center TALNT.",
+  items: roles.map((r) => ({
+    name: r.title,
+    url: `/roles/${r.slug}`,
+    description: r.description,
+  })),
+};
+
+const marketsItemList = {
+  name: "Top Data Center Markets in the United States",
+  description: "The top 10 U.S. markets for data center construction activity and talent demand.",
+  items: topMarkets.map((m) => ({
+    name: `${m.city}, ${m.state}`,
+    url: `/locations/${m.slug}`,
+    description: m.stat,
+  })),
+};
+
+const homeClaims = [
+  { claimText: "Data Center TALNT has placed 500+ professionals in data center and mission critical roles nationwide.", source: "Data Center TALNT" },
+  { claimText: "DC TALNT delivers first candidate shortlists within 48 hours of receiving a job order.", source: "Data Center TALNT" },
+  { claimText: "DC TALNT placed professionals achieve a 98% first-year retention rate.", source: "Data Center TALNT" },
+  { claimText: "The data center construction industry averages 126 days to fill a role; DC TALNT does it in 40.", source: "The Birm Group", sourceUrl: "https://thebirmgroup.com/the-data-center-construction-boom-hiring-surge-in-2026/" },
+];
+
 /* -------------------------------------------------------------------------- */
 /*  Page Component                                                            */
 /* -------------------------------------------------------------------------- */
@@ -305,7 +335,14 @@ export default function HomePage() {
     <>
       {/* Structured Data */}
       <SchemaScript
-        schema={[generateOrganizationSchema(), generateFAQSchema(faqs)]}
+        schema={[
+          generateOrganizationSchema(),
+          generateFAQSchema(faqs),
+          generateItemListSchema(rolesItemList),
+          generateItemListSchema(marketsItemList),
+          ...generateClaimSchema(homeClaims),
+          generateSpeakableSchema("/", ["[aria-labelledby='why-heading']", "[aria-labelledby='roles-heading']", "[aria-labelledby='faq-heading']"]),
+        ]}
       />
 
       {/* ------------------------------------------------------------------ */}

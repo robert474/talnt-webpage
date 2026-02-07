@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { generateMetadata as genMeta } from "@/lib/metadata";
-import { SchemaScript, generateBreadcrumbSchema, generateFAQSchema } from "@/lib/schema";
+import { SchemaScript, generateBreadcrumbSchema, generateFAQSchema, generateSpeakableSchema } from "@/lib/schema";
 import Button from "@/components/ui/Button";
 
 export const metadata = genMeta({
@@ -86,7 +86,7 @@ export default function VeteranRecruitersPage() {
 
   return (
     <>
-      <SchemaScript schema={[generateBreadcrumbSchema(breadcrumbs), generateFAQSchema(recruiterFaqs)]} />
+      <SchemaScript schema={[generateBreadcrumbSchema(breadcrumbs), generateFAQSchema(recruiterFaqs), generateSpeakableSchema("/veteran-recruiters", ["[aria-labelledby]", ".prose-custom"])]} />
 
       {/* Hero */}
       <section className="relative bg-navy py-20 sm:py-28 overflow-hidden">
