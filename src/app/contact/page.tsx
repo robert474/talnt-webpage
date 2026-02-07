@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { generateMetadata as genMeta } from "@/lib/metadata";
 import {
   SchemaScript,
@@ -84,14 +85,25 @@ export default function ContactPage() {
       />
 
       {/* Hero */}
-      <section className="bg-navy py-20 sm:py-28">
-        <div className="container-page text-center">
+      <section className="relative bg-navy py-20 sm:py-28 overflow-hidden">
+        <div className="absolute inset-0 opacity-15">
+          <Image
+            src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=2400&q=80"
+            alt=""
+            fill
+            className="object-cover"
+            sizes="100vw"
+            priority
+          />
+        </div>
+        <div className="relative container-page text-center">
           <h1 className="text-4xl font-bold tracking-tight text-white sm:text-5xl lg:text-6xl text-balance">
-            Contact Data Center TALNT
+            Let&rsquo;s Talk
           </h1>
           <p className="mx-auto mt-6 max-w-2xl text-lg leading-relaxed text-gray-300 sm:text-xl">
-            Ready to find exceptional talent or your next career move? Fill out
-            the form below and our team will respond within one business day.
+            Whether you need to staff a hyperscale build or you&rsquo;re a PM
+            looking for your next project, fill out the form and someone on our
+            team will get back to you within one business day.
           </p>
         </div>
       </section>
@@ -126,7 +138,7 @@ export default function ContactPage() {
                       name="name"
                       required
                       autoComplete="name"
-                      className="mt-1 block w-full rounded-lg border border-gray-300 px-4 py-2.5 text-gray-800 shadow-sm placeholder:text-gray-400 focus:border-green focus:outline-none focus:ring-2 focus:ring-green/30"
+                      className="mt-1 block w-full rounded-lg border border-gray-300 px-4 py-2.5 text-gray-800 shadow-sm placeholder:text-gray-400 focus:border-blue focus:outline-none focus:ring-2 focus:ring-blue/30"
                       placeholder="Jane Smith"
                     />
                   </div>
@@ -143,7 +155,7 @@ export default function ContactPage() {
                       name="email"
                       required
                       autoComplete="email"
-                      className="mt-1 block w-full rounded-lg border border-gray-300 px-4 py-2.5 text-gray-800 shadow-sm placeholder:text-gray-400 focus:border-green focus:outline-none focus:ring-2 focus:ring-green/30"
+                      className="mt-1 block w-full rounded-lg border border-gray-300 px-4 py-2.5 text-gray-800 shadow-sm placeholder:text-gray-400 focus:border-blue focus:outline-none focus:ring-2 focus:ring-blue/30"
                       placeholder="jane@company.com"
                     />
                   </div>
@@ -163,7 +175,7 @@ export default function ContactPage() {
                       id="phone"
                       name="phone"
                       autoComplete="tel"
-                      className="mt-1 block w-full rounded-lg border border-gray-300 px-4 py-2.5 text-gray-800 shadow-sm placeholder:text-gray-400 focus:border-green focus:outline-none focus:ring-2 focus:ring-green/30"
+                      className="mt-1 block w-full rounded-lg border border-gray-300 px-4 py-2.5 text-gray-800 shadow-sm placeholder:text-gray-400 focus:border-blue focus:outline-none focus:ring-2 focus:ring-blue/30"
                       placeholder="(555) 123-4567"
                     />
                   </div>
@@ -179,7 +191,7 @@ export default function ContactPage() {
                       id="company"
                       name="company"
                       autoComplete="organization"
-                      className="mt-1 block w-full rounded-lg border border-gray-300 px-4 py-2.5 text-gray-800 shadow-sm placeholder:text-gray-400 focus:border-green focus:outline-none focus:ring-2 focus:ring-green/30"
+                      className="mt-1 block w-full rounded-lg border border-gray-300 px-4 py-2.5 text-gray-800 shadow-sm placeholder:text-gray-400 focus:border-blue focus:outline-none focus:ring-2 focus:ring-blue/30"
                       placeholder="Acme Construction"
                     />
                   </div>
@@ -198,7 +210,7 @@ export default function ContactPage() {
                       id="looking-to"
                       name="looking-to"
                       required
-                      className="mt-1 block w-full rounded-lg border border-gray-300 bg-white px-4 py-2.5 text-gray-800 shadow-sm focus:border-green focus:outline-none focus:ring-2 focus:ring-green/30"
+                      className="mt-1 block w-full rounded-lg border border-gray-300 bg-white px-4 py-2.5 text-gray-800 shadow-sm focus:border-blue focus:outline-none focus:ring-2 focus:ring-blue/30"
                       defaultValue=""
                     >
                       <option value="" disabled>
@@ -218,7 +230,7 @@ export default function ContactPage() {
                     <select
                       id="industry"
                       name="industry"
-                      className="mt-1 block w-full rounded-lg border border-gray-300 bg-white px-4 py-2.5 text-gray-800 shadow-sm focus:border-green focus:outline-none focus:ring-2 focus:ring-green/30"
+                      className="mt-1 block w-full rounded-lg border border-gray-300 bg-white px-4 py-2.5 text-gray-800 shadow-sm focus:border-blue focus:outline-none focus:ring-2 focus:ring-blue/30"
                       defaultValue=""
                     >
                       <option value="" disabled>
@@ -246,7 +258,7 @@ export default function ContactPage() {
                     name="message"
                     required
                     rows={5}
-                    className="mt-1 block w-full rounded-lg border border-gray-300 px-4 py-2.5 text-gray-800 shadow-sm placeholder:text-gray-400 focus:border-green focus:outline-none focus:ring-2 focus:ring-green/30"
+                    className="mt-1 block w-full rounded-lg border border-gray-300 px-4 py-2.5 text-gray-800 shadow-sm placeholder:text-gray-400 focus:border-blue focus:outline-none focus:ring-2 focus:ring-blue/30"
                     placeholder="Tell us about your staffing needs or the role you are looking for..."
                   />
                 </div>
@@ -262,7 +274,7 @@ export default function ContactPage() {
 
             {/* Contact Info Sidebar */}
             <aside className="lg:col-span-2">
-              <div className="rounded-xl border border-gray-200 bg-gray-50 p-6 sm:p-8">
+              <div className="rounded-xl border border-gray-200 bg-sky-50 p-6 sm:p-8">
                 <h2 className="text-xl font-bold text-navy">
                   Contact Information
                 </h2>
@@ -287,7 +299,7 @@ export default function ContactPage() {
                   <p className="mt-2">
                     <a
                       href="tel:+15553282568"
-                      className="text-green font-medium hover:underline"
+                      className="text-blue font-medium hover:underline"
                     >
                       (555) DC-TALNT
                     </a>
@@ -302,7 +314,7 @@ export default function ContactPage() {
                   <p className="mt-2">
                     <a
                       href="mailto:info@datacentertalnt.com"
-                      className="text-green font-medium hover:underline"
+                      className="text-blue font-medium hover:underline"
                     >
                       info@datacentertalnt.com
                     </a>
@@ -330,7 +342,7 @@ export default function ContactPage() {
                     <li>
                       <a
                         href="/employers"
-                        className="text-sm font-medium text-green hover:underline"
+                        className="text-sm font-medium text-blue hover:underline"
                       >
                         For Employers
                       </a>
@@ -338,7 +350,7 @@ export default function ContactPage() {
                     <li>
                       <a
                         href="/candidates"
-                        className="text-sm font-medium text-green hover:underline"
+                        className="text-sm font-medium text-blue hover:underline"
                       >
                         For Job Seekers
                       </a>
@@ -346,7 +358,7 @@ export default function ContactPage() {
                     <li>
                       <a
                         href="/jobs"
-                        className="text-sm font-medium text-green hover:underline"
+                        className="text-sm font-medium text-blue hover:underline"
                       >
                         View Open Positions
                       </a>

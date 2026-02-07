@@ -1667,18 +1667,18 @@ export default async function LocationPage({
       {/* ================================================================== */}
       {/*  Breadcrumb                                                        */}
       {/* ================================================================== */}
-      <div className="bg-gray-50 border-b border-gray-200">
+      <div className="bg-sky-50 border-b border-gray-200">
         <div className="container-page py-3">
           <nav aria-label="Breadcrumb">
             <ol className="flex flex-wrap items-center gap-1.5 text-sm text-gray-500">
               <li>
-                <Link href="/" className="transition-colors hover:text-green">
+                <Link href="/" className="transition-colors hover:text-blue">
                   Home
                 </Link>
               </li>
               <li aria-hidden="true">/</li>
               <li>
-                <Link href="/locations" className="transition-colors hover:text-green">
+                <Link href="/locations" className="transition-colors hover:text-blue">
                   Locations
                 </Link>
               </li>
@@ -1699,7 +1699,7 @@ export default async function LocationPage({
       <section className="bg-navy pb-16 pt-14 text-white sm:pb-20 sm:pt-18">
         <div className="container-page">
           <div className="mx-auto max-w-4xl">
-            <p className="text-sm font-semibold uppercase tracking-wider text-green-light">
+            <p className="text-sm font-semibold uppercase tracking-wider text-blue-light">
               {location.state} Data Center Market
             </p>
 
@@ -1720,7 +1720,7 @@ export default async function LocationPage({
                   viewBox="0 0 16 16"
                   fill="none"
                   xmlns="http://www.w3.org/2000/svg"
-                  className="text-green-light"
+                  className="text-blue-light"
                   aria-hidden="true"
                 >
                   <rect x="2" y="6" width="3" height="8" rx="0.5" fill="currentColor" />
@@ -1736,7 +1736,7 @@ export default async function LocationPage({
                   viewBox="0 0 16 16"
                   fill="none"
                   xmlns="http://www.w3.org/2000/svg"
-                  className="text-green-light"
+                  className="text-blue-light"
                   aria-hidden="true"
                 >
                   <path
@@ -1753,7 +1753,7 @@ export default async function LocationPage({
                   viewBox="0 0 16 16"
                   fill="none"
                   xmlns="http://www.w3.org/2000/svg"
-                  className="text-green-light"
+                  className="text-blue-light"
                   aria-hidden="true"
                 >
                   <path
@@ -1792,7 +1792,7 @@ export default async function LocationPage({
       {/* ================================================================== */}
       {/*  Key Market Highlights                                             */}
       {/* ================================================================== */}
-      <section className="bg-gray-50 py-16 sm:py-20">
+      <section className="bg-sky-50 py-16 sm:py-20">
         <div className="container-page">
           <div className="mx-auto max-w-3xl">
             <h2 className="text-3xl font-bold text-navy sm:text-4xl">
@@ -1804,7 +1804,7 @@ export default async function LocationPage({
             <ul className="mt-8 space-y-4">
               {location.marketHighlights.map((highlight, i) => (
                 <li key={i} className="flex gap-3">
-                  <span className="mt-1.5 flex h-6 w-6 flex-shrink-0 items-center justify-center rounded-full bg-green text-white">
+                  <span className="mt-1.5 flex h-6 w-6 flex-shrink-0 items-center justify-center rounded-full bg-blue text-white">
                     <svg
                       width="14"
                       height="14"
@@ -1860,7 +1860,7 @@ export default async function LocationPage({
       {/* ================================================================== */}
       {/*  In-Demand Roles                                                   */}
       {/* ================================================================== */}
-      <section className="bg-gray-50 py-16 sm:py-20">
+      <section className="bg-sky-50 py-16 sm:py-20">
         <div className="container-page">
           <div className="mx-auto max-w-4xl">
             <h2 className="text-3xl font-bold text-navy sm:text-4xl">
@@ -1876,7 +1876,7 @@ export default async function LocationPage({
                   key={role}
                   className="rounded-xl border border-gray-200 bg-white p-5 shadow-sm"
                 >
-                  <div className="mb-3 flex h-10 w-10 items-center justify-center rounded-lg bg-green/10 text-green">
+                  <div className="mb-3 flex h-10 w-10 items-center justify-center rounded-lg bg-blue/10 text-blue">
                     <svg
                       width="20"
                       height="20"
@@ -1933,7 +1933,7 @@ export default async function LocationPage({
                 },
               ].map((item) => (
                 <div key={item.title} className="flex gap-4">
-                  <div className="mt-1 flex h-8 w-8 flex-shrink-0 items-center justify-center rounded-lg bg-green text-white">
+                  <div className="mt-1 flex h-8 w-8 flex-shrink-0 items-center justify-center rounded-lg bg-blue text-white">
                     <svg
                       width="16"
                       height="16"
@@ -1967,7 +1967,7 @@ export default async function LocationPage({
       {/* ================================================================== */}
       {/*  FAQ Section                                                       */}
       {/* ================================================================== */}
-      <section className="bg-gray-50 py-16 sm:py-20">
+      <section className="bg-sky-50 py-16 sm:py-20">
         <div className="container-page">
           <div className="mx-auto max-w-3xl">
             <h2 className="text-3xl font-bold text-navy sm:text-4xl">
@@ -2016,10 +2016,10 @@ export default async function LocationPage({
                 <Link
                   key={nearby.slug}
                   href={`/locations/${nearby.slug}`}
-                  className="group flex items-center justify-between rounded-xl border border-gray-200 bg-white p-5 shadow-sm transition-all hover:border-green/40 hover:shadow-md"
+                  className="group flex items-center justify-between rounded-xl border border-gray-200 bg-white p-5 shadow-sm transition-all hover:border-blue/40 hover:shadow-md"
                 >
                   <div>
-                    <h3 className="font-semibold text-navy group-hover:text-green">
+                    <h3 className="font-semibold text-navy group-hover:text-blue">
                       {nearby.city}
                     </h3>
                     <p className="mt-0.5 text-sm text-gray-500">
@@ -2027,7 +2027,7 @@ export default async function LocationPage({
                     </p>
                   </div>
                   <span
-                    className="text-gray-300 transition-transform group-hover:translate-x-1 group-hover:text-green"
+                    className="text-gray-300 transition-transform group-hover:translate-x-1 group-hover:text-blue"
                     aria-hidden="true"
                   >
                     <svg
@@ -2061,7 +2061,7 @@ export default async function LocationPage({
           <div className="mx-auto max-w-3xl text-center">
             <h2 className="text-balance text-3xl font-bold sm:text-4xl">
               Hiring in {location.city}?{" "}
-              <span className="text-green-light">Let&apos;s Talk.</span>
+              <span className="text-blue-light">Let&apos;s Talk.</span>
             </h2>
             <p className="mx-auto mt-4 max-w-2xl text-lg text-gray-300">
               Whether you need a single commissioning agent or an entire

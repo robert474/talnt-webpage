@@ -47,11 +47,11 @@ export default function Card({
       )}
       <div className="flex flex-1 flex-col p-5 sm:p-6">
         {icon && !image && (
-          <div className="mb-3 flex h-12 w-12 items-center justify-center rounded-lg bg-green/10 text-green">
+          <div className="mb-3 flex h-12 w-12 items-center justify-center rounded-lg bg-blue/10 text-blue">
             {icon}
           </div>
         )}
-        <h3 className="text-lg font-semibold text-navy group-hover:text-green transition-colors duration-200">
+        <h3 className="text-lg font-semibold text-navy group-hover:text-blue transition-colors duration-200">
           {title}
         </h3>
         {description && (
@@ -60,7 +60,7 @@ export default function Card({
           </p>
         )}
         {href && (
-          <span className="mt-auto inline-flex items-center gap-1 pt-4 text-sm font-medium text-green" aria-hidden="true">
+          <span className="mt-auto inline-flex items-center gap-1 pt-4 text-sm font-medium text-blue" aria-hidden="true">
             Learn more
             <svg
               xmlns="http://www.w3.org/2000/svg"

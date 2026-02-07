@@ -77,7 +77,7 @@ function DesktopDropdown({
         onClick={onToggle}
         aria-expanded={isOpen}
         aria-controls={id}
-        className="inline-flex items-center gap-1 px-3 py-2 text-sm font-medium text-gray-700 rounded-md hover:text-green transition-colors duration-200 cursor-pointer"
+        className="inline-flex items-center gap-1 px-3 py-2 text-sm font-medium text-gray-700 rounded-md hover:text-blue transition-colors duration-200 cursor-pointer"
       >
         {group.label}
         <svg
@@ -104,7 +104,7 @@ function DesktopDropdown({
           <Link
             href={group.href}
             role="menuitem"
-            className="block px-4 py-2 text-sm font-semibold text-navy hover:bg-gray-50 hover:text-green transition-colors duration-150"
+            className="block px-4 py-2 text-sm font-semibold text-navy hover:bg-gray-50 hover:text-blue transition-colors duration-150"
           >
             All {group.label}
           </Link>
@@ -114,7 +114,7 @@ function DesktopDropdown({
               key={item.href}
               href={item.href}
               role="menuitem"
-              className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50 hover:text-green transition-colors duration-150"
+              className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50 hover:text-blue transition-colors duration-150"
             >
               {item.label}
             </Link>
@@ -175,7 +175,7 @@ function MobileMenu({ onClose }: { onClose: () => void }) {
                       <Link
                         href={group.href}
                         onClick={onClose}
-                        className="block rounded-md py-2 text-sm font-semibold text-navy hover:text-green"
+                        className="block rounded-md py-2 text-sm font-semibold text-navy hover:text-blue"
                       >
                         All {group.label}
                       </Link>
@@ -185,7 +185,7 @@ function MobileMenu({ onClose }: { onClose: () => void }) {
                         <Link
                           href={item.href}
                           onClick={onClose}
-                          className="block rounded-md py-2 text-sm text-gray-600 hover:text-green"
+                          className="block rounded-md py-2 text-sm text-gray-600 hover:text-blue"
                         >
                           {item.label}
                         </Link>
@@ -198,7 +198,7 @@ function MobileMenu({ onClose }: { onClose: () => void }) {
               <Link
                 href={group.href}
                 onClick={onClose}
-                className="block py-3 text-base font-medium text-gray-800 hover:text-green"
+                className="block py-3 text-base font-medium text-gray-800 hover:text-blue"
               >
                 {group.label}
               </Link>
@@ -255,12 +255,12 @@ export default function Header() {
           className="flex items-center gap-2 text-xl font-bold tracking-tight text-navy"
           aria-label="Data Center TALNT - Home"
         >
-          <span className="inline-flex h-8 w-8 items-center justify-center rounded-md bg-green text-sm font-black text-white">
+          <span className="inline-flex h-8 w-8 items-center justify-center rounded-md bg-blue text-sm font-black text-white">
             DC
           </span>
           <span>
             <span className="text-navy">DC</span>{" "}
-            <span className="text-green">TALNT</span>
+            <span className="text-blue">TALNT</span>
           </span>
         </Link>
 
@@ -283,7 +283,7 @@ export default function Header() {
               <Link
                 key={group.label}
                 href={group.href}
-                className="px-3 py-2 text-sm font-medium text-gray-700 rounded-md hover:text-green transition-colors duration-200"
+                className="px-3 py-2 text-sm font-medium text-gray-700 rounded-md hover:text-blue transition-colors duration-200"
               >
                 {group.label}
               </Link>

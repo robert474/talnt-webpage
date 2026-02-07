@@ -6,12 +6,15 @@
  * complement the Tailwind utility classes.
  */
 @theme {
-  --color-navy: #1a1a2e;
-  --color-navy-light: #2a2a4a;
-  --color-navy-dark: #10101e;
-  --color-green: #2e7d32;
-  --color-green-light: #4caf50;
-  --color-green-dark: #1b5e20;
+  --color-navy: #0d1b2a;
+  --color-navy-light: #162d44;
+  --color-navy-dark: #060f1a;
+  --color-blue: #2563eb;
+  --color-blue-light: #60a5fa;
+  --color-blue-dark: #1d4ed8;
+  --color-sky-50: #dbeafe;
+  --color-sky-100: #bfdbfe;
+  --animate-hero-drift: hero-drift 25s ease-in-out infinite alternate;
   --color-gray-50: #f8f9fa;
   --color-gray-100: #f1f3f5;
   --color-gray-200: #e9ecef;
@@ -40,7 +43,7 @@
   }
 
   ::selection {
-    background-color: var(--color-green);
+    background-color: var(--color-blue);
     color: #ffffff;
   }
 
@@ -64,6 +67,16 @@
 /*
  * Utility layer: custom utilities beyond Tailwind defaults.
  */
+/* Hero drone-style drift animation */
+@keyframes hero-drift {
+  0% {
+    transform: scale(1.12) translate(0%, 0%);
+  }
+  100% {
+    transform: scale(1.18) translate(-2%, -1.5%);
+  }
+}
+
 @layer utilities {
   .text-balance {
     text-wrap: balance;

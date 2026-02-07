@@ -1,9 +1,12 @@
-import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
+import type { Metadata } from "next";
 import {
   generateBreadcrumbSchema,
   SchemaScript,
 } from "@/lib/schema";
+import SectionHeading from "@/components/ui/SectionHeading";
+import Button from "@/components/ui/Button";
 
 /* -------------------------------------------------------------------------- */
 /*  Metadata                                                                  */
@@ -26,103 +29,63 @@ export const metadata: Metadata = {
 };
 
 /* -------------------------------------------------------------------------- */
-/*  Industry Card Data                                                        */
+/*  Industry Data                                                             */
 /* -------------------------------------------------------------------------- */
 
 const industries = [
   {
     slug: "data-center-staffing",
-    title: "Data Center Staffing",
-    icon: (
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        fill="none"
-        viewBox="0 0 24 24"
-        strokeWidth={1.5}
-        stroke="currentColor"
-        className="size-8"
-        aria-hidden="true"
-      >
-        <path
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          d="M5.25 14.25h13.5m-13.5 0a3 3 0 0 1-3-3m3 3a3 3 0 1 0 0 6h13.5a3 3 0 1 0 0-6m-13.5 0a3 3 0 0 1-3-3m3 3h13.5m-13.5 0a3 3 0 0 1-3-3m3-3h13.5a3 3 0 0 1 3 3m-16.5 0a3 3 0 0 1-3-3m3 3a3 3 0 1 0 0-6h13.5a3 3 0 1 0 0 6m-13.5-6a3 3 0 0 1-3-3m19.5 0a3 3 0 0 0-3-3H6.75a3 3 0 0 0-3 3m16.5 0v.354a3 3 0 0 1-.879 2.122L18.75 8.25"
-        />
-      </svg>
-    ),
+    title: "Data Center Construction & Staffing",
+    image:
+      "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=1200&q=80",
     description:
-      "From hyperscale builds to colocation operations, we place commissioning agents, MEP engineers, project managers, and operations staff who keep the world's digital infrastructure running.",
+      "From hyperscale campuses to edge deployments, we place the PMs, commissioning agents, MEP engineers, and field leaders who keep data center builds on schedule and on budget. If you're pouring foundations in Ashburn or pulling wire in Phoenix, these are the people you need on your team.",
+    highlights: [
+      "Hyperscale, colocation, and enterprise builds",
+      "Tier II through Tier IV facility experience",
+      "Full lifecycle: pre-con through IST and turnover",
+    ],
   },
   {
     slug: "mission-critical-facilities",
     title: "Mission Critical Facilities",
-    icon: (
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        fill="none"
-        viewBox="0 0 24 24"
-        strokeWidth={1.5}
-        stroke="currentColor"
-        className="size-8"
-        aria-hidden="true"
-      >
-        <path
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          d="M9 12.75 11.25 15 15 9.75m-3-7.036A11.959 11.959 0 0 1 3.598 6 11.99 11.99 0 0 0 3 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285Z"
-        />
-      </svg>
-    ),
+    image:
+      "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=1200&q=80",
     description:
-      "Hospitals, financial trading floors, government facilities, and telecom hubs demand zero downtime. We recruit specialists who understand the unique requirements of mission critical environments.",
+      "When a hospital can't lose power and a trading floor can't afford a blink, the people maintaining those systems better know what they're doing. We recruit the specialists who design, build, and maintain environments where a single failure costs millions.",
+    highlights: [
+      "Healthcare, financial, and telecom facilities",
+      "Government and defense installations",
+      "Redundant power and cooling systems expertise",
+    ],
   },
   {
     slug: "construction-staffing",
-    title: "Construction Staffing",
-    icon: (
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        fill="none"
-        viewBox="0 0 24 24"
-        strokeWidth={1.5}
-        stroke="currentColor"
-        className="size-8"
-        aria-hidden="true"
-      >
-        <path
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          d="M11.42 15.17 17.25 21A2.652 2.652 0 0 0 21 17.25l-5.877-5.877M11.42 15.17l2.496-3.03c.317-.384.74-.626 1.208-.766M11.42 15.17l-4.655 5.653a2.548 2.548 0 1 1-3.586-3.586l6.837-5.63m5.108-.233c.55-.164 1.163-.188 1.743-.14a4.5 4.5 0 0 0 4.486-6.336l-3.276 3.277a3.004 3.004 0 0 1-2.25-2.25l3.276-3.276a4.5 4.5 0 0 0-6.336 4.486c.049.58.025 1.194-.14 1.743"
-        />
-      </svg>
-    ),
+    title: "Commercial & Industrial Construction",
+    image:
+      "https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=1200&q=80",
     description:
-      "Ground-up builds, tenant improvements, and large-scale renovations all require experienced superintendents, safety managers, estimators, and skilled tradespeople we deliver on demand.",
+      "Ground-up builds don't wait for candidates to update their resumes. We keep a bench of superintendents, schedulers, safety pros, and project engineers ready to mobilize when you need boots on the ground — this week, not next month.",
+    highlights: [
+      "Ground-up, renovation, and tenant improvements",
+      "Multi-trade coordination and field leadership",
+      "Safety managers, estimators, and QC professionals",
+    ],
   },
   {
     slug: "utilities-staffing",
-    title: "Utilities & Power",
-    icon: (
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        fill="none"
-        viewBox="0 0 24 24"
-        strokeWidth={1.5}
-        stroke="currentColor"
-        className="size-8"
-        aria-hidden="true"
-      >
-        <path
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          d="m3.75 13.5 10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75Z"
-        />
-      </svg>
-    ),
+    title: "Utilities & Power Infrastructure",
+    image:
+      "https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?auto=format&fit=crop&w=1200&q=80",
     description:
-      "Power generation, transmission, distribution, and renewable energy projects need specialized talent. We connect utilities employers with lineworkers, relay technicians, and power engineers.",
+      "Substations, T&D lines, solar farms, battery storage — the grid is getting a massive upgrade and every data center needs power to the site before it needs anything else. We recruit the relay technicians, lineworkers, and power engineers making it happen.",
+    highlights: [
+      "Substations, transmission, and distribution",
+      "Solar, wind, and battery storage projects",
+      "Utility interconnection and power delivery",
+    ],
   },
-] as const;
+];
 
 /* -------------------------------------------------------------------------- */
 /*  Page Component                                                            */
@@ -138,102 +101,141 @@ export default function IndustriesPage() {
     <>
       <SchemaScript schema={breadcrumbSchema} />
 
-      {/* ---- Breadcrumb ---- */}
-      <nav aria-label="Breadcrumb" className="bg-slate-50 border-b border-slate-200">
-        <div className="mx-auto max-w-7xl px-4 py-3 sm:px-6 lg:px-8">
-          <ol className="flex items-center gap-2 text-sm text-slate-600">
-            <li>
-              <Link href="/" className="hover:text-sky-700 transition-colors">
-                Home
-              </Link>
-            </li>
-            <li aria-hidden="true" className="text-slate-400">/</li>
-            <li aria-current="page" className="font-medium text-slate-900">
-              Industries
-            </li>
-          </ol>
+      {/* Hero */}
+      <section className="relative bg-navy py-20 sm:py-28 overflow-hidden">
+        <div className="absolute inset-0 opacity-15">
+          <Image
+            src="https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?auto=format&fit=crop&w=2400&q=80"
+            alt=""
+            fill
+            className="object-cover"
+            sizes="100vw"
+            priority
+          />
         </div>
-      </nav>
-
-      {/* ---- Hero / Intro ---- */}
-      <section className="bg-gradient-to-b from-slate-900 to-slate-800 text-white">
-        <div className="mx-auto max-w-7xl px-4 py-16 sm:px-6 sm:py-24 lg:px-8">
-          <h1 className="text-4xl font-bold tracking-tight sm:text-5xl">
+        <div className="relative container-page">
+          <h1 className="text-4xl font-bold tracking-tight text-white sm:text-5xl lg:text-6xl text-balance">
             Industries We Serve
           </h1>
-          <p className="mt-6 max-w-3xl text-lg leading-relaxed text-slate-300">
-            Data Center TALNT is a specialized staffing and recruitment firm
-            built for the industries that power modern infrastructure. Whether
-            you are constructing a hyperscale data center campus, maintaining
-            mission critical hospital systems, managing a large-scale
-            construction project, or expanding the nation&apos;s power grid, our
-            recruiters understand the technical demands, safety requirements, and
-            urgency that define your workforce needs. We deliver pre-vetted
-            engineers, project managers, superintendents, commissioning agents,
-            and skilled tradespeople across four core verticals.
+          <p className="mt-6 max-w-3xl text-lg leading-relaxed text-gray-300">
+            We don&rsquo;t recruit for every industry under the sun — just the
+            ones where failure isn&rsquo;t an option. Our four core verticals
+            share one thing in common: they build, power, and protect the
+            infrastructure that keeps everything else running.
           </p>
         </div>
       </section>
 
-      {/* ---- Industry Cards Grid ---- */}
-      <section className="bg-white py-16 sm:py-24">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <h2 className="sr-only">Our Industry Verticals</h2>
-          <div className="grid gap-8 sm:grid-cols-2">
-            {industries.map((industry) => (
-              <article
-                key={industry.slug}
-                className="group relative flex flex-col rounded-2xl border border-slate-200 bg-white p-8 shadow-sm transition-shadow hover:shadow-lg"
-              >
-                <div className="mb-4 flex size-14 items-center justify-center rounded-xl bg-sky-50 text-sky-700">
-                  {industry.icon}
-                </div>
-                <h3 className="text-xl font-semibold text-slate-900">
+      {/* Industry Cards */}
+      <section className="py-16 sm:py-24">
+        <div className="container-page space-y-16">
+          {industries.map((industry, idx) => (
+            <article
+              key={industry.slug}
+              className={`grid gap-8 lg:grid-cols-2 lg:items-center ${
+                idx % 2 === 1 ? "lg:[direction:rtl] lg:[&>*]:[direction:ltr]" : ""
+              }`}
+            >
+              {/* Image */}
+              <div className="relative aspect-[16/10] overflow-hidden rounded-2xl">
+                <Image
+                  src={industry.image}
+                  alt={industry.title}
+                  fill
+                  className="object-cover"
+                  sizes="(min-width: 1024px) 50vw, 100vw"
+                />
+              </div>
+
+              {/* Content */}
+              <div>
+                <h2 className="text-2xl font-bold text-navy sm:text-3xl">
                   {industry.title}
-                </h3>
-                <p className="mt-3 flex-1 text-base leading-relaxed text-slate-600">
+                </h2>
+                <p className="mt-4 leading-relaxed text-gray-600">
                   {industry.description}
                 </p>
+                <ul className="mt-5 space-y-2">
+                  {industry.highlights.map((item) => (
+                    <li
+                      key={item}
+                      className="flex items-start gap-2 text-sm text-gray-700"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 20 20"
+                        fill="currentColor"
+                        className="mt-0.5 h-4 w-4 flex-shrink-0 text-blue"
+                        aria-hidden="true"
+                      >
+                        <path
+                          fillRule="evenodd"
+                          d="M16.704 4.153a.75.75 0 0 1 .143 1.052l-8 10.5a.75.75 0 0 1-1.127.075l-4.5-4.5a.75.75 0 0 1 1.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 0 1 1.05-.143Z"
+                          clipRule="evenodd"
+                        />
+                      </svg>
+                      {item}
+                    </li>
+                  ))}
+                </ul>
                 <div className="mt-6">
                   <Link
                     href={`/industries/${industry.slug}`}
-                    className="inline-flex items-center gap-1 font-medium text-sky-700 transition-colors hover:text-sky-900"
+                    className="inline-flex items-center gap-1.5 text-sm font-semibold text-blue hover:text-blue-dark transition-colors"
                   >
-                    Explore {industry.title} <span aria-hidden="true">&rarr;</span>
-                    {/* Stretch link to cover entire card */}
-                    <span className="absolute inset-0" />
+                    Learn more about {industry.title} &rarr;
                   </Link>
                 </div>
-              </article>
+              </div>
+            </article>
+          ))}
+        </div>
+      </section>
+
+      {/* Stats Band */}
+      <section className="bg-navy py-14 sm:py-16">
+        <div className="container-page">
+          <div className="grid grid-cols-2 gap-8 sm:grid-cols-4">
+            {[
+              { value: "500+", label: "Professionals Placed" },
+              { value: "4", label: "Industry Verticals" },
+              { value: "40+", label: "States Covered" },
+              { value: "48hr", label: "Avg. First Shortlist" },
+            ].map((stat) => (
+              <div key={stat.label} className="text-center">
+                <p className="text-3xl font-bold text-blue-light sm:text-4xl">
+                  {stat.value}
+                </p>
+                <p className="mt-1 text-sm text-gray-300">{stat.label}</p>
+              </div>
             ))}
           </div>
         </div>
       </section>
 
-      {/* ---- Bottom CTA ---- */}
-      <section className="bg-slate-900 text-white">
-        <div className="mx-auto max-w-7xl px-4 py-16 text-center sm:px-6 sm:py-20 lg:px-8">
-          <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">
+      {/* CTA */}
+      <section className="bg-blue py-16 sm:py-20">
+        <div className="container-page text-center">
+          <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl">
             Ready to Build Your Team?
           </h2>
-          <p className="mx-auto mt-4 max-w-2xl text-lg text-slate-300">
+          <p className="mx-auto mt-4 max-w-2xl text-lg text-blue-100">
             Whether you need a single commissioning agent or an entire project
-            team, DC TALNT has the network, expertise, and speed to deliver
-            qualified candidates within days, not weeks.
+            team, DC TALNT has the network, the expertise, and the speed to
+            deliver qualified candidates within days.
           </p>
           <div className="mt-8 flex flex-col items-center justify-center gap-4 sm:flex-row">
-            <Link
-              href="/employers"
-              className="inline-flex items-center rounded-lg bg-sky-600 px-6 py-3 text-base font-semibold text-white shadow-sm transition-colors hover:bg-sky-500 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-sky-400"
-            >
+            <Button href="/employers" variant="secondary" size="lg">
               Hire Talent
-            </Link>
-            <Link
+            </Button>
+            <Button
               href="/candidates"
-              className="inline-flex items-center rounded-lg border border-white/20 bg-white/10 px-6 py-3 text-base font-semibold text-white backdrop-blur transition-colors hover:bg-white/20 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
+              variant="outline"
+              size="lg"
+              className="border-white text-white hover:bg-white hover:text-blue"
             >
               Find a Job
-            </Link>
+            </Button>
           </div>
         </div>
       </section>

@@ -113,11 +113,11 @@ export default function Footer() {
             className="inline-flex items-center gap-2 text-xl font-bold text-white"
             aria-label="Data Center TALNT - Home"
           >
-            <span className="inline-flex h-8 w-8 items-center justify-center rounded-md bg-green text-sm font-black text-white">
+            <span className="inline-flex h-8 w-8 items-center justify-center rounded-md bg-blue text-sm font-black text-white">
               DC
             </span>
             <span>
-              Data Center <span className="text-green">TALNT</span>
+              Data Center <span className="text-blue">TALNT</span>
             </span>
           </Link>
           <p className="mt-4 text-sm leading-relaxed text-gray-400">
