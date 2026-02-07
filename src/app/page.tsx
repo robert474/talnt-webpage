@@ -609,6 +609,71 @@ export default function HomePage() {
       </section>
 
       {/* ------------------------------------------------------------------ */}
+      {/*  Speed and Execution Callout                                        */}
+      {/* ------------------------------------------------------------------ */}
+      <section className="relative bg-navy py-16 sm:py-20 overflow-hidden">
+        <div className="absolute inset-0 opacity-10">
+          <Image
+            src="https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?auto=format&fit=crop&w=2400&q=80"
+            alt=""
+            fill
+            className="object-cover"
+            sizes="100vw"
+          />
+        </div>
+        <div className="relative container-page">
+          <div className="grid gap-8 lg:grid-cols-2 lg:items-center">
+            {/* Left — The Stat */}
+            <div>
+              <p className="text-sm font-semibold uppercase tracking-widest text-blue-light">
+                Speed and Execution
+              </p>
+              <h2 className="mt-3 text-3xl font-bold tracking-tight text-white sm:text-4xl lg:text-5xl">
+                <span className="text-gray-400 line-through decoration-gray-500">126 days</span>
+                {" "}
+                <span className="text-blue-light">40 days.</span>
+              </h2>
+              <p className="mt-4 max-w-lg text-lg leading-relaxed text-gray-300">
+                The industry averages 126 days to fill a data center construction
+                role. We do it in 40. That&rsquo;s 86 fewer days of schedule risk,
+                idle crews, and blown budgets on every single hire.
+              </p>
+              <div className="mt-6">
+                <Button href="/speed" variant="primary" size="lg">
+                  See How We Do It
+                </Button>
+              </div>
+            </div>
+
+            {/* Right — Quick stats grid */}
+            <div className="grid grid-cols-2 gap-6">
+              {[
+                { value: "40", unit: "days", label: "Avg. Time to Fill" },
+                { value: "68%", unit: "", label: "Faster Than Industry" },
+                { value: "48hr", unit: "", label: "First Shortlist" },
+                { value: "96%", unit: "", label: "Retention Rate" },
+              ].map((stat) => (
+                <div
+                  key={stat.label}
+                  className="rounded-xl border border-white/10 bg-white/5 p-5 text-center"
+                >
+                  <p className="text-3xl font-bold text-blue-light sm:text-4xl">
+                    {stat.value}
+                    {stat.unit && (
+                      <span className="ml-1 text-base font-medium text-gray-400">
+                        {stat.unit}
+                      </span>
+                    )}
+                  </p>
+                  <p className="mt-1 text-sm text-gray-400">{stat.label}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* ------------------------------------------------------------------ */}
       {/*  CTA Section                                                        */}
       {/* ------------------------------------------------------------------ */}
       <section aria-label="Call to action" className="bg-blue py-20 md:py-28">
