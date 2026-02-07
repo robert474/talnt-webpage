@@ -35,12 +35,23 @@ const roles: NavItem[] = [
   { label: "Estimators", href: "/roles/estimators" },
 ];
 
+const company: NavItem[] = [
+  { label: "About Us", href: "/about" },
+  { label: "Blog", href: "/blog" },
+  { label: "Resources", href: "/resources" },
+  { label: "Contact", href: "/contact" },
+  { label: "Speed & Execution", href: "/speed" },
+  { label: "Veteran Recruiters", href: "/veteran-recruiters" },
+  { label: "Talent Network", href: "/talent-network" },
+  { label: "Technology", href: "/technology" },
+];
+
 const navigation: NavGroup[] = [
   { label: "Industries", href: "/industries", children: industries },
   { label: "Roles", href: "/roles", children: roles },
   { label: "Locations", href: "/locations" },
   { label: "Jobs", href: "/jobs" },
-  { label: "About", href: "/about" },
+  { label: "Company", href: "/about", children: company },
 ];
 
 // ----------------------------------------------------------------

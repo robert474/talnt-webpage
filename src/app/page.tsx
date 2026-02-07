@@ -649,36 +649,43 @@ export default function HomePage() {
       {/* ------------------------------------------------------------------ */}
       <section
         aria-labelledby="industries-heading"
-        className="bg-gray-50 py-20 md:py-28"
+        className="bg-navy py-20 md:py-28"
       >
         <div className="container-page">
-          <SectionHeading
-            title="Industries We Serve"
-            subtitle="Every sector we staff has one thing in common: there's no room for error. Here's where we focus our recruiting muscle."
-          />
+          <div className="text-center mb-10 md:mb-14">
+            <h2
+              id="industries-heading"
+              className="text-3xl font-bold tracking-tight text-white sm:text-4xl lg:text-5xl"
+            >
+              Industries We Serve
+            </h2>
+            <p className="mx-auto mt-4 max-w-2xl text-lg leading-relaxed text-gray-300 sm:text-xl">
+              Every sector we staff has one thing in common: there&rsquo;s no room
+              for error. Here&rsquo;s where we focus our recruiting muscle.
+            </p>
+          </div>
 
           <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
             {industries.map((industry) => (
               <article
                 key={industry.slug}
-                className="group relative flex flex-col rounded-xl border border-gray-200 bg-white p-8 shadow-sm transition-shadow hover:shadow-md"
+                className="group relative flex flex-col rounded-xl border border-white/10 bg-white/5 p-8 transition-all hover:bg-white/10"
               >
-                <div className="mb-4 flex size-14 items-center justify-center rounded-xl bg-blue/10 text-blue">
+                <div className="mb-4 flex size-14 items-center justify-center rounded-xl bg-blue/20 text-blue-light">
                   {industry.icon}
                 </div>
-                <h3 className="text-xl font-semibold text-navy">
+                <h3 className="text-xl font-semibold text-white">
                   {industry.title}
                 </h3>
-                <p className="mt-3 flex-1 text-sm leading-relaxed text-gray-600">
+                <p className="mt-3 flex-1 text-sm leading-relaxed text-gray-300">
                   {industry.description}
                 </p>
                 <div className="mt-6">
                   <Link
                     href={`/industries/${industry.slug}`}
-                    className="inline-flex items-center gap-1 text-sm font-semibold text-blue transition-colors group-hover:text-blue-dark"
+                    className="inline-flex items-center gap-1 text-sm font-semibold text-blue-light transition-colors group-hover:text-white"
                   >
                     Learn More <span aria-hidden="true">&rarr;</span>
-                    {/* Stretch link to cover entire card */}
                     <span className="absolute inset-0" />
                   </Link>
                 </div>
