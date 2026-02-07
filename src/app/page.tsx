@@ -243,6 +243,24 @@ const topMarkets = [
   },
 ] as const;
 
+const monthlyData = [
+  { month: "Jan '25", days: 67 },
+  { month: "Feb", days: 58 },
+  { month: "Mar", days: 62 },
+  { month: "Apr", days: 53 },
+  { month: "May", days: 55 },
+  { month: "Jun", days: 57 },
+  { month: "Jul", days: 38 },
+  { month: "Aug", days: 41 },
+  { month: "Sep", days: 45 },
+  { month: "Oct", days: 51 },
+  { month: "Nov", days: 43 },
+  { month: "Dec", days: 49 },
+  { month: "Jan '26", days: 51 },
+];
+const INDUSTRY_AVG = 126;
+const CHART_MAX = 140;
+
 const faqs: FAQItem[] = [
   {
     question: "What types of data center roles do you staff?",
@@ -595,9 +613,9 @@ export default function HomePage() {
       </section>
 
       {/* ------------------------------------------------------------------ */}
-      {/*  Speed and Execution Callout                                        */}
+      {/*  Speed and Execution — Explanation + Chart                          */}
       {/* ------------------------------------------------------------------ */}
-      <section className="relative bg-navy py-16 sm:py-20 overflow-hidden">
+      <section className="relative bg-navy py-16 sm:py-24 overflow-hidden">
         <div className="absolute inset-0 opacity-10">
           <Image
             src="https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?auto=format&fit=crop&w=2400&q=80"
@@ -608,8 +626,8 @@ export default function HomePage() {
           />
         </div>
         <div className="relative container-page">
-          <div className="grid gap-8 lg:grid-cols-2 lg:items-center">
-            {/* Left — The Stat */}
+          <div className="grid gap-10 lg:grid-cols-[1fr_1.4fr] lg:items-center">
+            {/* Left — Explanation */}
             <div>
               <p className="text-sm font-semibold uppercase tracking-widest text-blue-light">
                 Speed and Execution
@@ -624,36 +642,114 @@ export default function HomePage() {
                 role. We do it in 40. That&rsquo;s 86 fewer days of schedule risk,
                 idle crews, and blown budgets on every single hire.
               </p>
-              <div className="mt-6">
+
+              {/* Quick stats */}
+              <div className="mt-8 grid grid-cols-2 gap-4">
+                {[
+                  { value: "40", unit: "days", label: "Avg. Time to Fill" },
+                  { value: "68%", unit: "", label: "Faster Than Industry" },
+                  { value: "48hr", unit: "", label: "First Shortlist" },
+                  { value: "96%", unit: "", label: "Retention Rate" },
+                ].map((stat) => (
+                  <div
+                    key={stat.label}
+                    className="rounded-xl border border-white/10 bg-white/5 p-4 text-center"
+                  >
+                    <p className="text-2xl font-bold text-blue-light sm:text-3xl">
+                      {stat.value}
+                      {stat.unit && (
+                        <span className="ml-1 text-sm font-medium text-gray-400">
+                          {stat.unit}
+                        </span>
+                      )}
+                    </p>
+                    <p className="mt-1 text-xs text-gray-400">{stat.label}</p>
+                  </div>
+                ))}
+              </div>
+
+              <div className="mt-8">
                 <Button href="/speed" variant="primary" size="lg">
-                  See How We Do It
+                  See the Full Breakdown
                 </Button>
               </div>
             </div>
 
-            {/* Right — Quick stats grid */}
-            <div className="grid grid-cols-2 gap-6">
-              {[
-                { value: "40", unit: "days", label: "Avg. Time to Fill" },
-                { value: "68%", unit: "", label: "Faster Than Industry" },
-                { value: "48hr", unit: "", label: "First Shortlist" },
-                { value: "96%", unit: "", label: "Retention Rate" },
-              ].map((stat) => (
+            {/* Right — Bar Chart */}
+            <div className="rounded-2xl border border-white/10 bg-white/5 p-4 sm:p-6">
+              <h3 className="text-center text-sm font-semibold uppercase tracking-widest text-gray-400">
+                Days to Fill — Month by Month
+              </h3>
+
+              <div className="relative mt-6">
+                {/* Industry average line */}
                 <div
-                  key={stat.label}
-                  className="rounded-xl border border-white/10 bg-white/5 p-5 text-center"
+                  className="absolute left-0 right-0 border-t-2 border-dashed border-red-400 z-10"
+                  style={{ top: `${((CHART_MAX - INDUSTRY_AVG) / CHART_MAX) * 100}%` }}
                 >
-                  <p className="text-3xl font-bold text-blue-light sm:text-4xl">
-                    {stat.value}
-                    {stat.unit && (
-                      <span className="ml-1 text-base font-medium text-gray-400">
-                        {stat.unit}
-                      </span>
-                    )}
-                  </p>
-                  <p className="mt-1 text-sm text-gray-400">{stat.label}</p>
+                  <span className="absolute -top-5 right-0 rounded bg-red-500 px-2 py-0.5 text-[10px] font-bold text-white">
+                    Industry Avg: 126 days
+                  </span>
                 </div>
-              ))}
+
+                {/* Bars */}
+                <div className="relative flex items-end gap-1 sm:gap-1.5" style={{ height: "280px" }}>
+                  {monthlyData.map((item) => {
+                    const heightPct = (item.days / CHART_MAX) * 100;
+                    return (
+                      <div
+                        key={item.month}
+                        className="group relative flex flex-1 flex-col items-center"
+                        style={{ height: "100%" }}
+                      >
+                        {/* Hover tooltip */}
+                        <div className="pointer-events-none absolute bottom-full mb-2 rounded bg-white px-2 py-1 text-xs font-bold text-navy opacity-0 shadow-lg transition-opacity group-hover:opacity-100 whitespace-nowrap z-20">
+                          {item.days} days
+                        </div>
+
+                        {/* Bar */}
+                        <div className="flex h-full w-full items-end">
+                          <div
+                            className="w-full rounded-t bg-blue transition-all duration-300 hover:bg-blue-light"
+                            style={{ height: `${heightPct}%` }}
+                          />
+                        </div>
+
+                        {/* Day count */}
+                        <span
+                          className="absolute text-[8px] font-bold text-white sm:text-[10px]"
+                          style={{ bottom: `${heightPct - 6}%` }}
+                        >
+                          {item.days}
+                        </span>
+                      </div>
+                    );
+                  })}
+                </div>
+
+                {/* X-axis labels */}
+                <div className="mt-2 flex gap-1 sm:gap-1.5">
+                  {monthlyData.map((item) => (
+                    <div key={item.month} className="flex-1 text-center">
+                      <span className="text-[7px] leading-tight text-gray-500 sm:text-[9px]">
+                        {item.month}
+                      </span>
+                    </div>
+                  ))}
+                </div>
+              </div>
+
+              {/* Legend */}
+              <div className="mt-4 flex items-center justify-center gap-5 text-xs">
+                <div className="flex items-center gap-1.5">
+                  <div className="h-2.5 w-5 rounded bg-blue" />
+                  <span className="text-gray-400">DC TALNT</span>
+                </div>
+                <div className="flex items-center gap-1.5">
+                  <div className="h-0.5 w-5 border-t-2 border-dashed border-red-400" />
+                  <span className="text-gray-400">Industry Avg (126d)</span>
+                </div>
+              </div>
             </div>
           </div>
         </div>
