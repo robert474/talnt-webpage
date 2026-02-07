@@ -68,11 +68,14 @@ export const metadata: Metadata = {
     },
   },
 
-  verification: {
-    google: "GOOGLE_SITE_VERIFICATION_TOKEN",
-    other: {
-      "msvalidate.01": "BING_SITE_VERIFICATION_TOKEN",
-    },
+  // verification: {
+  //   google: "YOUR_GOOGLE_VERIFICATION_TOKEN",
+  //   other: { "msvalidate.01": "YOUR_BING_VERIFICATION_TOKEN" },
+  // },
+
+  icons: {
+    icon: "/favicon.ico",
+    apple: "/apple-touch-icon.png",
   },
 
   other: {

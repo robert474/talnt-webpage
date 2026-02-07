@@ -242,7 +242,16 @@ export default function TechnologyPage() {
           <p className="mx-auto mt-4 max-w-2xl text-gray-600">
             All of this technology and process adds up to one number that
             matters: 40 days average time-to-fill, compared to the industry
-            average of 126 days. That&rsquo;s 86 fewer days of schedule risk
+            average of{" "}
+            <a
+              href="https://thebirmgroup.com/the-data-center-construction-boom-hiring-surge-in-2026/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="underline decoration-blue/30 hover:decoration-blue transition-colors"
+            >
+              126 days
+            </a>
+            . That&rsquo;s 86 fewer days of schedule risk
             on every single hire.
           </p>
           <div className="mt-6">

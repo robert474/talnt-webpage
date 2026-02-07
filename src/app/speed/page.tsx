@@ -123,7 +123,16 @@ export default function SpeedPage() {
             Speed and Execution
           </p>
           <h1 className="mt-4 text-4xl font-bold tracking-tight text-white sm:text-5xl lg:text-6xl text-balance">
-            The Industry Takes 126 Days to Fill a Role.
+            The Industry Takes{" "}
+            <a
+              href="https://thebirmgroup.com/the-data-center-construction-boom-hiring-surge-in-2026/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="underline decoration-gray-500 hover:decoration-blue-light transition-colors"
+            >
+              126 Days
+            </a>{" "}
+            to Fill a Role.
             <br />
             <span className="text-blue-light">We Take 40.</span>
           </h1>
@@ -132,6 +141,17 @@ export default function SpeedPage() {
             commissioning agent or project manager, your project is already
             staffed and moving. That&rsquo;s a 68% faster time-to-fill — and
             it&rsquo;s not a best case. It&rsquo;s our average.
+          </p>
+          <p className="mx-auto mt-3 max-w-2xl text-sm text-gray-500">
+            Source:{" "}
+            <a
+              href="https://thebirmgroup.com/the-data-center-construction-boom-hiring-surge-in-2026/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="underline hover:text-blue-light transition-colors"
+            >
+              The Birm Group — Data Center Construction Boom &amp; Hiring Surge in 2026
+            </a>
           </p>
         </div>
       </section>

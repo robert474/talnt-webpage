@@ -515,12 +515,28 @@ export default function HomePage() {
                 Speed and Execution
               </p>
               <h2 className="mt-3 text-3xl font-bold tracking-tight text-white sm:text-4xl lg:text-5xl">
-                <span className="text-gray-400 line-through decoration-gray-500">126 days</span>
+                <a
+                  href="https://thebirmgroup.com/the-data-center-construction-boom-hiring-surge-in-2026/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-gray-400 line-through decoration-gray-500 hover:text-gray-300 transition-colors"
+                >
+                  126 days
+                </a>
                 {" "}
                 <span className="text-blue-light">40 days.</span>
               </h2>
               <p className="mt-4 max-w-lg text-lg leading-relaxed text-gray-300">
-                The industry averages 126 days to fill a data center construction
+                The industry averages{" "}
+                <a
+                  href="https://thebirmgroup.com/the-data-center-construction-boom-hiring-surge-in-2026/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="underline decoration-gray-500 hover:decoration-blue-light transition-colors"
+                >
+                  126 days
+                </a>{" "}
+                to fill a data center construction
                 role. We do it in 40. That&rsquo;s 86 fewer days of schedule risk,
                 idle crews, and blown budgets on every single hire.
               </p>
