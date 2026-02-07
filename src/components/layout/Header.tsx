@@ -2,6 +2,7 @@
 
 import { useState, useCallback, useEffect, useRef } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import Button from "@/components/ui/Button";
 
 // ----------------------------------------------------------------
@@ -263,16 +264,17 @@ export default function Header() {
         {/* Logo */}
         <Link
           href="/"
-          className="flex items-center gap-2 text-xl font-bold tracking-tight text-navy"
+          className="flex items-center"
           aria-label="Data Center TALNT - Home"
         >
-          <span className="inline-flex h-8 w-8 items-center justify-center rounded-md bg-blue text-sm font-black text-white">
-            DC
-          </span>
-          <span>
-            <span className="text-navy">DC</span>{" "}
-            <span className="text-blue">TALNT</span>
-          </span>
+          <Image
+            src="/images/logo.png"
+            alt="Data Center TALNT"
+            width={180}
+            height={40}
+            className="h-9 w-auto"
+            priority
+          />
         </Link>
 
         {/* Desktop navigation */}

@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 
 // ----------------------------------------------------------------
 // Footer link data
@@ -110,15 +111,16 @@ export default function Footer() {
         <div className="mb-10 max-w-2xl">
           <Link
             href="/"
-            className="inline-flex items-center gap-2 text-xl font-bold text-white"
+            className="inline-flex items-center"
             aria-label="Data Center TALNT - Home"
           >
-            <span className="inline-flex h-8 w-8 items-center justify-center rounded-md bg-blue text-sm font-black text-white">
-              DC
-            </span>
-            <span>
-              Data Center <span className="text-blue">TALNT</span>
-            </span>
+            <Image
+              src="/images/logo-white.png"
+              alt="Data Center TALNT"
+              width={200}
+              height={44}
+              className="h-10 w-auto"
+            />
           </Link>
           <p className="mt-4 text-sm leading-relaxed text-gray-400">
             Data Center TALNT is a specialized staffing and recruitment firm
