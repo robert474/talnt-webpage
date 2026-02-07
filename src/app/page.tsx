@@ -10,6 +10,7 @@ import {
 import SectionHeading from "@/components/ui/SectionHeading";
 import Button from "@/components/ui/Button";
 import AnimatedHero from "@/components/ui/AnimatedHero";
+import USMarketMap from "@/components/ui/USMarketMap";
 
 /* -------------------------------------------------------------------------- */
 /*  SEO Metadata                                                              */
@@ -176,102 +177,6 @@ const roles = [
     description:
       "The last line of defense before your facility goes live. CxA-certified professionals who've led IST events on Tier III and Tier IV data centers.",
     salary: "$105K \u2013 $160K",
-  },
-] as const;
-
-const whyChoose = [
-  {
-    title: "Industry Expertise",
-    icon: (
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        fill="none"
-        viewBox="0 0 24 24"
-        strokeWidth={1.5}
-        stroke="currentColor"
-        className="size-8"
-        aria-hidden="true"
-      >
-        <path
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          d="M4.26 10.147a60.438 60.438 0 0 0-.491 6.347A48.62 48.62 0 0 1 12 20.904a48.62 48.62 0 0 1 8.232-4.41 60.46 60.46 0 0 0-.491-6.347m-15.482 0a50.636 50.636 0 0 0-2.658-.813A59.906 59.906 0 0 1 12 3.493a59.903 59.903 0 0 1 10.399 5.84c-.896.248-1.783.52-2.658.814m-15.482 0A50.717 50.717 0 0 1 12 13.489a50.702 50.702 0 0 1 7.74-3.342M6.75 15a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5Zm0 0v-3.675A55.378 55.378 0 0 1 12 8.443m-7.007 11.55A5.981 5.981 0 0 0 6.75 15.75v-1.5"
-        />
-      </svg>
-    ),
-    description:
-      "Our recruiters know the difference between a Tier III and Tier IV build. They've walked job sites, sat through IST events, and can tell when a candidate is padding their resume. That matters when you're hiring for a $200M campus.",
-  },
-  {
-    title: "Speed to Hire",
-    icon: (
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        fill="none"
-        viewBox="0 0 24 24"
-        strokeWidth={1.5}
-        stroke="currentColor"
-        className="size-8"
-        aria-hidden="true"
-      >
-        <path
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"
-        />
-      </svg>
-    ),
-    description:
-      "You called us Tuesday morning, you're reviewing resumes Wednesday afternoon. We maintain a live pipeline so we're not starting from scratch when your phone rings.",
-  },
-  {
-    title: "Nationwide Coverage",
-    icon: (
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        fill="none"
-        viewBox="0 0 24 24"
-        strokeWidth={1.5}
-        stroke="currentColor"
-        className="size-8"
-        aria-hidden="true"
-      >
-        <path
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"
-        />
-        <path
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z"
-        />
-      </svg>
-    ),
-    description:
-      "Northern Virginia, Phoenix, Dallas, Chicago, the Pacific Northwest — wherever the cranes are going up, we've already got candidates in the area. No scrambling, no relocation delays.",
-  },
-  {
-    title: "Verified Talent",
-    icon: (
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        fill="none"
-        viewBox="0 0 24 24"
-        strokeWidth={1.5}
-        stroke="currentColor"
-        className="size-8"
-        aria-hidden="true"
-      >
-        <path
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          d="M9 12.75 11.25 15 15 9.75M21 12c0 1.268-.63 2.39-1.593 3.068a3.745 3.745 0 0 1-1.043 3.296 3.745 3.745 0 0 1-3.296 1.043A3.745 3.745 0 0 1 12 21c-1.268 0-2.39-.63-3.068-1.593a3.746 3.746 0 0 1-3.296-1.043 3.745 3.745 0 0 1-1.043-3.296A3.745 3.745 0 0 1 3 12c0-1.268.63-2.39 1.593-3.068a3.745 3.745 0 0 1 1.043-3.296 3.746 3.746 0 0 1 3.296-1.043A3.746 3.746 0 0 1 12 3c1.268 0 2.39.63 3.068 1.593a3.746 3.746 0 0 1 3.296 1.043 3.746 3.746 0 0 1 1.043 3.296A3.745 3.745 0 0 1 21 12Z"
-        />
-      </svg>
-    ),
-    description:
-      "We don't forward resumes and hope for the best. Every candidate gets a technical screen, reference calls, cert verification, and a project history review before you ever see their name.",
   },
 ] as const;
 
@@ -538,7 +443,7 @@ export default function HomePage() {
       </section>
 
       {/* ------------------------------------------------------------------ */}
-      {/*  Why Choose DC TALNT                                                */}
+      {/*  Three Differentiators                                              */}
       {/* ------------------------------------------------------------------ */}
       <section
         aria-labelledby="why-heading"
@@ -550,33 +455,114 @@ export default function HomePage() {
               id="why-heading"
               className="text-3xl font-bold tracking-tight sm:text-4xl lg:text-5xl text-balance"
             >
-              Why Choose Data Center TALNT
+              Why Data Center TALNT
             </h2>
             <p className="mx-auto mt-4 max-w-2xl text-lg leading-relaxed text-gray-300 sm:text-xl">
-              We are not a generalist agency. Our entire operation is built
-              around the data center, mission critical, construction, and
-              utilities sectors.
+              Three things separate us from every other staffing agency in this
+              space. And they&rsquo;re not things you can spin up overnight.
             </p>
           </div>
 
-          <div className="grid gap-10 sm:grid-cols-2 lg:grid-cols-4">
-            {whyChoose.map((feature) => (
-              <div key={feature.title} className="text-center">
-                <div className="mx-auto mb-4 flex size-14 items-center justify-center rounded-xl bg-white/10 text-blue-light">
-                  {feature.icon}
-                </div>
-                <h3 className="text-xl font-semibold">{feature.title}</h3>
-                <p className="mt-3 text-sm leading-relaxed text-gray-300">
-                  {feature.description}
-                </p>
+          <div className="grid gap-8 lg:grid-cols-3">
+            {/* Card 1 — Veteran Recruiters */}
+            <Link
+              href="/veteran-recruiters"
+              className="group relative flex flex-col overflow-hidden rounded-2xl border border-white/10 bg-white/5 transition-all duration-300 hover:bg-white/10"
+            >
+              <div className="relative h-48 overflow-hidden">
+                <Image
+                  src="https://images.unsplash.com/photo-1531973576160-7125cd663d86?auto=format&fit=crop&w=800&q=80"
+                  alt="Experienced professionals on a construction site"
+                  fill
+                  className="object-cover transition-transform duration-300 group-hover:scale-105"
+                  sizes="(min-width: 1024px) 33vw, 100vw"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-navy via-navy/50 to-transparent" />
               </div>
-            ))}
+              <div className="flex flex-1 flex-col p-6">
+                <p className="text-sm font-semibold uppercase tracking-widest text-blue-light">
+                  Our Recruiters
+                </p>
+                <h3 className="mt-2 text-2xl font-bold">15+ Year Veterans</h3>
+                <p className="mt-3 flex-1 text-sm leading-relaxed text-gray-300">
+                  Our recruiters average 15+ years in data center and
+                  construction staffing. They&rsquo;ve walked job sites, built
+                  networks across every major market, and know the difference
+                  between a resume padder and a real operator.
+                </p>
+                <span className="mt-4 inline-flex items-center gap-1 text-sm font-semibold text-blue-light group-hover:gap-2 transition-all">
+                  Learn More <span aria-hidden="true">&rarr;</span>
+                </span>
+              </div>
+            </Link>
+
+            {/* Card 2 — Talent Network */}
+            <Link
+              href="/talent-network"
+              className="group relative flex flex-col overflow-hidden rounded-2xl border border-white/10 bg-white/5 transition-all duration-300 hover:bg-white/10"
+            >
+              <div className="relative h-48 overflow-hidden">
+                <Image
+                  src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=800&q=80"
+                  alt="Server room representing data and intelligence"
+                  fill
+                  className="object-cover transition-transform duration-300 group-hover:scale-105"
+                  sizes="(min-width: 1024px) 33vw, 100vw"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-navy via-navy/50 to-transparent" />
+              </div>
+              <div className="flex flex-1 flex-col p-6">
+                <p className="text-sm font-semibold uppercase tracking-widest text-blue-light">
+                  Our Database
+                </p>
+                <h3 className="mt-2 text-2xl font-bold">10+ Years of Intel</h3>
+                <p className="mt-3 flex-1 text-sm leading-relaxed text-gray-300">
+                  Every interview, every placement, every reference — logged and
+                  searchable across a decade. We know about candidates before
+                  they apply, and we find people that other agencies can&rsquo;t.
+                </p>
+                <span className="mt-4 inline-flex items-center gap-1 text-sm font-semibold text-blue-light group-hover:gap-2 transition-all">
+                  Learn More <span aria-hidden="true">&rarr;</span>
+                </span>
+              </div>
+            </Link>
+
+            {/* Card 3 — Technology */}
+            <Link
+              href="/technology"
+              className="group relative flex flex-col overflow-hidden rounded-2xl border border-white/10 bg-white/5 transition-all duration-300 hover:bg-white/10"
+            >
+              <div className="relative h-48 overflow-hidden">
+                <Image
+                  src="https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?auto=format&fit=crop&w=800&q=80"
+                  alt="Advanced industrial systems and technology"
+                  fill
+                  className="object-cover transition-transform duration-300 group-hover:scale-105"
+                  sizes="(min-width: 1024px) 33vw, 100vw"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-navy via-navy/50 to-transparent" />
+              </div>
+              <div className="flex flex-1 flex-col p-6">
+                <p className="text-sm font-semibold uppercase tracking-widest text-blue-light">
+                  Our Systems
+                </p>
+                <h3 className="mt-2 text-2xl font-bold">Built for Speed</h3>
+                <p className="mt-3 flex-1 text-sm leading-relaxed text-gray-300">
+                  Job posts in minutes. Candidate interviews in hours. Offers in
+                  days. Our tech stack eliminates the bottlenecks that make
+                  traditional staffing agencies slow.
+                </p>
+                <span className="mt-4 inline-flex items-center gap-1 text-sm font-semibold text-blue-light group-hover:gap-2 transition-all">
+                  Learn More <span aria-hidden="true">&rarr;</span>
+                </span>
+              </div>
+            </Link>
           </div>
         </div>
       </section>
 
       {/* ------------------------------------------------------------------ */}
-      {/*  Top Markets                                                        */}
+      {/*  Top Markets — Interactive Map                                      */}
       {/* ------------------------------------------------------------------ */}
       <section
         aria-labelledby="markets-heading"
@@ -585,23 +571,23 @@ export default function HomePage() {
         <div className="container-page">
           <SectionHeading
             title="Top Data Center Markets"
-            subtitle="We maintain active talent pipelines in the markets experiencing the highest data center construction demand."
+            subtitle="We maintain active talent pipelines in the markets experiencing the highest data center construction demand. Hover over a pin to learn more."
           />
 
-          <div className="grid gap-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5">
+          <USMarketMap />
+
+          {/* Quick-link grid below the map */}
+          <div className="mt-10 grid gap-3 sm:grid-cols-2 md:grid-cols-5">
             {topMarkets.map((market) => (
               <Link
                 key={market.slug}
                 href={`/locations/${market.slug}`}
-                className="group rounded-lg border border-gray-200 bg-white px-5 py-6 text-center shadow-sm transition-shadow hover:shadow-md"
+                className="group rounded-lg border border-gray-200 bg-white px-4 py-3 text-center shadow-sm transition-shadow hover:shadow-md"
               >
-                <h3 className="text-lg font-semibold text-navy group-hover:text-blue transition-colors duration-200">
+                <h3 className="text-sm font-semibold text-navy group-hover:text-blue transition-colors duration-200">
                   {market.city}
                 </h3>
-                <p className="text-sm text-gray-500">{market.state}</p>
-                <p className="mt-2 text-xs leading-snug text-gray-400">
-                  {market.stat}
-                </p>
+                <p className="text-xs text-gray-500">{market.state}</p>
               </Link>
             ))}
           </div>

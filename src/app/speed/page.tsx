@@ -50,6 +50,25 @@ const painPoints = [
   },
 ];
 
+const monthlyData = [
+  { month: "Jan '25", days: 67 },
+  { month: "Feb", days: 58 },
+  { month: "Mar", days: 62 },
+  { month: "Apr", days: 53 },
+  { month: "May", days: 55 },
+  { month: "Jun", days: 57 },
+  { month: "Jul", days: 38 },
+  { month: "Aug", days: 41 },
+  { month: "Sep", days: 45 },
+  { month: "Oct", days: 51 },
+  { month: "Nov", days: 43 },
+  { month: "Dec", days: 49 },
+  { month: "Jan '26", days: 51 },
+];
+
+const INDUSTRY_AVG = 126;
+const CHART_MAX = 140; // ceiling for bar scaling
+
 const howWeDoIt = [
   {
     title: "Live Talent Pipeline",
@@ -180,6 +199,111 @@ export default function SpeedPage() {
                 That&rsquo;s nearly three months of schedule risk, cost overruns,
                 and lost productivity eliminated from every hire.
               </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Monthly Bar Chart */}
+      <section className="bg-sky-50 py-16 sm:py-24">
+        <div className="container-page">
+          <div className="text-center">
+            <h2 className="text-2xl font-bold text-navy sm:text-3xl">
+              Our Track Record — Month by Month
+            </h2>
+            <p className="mx-auto mt-3 max-w-2xl text-gray-600">
+              Average days to fill across the past 13 months. The red line is
+              the industry average. The blue bars are us.
+            </p>
+          </div>
+
+          <div className="mx-auto mt-10 max-w-4xl">
+            {/* Chart container */}
+            <div className="relative">
+              {/* Y-axis labels */}
+              <div className="absolute -left-2 top-0 bottom-8 flex flex-col justify-between text-right sm:-left-8">
+                {[140, 126, 100, 75, 50, 25, 0].map((val) => (
+                  <span
+                    key={val}
+                    className={`text-[10px] sm:text-xs ${
+                      val === 126 ? "font-bold text-red-500" : "text-gray-400"
+                    }`}
+                  >
+                    {val === 126 ? "126" : val}
+                  </span>
+                ))}
+              </div>
+
+              {/* Chart area */}
+              <div className="ml-6 sm:ml-10">
+                {/* Industry average line */}
+                <div
+                  className="absolute left-6 right-0 sm:left-10 border-t-2 border-dashed border-red-400 z-10"
+                  style={{ top: `${((CHART_MAX - INDUSTRY_AVG) / CHART_MAX) * 100}%` }}
+                >
+                  <span className="absolute -top-5 right-0 rounded bg-red-500 px-2 py-0.5 text-[10px] font-bold text-white sm:text-xs">
+                    Industry Avg: 126 days
+                  </span>
+                </div>
+
+                {/* Bars */}
+                <div className="relative flex items-end gap-1.5 sm:gap-2" style={{ height: "320px" }}>
+                  {monthlyData.map((item) => {
+                    const heightPct = (item.days / CHART_MAX) * 100;
+                    return (
+                      <div
+                        key={item.month}
+                        className="group relative flex flex-1 flex-col items-center"
+                        style={{ height: "100%" }}
+                      >
+                        {/* Tooltip */}
+                        <div className="pointer-events-none absolute bottom-full mb-2 rounded bg-navy px-2 py-1 text-xs font-bold text-white opacity-0 shadow-lg transition-opacity group-hover:opacity-100 whitespace-nowrap z-20">
+                          {item.days} days
+                        </div>
+
+                        {/* Bar wrapper - full height, bar grows from bottom */}
+                        <div className="flex h-full w-full items-end">
+                          <div
+                            className="w-full rounded-t bg-blue transition-all duration-300 hover:bg-blue-dark"
+                            style={{ height: `${heightPct}%` }}
+                          />
+                        </div>
+
+                        {/* Day count on bar */}
+                        <span
+                          className="absolute text-[9px] font-bold text-white sm:text-[10px]"
+                          style={{ bottom: `${heightPct - 5}%` }}
+                        >
+                          {item.days}
+                        </span>
+                      </div>
+                    );
+                  })}
+                </div>
+
+                {/* X-axis labels */}
+                <div className="mt-2 flex gap-1.5 sm:gap-2">
+                  {monthlyData.map((item) => (
+                    <div key={item.month} className="flex-1 text-center">
+                      <span className="text-[8px] leading-tight text-gray-500 sm:text-[10px]">
+                        {item.month}
+                      </span>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            </div>
+
+            {/* Legend */}
+            <div className="mt-6 flex items-center justify-center gap-6 text-sm">
+              <div className="flex items-center gap-2">
+                <div className="h-3 w-6 rounded bg-blue" />
+                <span className="text-gray-600">DC TALNT Days to Fill</span>
+              </div>
+              <div className="flex items-center gap-2">
+                <div className="h-0.5 w-6 border-t-2 border-dashed border-red-400" />
+                <span className="text-gray-600">Industry Average (126 days)</span>
+              </div>
             </div>
           </div>
         </div>
