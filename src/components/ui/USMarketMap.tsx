@@ -159,33 +159,33 @@ export default function USMarketMap() {
                 aria-label={`${market.city}, ${market.state}`}
               >
                 <svg
-                  width="32"
-                  height="42"
-                  viewBox="0 0 32 42"
+                  width="36"
+                  height="48"
+                  viewBox="0 0 36 48"
                   fill="none"
                   xmlns="http://www.w3.org/2000/svg"
                   className="drop-shadow-lg"
                 >
                   {/* Teardrop shape */}
                   <path
-                    d="M16 0C7.163 0 0 7.163 0 16c0 8.837 16 26 16 26s16-17.163 16-26C32 7.163 24.837 0 16 0z"
+                    d="M18 0C8.059 0 0 8.059 0 18c0 9.941 18 30 18 30s18-20.059 18-30C36 8.059 27.941 0 18 0z"
                     className={isActive ? "fill-blue-dark" : "fill-blue"}
                     style={{ transition: "fill 0.2s" }}
                   />
                   {/* White circle inside */}
-                  <circle cx="16" cy="15" r="9" fill="white" />
-                  {/* DC text (brand logo) */}
-                  <text
-                    x="16"
-                    y="18.5"
-                    textAnchor="middle"
-                    className="fill-blue"
-                    fontSize="10"
-                    fontWeight="900"
-                    fontFamily="system-ui, sans-serif"
-                  >
-                    DC
-                  </text>
+                  <circle cx="18" cy="17" r="11" fill="white" />
+                  {/* Hex logo icon inside circle */}
+                  <path
+                    d="M18 7.5L25.5 12V21L18 25.5L10.5 21V12L18 7.5Z"
+                    className={isActive ? "fill-blue-dark" : "fill-blue"}
+                    style={{ transition: "fill 0.2s" }}
+                  />
+                  <path
+                    d="M13 14h10M13 16.5h10M13 19h7"
+                    stroke="white"
+                    strokeWidth="1.2"
+                    strokeLinecap="round"
+                  />
                 </svg>
               </Link>
 

@@ -111,16 +111,17 @@ export default function Footer() {
         <div className="mb-10 max-w-2xl">
           <Link
             href="/"
-            className="inline-flex items-center"
+            className="inline-flex items-center gap-2 text-xl font-bold text-white"
             aria-label="Data Center TALNT - Home"
           >
-            <Image
-              src="/images/logo-white.png"
-              alt="Data Center TALNT"
-              width={200}
-              height={44}
-              className="h-10 w-auto"
-            />
+            {/* Hex icon matching brand */}
+            <svg width="32" height="36" viewBox="0 0 32 36" fill="none" xmlns="http://www.w3.org/2000/svg" className="h-8 w-auto">
+              <path d="M16 0L30.5 8.5V27.5L16 36L1.5 27.5V8.5L16 0Z" className="fill-blue" />
+              <path d="M8 14h16M8 18h16M8 22h12" stroke="white" strokeWidth="2" strokeLinecap="round" />
+            </svg>
+            <span>
+              DATA CENTER <span className="text-blue">TALNT</span>
+            </span>
           </Link>
           <p className="mt-4 text-sm leading-relaxed text-gray-400">
             Data Center TALNT is a specialized staffing and recruitment firm
