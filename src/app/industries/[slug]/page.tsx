@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import Image from "next/image";
 import { notFound } from "next/navigation";
 import {
   generateBreadcrumbSchema,
@@ -11,6 +12,15 @@ import {
 /* ========================================================================== */
 /*  Hyperscaler Logos Component                                               */
 /* ========================================================================== */
+
+const hyperscalerLogos = [
+  { name: "AWS", src: "/images/logos/aws.svg", width: 100, height: 60 },
+  { name: "OpenAI", src: "/images/logos/openai.svg", width: 200, height: 60 },
+  { name: "Oracle", src: "/images/logos/oracle.svg", width: 180, height: 60 },
+  { name: "Microsoft", src: "/images/logos/microsoft.svg", width: 220, height: 60 },
+  { name: "Google", src: "/images/logos/google.svg", width: 160, height: 60 },
+  { name: "Meta", src: "/images/logos/meta.svg", width: 140, height: 60 },
+];
 
 function HyperscalerLogos() {
   return (
@@ -24,43 +34,17 @@ function HyperscalerLogos() {
           commissioned by the world&rsquo;s leading hyperscalers and AI companies.
         </p>
         <div className="mt-12 grid grid-cols-2 items-center gap-8 sm:grid-cols-3 lg:grid-cols-6">
-          {/* AWS */}
-          <div className="flex items-center justify-center">
-            <svg viewBox="0 0 120 50" className="h-14 w-auto" aria-label="Amazon Web Services">
-              <text x="50%" y="32" textAnchor="middle" fontFamily="Arial, Helvetica, sans-serif" fontWeight="bold" fontSize="26" fill="#232F3E">AWS</text>
-              <path d="M30 42 C45 48, 60 49, 90 44" stroke="#FF9900" strokeWidth="3" fill="none" strokeLinecap="round" />
-            </svg>
-          </div>
-          {/* OpenAI */}
-          <div className="flex items-center justify-center">
-            <svg viewBox="0 0 160 50" className="h-14 w-auto" aria-label="OpenAI">
-              <text x="50%" y="33" textAnchor="middle" fontFamily="Arial, Helvetica, sans-serif" fontWeight="bold" fontSize="26" fill="#0D0D0D">OpenAI</text>
-            </svg>
-          </div>
-          {/* Oracle */}
-          <div className="flex items-center justify-center">
-            <svg viewBox="0 0 160 50" className="h-14 w-auto" aria-label="Oracle">
-              <text x="50%" y="33" textAnchor="middle" fontFamily="Arial, Helvetica, sans-serif" fontWeight="bold" fontSize="26" fill="#C74634">Oracle</text>
-            </svg>
-          </div>
-          {/* Microsoft */}
-          <div className="flex items-center justify-center">
-            <svg viewBox="0 0 210 50" className="h-14 w-auto" aria-label="Microsoft">
-              <text x="50%" y="33" textAnchor="middle" fontFamily="Arial, Helvetica, sans-serif" fontWeight="bold" fontSize="26" fill="#737373">Microsoft</text>
-            </svg>
-          </div>
-          {/* Google */}
-          <div className="flex items-center justify-center">
-            <svg viewBox="0 0 160 50" className="h-14 w-auto" aria-label="Google">
-              <text x="50%" y="33" textAnchor="middle" fontFamily="Arial, Helvetica, sans-serif" fontWeight="bold" fontSize="26" fill="#4285F4">Google</text>
-            </svg>
-          </div>
-          {/* Meta */}
-          <div className="flex items-center justify-center">
-            <svg viewBox="0 0 120 50" className="h-14 w-auto" aria-label="Meta">
-              <text x="50%" y="33" textAnchor="middle" fontFamily="Arial, Helvetica, sans-serif" fontWeight="bold" fontSize="26" fill="#0668E1">Meta</text>
-            </svg>
-          </div>
+          {hyperscalerLogos.map((logo) => (
+            <div key={logo.name} className="flex items-center justify-center">
+              <Image
+                src={logo.src}
+                alt={logo.name}
+                width={logo.width}
+                height={logo.height}
+                className="h-14 w-auto object-contain"
+              />
+            </div>
+          ))}
         </div>
       </div>
     </section>

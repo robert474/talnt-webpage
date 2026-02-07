@@ -399,43 +399,24 @@ export default function HomePage() {
             Our Talent Builds for the World&rsquo;s Leading Hyperscalers
           </p>
           <div className="mt-8 flex flex-wrap items-center justify-center gap-x-12 gap-y-8 sm:gap-x-16 lg:gap-x-20">
-            {/* AWS */}
-            <Link href="/industries/hyperscalers" className="group transition-opacity hover:opacity-80">
-              <svg viewBox="0 0 120 40" className="h-10 w-auto sm:h-12" aria-label="Amazon Web Services">
-                <text x="0" y="28" fontFamily="Arial, Helvetica, sans-serif" fontWeight="bold" fontSize="22" fill="#232F3E">AWS</text>
-                <path d="M50 32 C55 35, 62 36, 70 35" stroke="#FF9900" strokeWidth="2.5" fill="none" strokeLinecap="round" />
-              </svg>
-            </Link>
-            {/* OpenAI */}
-            <Link href="/industries/hyperscalers" className="group transition-opacity hover:opacity-80">
-              <svg viewBox="0 0 160 40" className="h-10 w-auto sm:h-12" aria-label="OpenAI">
-                <text x="0" y="28" fontFamily="Arial, Helvetica, sans-serif" fontWeight="bold" fontSize="22" fill="#0D0D0D">OpenAI</text>
-              </svg>
-            </Link>
-            {/* Oracle */}
-            <Link href="/industries/hyperscalers" className="group transition-opacity hover:opacity-80">
-              <svg viewBox="0 0 160 40" className="h-10 w-auto sm:h-12" aria-label="Oracle">
-                <text x="0" y="28" fontFamily="Arial, Helvetica, sans-serif" fontWeight="bold" fontSize="22" fill="#C74634">Oracle</text>
-              </svg>
-            </Link>
-            {/* Microsoft */}
-            <Link href="/industries/hyperscalers" className="group transition-opacity hover:opacity-80">
-              <svg viewBox="0 0 200 40" className="h-10 w-auto sm:h-12" aria-label="Microsoft">
-                <text x="0" y="28" fontFamily="Arial, Helvetica, sans-serif" fontWeight="bold" fontSize="22" fill="#737373">Microsoft</text>
-              </svg>
-            </Link>
-            {/* Google */}
-            <Link href="/industries/hyperscalers" className="group transition-opacity hover:opacity-80">
-              <svg viewBox="0 0 160 40" className="h-10 w-auto sm:h-12" aria-label="Google">
-                <text x="0" y="28" fontFamily="Arial, Helvetica, sans-serif" fontWeight="bold" fontSize="22" fill="#4285F4">Google</text>
-              </svg>
-            </Link>
-            {/* Meta */}
-            <Link href="/industries/hyperscalers" className="group transition-opacity hover:opacity-80">
-              <svg viewBox="0 0 120 40" className="h-10 w-auto sm:h-12" aria-label="Meta">
-                <text x="0" y="28" fontFamily="Arial, Helvetica, sans-serif" fontWeight="bold" fontSize="22" fill="#0668E1">Meta</text>
-              </svg>
-            </Link>
+            {[
+              { name: "AWS", src: "/images/logos/aws.svg", width: 100, height: 60 },
+              { name: "OpenAI", src: "/images/logos/openai.svg", width: 200, height: 60 },
+              { name: "Oracle", src: "/images/logos/oracle.svg", width: 180, height: 60 },
+              { name: "Microsoft", src: "/images/logos/microsoft.svg", width: 220, height: 60 },
+              { name: "Google", src: "/images/logos/google.svg", width: 160, height: 60 },
+              { name: "Meta", src: "/images/logos/meta.svg", width: 140, height: 60 },
+            ].map((logo) => (
+              <Link key={logo.name} href="/industries/hyperscalers" className="transition-opacity hover:opacity-70">
+                <Image
+                  src={logo.src}
+                  alt={logo.name}
+                  width={logo.width}
+                  height={logo.height}
+                  className="h-10 w-auto sm:h-12 object-contain"
+                />
+              </Link>
+            ))}
           </div>
           <div className="mt-8 text-center">
             <Link
