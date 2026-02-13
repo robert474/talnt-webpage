@@ -52,6 +52,30 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.7,
     },
     {
+      url: `${BASE_URL}/speed`,
+      lastModified: now,
+      changeFrequency: 'monthly',
+      priority: 0.8,
+    },
+    {
+      url: `${BASE_URL}/veteran-recruiters`,
+      lastModified: now,
+      changeFrequency: 'monthly',
+      priority: 0.8,
+    },
+    {
+      url: `${BASE_URL}/talent-network`,
+      lastModified: now,
+      changeFrequency: 'monthly',
+      priority: 0.8,
+    },
+    {
+      url: `${BASE_URL}/technology`,
+      lastModified: now,
+      changeFrequency: 'monthly',
+      priority: 0.8,
+    },
+    {
       url: `${BASE_URL}/resources`,
       lastModified: now,
       changeFrequency: 'monthly',
@@ -85,6 +109,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     'mission-critical-facilities',
     'construction-staffing',
     'utilities-staffing',
+    'hyperscalers',
   ]
 
   const industryPages: MetadataRoute.Sitemap = industries.map((slug) => ({
@@ -146,5 +171,31 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.8,
   }))
 
-  return [...staticPages, ...industryPages, ...rolePages, ...locationPages]
+  /* ------------------------------------------------------------------ */
+  /*  Blog posts                                                         */
+  /* ------------------------------------------------------------------ */
+  const blogSlugs = [
+    'why-companies-use-staffing-agencies-data-center-hiring',
+    'data-center-construction-382-billion-market-2026',
+    'skilled-trades-shortage-data-center-construction',
+    'professional-workforce-shortage-data-center-engineers',
+    'top-10-universities-producing-data-center-talent',
+    '2026-data-center-construction-salary-guide',
+    'top-10-data-center-markets-construction-jobs',
+    'mep-engineering-trends-mission-critical-facilities',
+    'how-to-hire-data-center-construction-manager',
+    'future-of-hyperscale-data-center-construction',
+    'commissioning-agent-vs-commissioning-engineer',
+    'data-center-construction-workforce-challenges-2026',
+    'negotiating-your-data-center-construction-salary',
+  ]
+
+  const blogPages: MetadataRoute.Sitemap = blogSlugs.map((slug) => ({
+    url: `${BASE_URL}/blog/${slug}`,
+    lastModified: now,
+    changeFrequency: 'monthly',
+    priority: 0.7,
+  }))
+
+  return [...staticPages, ...industryPages, ...rolePages, ...locationPages, ...blogPages]
 }

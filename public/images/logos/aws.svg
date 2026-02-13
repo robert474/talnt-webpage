@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 80" fill="none">
+  <text x="12" y="48" font-family="'Amazon Ember', Arial, sans-serif" font-weight="bold" font-size="42" fill="#232F3E" letter-spacing="-1">aws</text>
+  <path d="M14 60 Q50 76, 110 66" stroke="#FF9900" stroke-width="4.5" fill="none" stroke-linecap="round"/>
+  <polygon points="110,61 122,65 110,71" fill="#FF9900"/>
+</svg>

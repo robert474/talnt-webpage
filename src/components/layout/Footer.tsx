@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 
 // ----------------------------------------------------------------
 // Footer link data
@@ -10,6 +11,7 @@ interface FooterLink {
 }
 
 const industriesLinks: FooterLink[] = [
+  { label: "Hyperscalers", href: "/industries/hyperscalers" },
   { label: "Data Centers", href: "/industries/data-centers" },
   { label: "Mission Critical", href: "/industries/mission-critical" },
   { label: "Construction", href: "/industries/construction" },
@@ -113,12 +115,13 @@ export default function Footer() {
             className="inline-flex items-center gap-2 text-xl font-bold text-white"
             aria-label="Data Center TALNT - Home"
           >
-            <span className="inline-flex h-8 w-8 items-center justify-center rounded-md bg-blue text-sm font-black text-white">
-              DC
-            </span>
-            <span>
-              Data Center <span className="text-blue">TALNT</span>
-            </span>
+            <Image
+              src="/images/logos/datacenter-logo-black-type-transparent.png"
+              alt="Data Center TALNT"
+              width={200}
+              height={48}
+              className="h-10 w-auto brightness-0 invert"
+            />
           </Link>
           <p className="mt-4 text-sm leading-relaxed text-gray-400">
             Data Center TALNT is a specialized staffing and recruitment firm
@@ -149,21 +152,21 @@ export default function Footer() {
             <meta itemProp="url" content="https://www.datacentertalnt.com" />
             <div itemProp="address" itemScope itemType="https://schema.org/PostalAddress">
               <p className="font-medium text-gray-300">Address</p>
-              <p itemProp="streetAddress">123 Main Street, Suite 400</p>
+              <p itemProp="streetAddress">31801 Red Bud Ln, Ste B-182</p>
               <p>
-                <span itemProp="addressLocality">Dallas</span>,{" "}
+                <span itemProp="addressLocality">Round Rock</span>,{" "}
                 <span itemProp="addressRegion">TX</span>{" "}
-                <span itemProp="postalCode">75201</span>
+                <span itemProp="postalCode">78664</span>
               </p>
             </div>
             <div>
               <p className="font-medium text-gray-300">Phone</p>
               <a
-                href="tel:+15551234567"
+                href="tel:+12067550724"
                 itemProp="telephone"
                 className="hover:text-white transition-colors duration-200"
               >
-                (555) 123-4567
+                (206) 755-0724
               </a>
             </div>
             <div>

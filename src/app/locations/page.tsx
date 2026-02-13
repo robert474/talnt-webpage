@@ -4,6 +4,7 @@ import Button from "@/components/ui/Button";
 import { SchemaScript } from "@/lib/schema";
 import { generateBreadcrumbSchema } from "@/lib/schema";
 import { siteConfig } from "@/lib/metadata";
+import USMarketMap from "@/components/ui/USMarketMap";
 
 /* -------------------------------------------------------------------------- */
 /*  Metadata                                                                  */
@@ -213,114 +214,8 @@ const regions: Region[] = [
 ];
 
 /* -------------------------------------------------------------------------- */
-/*  US Region Map Placeholder                                                 */
+/*  US Market Map (shared D3.js interactive component)                        */
 /* -------------------------------------------------------------------------- */
-
-function RegionMapPlaceholder() {
-  const mapRegions = [
-    { label: "West Coast", x: "8%", y: "35%", color: "bg-blue/20" },
-    { label: "Mountain West", x: "22%", y: "30%", color: "bg-blue/15" },
-    { label: "Southwest", x: "22%", y: "55%", color: "bg-blue/25" },
-    { label: "Midwest", x: "52%", y: "28%", color: "bg-blue/20" },
-    { label: "South Central", x: "45%", y: "62%", color: "bg-blue/15" },
-    { label: "Mid-Atlantic", x: "75%", y: "32%", color: "bg-blue/30" },
-    { label: "Southeast", x: "68%", y: "55%", color: "bg-blue/20" },
-  ];
-
-  return (
-    <div className="relative mx-auto w-full max-w-4xl overflow-hidden rounded-2xl border border-gray-200 bg-navy-dark">
-      {/* Background grid lines */}
-      <div className="absolute inset-0 opacity-10">
-        <div
-          className="h-full w-full"
-          style={{
-            backgroundImage:
-              "linear-gradient(rgba(96,165,250,0.3) 1px, transparent 1px), linear-gradient(90deg, rgba(96,165,250,0.3) 1px, transparent 1px)",
-            backgroundSize: "40px 40px",
-          }}
-        />
-      </div>
-
-      <div className="relative aspect-[16/9] p-6 sm:p-8">
-        {/* Title badge */}
-        <div className="absolute left-4 top-4 rounded-lg bg-blue/90 px-3 py-1.5 text-xs font-semibold text-white sm:left-6 sm:top-6 sm:text-sm">
-          20+ Markets Nationwide
-        </div>
-
-        {/* Region bubbles */}
-        {mapRegions.map((region) => (
-          <div
-            key={region.label}
-            className="absolute flex items-center justify-center"
-            style={{ left: region.x, top: region.y }}
-          >
-            <div
-              className={`${region.color} flex h-16 w-16 items-center justify-center rounded-full border border-blue/40 backdrop-blur-sm transition-transform hover:scale-110 sm:h-20 sm:w-20 md:h-24 md:w-24`}
-            >
-              <span className="text-center text-[10px] font-medium leading-tight text-white sm:text-xs">
-                {region.label}
-              </span>
-            </div>
-            {/* Pulse dot */}
-            <div className="absolute h-2 w-2 rounded-full bg-blue-light" />
-          </div>
-        ))}
-
-        {/* Decorative connection lines */}
-        <svg
-          className="absolute inset-0 h-full w-full opacity-20"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <line
-            x1="18%"
-            y1="40%"
-            x2="32%"
-            y2="35%"
-            stroke="#60a5fa"
-            strokeWidth="1"
-            strokeDasharray="4 4"
-          />
-          <line
-            x1="32%"
-            y1="35%"
-            x2="55%"
-            y2="33%"
-            stroke="#60a5fa"
-            strokeWidth="1"
-            strokeDasharray="4 4"
-          />
-          <line
-            x1="55%"
-            y1="33%"
-            x2="78%"
-            y2="37%"
-            stroke="#60a5fa"
-            strokeWidth="1"
-            strokeDasharray="4 4"
-          />
-          <line
-            x1="55%"
-            y1="33%"
-            x2="50%"
-            y2="67%"
-            stroke="#60a5fa"
-            strokeWidth="1"
-            strokeDasharray="4 4"
-          />
-          <line
-            x1="78%"
-            y1="37%"
-            x2="72%"
-            y2="60%"
-            stroke="#60a5fa"
-            strokeWidth="1"
-            strokeDasharray="4 4"
-          />
-        </svg>
-      </div>
-    </div>
-  );
-}
 
 /* -------------------------------------------------------------------------- */
 /*  Page Component                                                            */
@@ -411,7 +306,7 @@ export default function LocationsPage() {
           </div>
 
           <div className="mt-12">
-            <RegionMapPlaceholder />
+            <USMarketMap />
           </div>
         </div>
       </section>

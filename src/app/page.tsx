@@ -4,12 +4,16 @@ import { generateMetadata as genMeta } from "@/lib/metadata";
 import {
   generateOrganizationSchema,
   generateFAQSchema,
+  generateItemListSchema,
+  generateClaimSchema,
+  generateSpeakableSchema,
   SchemaScript,
   type FAQItem,
 } from "@/lib/schema";
 import SectionHeading from "@/components/ui/SectionHeading";
 import Button from "@/components/ui/Button";
 import AnimatedHero from "@/components/ui/AnimatedHero";
+import USMarketMap from "@/components/ui/USMarketMap";
 
 /* -------------------------------------------------------------------------- */
 /*  SEO Metadata                                                              */
@@ -179,164 +183,86 @@ const roles = [
   },
 ] as const;
 
-const whyChoose = [
-  {
-    title: "Industry Expertise",
-    icon: (
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        fill="none"
-        viewBox="0 0 24 24"
-        strokeWidth={1.5}
-        stroke="currentColor"
-        className="size-8"
-        aria-hidden="true"
-      >
-        <path
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          d="M4.26 10.147a60.438 60.438 0 0 0-.491 6.347A48.62 48.62 0 0 1 12 20.904a48.62 48.62 0 0 1 8.232-4.41 60.46 60.46 0 0 0-.491-6.347m-15.482 0a50.636 50.636 0 0 0-2.658-.813A59.906 59.906 0 0 1 12 3.493a59.903 59.903 0 0 1 10.399 5.84c-.896.248-1.783.52-2.658.814m-15.482 0A50.717 50.717 0 0 1 12 13.489a50.702 50.702 0 0 1 7.74-3.342M6.75 15a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5Zm0 0v-3.675A55.378 55.378 0 0 1 12 8.443m-7.007 11.55A5.981 5.981 0 0 0 6.75 15.75v-1.5"
-        />
-      </svg>
-    ),
-    description:
-      "Our recruiters know the difference between a Tier III and Tier IV build. They've walked job sites, sat through IST events, and can tell when a candidate is padding their resume. That matters when you're hiring for a $200M campus.",
-  },
-  {
-    title: "Speed to Hire",
-    icon: (
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        fill="none"
-        viewBox="0 0 24 24"
-        strokeWidth={1.5}
-        stroke="currentColor"
-        className="size-8"
-        aria-hidden="true"
-      >
-        <path
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"
-        />
-      </svg>
-    ),
-    description:
-      "You called us Tuesday morning, you're reviewing resumes Wednesday afternoon. We maintain a live pipeline so we're not starting from scratch when your phone rings.",
-  },
-  {
-    title: "Nationwide Coverage",
-    icon: (
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        fill="none"
-        viewBox="0 0 24 24"
-        strokeWidth={1.5}
-        stroke="currentColor"
-        className="size-8"
-        aria-hidden="true"
-      >
-        <path
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"
-        />
-        <path
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z"
-        />
-      </svg>
-    ),
-    description:
-      "Northern Virginia, Phoenix, Dallas, Chicago, the Pacific Northwest — wherever the cranes are going up, we've already got candidates in the area. No scrambling, no relocation delays.",
-  },
-  {
-    title: "Verified Talent",
-    icon: (
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        fill="none"
-        viewBox="0 0 24 24"
-        strokeWidth={1.5}
-        stroke="currentColor"
-        className="size-8"
-        aria-hidden="true"
-      >
-        <path
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          d="M9 12.75 11.25 15 15 9.75M21 12c0 1.268-.63 2.39-1.593 3.068a3.745 3.745 0 0 1-1.043 3.296 3.745 3.745 0 0 1-3.296 1.043A3.745 3.745 0 0 1 12 21c-1.268 0-2.39-.63-3.068-1.593a3.746 3.746 0 0 1-3.296-1.043 3.745 3.745 0 0 1-1.043-3.296A3.745 3.745 0 0 1 3 12c0-1.268.63-2.39 1.593-3.068a3.745 3.745 0 0 1 1.043-3.296 3.746 3.746 0 0 1 3.296-1.043A3.746 3.746 0 0 1 12 3c1.268 0 2.39.63 3.068 1.593a3.746 3.746 0 0 1 3.296 1.043 3.746 3.746 0 0 1 1.043 3.296A3.745 3.745 0 0 1 21 12Z"
-        />
-      </svg>
-    ),
-    description:
-      "We don't forward resumes and hope for the best. Every candidate gets a technical screen, reference calls, cert verification, and a project history review before you ever see their name.",
-  },
-] as const;
-
 const topMarkets = [
   {
-    slug: "ashburn-va",
-    city: "Ashburn",
+    slug: "northern-virginia",
+    city: "Northern Virginia",
     state: "Virginia",
     stat: "Largest data center market globally",
   },
   {
-    slug: "dallas-tx",
-    city: "Dallas",
+    slug: "dallas-fort-worth",
+    city: "Dallas-Fort Worth",
     state: "Texas",
     stat: "Fastest-growing capacity in the South",
   },
   {
-    slug: "phoenix-az",
+    slug: "phoenix",
     city: "Phoenix",
     state: "Arizona",
     stat: "Major hyperscale expansion hub",
   },
   {
-    slug: "chicago-il",
+    slug: "chicago",
     city: "Chicago",
     state: "Illinois",
     stat: "Central U.S. network interconnection hub",
   },
   {
-    slug: "silicon-valley-ca",
+    slug: "silicon-valley",
     city: "Silicon Valley",
     state: "California",
     stat: "Heart of tech-driven data demand",
   },
   {
-    slug: "atlanta-ga",
+    slug: "atlanta",
     city: "Atlanta",
     state: "Georgia",
     stat: "Southeast\u2019s premier connectivity market",
   },
   {
-    slug: "portland-or",
+    slug: "portland-oregon",
     city: "Portland",
     state: "Oregon",
     stat: "Low-cost power and fiber-rich region",
   },
   {
-    slug: "columbus-oh",
+    slug: "columbus-ohio",
     city: "Columbus",
     state: "Ohio",
     stat: "Emerging Midwest data center corridor",
   },
   {
-    slug: "reno-nv",
+    slug: "reno",
     city: "Reno",
     state: "Nevada",
     stat: "Growing hyperscale destination",
   },
   {
-    slug: "salt-lake-city-ut",
+    slug: "salt-lake-city",
     city: "Salt Lake City",
     state: "Utah",
     stat: "Mountain West expansion market",
   },
 ] as const;
+
+const monthlyData = [
+  { month: "Jan '25", days: 67 },
+  { month: "Feb", days: 58 },
+  { month: "Mar", days: 62 },
+  { month: "Apr", days: 53 },
+  { month: "May", days: 55 },
+  { month: "Jun", days: 57 },
+  { month: "Jul", days: 38 },
+  { month: "Aug", days: 41 },
+  { month: "Sep", days: 45 },
+  { month: "Oct", days: 51 },
+  { month: "Nov", days: 43 },
+  { month: "Dec", days: 49 },
+  { month: "Jan '26", days: 51 },
+];
+const INDUSTRY_AVG = 126;
+const CHART_MAX = 140;
 
 const faqs: FAQItem[] = [
   {
@@ -373,6 +299,33 @@ const faqs: FAQItem[] = [
   },
 ];
 
+const rolesItemList = {
+  name: "Data Center Construction Roles We Place",
+  description: "Specialized data center and mission critical facility roles staffed by Data Center TALNT.",
+  items: roles.map((r) => ({
+    name: r.title,
+    url: `/roles/${r.slug}`,
+    description: r.description,
+  })),
+};
+
+const marketsItemList = {
+  name: "Top Data Center Markets in the United States",
+  description: "The top 10 U.S. markets for data center construction activity and talent demand.",
+  items: topMarkets.map((m) => ({
+    name: `${m.city}, ${m.state}`,
+    url: `/locations/${m.slug}`,
+    description: m.stat,
+  })),
+};
+
+const homeClaims = [
+  { claimText: "Data Center TALNT has placed 500+ professionals in data center and mission critical roles nationwide.", source: "Data Center TALNT" },
+  { claimText: "DC TALNT delivers first candidate shortlists within 48 hours of receiving a job order.", source: "Data Center TALNT" },
+  { claimText: "DC TALNT placed professionals achieve a 98% first-year retention rate.", source: "Data Center TALNT" },
+  { claimText: "The data center construction industry averages 126 days to fill a role; DC TALNT does it in 40.", source: "The Birm Group", sourceUrl: "https://thebirmgroup.com/the-data-center-construction-boom-hiring-surge-in-2026/" },
+];
+
 /* -------------------------------------------------------------------------- */
 /*  Page Component                                                            */
 /* -------------------------------------------------------------------------- */
@@ -382,7 +335,14 @@ export default function HomePage() {
     <>
       {/* Structured Data */}
       <SchemaScript
-        schema={[generateOrganizationSchema(), generateFAQSchema(faqs)]}
+        schema={[
+          generateOrganizationSchema(),
+          generateFAQSchema(faqs),
+          generateItemListSchema(rolesItemList),
+          generateItemListSchema(marketsItemList),
+          ...generateClaimSchema(homeClaims),
+          generateSpeakableSchema("/", ["[aria-labelledby='why-heading']", "[aria-labelledby='roles-heading']", "[aria-labelledby='faq-heading']"]),
+        ]}
       />
 
       {/* ------------------------------------------------------------------ */}
@@ -431,51 +391,162 @@ export default function HomePage() {
       </AnimatedHero>
 
       {/* ------------------------------------------------------------------ */}
-      {/*  Industries We Serve                                                */}
+      {/*  Hyperscaler Logo Bar                                               */}
       {/* ------------------------------------------------------------------ */}
-      <section
-        aria-labelledby="industries-heading"
-        className="bg-sky-50 py-20 md:py-28"
-      >
+      <section className="bg-white py-12 sm:py-16 border-b border-gray-100">
         <div className="container-page">
-          <SectionHeading
-            title="Industries We Serve"
-            subtitle="Every sector we staff has one thing in common: there's no room for error. Here's where we focus our recruiting muscle."
-          />
-
-          <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
-            {industries.map((industry) => (
-              <article
-                key={industry.slug}
-                className="group relative flex flex-col rounded-xl border border-gray-200 bg-white p-8 shadow-sm transition-shadow hover:shadow-md"
-              >
-                <div className="mb-4 flex size-14 items-center justify-center rounded-xl bg-blue/10 text-blue">
-                  {industry.icon}
-                </div>
-                <h3 className="text-xl font-semibold text-navy">
-                  {industry.title}
-                </h3>
-                <p className="mt-3 flex-1 text-sm leading-relaxed text-gray-600">
-                  {industry.description}
-                </p>
-                <div className="mt-6">
-                  <Link
-                    href={`/industries/${industry.slug}`}
-                    className="inline-flex items-center gap-1 text-sm font-semibold text-blue transition-colors group-hover:text-blue-dark"
-                  >
-                    Learn More <span aria-hidden="true">&rarr;</span>
-                    {/* Stretch link to cover entire card */}
-                    <span className="absolute inset-0" />
-                  </Link>
-                </div>
-              </article>
+          <p className="text-center text-sm font-semibold uppercase tracking-widest text-gray-400">
+            Our Talent Builds for the World&rsquo;s Leading Hyperscalers
+          </p>
+          <div className="mt-10 flex flex-wrap items-center justify-center gap-x-16 gap-y-10 sm:gap-x-20 lg:gap-x-28">
+            {[
+              { name: "Amazon Web Services", src: "/images/logos/aws.svg", width: 160, height: 80 },
+              { name: "OpenAI", src: "/images/logos/OpenAI_Wordmark_Gif.webp", width: 260, height: 80 },
+              { name: "Oracle", src: "/images/logos/Oracle_ideA555_no_0.svg", width: 240, height: 80 },
+            ].map((logo) => (
+              <Link key={logo.name} href="/industries/hyperscalers" className="transition-opacity hover:opacity-70">
+                <Image
+                  src={logo.src}
+                  alt={logo.name}
+                  width={logo.width}
+                  height={logo.height}
+                  className="h-14 w-auto sm:h-16 lg:h-20 object-contain"
+                />
+              </Link>
             ))}
+          </div>
+          <div className="mt-8 text-center">
+            <Link
+              href="/industries/hyperscalers"
+              className="inline-flex items-center gap-1 text-sm font-semibold text-blue hover:text-blue-dark transition-colors"
+            >
+              See How We Staff Hyperscale Projects <span aria-hidden="true">&rarr;</span>
+            </Link>
           </div>
         </div>
       </section>
 
       {/* ------------------------------------------------------------------ */}
-      {/*  Image Break — Construction Crew                                    */}
+      {/*  Three Differentiators — Why DC TALNT                               */}
+      {/* ------------------------------------------------------------------ */}
+      <section
+        aria-labelledby="why-heading"
+        className="bg-gray-50 py-20 md:py-28"
+      >
+        <div className="container-page">
+          <div className="text-center mb-10 md:mb-14">
+            <h2
+              id="why-heading"
+              className="text-3xl font-bold tracking-tight text-navy sm:text-4xl lg:text-5xl text-balance"
+            >
+              Why Data Center TALNT
+            </h2>
+            <p className="mx-auto mt-4 max-w-2xl text-lg leading-relaxed text-gray-600 sm:text-xl">
+              Three things separate us from every other staffing agency in this
+              space. And they&rsquo;re not things you can spin up overnight.
+            </p>
+          </div>
+
+          <div className="grid gap-8 lg:grid-cols-3">
+            {/* Card 1 — Veteran Recruiters */}
+            <Link
+              href="/veteran-recruiters"
+              className="group relative flex flex-col overflow-hidden rounded-2xl border border-gray-200 bg-white shadow-sm transition-all duration-300 hover:shadow-lg"
+            >
+              <div className="relative h-48 overflow-hidden">
+                <Image
+                  src="https://images.unsplash.com/photo-1531973576160-7125cd663d86?auto=format&fit=crop&w=800&q=80"
+                  alt="Experienced professionals on a construction site"
+                  fill
+                  className="object-cover transition-transform duration-300 group-hover:scale-105"
+                  sizes="(min-width: 1024px) 33vw, 100vw"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-white via-white/40 to-transparent" />
+              </div>
+              <div className="flex flex-1 flex-col p-6">
+                <p className="text-sm font-semibold uppercase tracking-widest text-blue">
+                  Our Recruiters
+                </p>
+                <h3 className="mt-2 text-2xl font-bold text-navy">15+ Year Veterans</h3>
+                <p className="mt-3 flex-1 text-sm leading-relaxed text-gray-600">
+                  Our recruiters average 15+ years in data center and
+                  construction staffing. They&rsquo;ve walked job sites, built
+                  networks across every major market, and know the difference
+                  between a resume padder and a real operator.
+                </p>
+                <span className="mt-4 inline-flex items-center gap-1 text-sm font-semibold text-blue group-hover:gap-2 transition-all">
+                  Learn More <span aria-hidden="true">&rarr;</span>
+                </span>
+              </div>
+            </Link>
+
+            {/* Card 2 — Talent Network */}
+            <Link
+              href="/talent-network"
+              className="group relative flex flex-col overflow-hidden rounded-2xl border border-gray-200 bg-white shadow-sm transition-all duration-300 hover:shadow-lg"
+            >
+              <div className="relative h-48 overflow-hidden">
+                <Image
+                  src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=800&q=80"
+                  alt="Server room representing data and intelligence"
+                  fill
+                  className="object-cover transition-transform duration-300 group-hover:scale-105"
+                  sizes="(min-width: 1024px) 33vw, 100vw"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-white via-white/40 to-transparent" />
+              </div>
+              <div className="flex flex-1 flex-col p-6">
+                <p className="text-sm font-semibold uppercase tracking-widest text-blue">
+                  Our Database
+                </p>
+                <h3 className="mt-2 text-2xl font-bold text-navy">10+ Years of Intel</h3>
+                <p className="mt-3 flex-1 text-sm leading-relaxed text-gray-600">
+                  Every interview, every placement, every reference — logged and
+                  searchable across a decade. We know about candidates before
+                  they apply, and we find people that other agencies can&rsquo;t.
+                </p>
+                <span className="mt-4 inline-flex items-center gap-1 text-sm font-semibold text-blue group-hover:gap-2 transition-all">
+                  Learn More <span aria-hidden="true">&rarr;</span>
+                </span>
+              </div>
+            </Link>
+
+            {/* Card 3 — Technology */}
+            <Link
+              href="/technology"
+              className="group relative flex flex-col overflow-hidden rounded-2xl border border-gray-200 bg-white shadow-sm transition-all duration-300 hover:shadow-lg"
+            >
+              <div className="relative h-48 overflow-hidden">
+                <Image
+                  src="https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?auto=format&fit=crop&w=800&q=80"
+                  alt="Advanced industrial systems and technology"
+                  fill
+                  className="object-cover transition-transform duration-300 group-hover:scale-105"
+                  sizes="(min-width: 1024px) 33vw, 100vw"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-white via-white/40 to-transparent" />
+              </div>
+              <div className="flex flex-1 flex-col p-6">
+                <p className="text-sm font-semibold uppercase tracking-widest text-blue">
+                  Our Systems
+                </p>
+                <h3 className="mt-2 text-2xl font-bold text-navy">Built for Speed</h3>
+                <p className="mt-3 flex-1 text-sm leading-relaxed text-gray-600">
+                  Job posts in minutes. Candidate interviews in hours. Offers in
+                  days. Our tech stack eliminates the bottlenecks that make
+                  traditional staffing agencies slow.
+                </p>
+                <span className="mt-4 inline-flex items-center gap-1 text-sm font-semibold text-blue group-hover:gap-2 transition-all">
+                  Learn More <span aria-hidden="true">&rarr;</span>
+                </span>
+              </div>
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* ------------------------------------------------------------------ */}
+      {/*  Image Break — "The Right People"                                   */}
       {/* ------------------------------------------------------------------ */}
       <section className="relative h-64 overflow-hidden sm:h-80 lg:h-96">
         <Image
@@ -497,11 +568,245 @@ export default function HomePage() {
       </section>
 
       {/* ------------------------------------------------------------------ */}
+      {/*  Speed and Execution — Explanation + Chart                          */}
+      {/* ------------------------------------------------------------------ */}
+      <section className="bg-white py-16 sm:py-24">
+        <div className="container-page">
+          <div className="grid gap-10 lg:grid-cols-[1fr_1.4fr] lg:items-center">
+            {/* Left — Explanation */}
+            <div>
+              <p className="text-sm font-semibold uppercase tracking-widest text-blue">
+                Speed and Execution
+              </p>
+              <h2 className="mt-3 text-3xl font-bold tracking-tight text-navy sm:text-4xl lg:text-5xl">
+                <a
+                  href="https://thebirmgroup.com/the-data-center-construction-boom-hiring-surge-in-2026/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-gray-400 line-through decoration-gray-400 hover:text-gray-500 transition-colors"
+                >
+                  126 days
+                </a>
+                {" "}
+                <span className="text-blue">40 days.</span>
+              </h2>
+              <p className="mt-4 max-w-lg text-lg leading-relaxed text-gray-600">
+                The industry averages{" "}
+                <a
+                  href="https://thebirmgroup.com/the-data-center-construction-boom-hiring-surge-in-2026/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="underline decoration-gray-400 hover:decoration-blue transition-colors"
+                >
+                  126 days
+                </a>{" "}
+                to fill a data center construction
+                role. We do it in 40. That&rsquo;s 86 fewer days of schedule risk,
+                idle crews, and blown budgets on every single hire.
+              </p>
+
+              {/* Quick stats */}
+              <div className="mt-8 grid grid-cols-2 gap-4">
+                {[
+                  { value: "40", unit: "days", label: "Avg. Time to Fill" },
+                  { value: "68%", unit: "", label: "Faster Than Industry" },
+                  { value: "48hr", unit: "", label: "First Shortlist" },
+                  { value: "96%", unit: "", label: "Retention Rate" },
+                ].map((stat) => (
+                  <div
+                    key={stat.label}
+                    className="rounded-xl border border-gray-200 bg-gray-50 p-4 text-center"
+                  >
+                    <p className="text-2xl font-bold text-navy sm:text-3xl">
+                      {stat.value}
+                      {stat.unit && (
+                        <span className="ml-1 text-sm font-medium text-gray-400">
+                          {stat.unit}
+                        </span>
+                      )}
+                    </p>
+                    <p className="mt-1 text-xs text-gray-500">{stat.label}</p>
+                  </div>
+                ))}
+              </div>
+
+              <div className="mt-8">
+                <Button href="/speed" variant="primary" size="lg">
+                  See the Full Breakdown
+                </Button>
+              </div>
+            </div>
+
+            {/* Right — Bar Chart */}
+            <div className="rounded-2xl border border-gray-200 bg-gray-50 p-4 sm:p-6">
+              <h3 className="text-center text-sm font-semibold uppercase tracking-widest text-gray-500">
+                Days to Fill — Month by Month
+              </h3>
+
+              <div className="relative mt-6">
+                {/* Industry average line */}
+                <div
+                  className="absolute left-0 right-0 border-t-2 border-dashed border-red-400 z-10"
+                  style={{ top: `${((CHART_MAX - INDUSTRY_AVG) / CHART_MAX) * 100}%` }}
+                >
+                  <span className="absolute -top-5 right-0 rounded bg-red-500 px-2 py-0.5 text-[10px] font-bold text-white">
+                    Industry Avg: 126 days
+                  </span>
+                </div>
+
+                {/* Bars */}
+                <div className="relative flex items-end gap-1 sm:gap-1.5" style={{ height: "280px" }}>
+                  {monthlyData.map((item) => {
+                    const heightPct = (item.days / CHART_MAX) * 100;
+                    return (
+                      <div
+                        key={item.month}
+                        className="group relative flex flex-1 flex-col items-center"
+                        style={{ height: "100%" }}
+                      >
+                        {/* Hover tooltip */}
+                        <div className="pointer-events-none absolute bottom-full mb-2 rounded bg-navy px-2 py-1 text-xs font-bold text-white opacity-0 shadow-lg transition-opacity group-hover:opacity-100 whitespace-nowrap z-20">
+                          {item.days} days
+                        </div>
+
+                        {/* Bar */}
+                        <div className="flex h-full w-full items-end">
+                          <div
+                            className="w-full rounded-t bg-blue transition-all duration-300 hover:bg-blue-dark"
+                            style={{ height: `${heightPct}%` }}
+                          />
+                        </div>
+
+                        {/* Day count */}
+                        <span
+                          className="absolute text-[8px] font-bold text-white sm:text-[10px]"
+                          style={{ bottom: `${heightPct - 6}%` }}
+                        >
+                          {item.days}
+                        </span>
+                      </div>
+                    );
+                  })}
+                </div>
+
+                {/* X-axis labels */}
+                <div className="mt-2 flex gap-1 sm:gap-1.5">
+                  {monthlyData.map((item) => (
+                    <div key={item.month} className="flex-1 text-center">
+                      <span className="text-[7px] leading-tight text-gray-500 sm:text-[9px]">
+                        {item.month}
+                      </span>
+                    </div>
+                  ))}
+                </div>
+              </div>
+
+              {/* Legend */}
+              <div className="mt-4 flex items-center justify-center gap-5 text-xs">
+                <div className="flex items-center gap-1.5">
+                  <div className="h-2.5 w-5 rounded bg-blue" />
+                  <span className="text-gray-500">DC TALNT</span>
+                </div>
+                <div className="flex items-center gap-1.5">
+                  <div className="h-0.5 w-5 border-t-2 border-dashed border-red-400" />
+                  <span className="text-gray-500">Industry Avg (126d)</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* ------------------------------------------------------------------ */}
+      {/*  Industries We Serve                                                */}
+      {/* ------------------------------------------------------------------ */}
+      <section
+        aria-labelledby="industries-heading"
+        className="bg-navy py-20 md:py-28"
+      >
+        <div className="container-page">
+          <div className="text-center mb-10 md:mb-14">
+            <h2
+              id="industries-heading"
+              className="text-3xl font-bold tracking-tight text-white sm:text-4xl lg:text-5xl"
+            >
+              Industries We Serve
+            </h2>
+            <p className="mx-auto mt-4 max-w-2xl text-lg leading-relaxed text-gray-300 sm:text-xl">
+              Every sector we staff has one thing in common: there&rsquo;s no room
+              for error. Here&rsquo;s where we focus our recruiting muscle.
+            </p>
+          </div>
+
+          <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
+            {industries.map((industry) => (
+              <article
+                key={industry.slug}
+                className="group relative flex flex-col rounded-xl border border-white/10 bg-white/5 p-8 transition-all hover:bg-white/10"
+              >
+                <div className="mb-4 flex size-14 items-center justify-center rounded-xl bg-blue/20 text-blue-light">
+                  {industry.icon}
+                </div>
+                <h3 className="text-xl font-semibold text-white">
+                  {industry.title}
+                </h3>
+                <p className="mt-3 flex-1 text-sm leading-relaxed text-gray-300">
+                  {industry.description}
+                </p>
+                <div className="mt-6">
+                  <Link
+                    href={`/industries/${industry.slug}`}
+                    className="inline-flex items-center gap-1 text-sm font-semibold text-blue-light transition-colors group-hover:text-white"
+                  >
+                    Learn More <span aria-hidden="true">&rarr;</span>
+                    <span className="absolute inset-0" />
+                  </Link>
+                </div>
+              </article>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* ------------------------------------------------------------------ */}
+      {/*  Top Markets — Interactive Map                                      */}
+      {/* ------------------------------------------------------------------ */}
+      <section
+        aria-labelledby="markets-heading"
+        className="bg-white py-20 md:py-28"
+      >
+        <div className="container-page">
+          <SectionHeading
+            title="Top Data Center Markets"
+            subtitle="We maintain active talent pipelines in the markets experiencing the highest data center construction demand. Hover over a pin to learn more."
+          />
+
+          <USMarketMap />
+
+          {/* Quick-link grid below the map */}
+          <div className="mt-10 grid gap-3 sm:grid-cols-2 md:grid-cols-5">
+            {topMarkets.map((market) => (
+              <Link
+                key={market.slug}
+                href={`/locations/${market.slug}`}
+                className="group rounded-lg border border-gray-200 bg-white px-4 py-3 text-center shadow-sm transition-shadow hover:shadow-md"
+              >
+                <h3 className="text-sm font-semibold text-navy group-hover:text-blue transition-colors duration-200">
+                  {market.city}
+                </h3>
+                <p className="text-xs text-gray-500">{market.state}</p>
+              </Link>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* ------------------------------------------------------------------ */}
       {/*  Roles We Place                                                     */}
       {/* ------------------------------------------------------------------ */}
       <section
         aria-labelledby="roles-heading"
-        className="bg-white py-20 md:py-28"
+        className="bg-sky-50 py-20 md:py-28"
       >
         <div className="container-page">
           <SectionHeading
@@ -530,77 +835,6 @@ export default function HomePage() {
                   >
                     &rarr;
                   </span>
-                </p>
-              </Link>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* ------------------------------------------------------------------ */}
-      {/*  Why Choose DC TALNT                                                */}
-      {/* ------------------------------------------------------------------ */}
-      <section
-        aria-labelledby="why-heading"
-        className="bg-navy text-white py-20 md:py-28"
-      >
-        <div className="container-page">
-          <div className="text-center mb-10 md:mb-14">
-            <h2
-              id="why-heading"
-              className="text-3xl font-bold tracking-tight sm:text-4xl lg:text-5xl text-balance"
-            >
-              Why Choose Data Center TALNT
-            </h2>
-            <p className="mx-auto mt-4 max-w-2xl text-lg leading-relaxed text-gray-300 sm:text-xl">
-              We are not a generalist agency. Our entire operation is built
-              around the data center, mission critical, construction, and
-              utilities sectors.
-            </p>
-          </div>
-
-          <div className="grid gap-10 sm:grid-cols-2 lg:grid-cols-4">
-            {whyChoose.map((feature) => (
-              <div key={feature.title} className="text-center">
-                <div className="mx-auto mb-4 flex size-14 items-center justify-center rounded-xl bg-white/10 text-blue-light">
-                  {feature.icon}
-                </div>
-                <h3 className="text-xl font-semibold">{feature.title}</h3>
-                <p className="mt-3 text-sm leading-relaxed text-gray-300">
-                  {feature.description}
-                </p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* ------------------------------------------------------------------ */}
-      {/*  Top Markets                                                        */}
-      {/* ------------------------------------------------------------------ */}
-      <section
-        aria-labelledby="markets-heading"
-        className="bg-sky-50 py-20 md:py-28"
-      >
-        <div className="container-page">
-          <SectionHeading
-            title="Top Data Center Markets"
-            subtitle="We maintain active talent pipelines in the markets experiencing the highest data center construction demand."
-          />
-
-          <div className="grid gap-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5">
-            {topMarkets.map((market) => (
-              <Link
-                key={market.slug}
-                href={`/locations/${market.slug}`}
-                className="group rounded-lg border border-gray-200 bg-white px-5 py-6 text-center shadow-sm transition-shadow hover:shadow-md"
-              >
-                <h3 className="text-lg font-semibold text-navy group-hover:text-blue transition-colors duration-200">
-                  {market.city}
-                </h3>
-                <p className="text-sm text-gray-500">{market.state}</p>
-                <p className="mt-2 text-xs leading-snug text-gray-400">
-                  {market.stat}
                 </p>
               </Link>
             ))}

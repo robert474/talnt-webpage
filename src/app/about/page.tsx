@@ -93,19 +93,25 @@ const expertise = [
 
 const leadership = [
   {
-    name: "Robert Carter",
+    name: "Nate Ollestad",
     role: "Founder & CEO",
-    bio: "Spent 15 years on the employer side of data center construction before deciding the industry needed a staffing partner that actually understood the work. Launched DC TALNT to fill that gap.",
+    image: "/images/logos/nate-headshot-TALNT-team.jpg",
+    linkedin: "https://www.linkedin.com/in/nathanollestad/",
+    bio: "Nate founded Data Center TALNT after years of building recruiting teams and talent acquisition operations across the tech industry, including leadership roles at Duo Security. Known for his ability to build deep relationships and identify exceptional talent, he launched DC TALNT to bring that same precision to the data center and mission critical construction space — an industry where the wrong hire costs six figures in schedule delays.",
   },
   {
-    name: "Michelle Torres",
-    role: "VP of Recruiting",
-    bio: "Former MEP project engineer turned recruiter. Michelle's technical background means she can vet a controls engineer's skillset in 15 minutes — saving clients weeks of guesswork.",
+    name: "Ramiro Barrientos",
+    role: "Senior Account Executive & Talent Acquisition Partner",
+    image: "/images/logos/ramiro-headshot-TALNT-team.png",
+    linkedin: "https://www.linkedin.com/in/ramiro-barrientos/",
+    bio: "Ramiro brings deep technical recruiting experience from Apple, Rackspace Technology, and Aerotek, where he managed full-cycle recruiting across enterprise sales, software engineering, and skilled trades. At DC TALNT, he leads business development and client partnerships, combining his technical screening expertise with hands-on knowledge of construction and infrastructure staffing to deliver candidates who can contribute from day one.",
   },
   {
-    name: "James Whitfield",
-    role: "Director of Business Development",
-    bio: "Built his career managing subcontractor relationships on data center programs from coast to coast. Now he uses that network to connect GCs and owners with the talent they can't find on their own.",
+    name: "Robert Putt",
+    role: "Advisor",
+    image: "/images/logos/robert-putt.png",
+    linkedin: "https://www.linkedin.com/in/robert-putt-leadership/",
+    bio: "Robert is a proven business leader with experience at Amazon and in AI technology, known for his calm, level-headed leadership style and ability to drive results in high-pressure environments. As an advisor to DC TALNT, he provides strategic guidance on scaling operations, technology-driven recruiting, and navigating the intersection of data center infrastructure and the rapidly evolving AI economy.",
   },
 ];
 
@@ -312,31 +318,40 @@ export default function AboutPage() {
           <div className="grid gap-8 sm:grid-cols-3">
             {leadership.map((person) => (
               <div
-                key={person.role}
-                className="rounded-xl border border-gray-200 bg-white p-6 text-center shadow-sm"
+                key={person.name}
+                className="rounded-xl border border-gray-200 bg-white overflow-hidden shadow-sm"
               >
-                <div className="mx-auto mb-4 flex h-20 w-20 items-center justify-center rounded-full bg-navy/10">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 24 24"
-                    fill="currentColor"
-                    className="h-10 w-10 text-navy/50"
-                    aria-hidden="true"
-                  >
-                    <path
-                      fillRule="evenodd"
-                      d="M7.5 6a4.5 4.5 0 1 1 9 0 4.5 4.5 0 0 1-9 0ZM3.751 20.105a8.25 8.25 0 0 1 16.498 0 .75.75 0 0 1-.437.695A18.683 18.683 0 0 1 12 22.5c-2.786 0-5.433-.608-7.812-1.7a.75.75 0 0 1-.437-.695Z"
-                      clipRule="evenodd"
-                    />
-                  </svg>
+                {/* Headshot */}
+                <div className="relative aspect-[4/5] bg-gray-100">
+                  <Image
+                    src={person.image}
+                    alt={`${person.name} — ${person.role} at Data Center TALNT`}
+                    fill
+                    className="object-cover object-top"
+                    sizes="(min-width: 640px) 33vw, 100vw"
+                  />
                 </div>
-                <h3 className="text-lg font-semibold text-navy">
-                  {person.name}
-                </h3>
-                <p className="text-sm font-medium text-blue">{person.role}</p>
-                <p className="mt-3 text-sm leading-relaxed text-gray-600">
-                  {person.bio}
-                </p>
+                <div className="p-6 text-center">
+                  <h3 className="text-lg font-semibold text-navy">
+                    {person.name}
+                  </h3>
+                  <p className="text-sm font-medium text-blue">{person.role}</p>
+                  <p className="mt-3 text-sm leading-relaxed text-gray-600">
+                    {person.bio}
+                  </p>
+                  {/* LinkedIn */}
+                  <a
+                    href={person.linkedin}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="mt-4 inline-flex items-center gap-1.5 text-sm font-medium text-blue hover:text-blue-dark transition-colors"
+                  >
+                    <svg className="h-4 w-4" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                      <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                    </svg>
+                    Connect on LinkedIn
+                  </a>
+                </div>
               </div>
             ))}
           </div>

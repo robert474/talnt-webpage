@@ -2,6 +2,7 @@
 
 import { useState, useCallback, useEffect, useRef } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import Button from "@/components/ui/Button";
 
 // ----------------------------------------------------------------
@@ -20,6 +21,7 @@ interface NavGroup {
 }
 
 const industries: NavItem[] = [
+  { label: "Hyperscalers", href: "/industries/hyperscalers" },
   { label: "Data Centers", href: "/industries/data-centers" },
   { label: "Mission Critical", href: "/industries/mission-critical" },
   { label: "Construction", href: "/industries/construction" },
@@ -35,12 +37,23 @@ const roles: NavItem[] = [
   { label: "Estimators", href: "/roles/estimators" },
 ];
 
+const company: NavItem[] = [
+  { label: "About Us", href: "/about" },
+  { label: "Blog", href: "/blog" },
+  { label: "Resources", href: "/resources" },
+  { label: "Contact", href: "/contact" },
+  { label: "Speed & Execution", href: "/speed" },
+  { label: "Veteran Recruiters", href: "/veteran-recruiters" },
+  { label: "Talent Network", href: "/talent-network" },
+  { label: "Technology", href: "/technology" },
+];
+
 const navigation: NavGroup[] = [
   { label: "Industries", href: "/industries", children: industries },
   { label: "Roles", href: "/roles", children: roles },
   { label: "Locations", href: "/locations" },
   { label: "Jobs", href: "/jobs" },
-  { label: "About", href: "/about" },
+  { label: "Company", href: "/about", children: company },
 ];
 
 // ----------------------------------------------------------------
@@ -255,13 +268,14 @@ export default function Header() {
           className="flex items-center gap-2 text-xl font-bold tracking-tight text-navy"
           aria-label="Data Center TALNT - Home"
         >
-          <span className="inline-flex h-8 w-8 items-center justify-center rounded-md bg-blue text-sm font-black text-white">
-            DC
-          </span>
-          <span>
-            <span className="text-navy">DC</span>{" "}
-            <span className="text-blue">TALNT</span>
-          </span>
+          <Image
+            src="/images/logos/datacenter-logo-black-type-transparent.png"
+            alt="Data Center TALNT"
+            width={200}
+            height={48}
+            className="h-10 w-auto"
+            priority
+          />
         </Link>
 
         {/* Desktop navigation */}

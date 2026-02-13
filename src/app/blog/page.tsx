@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { generateMetadata as genMeta } from "@/lib/metadata";
 import { SchemaScript, generateBreadcrumbSchema } from "@/lib/schema";
-import SectionHeading from "@/components/ui/SectionHeading";
+import { posts, categories } from "@/lib/blog-data";
 
 export const metadata = genMeta({
   title: "Data Center Staffing Insights & Industry News | Blog | Data Center TALNT",
@@ -19,118 +19,6 @@ export const metadata = genMeta({
     "data center career advice",
   ],
 });
-
-/* ------------------------------------------------------------------ */
-/*  Data                                                               */
-/* ------------------------------------------------------------------ */
-
-const categories = [
-  "Industry Trends",
-  "Salary Guides",
-  "Career Advice",
-  "Market Reports",
-];
-
-interface BlogPost {
-  slug: string;
-  title: string;
-  excerpt: string;
-  date: string;
-  category: string;
-  readTime: string;
-  image: string;
-}
-
-const posts: BlogPost[] = [
-  {
-    slug: "2026-data-center-construction-salary-guide",
-    title: "2026 Data Center Construction Salary Guide",
-    excerpt:
-      "We pulled comp data from over 1,200 placements to build the most comprehensive salary guide in the industry. See how PMs, supers, CxAs, and MEP engineers are being paid across every major market — and where the biggest jumps happened this year.",
-    date: "January 15, 2026",
-    category: "Salary Guides",
-    readTime: "8 min read",
-    image:
-      "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=800&q=80",
-  },
-  {
-    slug: "top-10-data-center-markets-construction-jobs",
-    title: "Top 10 Data Center Markets for Construction Jobs in 2026",
-    excerpt:
-      "Ashburn is still king, but Phoenix is closing the gap fast and Columbus came out of nowhere. We ranked the top markets by active projects, salary premiums, and long-term growth potential for construction professionals.",
-    date: "January 8, 2026",
-    category: "Market Reports",
-    readTime: "6 min read",
-    image:
-      "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=800&q=80",
-  },
-  {
-    slug: "mep-engineering-trends-mission-critical-facilities",
-    title: "MEP Engineering Trends in Mission Critical Facilities",
-    excerpt:
-      "Liquid cooling, high-density power distribution, and AI-driven BMS — the MEP landscape is shifting fast. Here's what engineers need to know to stay relevant and what employers should be looking for in their next hire.",
-    date: "December 20, 2025",
-    category: "Industry Trends",
-    readTime: "7 min read",
-    image:
-      "https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?auto=format&fit=crop&w=800&q=80",
-  },
-  {
-    slug: "how-to-hire-data-center-construction-manager",
-    title: "How to Hire a Data Center Construction Manager",
-    excerpt:
-      "Finding a CM with genuine data center experience is one of the hardest hires in the industry. We break down what to look for, where to find candidates, comp benchmarks, and interview questions that separate the real deal from the resume puffers.",
-    date: "December 12, 2025",
-    category: "Career Advice",
-    readTime: "10 min read",
-    image:
-      "https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=800&q=80",
-  },
-  {
-    slug: "future-of-hyperscale-data-center-construction",
-    title: "The Future of Hyperscale Data Center Construction",
-    excerpt:
-      "AI workloads are driving unprecedented demand for hyperscale capacity. We look at the pipeline of announced projects, the labor shortages threatening timelines, and how modular construction is starting to change the game.",
-    date: "December 5, 2025",
-    category: "Industry Trends",
-    readTime: "9 min read",
-    image:
-      "https://images.unsplash.com/photo-1541888946425-d81bb19240f5?auto=format&fit=crop&w=800&q=80",
-  },
-  {
-    slug: "commissioning-agent-vs-commissioning-engineer",
-    title: "Commissioning Agent vs. Commissioning Engineer: What's the Difference?",
-    excerpt:
-      "The titles get used interchangeably, but they're not the same role. We break down the responsibilities, qualifications, salary expectations, and career paths for each — and explain why it matters for your hiring process.",
-    date: "November 28, 2025",
-    category: "Career Advice",
-    readTime: "5 min read",
-    image:
-      "https://images.unsplash.com/photo-1581094794329-c8112a89af12?auto=format&fit=crop&w=800&q=80",
-  },
-  {
-    slug: "data-center-construction-workforce-challenges-2026",
-    title: "Workforce Challenges Facing Data Center Construction in 2026",
-    excerpt:
-      "With over 5GW of new capacity under construction, the talent shortage isn't theoretical anymore. We analyze the bottleneck roles, geographic hot spots, and strategies employers are using to attract and retain skilled workers.",
-    date: "November 20, 2025",
-    category: "Market Reports",
-    readTime: "7 min read",
-    image:
-      "https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?auto=format&fit=crop&w=800&q=80",
-  },
-  {
-    slug: "negotiating-your-data-center-construction-salary",
-    title: "How to Negotiate Your Data Center Construction Salary",
-    excerpt:
-      "You're in demand. Use it. We walk through how to benchmark your market value, time your ask, and negotiate total comp — salary, per diem, bonus, relocation — not just base pay.",
-    date: "November 12, 2025",
-    category: "Salary Guides",
-    readTime: "6 min read",
-    image:
-      "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=800&q=80",
-  },
-];
 
 /* ------------------------------------------------------------------ */
 /*  Page Component                                                     */

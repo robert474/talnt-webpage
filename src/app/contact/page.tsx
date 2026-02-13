@@ -53,14 +53,14 @@ export default function ContactPage() {
     logo: "https://www.datacentertalnt.com/images/logo.png",
     description:
       "Specialized staffing and recruitment firm for data center, mission critical, construction, and utilities industries.",
-    telephone: "+1-555-DC-TALNT",
+    telephone: "+1-206-755-0724",
     email: "info@datacentertalnt.com",
     address: {
       "@type": "PostalAddress",
-      streetAddress: "123 Infrastructure Drive, Suite 400",
-      addressLocality: "Ashburn",
-      addressRegion: "VA",
-      postalCode: "20147",
+      streetAddress: "31801 Red Bud Ln, Ste B-182",
+      addressLocality: "Round Rock",
+      addressRegion: "TX",
+      postalCode: "78664",
       addressCountry: "US",
     },
     openingHoursSpecification: [
@@ -285,9 +285,9 @@ export default function ContactPage() {
                     Office Address
                   </h3>
                   <address className="mt-2 not-italic leading-relaxed text-gray-700">
-                    123 Infrastructure Drive, Suite 400
+                    31801 Red Bud Ln, Ste B-182
                     <br />
-                    Ashburn, VA 20147
+                    Round Rock, TX 78664
                   </address>
                 </div>
 
@@ -298,10 +298,10 @@ export default function ContactPage() {
                   </h3>
                   <p className="mt-2">
                     <a
-                      href="tel:+15553282568"
+                      href="tel:+12067550724"
                       className="text-blue font-medium hover:underline"
                     >
-                      (555) DC-TALNT
+                      (206) 755-0724
                     </a>
                   </p>
                 </div>
