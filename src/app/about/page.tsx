@@ -109,7 +109,7 @@ const leadership = [
   {
     name: "Robert Putt",
     role: "Advisor",
-    image: "/images/logos/robert-putt.jpg",
+    image: "/images/logos/robert-putt.png",
     linkedin: "https://www.linkedin.com/in/robert-putt-leadership/",
     bio: "Robert is a proven business leader with experience at Amazon and in AI technology, known for his calm, level-headed leadership style and ability to drive results in high-pressure environments. As an advisor to DC TALNT, he provides strategic guidance on scaling operations, technology-driven recruiting, and navigating the intersection of data center infrastructure and the rapidly evolving AI economy.",
   },
