@@ -23,7 +23,7 @@ export const metadata = genMeta({
   title:
     "Data Center TALNT | Data Center & Mission Critical Staffing Experts",
   description:
-    "Data Center TALNT is a nationwide staffing and recruitment firm specializing in data center construction, mission critical facilities, MEP engineering, and utilities talent. We place project managers, superintendents, commissioning agents, and more across all 50 states.",
+    "Data Center TALNT is a nationwide staffing and recruitment firm specializing in data center construction, mission critical facilities, MEP engineering, and utilities talent. We place project managers, QA/QC inspectors, commissioning agents, and more across all 50 states.",
   path: "/",
   keywords: [
     "data center staffing agency",
@@ -32,7 +32,7 @@ export const metadata = genMeta({
     "MEP engineer staffing",
     "commissioning agent recruitment",
     "data center project manager jobs",
-    "construction superintendent staffing",
+    "construction QA/QC inspector staffing",
     "utilities staffing agency",
     "critical infrastructure talent",
     "nationwide construction staffing",
@@ -111,7 +111,7 @@ const industries = [
     ),
     title: "Commercial & Industrial Construction",
     description:
-      "Ground-up builds don't wait for candidates to update their resumes. We keep a bench of superintendents, schedulers, and safety pros ready to mobilize when you need boots on the ground.",
+      "Ground-up builds don't wait for candidates to update their resumes. We keep a bench of QA/QC inspectors, schedulers, and safety pros ready to mobilize when you need boots on the ground.",
   },
   {
     slug: "utilities-staffing",
@@ -168,11 +168,11 @@ const roles = [
     salary: "$90K \u2013 $140K",
   },
   {
-    slug: "superintendents",
-    title: "Superintendents",
+    slug: "qa-qc-inspectors",
+    title: "QA/QC Inspectors",
     description:
-      "Field generals who command respect from every trade on site. We find supers who've run clean build protocols and managed phased energization without a hitch.",
-    salary: "$115K \u2013 $175K",
+      "The quality gatekeepers who catch deficiencies before systems get energized. CWI, NETA, and ACI-certified pros who know what zero-defect means on a data center build.",
+    salary: "$80K \u2013 $140K",
   },
   {
     slug: "commissioning-agents",
@@ -268,7 +268,7 @@ const faqs: FAQItem[] = [
   {
     question: "What types of data center roles do you staff?",
     answer:
-      "Data Center TALNT staffs a comprehensive range of data center and mission critical roles including project managers, construction managers, MEP engineers (mechanical, electrical, and plumbing), superintendents, commissioning agents, schedulers, safety managers, quality control professionals, and BIM coordinators. We cover every phase from pre-construction and design through commissioning and turnover for Tier I through Tier IV facilities.",
+      "Data Center TALNT staffs a comprehensive range of data center and mission critical roles including project managers, construction managers, MEP engineers (mechanical, electrical, and plumbing), QA/QC inspectors, commissioning agents, schedulers, safety managers, and BIM coordinators. We cover every phase from pre-construction and design through commissioning and turnover for Tier I through Tier IV facilities.",
   },
   {
     question: "How quickly can you fill a data center construction position?",
@@ -356,7 +356,7 @@ export default function HomePage() {
             <span className="text-blue-light">America&rsquo;s Data Centers</span>
           </>
         }
-        subtitle="Your next hyperscale campus needs people who've done it before. DC TALNT places project managers, MEP engineers, superintendents, and commissioning agents on mission critical builds from Ashburn to Phoenix — and everywhere the concrete is still curing."
+        subtitle="Your next hyperscale campus needs people who've done it before. DC TALNT places project managers, MEP engineers, QA/QC inspectors, and commissioning agents on mission critical builds from Ashburn to Phoenix — and everywhere the concrete is still curing."
       >
         <div className="flex flex-wrap gap-4">
           <Button href="/employers" variant="primary" size="lg">

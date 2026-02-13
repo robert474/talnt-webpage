@@ -187,7 +187,7 @@ export default function AboutPage() {
                 <p>
                   Today, DC TALNT places professionals across every phase of
                   data center and critical infrastructure construction — from
-                  the site superintendent running daily standups to the
+                  the QA/QC inspector conducting daily inspections to the
                   commissioning authority signing off on Level 5 integrated
                   testing. Every placement starts with the same question: has
                   this person actually done this work before?

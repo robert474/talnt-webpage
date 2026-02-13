@@ -31,7 +31,7 @@ const industries: NavItem[] = [
 const roles: NavItem[] = [
   { label: "Project Managers", href: "/roles/project-managers" },
   { label: "Engineers", href: "/roles/engineers" },
-  { label: "Superintendents", href: "/roles/superintendents" },
+  { label: "QA/QC Inspectors", href: "/roles/qa-qc-inspectors" },
   { label: "Commissioning Agents", href: "/roles/commissioning-agents" },
   { label: "Technicians", href: "/roles/technicians" },
   { label: "Estimators", href: "/roles/estimators" },

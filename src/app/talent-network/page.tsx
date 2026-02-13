@@ -88,7 +88,7 @@ const networkFaqs = [
   {
     question: "How does DC TALNT find candidates that other agencies can't?",
     answer:
-      "Most agencies search LinkedIn and job boards — the same pool everyone else is fishing in. Our 10+ year database gives us direct access to professionals who've been interviewed, assessed, and relationship-managed by our recruiters over time. When we need a senior superintendent with hyperscale experience, we're pulling up people we already know.",
+      "Most agencies search LinkedIn and job boards — the same pool everyone else is fishing in. Our 10+ year database gives us direct access to professionals who've been interviewed, assessed, and relationship-managed by our recruiters over time. When we need a senior QA/QC inspector with hyperscale experience, we're pulling up people we already know.",
   },
 ];
 
@@ -188,7 +188,7 @@ export default function TalentNetworkPage() {
                 candidate over the past decade.
               </p>
               <p className="mt-4 text-gray-600 leading-relaxed">
-                That means when you call us looking for a senior superintendent
+                That means when you call us looking for a senior QA/QC inspector
                 with hyperscale experience in the Phoenix market, we&rsquo;re
                 not running a keyword search. We&rsquo;re pulling up profiles
                 with detailed interview notes, verified project histories, and

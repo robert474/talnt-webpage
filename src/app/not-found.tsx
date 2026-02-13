@@ -11,7 +11,7 @@ const quickLinks = [
   {
     label: "Roles",
     href: "/roles",
-    description: "Project managers, engineers, superintendents & more",
+    description: "Project managers, engineers, QA/QC inspectors & more",
   },
   {
     label: "Locations",

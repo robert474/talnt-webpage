@@ -21,7 +21,7 @@ const industriesLinks: FooterLink[] = [
 const rolesLinks: FooterLink[] = [
   { label: "Project Managers", href: "/roles/project-managers" },
   { label: "Engineers", href: "/roles/engineers" },
-  { label: "Superintendents", href: "/roles/superintendents" },
+  { label: "QA/QC Inspectors", href: "/roles/qa-qc-inspectors" },
   { label: "Commissioning Agents", href: "/roles/commissioning-agents" },
   { label: "Technicians", href: "/roles/technicians" },
   { label: "Estimators", href: "/roles/estimators" },
@@ -128,7 +128,7 @@ export default function Footer() {
             connecting top-tier talent with data center, mission critical,
             construction, and utilities employers nationwide. From project
             managers and MEP engineers to commissioning agents and
-            superintendents, we deliver the skilled workforce that powers
+            QA/QC inspectors, we deliver the skilled workforce that powers
             modern critical infrastructure.
           </p>
         </div>

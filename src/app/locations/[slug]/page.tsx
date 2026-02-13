@@ -86,7 +86,7 @@ const locations: LocationData[] = [
     topRoles: [
       "Critical Facility Engineer",
       "Commissioning Agent",
-      "Electrical Superintendent",
+      "Electrical QA/QC Inspector",
       "Data Center Project Manager",
       "MEP Engineer",
       "Controls Technician",
@@ -121,7 +121,7 @@ const locations: LocationData[] = [
         question:
           "What types of data center roles are most in demand in Northern Virginia?",
         answer:
-          "The most in-demand roles in Northern Virginia include critical facility engineers, electrical and mechanical technicians, commissioning agents, MEP engineers, project managers, and construction superintendents. The constant pace of new construction and the need to staff operational facilities simultaneously creates persistent demand across all skill levels.",
+          "The most in-demand roles in Northern Virginia include critical facility engineers, electrical and mechanical technicians, commissioning agents, MEP engineers, project managers, and construction QA/QC inspectors. The constant pace of new construction and the need to staff operational facilities simultaneously creates persistent demand across all skill levels.",
       },
     ],
     latitude: 39.0438,
@@ -174,7 +174,7 @@ const locations: LocationData[] = [
       "MEP Project Manager",
       "BMS/Controls Specialist",
       "Safety Coordinator",
-      "Mechanical Superintendent",
+      "Mechanical QA/QC Inspector",
     ],
     nearbyLocations: [
       { city: "Houston", slug: "houston" },
@@ -193,7 +193,7 @@ const locations: LocationData[] = [
         question:
           "What is the average salary for data center jobs in Dallas-Fort Worth?",
         answer:
-          "Data center professionals in DFW typically earn competitive salaries thanks to strong demand and Texas's cost-of-living advantages. Critical facility engineers earn $80,000 to $120,000, project managers earn $100,000 to $160,000, and construction superintendents can earn $110,000 to $170,000 annually.",
+          "Data center professionals in DFW typically earn competitive salaries thanks to strong demand and Texas's cost-of-living advantages. Critical facility engineers earn $80,000 to $120,000, project managers earn $100,000 to $160,000, and construction QA/QC inspectors can earn $80,000 to $140,000 annually.",
       },
       {
         question:
@@ -244,13 +244,13 @@ const locations: LocationData[] = [
     ],
     keyStats: { datacenters: 80, megawatts: 600, growthRate: "25% YoY" },
     topRoles: [
-      "Data Center Construction Superintendent",
+      "Data Center Construction QA/QC Inspector",
       "Mechanical Engineer",
       "Electrical Technician",
       "Project Controls Specialist",
       "Commissioning Agent",
       "Critical Facility Engineer",
-      "General Superintendent",
+      "General QA/QC Inspector",
       "Quality Control Manager",
     ],
     nearbyLocations: [
@@ -269,7 +269,7 @@ const locations: LocationData[] = [
         question:
           "What is the average salary for data center jobs in Phoenix?",
         answer:
-          "Data center salaries in Phoenix are rising rapidly due to strong demand. Critical facility engineers typically earn $75,000 to $115,000 annually, while construction superintendents earn $100,000 to $155,000. Project managers overseeing hyperscale builds can command $110,000 to $170,000.",
+          "Data center salaries in Phoenix are rising rapidly due to strong demand. Critical facility engineers typically earn $75,000 to $115,000 annually, while construction QA/QC inspectors earn $80,000 to $140,000. Project managers overseeing hyperscale builds can command $110,000 to $170,000.",
       },
       {
         question:
@@ -322,7 +322,7 @@ const locations: LocationData[] = [
     topRoles: [
       "Data Center Technician",
       "Facility Engineer",
-      "Electrical Superintendent",
+      "Electrical QA/QC Inspector",
       "Network Infrastructure Specialist",
       "Project Manager",
       "MEP Coordinator",
@@ -400,7 +400,7 @@ const locations: LocationData[] = [
       "Critical Facility Engineer",
       "Union Electrician",
       "Data Center Project Manager",
-      "Mechanical Superintendent",
+      "Mechanical QA/QC Inspector",
       "Commissioning Agent",
       "BMS Technician",
       "Fire Protection Engineer",
@@ -530,7 +530,7 @@ const locations: LocationData[] = [
     description: [
       "Columbus, Ohio has emerged as one of the most dynamic data center markets in the United States, experiencing explosive growth that has caught the attention of every major hyperscale operator. The New Albany International Business Park, located northeast of the city, has become a preferred destination for massive data center campuses, with Google, Amazon, Meta, and Microsoft all committing to multi-billion-dollar investments in the region. Licking County and adjacent areas are rapidly transforming from agricultural land into one of America's newest data center corridors.",
       "Ohio's appeal as a data center market extends beyond land availability. The state offers competitive electricity rates through American Electric Power and Ohio Power, access to abundant water resources from the Great Lakes watershed, and a central geographic position that provides low-latency connectivity to major East Coast and Midwest population centers. Ohio has also implemented generous tax incentives specifically designed to attract and retain data center investments.",
-      "The unprecedented pace of data center construction in Columbus has created a significant talent shortage, particularly for experienced construction managers, electrical superintendents, and commissioning agents. With multiple billion-dollar projects running simultaneously, the demand for skilled professionals has far outpaced the local labor supply. Data Center TALNT helps Columbus-area employers tap into a broader national talent pool while also developing local workforce pipelines to sustain long-term growth.",
+      "The unprecedented pace of data center construction in Columbus has created a significant talent shortage, particularly for experienced construction managers, electrical QA/QC inspectors, and commissioning agents. With multiple billion-dollar projects running simultaneously, the demand for skilled professionals has far outpaced the local labor supply. Data Center TALNT helps Columbus-area employers tap into a broader national talent pool while also developing local workforce pipelines to sustain long-term growth.",
     ],
     marketHighlights: [
       "Fastest-growing data center market in the Midwest, with over 600 MW of new capacity in active development across New Albany and Licking County",
@@ -550,7 +550,7 @@ const locations: LocationData[] = [
     ],
     keyStats: { datacenters: 45, megawatts: 350, growthRate: "30% YoY" },
     topRoles: [
-      "Construction Superintendent",
+      "Construction QA/QC Inspector",
       "Electrical Foreman",
       "Data Center Project Manager",
       "Commissioning Technician",
@@ -575,7 +575,7 @@ const locations: LocationData[] = [
         question:
           "What is the average salary for data center jobs in Columbus?",
         answer:
-          "Data center salaries in Columbus have risen sharply due to the construction boom. Technicians earn $55,000 to $80,000, construction superintendents earn $95,000 to $145,000, and project managers earn $100,000 to $155,000 annually. The region's lower cost of living compared to coastal markets makes these salaries highly competitive.",
+          "Data center salaries in Columbus have risen sharply due to the construction boom. Technicians earn $55,000 to $80,000, construction QA/QC inspectors earn $80,000 to $140,000, and project managers earn $100,000 to $155,000 annually. The region's lower cost of living compared to coastal markets makes these salaries highly competitive.",
       },
       {
         question:
@@ -704,7 +704,7 @@ const locations: LocationData[] = [
     topRoles: [
       "Data Center Technician",
       "Electrical Engineer",
-      "Mechanical Superintendent",
+      "Mechanical QA/QC Inspector",
       "Commissioning Agent",
       "Project Manager",
       "Critical Facility Engineer",
@@ -781,7 +781,7 @@ const locations: LocationData[] = [
     topRoles: [
       "Critical Facility Engineer",
       "Data Center Compliance Specialist",
-      "Electrical Superintendent",
+      "Electrical QA/QC Inspector",
       "Project Manager",
       "Commissioning Agent",
       "Security Systems Technician",
@@ -857,7 +857,7 @@ const locations: LocationData[] = [
     topRoles: [
       "Critical Facility Engineer",
       "Construction Project Manager",
-      "Electrical Superintendent",
+      "Electrical QA/QC Inspector",
       "Commissioning Agent",
       "MEP Engineer",
       "Data Center Technician",
@@ -938,7 +938,7 @@ const locations: LocationData[] = [
       "MEP Project Manager",
       "Commissioning Agent",
       "Safety Coordinator",
-      "Mechanical Superintendent",
+      "Mechanical QA/QC Inspector",
     ],
     nearbyLocations: [
       { city: "Dallas-Fort Worth", slug: "dallas-fort-worth" },
@@ -1014,7 +1014,7 @@ const locations: LocationData[] = [
       "Commissioning Agent",
       "Fire & Life Safety Specialist",
       "Compliance Coordinator",
-      "Construction Superintendent",
+      "Construction QA/QC Inspector",
     ],
     nearbyLocations: [
       { city: "Northern Virginia", slug: "northern-virginia" },
@@ -1085,7 +1085,7 @@ const locations: LocationData[] = [
     topRoles: [
       "Critical Facility Engineer",
       "Data Center Operations Manager",
-      "Electrical Superintendent",
+      "Electrical QA/QC Inspector",
       "Project Manager",
       "Commissioning Agent",
       "Network Infrastructure Technician",
@@ -1161,7 +1161,7 @@ const locations: LocationData[] = [
     topRoles: [
       "Critical Facility Engineer",
       "Electrical Technician",
-      "Data Center Construction Superintendent",
+      "Data Center Construction QA/QC Inspector",
       "Project Manager",
       "Commissioning Agent",
       "Cooling Systems Specialist",
@@ -1237,7 +1237,7 @@ const locations: LocationData[] = [
     topRoles: [
       "Data Center Construction Manager",
       "Critical Facility Engineer",
-      "Electrical Superintendent",
+      "Electrical QA/QC Inspector",
       "Commissioning Agent",
       "MEP Engineer",
       "Project Manager",
@@ -1311,7 +1311,7 @@ const locations: LocationData[] = [
     ],
     keyStats: { datacenters: 20, megawatts: 200, growthRate: "28% YoY" },
     topRoles: [
-      "Data Center Construction Superintendent",
+      "Data Center Construction QA/QC Inspector",
       "Electrical Foreman",
       "Commissioning Agent",
       "Critical Facility Engineer",
@@ -1336,7 +1336,7 @@ const locations: LocationData[] = [
         question:
           "What is the average salary for data center jobs in Reno?",
         answer:
-          "Reno data center salaries have risen sharply due to the construction boom and limited local talent. Technicians earn $55,000 to $85,000, construction superintendents earn $100,000 to $155,000, and project managers earn $95,000 to $150,000 annually. Nevada's zero state income tax effectively boosts take-home pay by 5-10% compared to neighboring California.",
+          "Reno data center salaries have risen sharply due to the construction boom and limited local talent. Technicians earn $55,000 to $85,000, construction QA/QC inspectors earn $80,000 to $140,000, and project managers earn $95,000 to $150,000 annually. Nevada's zero state income tax effectively boosts take-home pay by 5-10% compared to neighboring California.",
       },
       {
         question:
@@ -1391,7 +1391,7 @@ const locations: LocationData[] = [
       "Data Center Construction Manager",
       "Electrical Technician",
       "Commissioning Agent",
-      "Mechanical Superintendent",
+      "Mechanical QA/QC Inspector",
       "Project Manager",
       "Controls Technician",
       "Data Center Technician",
@@ -1465,7 +1465,7 @@ const locations: LocationData[] = [
     topRoles: [
       "Critical Facility Engineer",
       "Data Center Technician",
-      "Electrical Superintendent",
+      "Electrical QA/QC Inspector",
       "Project Manager",
       "Commissioning Agent",
       "HVAC Controls Specialist",

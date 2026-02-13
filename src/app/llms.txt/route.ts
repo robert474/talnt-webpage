@@ -5,7 +5,7 @@ export function GET() {
 
 ## About
 
-Data Center TALNT connects experienced project managers, MEP engineers, superintendents, commissioning agents, schedulers, and construction managers with employers building and operating America's critical infrastructure. We serve all 50 U.S. states with concentrated expertise in the top data center markets: Northern Virginia (Ashburn), Dallas-Fort Worth, Phoenix, Chicago, Silicon Valley, Atlanta, Portland, Columbus, Reno, and Salt Lake City.
+Data Center TALNT connects experienced project managers, MEP engineers, QA/QC inspectors, commissioning agents, schedulers, and construction managers with employers building and operating America's critical infrastructure. We serve all 50 U.S. states with concentrated expertise in the top data center markets: Northern Virginia (Ashburn), Dallas-Fort Worth, Phoenix, Chicago, Silicon Valley, Atlanta, Portland, Columbus, Reno, and Salt Lake City.
 
 ## Key Differentiators
 
@@ -40,7 +40,7 @@ Data Center TALNT connects experienced project managers, MEP engineers, superint
 - Streamlined offers and digital onboarding
 
 ## The Cost of Slow Hiring
-- $15,000+ per week cost of an unfilled PM or superintendent position
+- $15,000+ per week cost of an unfilled PM or QA/QC inspector position
 - 340,000 unfilled construction positions projected by BLS for end of 2026
 - 82% of construction firms report difficulty filling positions (AGC data)
 - 23,000 experienced workers retiring annually from the industry
@@ -62,13 +62,13 @@ Data Center TALNT connects experienced project managers, MEP engineers, superint
 
 ## Hyperscaler Staffing
 
-DC TALNT provides specialized staffing for hyperscale data center construction projects. Our candidates have direct, verified experience on 50 MW to 500+ MW campus builds for companies like Amazon Web Services (AWS), OpenAI, and Oracle Cloud Infrastructure (OCI). We work with the general contractors (Turner, Holder, Fortis, Rosendin), commissioning authorities, and owner's representatives who execute these projects. Key hyperscale roles include: Hyperscale Project Managers, Commissioning Agents (L1-L5), MEP Superintendents, Controls/BMS Engineers, Quality Control Managers, and Schedulers. We can mobilize teams of 10-50+ professionals for commissioning surge events on short notice.
+DC TALNT provides specialized staffing for hyperscale data center construction projects. Our candidates have direct, verified experience on 50 MW to 500+ MW campus builds for companies like Amazon Web Services (AWS), OpenAI, and Oracle Cloud Infrastructure (OCI). We work with the general contractors (Turner, Holder, Fortis, Rosendin), commissioning authorities, and owner's representatives who execute these projects. Key hyperscale roles include: Hyperscale Project Managers, Commissioning Agents (L1-L5), QA/QC Inspectors, Controls/BMS Engineers, Quality Control Managers, and Schedulers. We can mobilize teams of 10-50+ professionals for commissioning surge events on short notice.
 - Hyperscaler Staffing: https://www.datacentertalnt.com/industries/hyperscalers
 
 ## Roles We Place
 
 - Project Managers ($130K–$175K base + 10-20% bonus)
-- Senior Superintendents ($140K–$185K base + $150-$200/day per diem)
+- QA/QC Inspectors ($80K–$140K base)
 - Commissioning Agents ($110K–$155K base)
 - MEP Engineers ($105K–$145K base)
 - Controls Engineers ($95K–$135K base)

@@ -65,7 +65,7 @@ const industries = [
     image:
       "https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=1200&q=80",
     description:
-      "Ground-up builds don't wait for candidates to update their resumes. We keep a bench of superintendents, schedulers, safety pros, and project engineers ready to mobilize when you need boots on the ground — this week, not next month.",
+      "Ground-up builds don't wait for candidates to update their resumes. We keep a bench of QA/QC inspectors, schedulers, safety pros, and project engineers ready to mobilize when you need boots on the ground — this week, not next month.",
     highlights: [
       "Ground-up, renovation, and tenant improvements",
       "Multi-trade coordination and field leadership",

@@ -130,10 +130,10 @@ const industriesData: Record<string, IndustryData> = {
         href: "/roles/project-manager",
       },
       {
-        name: "Superintendent",
+        name: "QA/QC Inspector",
         description:
-          "Construction superintendents experienced in managing MEP subcontractors, coordinating with commissioning teams, and maintaining quality standards in mission critical environments.",
-        href: "/roles/superintendent",
+          "QA/QC inspectors experienced in managing MEP subcontractors, coordinating with commissioning teams, and maintaining quality standards in mission critical environments.",
+        href: "/roles/qa-qc-inspectors",
       },
       {
         name: "Controls / BMS Technician",
@@ -183,7 +183,7 @@ const industriesData: Record<string, IndustryData> = {
         question:
           "What types of data center staffing roles does DC TALNT fill?",
         answer:
-          "DC TALNT places professionals across the entire data center lifecycle, including commissioning agents (Levels 1-5), MEP engineers, project managers, superintendents, controls/BMS technicians, critical facility technicians, electrical engineers, safety managers, estimators, and design engineers. We staff positions for pre-construction planning, ground-up construction, commissioning and turnover, and steady-state operations.",
+          "DC TALNT places professionals across the entire data center lifecycle, including commissioning agents (Levels 1-5), MEP engineers, project managers, QA/QC inspectors, controls/BMS technicians, critical facility technicians, electrical engineers, safety managers, estimators, and design engineers. We staff positions for pre-construction planning, ground-up construction, commissioning and turnover, and steady-state operations.",
       },
       {
         question:
@@ -201,7 +201,7 @@ const industriesData: Record<string, IndustryData> = {
         question:
           "Does DC TALNT staff both data center construction and operations roles?",
         answer:
-          "Yes. Our data center staffing practice covers both the construction and operations sides of the industry. On the construction side, we place project managers, superintendents, commissioning agents, and MEP tradespeople. On the operations side, we fill critical facility technician, chief engineer, data center manager, and capacity planning roles.",
+          "Yes. Our data center staffing practice covers both the construction and operations sides of the industry. On the construction side, we place project managers, QA/QC inspectors, commissioning agents, and MEP tradespeople. On the operations side, we fill critical facility technician, chief engineer, data center manager, and capacity planning roles.",
       },
       {
         question:
@@ -382,13 +382,13 @@ const industriesData: Record<string, IndustryData> = {
     metaTitle:
       "Construction Staffing & Recruitment Agency | Data Center TALNT",
     metaDescription:
-      "DC TALNT is a construction staffing agency placing project managers, superintendents, estimators, safety managers, and skilled tradespeople for ground-up builds, renovations, and tenant improvements nationwide.",
+      "DC TALNT is a construction staffing agency placing project managers, QA/QC inspectors, estimators, safety managers, and skilled tradespeople for ground-up builds, renovations, and tenant improvements nationwide.",
     heroTitle: "Construction Staffing Solutions",
     heroSubtitle:
-      "Ground-up builds, large-scale renovations, and tenant improvements all require experienced leadership and skilled tradespeople. We place the project managers, superintendents, and specialists who deliver projects on time and on budget.",
+      "Ground-up builds, large-scale renovations, and tenant improvements all require experienced leadership and skilled tradespeople. We place the project managers, QA/QC inspectors, and specialists who deliver projects on time and on budget.",
     description: [
       "The U.S. construction industry generates over $2 trillion in annual spending, yet consistently faces a skilled labor shortage that threatens project timelines and budgets. The Associated General Contractors of America reports that more than 80% of construction firms struggle to find qualified workers, and the industry needs to attract an estimated 500,000 additional workers each year to meet demand. Data Center TALNT helps general contractors, owners, and developers bridge this gap by providing vetted construction professionals across commercial, industrial, and infrastructure sectors.",
-      "Our construction staffing practice draws on the same rigorous screening methodology we use for data center and mission critical placements. Every candidate is evaluated not only for technical skill and relevant experience but also for safety awareness, communication ability, and cultural fit with your project team. We staff roles from the pre-construction phase through punch list and closeout, including estimators, project engineers, project managers, superintendents, safety managers, and quality control specialists.",
+      "Our construction staffing practice draws on the same rigorous screening methodology we use for data center and mission critical placements. Every candidate is evaluated not only for technical skill and relevant experience but also for safety awareness, communication ability, and cultural fit with your project team. We staff roles from the pre-construction phase through punch list and closeout, including estimators, project engineers, project managers, QA/QC inspectors, safety managers, and quality control specialists.",
     ],
     keyRoles: [
       {
@@ -398,10 +398,10 @@ const industriesData: Record<string, IndustryData> = {
         href: "/roles/project-manager",
       },
       {
-        name: "Superintendent",
+        name: "QA/QC Inspector",
         description:
-          "Field superintendents who coordinate daily construction activities, manage subcontractor crews, enforce safety protocols, and maintain project quality standards.",
-        href: "/roles/superintendent",
+          "QA/QC inspectors who coordinate daily quality inspections, manage subcontractor compliance, enforce safety protocols, and maintain project quality standards.",
+        href: "/roles/qa-qc-inspectors",
       },
       {
         name: "Estimator / Preconstruction Manager",
@@ -453,13 +453,13 @@ const industriesData: Record<string, IndustryData> = {
         question:
           "What types of construction staffing does DC TALNT provide?",
         answer:
-          "DC TALNT provides construction staffing for commercial, industrial, and infrastructure projects. We place project managers, superintendents, estimators, project engineers, safety managers, quality control managers, and MEP coordinators. Our placements cover ground-up construction, renovations, tenant improvements, and specialty projects such as data center and mission critical facility builds.",
+          "DC TALNT provides construction staffing for commercial, industrial, and infrastructure projects. We place project managers, QA/QC inspectors, estimators, project engineers, safety managers, quality control managers, and MEP coordinators. Our placements cover ground-up construction, renovations, tenant improvements, and specialty projects such as data center and mission critical facility builds.",
       },
       {
         question:
           "Does DC TALNT staff both direct hire and contract construction roles?",
         answer:
-          "Yes. We offer direct hire, contract, and contract-to-hire staffing models for construction positions. Many of our clients use contract staffing to bring on superintendents or project managers for the duration of a specific project, then convert high performers to permanent roles.",
+          "Yes. We offer direct hire, contract, and contract-to-hire staffing models for construction positions. Many of our clients use contract staffing to bring on QA/QC inspectors or project managers for the duration of a specific project, then convert high performers to permanent roles.",
       },
       {
         question:
@@ -471,7 +471,7 @@ const industriesData: Record<string, IndustryData> = {
         question:
           "Can DC TALNT staff an entire project team?",
         answer:
-          "Yes. We frequently assemble complete project teams including a project manager, superintendent, project engineer, safety manager, and QC manager for general contractors and owners who are ramping up for new projects or entering new geographic markets.",
+          "Yes. We frequently assemble complete project teams including a project manager, QA/QC inspector, project engineer, safety manager, and QC manager for general contractors and owners who are ramping up for new projects or entering new geographic markets.",
       },
       {
         question:
@@ -644,10 +644,10 @@ const industriesData: Record<string, IndustryData> = {
     metaTitle:
       "Hyperscaler Data Center Staffing | AWS, OpenAI, Oracle | Data Center TALNT",
     metaDescription:
-      "DC TALNT provides specialized staffing for hyperscale data center construction projects built for AWS, OpenAI, Oracle, and other leading hyperscalers. We place project managers, commissioning agents, MEP engineers, and superintendents on the largest campus builds in the country.",
+      "DC TALNT provides specialized staffing for hyperscale data center construction projects built for AWS, OpenAI, Oracle, and other leading hyperscalers. We place project managers, commissioning agents, MEP engineers, and QA/QC inspectors on the largest campus builds in the country.",
     heroTitle: "Hyperscaler Data Center Staffing",
     heroSubtitle:
-      "The world's largest cloud and AI companies are building data center campuses at an unprecedented pace. DC TALNT places the project managers, commissioning agents, MEP engineers, and superintendents who deliver these mission critical builds on schedule.",
+      "The world's largest cloud and AI companies are building data center campuses at an unprecedented pace. DC TALNT places the project managers, commissioning agents, MEP engineers, and QA/QC inspectors who deliver these mission critical builds on schedule.",
     description: [
       "Hyperscale data center construction represents the largest and most complex builds in the industry. Companies like Amazon Web Services (AWS), Microsoft Azure, Google Cloud, Meta, Oracle Cloud Infrastructure (OCI), and OpenAI are investing hundreds of billions of dollars in new data center campuses across the United States. These projects range from 50 MW single-building facilities to 500 MW+ multi-phase campuses that take years to complete and employ thousands of construction professionals at peak activity.",
       "The staffing demands of hyperscale projects are fundamentally different from standard commercial construction. These builds require professionals who understand concurrent maintainability, N+1 and 2N redundancy architectures, phased energization sequences, and the rigorous commissioning protocols that hyperscalers mandate before accepting a facility. A project manager who has delivered a 100 MW campus for AWS operates in a different league than one who has managed office buildings — and hyperscaler clients know the difference immediately.",
@@ -667,10 +667,10 @@ const industriesData: Record<string, IndustryData> = {
         href: "/roles/commissioning-agents",
       },
       {
-        name: "MEP Superintendent",
+        name: "MEP QA/QC Inspector",
         description:
-          "Field superintendents specializing in the mechanical, electrical, and plumbing systems that define hyperscale data centers — including medium-voltage switchgear, chilled water plants, and generator paralleling systems.",
-        href: "/roles/superintendents",
+          "QA/QC inspectors specializing in the mechanical, electrical, and plumbing systems that define hyperscale data centers — including medium-voltage switchgear, chilled water plants, and generator paralleling systems.",
+        href: "/roles/qa-qc-inspectors",
       },
       {
         name: "MEP Engineer",

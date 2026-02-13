@@ -12,7 +12,7 @@ import Button from "@/components/ui/Button";
 export const metadata = genMeta({
   title: "Open Positions | Data Center & Construction Jobs | Data Center TALNT",
   description:
-    "Browse current data center, mission critical, construction, and utilities job openings. Find project manager, MEP engineer, superintendent, and commissioning agent positions nationwide.",
+    "Browse current data center, mission critical, construction, and utilities job openings. Find project manager, MEP engineer, QA/QC inspector, and commissioning agent positions nationwide.",
   path: "/jobs",
   keywords: [
     "data center jobs",
@@ -20,7 +20,7 @@ export const metadata = genMeta({
     "MEP engineer positions",
     "project manager data center",
     "commissioning agent jobs",
-    "superintendent jobs",
+    "QA/QC inspector jobs",
     "mission critical facility careers",
     "data center construction careers",
   ],
@@ -75,9 +75,9 @@ const jobs: (JobPostingData & { id: string; salaryDisplay: string })[] = [
   },
   {
     id: "super-atl",
-    title: "General Superintendent - Ground-Up Construction",
+    title: "Senior QA/QC Inspector - Ground-Up Construction",
     description:
-      "Oversee all field operations for a multi-building data center campus. Manage a team of 6+ area superintendents, enforce safety protocols, and coordinate with the project management team on schedule and budget. 10+ years of commercial or industrial construction experience required.",
+      "Oversee all field quality control operations for a multi-building data center campus. Manage a team of 6+ area QA/QC inspectors, enforce safety protocols, and coordinate with the project management team on schedule and budget. 10+ years of commercial or industrial construction experience required.",
     datePosted: "2026-01-25",
     validThrough: "2026-04-25",
     employmentType: "FULL_TIME",
@@ -237,7 +237,7 @@ export default function JobsPage() {
                 <option value="">All Role Types</option>
                 <option value="project-manager">Project Manager</option>
                 <option value="construction-manager">Construction Manager</option>
-                <option value="superintendent">Superintendent</option>
+                <option value="qa-qc-inspector">QA/QC Inspector</option>
                 <option value="mep-engineer">MEP Engineer</option>
                 <option value="scheduler">Scheduler</option>
                 <option value="commissioning-agent">Commissioning Agent</option>

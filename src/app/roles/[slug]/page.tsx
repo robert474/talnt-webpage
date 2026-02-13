@@ -117,10 +117,10 @@ const rolesData: Record<string, RoleData> = {
           "Schedulers build and maintain the CPM schedules that project managers rely on to track milestones and critical path activities.",
       },
       {
-        title: "Superintendents",
-        slug: "superintendents",
+        title: "QA/QC Inspectors",
+        slug: "qa-qc-inspectors",
         brief:
-          "Superintendents manage daily field operations and serve as the project manager's primary on-site representative.",
+          "QA/QC inspectors verify construction quality across all trades, ensuring work meets specifications before commissioning begins.",
       },
     ],
     faqs: [
@@ -222,10 +222,10 @@ const rolesData: Record<string, RoleData> = {
           "Project managers oversee the full lifecycle from pre-construction through turnover, with the CM executing the field operations.",
       },
       {
-        title: "Superintendents",
-        slug: "superintendents",
+        title: "QA/QC Inspectors",
+        slug: "qa-qc-inspectors",
         brief:
-          "Superintendents work alongside construction managers, focusing on specific building areas or trade scopes within larger programs.",
+          "QA/QC inspectors work alongside construction managers, verifying that trade work meets specifications and quality standards.",
       },
       {
         title: "MEP Engineers",
@@ -509,53 +509,56 @@ const rolesData: Record<string, RoleData> = {
   },
 
   /* ---------------------------------------------------------------------- */
-  /*  Superintendents                                                        */
+  /*  QA/QC Inspectors                                                       */
   /* ---------------------------------------------------------------------- */
-  superintendents: {
-    slug: "superintendents",
-    title: "Superintendents",
+  "qa-qc-inspectors": {
+    slug: "qa-qc-inspectors",
+    title: "QA/QC Inspectors",
     metaTitle:
-      "Data Center Superintendent Staffing | Field Leadership | Data Center TALNT",
+      "Data Center QA/QC Inspector Staffing | Quality Assurance | Data Center TALNT",
     metaDescription:
-      "Hire experienced data center superintendents through DC TALNT. We recruit field-proven superintendents for ground-up hyperscale builds, mission critical construction, and complex MEP-intensive projects nationwide.",
-    salaryRange: "$100,000 - $170,000",
-    salaryMin: 100000,
-    salaryMax: 170000,
-    heroTitle: "Data Center Superintendent Staffing",
+      "Hire experienced QA/QC inspectors for data center and mission critical construction through DC TALNT. We recruit certified quality assurance and quality control professionals for MEP, structural, and electrical inspection on hyperscale builds nationwide.",
+    salaryRange: "$80,000 - $140,000",
+    salaryMin: 80000,
+    salaryMax: 140000,
+    heroTitle: "Data Center QA/QC Inspector Staffing",
     description: [
-      "Superintendents are the field leaders who translate project plans into physical reality on data center construction sites. They are typically the first people on site each morning and the last to leave, managing the daily coordination of subcontractor crews, enforcing safety standards, inspecting quality of work, and resolving the countless field-level issues that arise during complex mission critical construction. In data center builds, superintendents must manage the unique challenges of clean room construction protocols, phased energization around live IT equipment, vibration-sensitive installations, and the exacting tolerances required for precision MEP systems.",
-      "DC TALNT recruits superintendents who have proven themselves on ground-up data center campuses, critical facility expansions, and high-reliability construction projects. Our candidates bring the leadership presence, technical knowledge, and field problem-solving abilities that distinguish outstanding superintendents from average ones. They understand how to sequence work across structural, mechanical, electrical, plumbing, and fire protection trades in the tight confines of a data center building, and they know how to maintain schedule momentum without compromising safety or quality.",
-      "The shortage of experienced data center superintendents has become one of the most significant bottlenecks in the industry's growth. As construction pipelines expand across major markets, DC TALNT provides employers with access to superintendent talent that has been pre-vetted for mission critical construction experience, safety track records, and trade coordination capabilities.",
+      "QA/QC inspectors are the quality gatekeepers on data center and mission critical construction projects. They systematically verify that every installation — from structural steel connections and concrete pours to electrical terminations and mechanical piping — meets the exact specifications, codes, and owner requirements before work is covered up or systems are energized. In data center construction, where a single deficient electrical connection can cause an arc flash event or a faulty pipe weld can leak coolant onto millions of dollars in IT equipment, the QA/QC inspector's role is not optional — it is essential to facility reliability and safety.",
+      "DC TALNT recruits QA/QC inspectors who have worked on $50 million to $500 million+ critical facility projects. Our candidates understand the unique quality demands of mission critical construction: AWS/NETA electrical testing standards, ASME and AWS welding inspection requirements, concrete and structural testing protocols, MEP installation verification against Uptime Institute Tier standards, and the documentation rigor required to support commissioning and facility turnover. They bring certifications like CWI (Certified Welding Inspector), ACI (American Concrete Institute), ICC (International Code Council), and NETA alongside hands-on experience catching deficiencies before they become failures.",
+      "The demand for qualified QA/QC inspectors has surged alongside the data center construction boom. As hyperscale operators and colocation providers invest billions in new capacity, the need for professionals who can systematically verify construction quality across mechanical, electrical, structural, and civil disciplines has never been greater. DC TALNT provides employers with access to QA/QC talent that has been pre-vetted for mission critical construction experience and the documentation skills that commissioning authorities and owners require.",
     ],
     responsibilities: [
-      "Manage daily field construction operations on data center sites including subcontractor coordination, work sequencing, and resource allocation",
-      "Enforce comprehensive site safety programs, conduct daily safety briefings, and ensure compliance with OSHA regulations and owner safety requirements",
-      "Perform quality inspections at all construction phases, document deficiencies, and verify corrective actions before proceeding to subsequent activities",
-      "Coordinate trade sequences across structural, mechanical, electrical, plumbing, and fire protection subcontractors in complex multi-trade environments",
-      "Manage site logistics including material deliveries, crane operations, laydown areas, temporary utilities, and access control for active data center campuses",
-      "Prepare daily construction reports documenting manpower, weather conditions, activities completed, issues encountered, and safety observations",
-      "Lead subcontractor foreman meetings and resolve field conflicts arising from design discrepancies, space constraints, or scheduling misalignments",
-      "Support clean build protocol implementation during data center white space construction phases, including dust control and contamination prevention",
-      "Coordinate with commissioning agents during equipment start-up, testing, and commissioning activities that overlap with ongoing construction",
-      "Manage punch list development, remediation tracking, and turnover documentation during project closeout phases",
+      "Perform daily quality inspections of MEP, structural, and civil work against approved drawings, specifications, and applicable codes on data center construction sites",
+      "Verify that materials, equipment, and installations meet project specifications and manufacturer requirements before concealment or energization",
+      "Witness and document critical inspections including concrete pours, structural steel connections, electrical terminations, bus duct installations, and piping pressure tests",
+      "Review and approve subcontractor quality documentation including Inspection and Test Plans (ITPs), material certifications, mill certs, and test reports",
+      "Maintain comprehensive QA/QC logs, non-conformance reports (NCRs), and corrective action tracking databases with full photo documentation",
+      "Coordinate with commissioning agents to ensure pre-functional checklists and construction verification are completed before system testing begins",
+      "Conduct welding inspections per AWS D1.1 and ASME standards for structural steel connections and mechanical piping systems",
+      "Perform or witness electrical testing including megger testing, hi-pot testing, thermographic scanning, and NETA acceptance testing protocols",
+      "Review shop drawings and submittals for compliance with design intent and specification requirements across all trades",
+      "Support project closeout by compiling as-built documentation, test reports, warranties, O&M manuals, and quality record packages",
+      "Interface with AHJ (Authority Having Jurisdiction) inspectors, third-party testing agencies, and owner quality representatives",
     ],
     qualifications: [
-      "10-20+ years of construction field experience with progressive advancement from foreman or assistant superintendent to superintendent",
-      "Minimum 4 years of superintendent experience on data center, mission critical, or heavily MEP-intensive construction projects",
-      "Demonstrated ability to manage sites with 100+ craft workers across multiple trades simultaneously",
-      "Strong understanding of MEP systems installation sequences in critical environments, including clean build and energization protocols",
-      "Proven safety leadership record with experience managing zero-incident safety programs on large-scale construction sites",
-      "Proficiency with field technology including Procore, PlanGrid, Bluebeam, and daily reporting platforms",
-      "Ability to read and interpret complex MEP drawings, structural plans, and architectural details",
-      "Strong leadership and interpersonal skills with the ability to earn respect from trade foremen and communicate effectively with project management",
+      "5-15+ years of quality assurance/quality control experience in construction, with preference for data center, mission critical, or complex MEP-intensive projects",
+      "Strong knowledge of MEP systems including critical power distribution, cooling systems, fire protection, and building automation/controls",
+      "Ability to read and interpret construction drawings, specifications, and shop drawings across structural, mechanical, electrical, and plumbing trades",
+      "Experience developing and managing Inspection and Test Plans (ITPs) for complex, multi-trade construction projects",
+      "Proficiency in quality management software, Procore, Bluebeam, and Microsoft Office Suite",
+      "Knowledge of applicable codes and standards: NEC, NFPA 70/72/75/76, ASHRAE, ASME, AWS D1.1, ACI 318, and Uptime Institute Tier Standards",
+      "OSHA 30-Hour certification required",
+      "Strong documentation, communication, and technical report-writing skills",
     ],
     certifications: [
+      "CWI (Certified Welding Inspector) — AWS",
+      "ACI Concrete Field Testing Technician",
+      "ICC (International Code Council) Building Inspector",
+      "NETA Electrical Testing Certification",
       "OSHA 30-Hour Construction Safety",
-      "OSHA 10-Hour Construction Safety",
-      "First Aid / CPR / AED Certification",
-      "CHST (Construction Health & Safety Technician)",
-      "STSC (Safety Trained Supervisor Construction)",
-      "NFPA 70E Electrical Safety Certification",
+      "ASQ CQI (Certified Quality Inspector)",
+      "CQM (Construction Quality Management) — USACE",
+      "NICET (National Institute for Certification in Engineering Technologies)",
     ],
     industries: [
       { name: "Data Centers", slug: "data-center-staffing" },
@@ -564,58 +567,58 @@ const rolesData: Record<string, RoleData> = {
     ],
     relatedRoles: [
       {
-        title: "Construction Managers",
-        slug: "construction-managers",
-        brief:
-          "Construction managers work alongside superintendents, focusing on overall site management while superintendents drive field execution.",
-      },
-      {
-        title: "Project Managers",
-        slug: "project-managers",
-        brief:
-          "Project managers provide the schedule, budget, and contractual framework within which superintendents execute field operations.",
-      },
-      {
         title: "Commissioning Agents",
         slug: "commissioning-agents",
         brief:
-          "Commissioning agents coordinate with superintendents during the testing phases that bridge construction completion and facility turnover.",
+          "Commissioning agents build on the QA/QC inspector's verification work, performing functional and integrated systems testing to validate facility performance.",
+      },
+      {
+        title: "MEP Engineers",
+        slug: "mep-engineers",
+        brief:
+          "MEP engineers design the systems that QA/QC inspectors verify in the field, providing the specifications and design intent that drive inspection criteria.",
+      },
+      {
+        title: "Construction Managers",
+        slug: "construction-managers",
+        brief:
+          "Construction managers oversee overall site execution and rely on QA/QC inspectors to identify and resolve quality deficiencies before they impact the schedule.",
       },
     ],
     faqs: [
       {
         question:
-          "What does a data center superintendent do on a daily basis?",
+          "What does a QA/QC inspector do on a data center construction site?",
         answer:
-          "A data center superintendent's day typically begins with a site walk to assess overnight conditions and plan the day's activities. They conduct a morning safety briefing, coordinate with subcontractor foremen on daily work plans, manage material deliveries and crane operations, perform quality inspections, resolve field conflicts, and document progress through daily reports. Throughout the day, they move continuously across the site, ensuring that work progresses safely and according to the approved schedule and specifications. On data center projects specifically, they must also manage clean build protocols, coordinate energization sequences, and interface with commissioning teams.",
+          "A QA/QC inspector's day on a data center site involves performing systematic inspections of ongoing construction work across all trades. They verify that electrical terminations, conduit installations, mechanical piping, ductwork, structural connections, and concrete work conform to the approved drawings and specifications. They witness critical tests such as pressure testing, megger testing, and concrete cylinder breaks. They document deficiencies through non-conformance reports, track corrective actions to closure, and review subcontractor quality documentation. They also coordinate with commissioning agents to ensure construction verification is complete before systems testing begins.",
       },
       {
         question:
-          "What is the salary range for data center superintendents?",
+          "What is the salary range for data center QA/QC inspectors?",
         answer:
-          "Data center superintendents typically earn between $100,000 and $170,000 annually in base salary. Total compensation packages, including bonuses, per diem allowances for travel assignments, vehicle allowances, and benefits, can push total annual earnings to $180,000 to $220,000 for experienced professionals. Superintendents with hyperscale data center experience in high-demand markets command the highest compensation, reflecting the scarcity of qualified field leaders in this specialized sector.",
+          "Data center QA/QC inspectors typically earn between $80,000 and $140,000 annually in base salary, depending on experience, certifications, and geographic market. Senior QA/QC managers overseeing quality programs across multi-building campus programs can earn $130,000 to $160,000+. Total compensation often includes per diem for travel assignments ($100-$175/day), vehicle allowance, and benefits. Inspectors with specialized certifications like CWI, NETA, or PE command premium compensation, reflecting the scarcity of qualified quality professionals in mission critical construction.",
       },
       {
         question:
-          "How is a data center superintendent different from a commercial construction superintendent?",
+          "What certifications are most valuable for QA/QC inspectors in data center construction?",
         answer:
-          "Data center superintendents must manage several unique challenges beyond standard commercial construction. These include maintaining clean build protocols during white space construction to prevent contamination of IT equipment, coordinating phased energization sequences for mission critical electrical systems, managing construction activities adjacent to live data center operations, enforcing vibration and dust control measures to protect sensitive equipment, and coordinating with commissioning teams during extended testing phases. The precision and zero-tolerance-for-error mentality required in data center construction creates a higher performance bar than most commercial projects.",
+          "The most valued certifications include: CWI (Certified Welding Inspector) from AWS for structural and piping inspection, ACI certifications for concrete testing, ICC (International Code Council) certifications for building inspection, NETA certification for electrical testing and acceptance, and OSHA 30-Hour for safety compliance. Additional certifications like CQM (Construction Quality Management from USACE), ASQ CQI (Certified Quality Inspector), NICET, and Six Sigma credentials strengthen a candidate's profile. For senior QA/QC manager roles, a PE license or CCM certification provides a competitive advantage.",
       },
       {
         question:
-          "What career path leads to a data center superintendent role?",
+          "Why is QA/QC inspection particularly critical in data center construction?",
         answer:
-          "Most data center superintendents follow a field-based career progression, starting as apprentices or journeymen in a specific trade (often electrical or mechanical), advancing to foreman, then assistant superintendent, and finally superintendent. This progression typically spans 10-20 years. Some superintendents come from military construction backgrounds. The transition from commercial or industrial superintendent to data center superintendent usually requires mentorship from experienced data center field leaders and a learning curve on mission critical systems, clean build protocols, and commissioning coordination.",
+          "Data center construction has zero tolerance for quality failures because the consequences are catastrophic — a faulty electrical termination can cause an arc flash, a deficient pipe weld can cause a cooling system leak that damages millions in IT equipment, and an improperly installed fire suppression system can fail during an emergency. QA/QC inspectors catch these deficiencies before systems are energized and before the commissioning process begins. The Uptime Institute emphasizes that construction quality directly correlates with facility reliability, making rigorous QA/QC inspection a non-negotiable requirement for any mission critical build.",
       },
       {
         question:
-          "Can DC TALNT provide superintendents for multi-phase data center campus programs?",
+          "How quickly can DC TALNT place a QA/QC inspector?",
         answer:
-          "Yes. We regularly staff superintendents for multi-phase data center campus programs that span several years and involve multiple concurrent buildings. These assignments may require area superintendents (responsible for specific buildings or zones), MEP superintendents (focused on mechanical and electrical trade coordination), and general superintendents (overseeing the entire campus program). We match the superintendent's experience level and specialization to the specific demands of each role within the campus program structure.",
+          "Our average time-to-fill for QA/QC inspector roles is 10-18 business days, with pre-vetted candidates available for presentation within 5-7 business days. For urgent needs on active construction sites where quality coverage gaps create schedule risk, we maintain relationships with certified QA/QC professionals between project assignments who can mobilize within one week. Our specialized focus on data center and mission critical construction means we recruit from a targeted pool of quality professionals with the specific certifications and experience that these projects demand.",
       },
     ],
     demandTrend:
-      "Superintendent demand in data center construction has reached critical levels as the industry struggles to fill field leadership positions on an expanding number of concurrent projects. The shortage is compounded by an aging workforce—many experienced superintendents are approaching retirement—and the difficulty of rapidly training replacements for a role that requires years of on-site experience. Markets with heavy data center construction activity, including Northern Virginia, Phoenix, Dallas, and Atlanta, report the most acute shortages.",
+      "QA/QC inspector demand in data center construction has grown significantly as the industry prioritizes zero-defect delivery on increasingly complex hyperscale builds. Owners and general contractors are expanding quality programs that historically relied on a single QA/QC manager to now include dedicated inspectors for electrical, mechanical, structural, and civil disciplines. Markets with heavy data center construction activity, including Northern Virginia, Phoenix, Dallas, and Columbus, report the most acute shortages of qualified quality professionals.",
   },
 
   /* ---------------------------------------------------------------------- */
@@ -688,10 +691,10 @@ const rolesData: Record<string, RoleData> = {
           "Project managers schedule and coordinate commissioning milestones within the overall project delivery timeline.",
       },
       {
-        title: "Superintendents",
-        slug: "superintendents",
+        title: "QA/QC Inspectors",
+        slug: "qa-qc-inspectors",
         brief:
-          "Superintendents coordinate field access, system readiness, and contractor support for commissioning testing events.",
+          "QA/QC inspectors verify construction quality and complete pre-functional checklists before commissioning testing begins.",
       },
     ],
     faqs: [
@@ -741,7 +744,7 @@ export function generateStaticParams() {
     { slug: "construction-managers" },
     { slug: "schedulers" },
     { slug: "mep-engineers" },
-    { slug: "superintendents" },
+    { slug: "qa-qc-inspectors" },
     { slug: "commissioning-agents" },
   ];
 }

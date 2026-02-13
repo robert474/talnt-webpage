@@ -27,7 +27,7 @@ export const industries: Industry[] = [
     metaTitle:
       "Data Center Staffing & Recruitment | Specialized Talent for Critical Facilities",
     metaDescription:
-      "Data Center TALNT delivers pre-vetted project managers, MEP engineers, commissioning agents, and superintendents for hyperscale, colocation, and enterprise data center builds across the US.",
+      "Data Center TALNT delivers pre-vetted project managers, MEP engineers, commissioning agents, and QA/QC inspectors for hyperscale, colocation, and enterprise data center builds across the US.",
     heroTitle: "Data Center Staffing Solutions Built for Scale",
     heroSubtitle:
       "From hyperscale campuses to edge deployments, we connect data center owners and contractors with the specialized talent that keeps builds on schedule and within budget.",
@@ -37,9 +37,9 @@ export const industries: Industry[] = [
       "Data Center Project Manager",
       "MEP Engineer (Mechanical, Electrical, Plumbing)",
       "Commissioning Agent / Cx Authority",
-      "Data Center Superintendent",
-      "Electrical Superintendent",
-      "Mechanical Superintendent",
+      "Data Center QA/QC Inspector",
+      "Electrical QA/QC Inspector",
+      "Mechanical QA/QC Inspector",
       "Controls & BMS Engineer",
       "Preconstruction Manager",
       "Critical Power Engineer",
@@ -62,7 +62,7 @@ export const industries: Industry[] = [
       {
         question: "What types of data center roles do you staff?",
         answer:
-          "We staff the full spectrum of data center construction and operations roles, including project managers, MEP engineers (mechanical, electrical, and plumbing), commissioning agents, superintendents, BMS/controls engineers, preconstruction managers, estimators, schedulers, safety managers, QA/QC managers, BIM coordinators, fire protection engineers, and critical power engineers. Our candidates have direct experience with Tier III and Tier IV facilities, hyperscale campuses, colocation facilities, and enterprise data centers.",
+          "We staff the full spectrum of data center construction and operations roles, including project managers, MEP engineers (mechanical, electrical, and plumbing), commissioning agents, QA/QC inspectors, BMS/controls engineers, preconstruction managers, estimators, schedulers, safety managers, QA/QC managers, BIM coordinators, fire protection engineers, and critical power engineers. Our candidates have direct experience with Tier III and Tier IV facilities, hyperscale campuses, colocation facilities, and enterprise data centers.",
       },
       {
         question:
@@ -110,12 +110,12 @@ export const industries: Industry[] = [
     heroSubtitle:
       "We place engineers, project managers, and commissioning professionals in environments where uptime requirements are measured in nines and downtime costs millions per minute.",
     description:
-      "Mission critical facilities operate under a simple mandate: they cannot fail. Whether it is a Level I trauma center, a financial trading floor processing billions in daily transactions, a Tier IV telecom central office, or a pharmaceutical manufacturing cleanroom, these environments demand professionals who understand that every system, every connection, and every procedure exists to protect continuous operation. Data Center TALNT provides the specialized talent these facilities require, professionals who bring both the technical expertise and the operational mindset that mission critical environments demand.\n\nThe mission critical sector encompasses a broad range of facility types, each with unique regulatory frameworks, redundancy requirements, and operational protocols. Healthcare facilities must comply with Joint Commission standards, ASHRAE 170, and FGI Guidelines. Financial institutions operate under SEC and FINRA infrastructure mandates. Telecommunications facilities follow TIA-942 and Telcordia standards. Government and defense installations require security clearances and must meet SCIF specifications. Our recruiters understand these distinctions and screen candidates against the specific compliance and technical requirements of each subsector.\n\nStaffing these environments requires more than matching resumes to job descriptions. It requires understanding that a mechanical engineer for a hospital central plant needs expertise in medical gas systems, steam sterilization, and redundant chiller plants that a commercial HVAC engineer simply does not possess. It means knowing that a superintendent for a pharmaceutical cleanroom must understand ISO 14644 classification, differential pressurization, and FDA validation protocols. This depth of screening is what sets Data Center TALNT apart and why our mission critical clients achieve placement success rates above 92%.",
+      "Mission critical facilities operate under a simple mandate: they cannot fail. Whether it is a Level I trauma center, a financial trading floor processing billions in daily transactions, a Tier IV telecom central office, or a pharmaceutical manufacturing cleanroom, these environments demand professionals who understand that every system, every connection, and every procedure exists to protect continuous operation. Data Center TALNT provides the specialized talent these facilities require, professionals who bring both the technical expertise and the operational mindset that mission critical environments demand.\n\nThe mission critical sector encompasses a broad range of facility types, each with unique regulatory frameworks, redundancy requirements, and operational protocols. Healthcare facilities must comply with Joint Commission standards, ASHRAE 170, and FGI Guidelines. Financial institutions operate under SEC and FINRA infrastructure mandates. Telecommunications facilities follow TIA-942 and Telcordia standards. Government and defense installations require security clearances and must meet SCIF specifications. Our recruiters understand these distinctions and screen candidates against the specific compliance and technical requirements of each subsector.\n\nStaffing these environments requires more than matching resumes to job descriptions. It requires understanding that a mechanical engineer for a hospital central plant needs expertise in medical gas systems, steam sterilization, and redundant chiller plants that a commercial HVAC engineer simply does not possess. It means knowing that a QA/QC inspector for a pharmaceutical cleanroom must understand ISO 14644 classification, differential pressurization, and FDA validation protocols. This depth of screening is what sets Data Center TALNT apart and why our mission critical clients achieve placement success rates above 92%.",
     keyRoles: [
       "Mission Critical Project Manager",
       "Critical Facility MEP Engineer",
       "Commissioning Agent (Healthcare/Financial)",
-      "Critical Systems Superintendent",
+      "Critical Systems QA/QC Inspector",
       "Controls & Automation Engineer",
       "Fire Protection / Life Safety Engineer",
       "Reliability Engineer",
@@ -176,19 +176,19 @@ export const industries: Industry[] = [
     slug: "construction-staffing",
     title: "Construction Staffing",
     metaTitle:
-      "Construction Staffing Agency | Project Managers, Superintendents & Engineers",
+      "Construction Staffing Agency | Project Managers, QA/QC Inspectors & Engineers",
     metaDescription:
-      "Specialized construction staffing for ground-up builds, renovations, and tenant improvements. We place project managers, superintendents, estimators, and engineers on commercial and industrial projects.",
+      "Specialized construction staffing for ground-up builds, renovations, and tenant improvements. We place project managers, QA/QC inspectors, estimators, and engineers on commercial and industrial projects.",
     heroTitle: "Construction Talent That Delivers Projects on Time and on Budget",
     heroSubtitle:
       "From preconstruction through punch list, we source experienced construction professionals who bring the leadership and technical skills your projects demand.",
     description:
-      "The US construction industry put $2.2 trillion of work in place in 2024, yet the sector faces a workforce shortage of roughly 500,000 skilled workers according to Associated Builders and Contractors. This gap is most acute at the supervisory and management level, where experienced project managers, superintendents, and engineers are in fierce demand across commercial, industrial, and institutional sectors. Data Center TALNT bridges this gap by connecting construction firms with pre-vetted professionals who have the track record, certifications, and leadership capabilities to drive project success.\n\nOur construction staffing practice covers the full project lifecycle. During preconstruction we place estimators, preconstruction managers, and VDC/BIM coordinators who set projects up for success from day one. During active construction we deliver project managers, superintendents, assistant superintendents, MEP coordinators, safety managers, and quality control professionals. For closeout we provide commissioning agents, punch list managers, and turnover coordinators. This lifecycle approach means we understand not just the role in isolation but how it connects to every other function on the project.\n\nWe serve general contractors, specialty subcontractors, construction management firms, and owner-direct organizations across ground-up new construction, major renovation, tenant improvement, and infrastructure projects. Our recruiters have construction industry backgrounds and understand the difference between a superintendent who has run a $200 million healthcare project and one who has managed $20 million retail build-outs. This nuance in evaluation is what allows us to deliver candidates who match the specific scope, complexity, and culture of your projects.",
+      "The US construction industry put $2.2 trillion of work in place in 2024, yet the sector faces a workforce shortage of roughly 500,000 skilled workers according to Associated Builders and Contractors. This gap is most acute at the supervisory and management level, where experienced project managers, QA/QC inspectors, and engineers are in fierce demand across commercial, industrial, and institutional sectors. Data Center TALNT bridges this gap by connecting construction firms with pre-vetted professionals who have the track record, certifications, and leadership capabilities to drive project success.\n\nOur construction staffing practice covers the full project lifecycle. During preconstruction we place estimators, preconstruction managers, and VDC/BIM coordinators who set projects up for success from day one. During active construction we deliver project managers, QA/QC inspectors, assistant QA/QC inspectors, MEP coordinators, safety managers, and quality control professionals. For closeout we provide commissioning agents, punch list managers, and turnover coordinators. This lifecycle approach means we understand not just the role in isolation but how it connects to every other function on the project.\n\nWe serve general contractors, specialty subcontractors, construction management firms, and owner-direct organizations across ground-up new construction, major renovation, tenant improvement, and infrastructure projects. Our recruiters have construction industry backgrounds and understand the difference between a QA/QC inspector who has run a $200 million healthcare project and one who has managed $20 million retail build-outs. This nuance in evaluation is what allows us to deliver candidates who match the specific scope, complexity, and culture of your projects.",
     keyRoles: [
       "Construction Project Manager",
-      "Senior Superintendent",
-      "Assistant Superintendent",
-      "General Superintendent",
+      "Senior QA/QC Inspector",
+      "Assistant QA/QC Inspector",
+      "General QA/QC Inspector",
       "Preconstruction Manager",
       "Senior Estimator",
       "MEP Coordinator",
@@ -205,7 +205,7 @@ export const industries: Industry[] = [
       "US Construction Spending (2024)": "$2.2 trillion",
       "Industry Workforce Shortage": "~500,000 workers (ABC estimate)",
       "Avg. PM Salary (Commercial)": "$105,000-$165,000",
-      "Avg. Superintendent Salary": "$95,000-$150,000",
+      "Avg. QA/QC Inspector Salary": "$80,000-$140,000",
       "Projected Industry Growth (2024-2034)": "4.7% (BLS)",
       "Time to Fill Senior Roles (Industry Avg.)": "45-60 days",
     },
@@ -224,13 +224,13 @@ export const industries: Industry[] = [
       {
         question: "Do you provide both temporary and permanent construction staffing?",
         answer:
-          "Yes. We offer direct hire (permanent placement), contract staffing (project-duration assignments), and contract-to-hire engagements. Many of our clients use contract staffing to bring on senior leadership for specific project phases, such as a superintendent for the duration of a 14-month build, while others use our direct hire service to fill permanent positions on their core team. We also support surge staffing for firms that have won multiple projects simultaneously and need to scale their team rapidly.",
+          "Yes. We offer direct hire (permanent placement), contract staffing (project-duration assignments), and contract-to-hire engagements. Many of our clients use contract staffing to bring on senior leadership for specific project phases, such as a QA/QC inspector for the duration of a 14-month build, while others use our direct hire service to fill permanent positions on their core team. We also support surge staffing for firms that have won multiple projects simultaneously and need to scale their team rapidly.",
       },
       {
         question:
           "What experience level do your construction candidates typically have?",
         answer:
-          "We primarily focus on mid-career to senior-level construction professionals. Our typical project manager candidate has 8-15 years of experience and has managed $50 million to $500 million+ in project value. Our superintendent candidates typically have 10-20 years of field experience and have run projects across multiple sectors. For estimating and preconstruction roles, we source candidates with 5-15 years of experience and demonstrated accuracy in competitive bid and negotiated environments. We also place earlier-career project engineers and assistant superintendents with 3-7 years of experience.",
+          "We primarily focus on mid-career to senior-level construction professionals. Our typical project manager candidate has 8-15 years of experience and has managed $50 million to $500 million+ in project value. Our QA/QC inspector candidates typically have 10-20 years of field experience and have run projects across multiple sectors. For estimating and preconstruction roles, we source candidates with 5-15 years of experience and demonstrated accuracy in competitive bid and negotiated environments. We also place earlier-career project engineers and assistant QA/QC inspectors with 3-7 years of experience.",
       },
       {
         question: "What regions do you cover for construction staffing?",
@@ -240,7 +240,7 @@ export const industries: Industry[] = [
       {
         question: "How do you ensure construction candidates are safety-qualified?",
         answer:
-          "Safety is a non-negotiable component of our screening process. We verify OSHA 30-Hour certification (required for all supervisory candidates), check for OSHA violation history, confirm current first aid and CPR certifications, and review each candidate's personal safety record including EMR (Experience Modification Rate) history for superintendent and safety roles. We also assess safety culture alignment during interviews, ensuring candidates prioritize proactive safety management rather than reactive compliance.",
+          "Safety is a non-negotiable component of our screening process. We verify OSHA 30-Hour certification (required for all supervisory candidates), check for OSHA violation history, confirm current first aid and CPR certifications, and review each candidate's personal safety record including EMR (Experience Modification Rate) history for QA/QC inspector and safety roles. We also assess safety culture alignment during interviews, ensuring candidates prioritize proactive safety management rather than reactive compliance.",
       },
     ],
     icon: "hardhat",
@@ -273,7 +273,7 @@ export const industries: Industry[] = [
       "Wind Turbine Engineer",
       "BESS (Battery Storage) Engineer",
       "Grid Modernization Specialist",
-      "Utility Construction Superintendent",
+      "Utility Construction QA/QC Inspector",
       "SCADA / Controls Engineer",
       "Environmental Compliance Manager",
       "Right-of-Way Agent",
@@ -305,7 +305,7 @@ export const industries: Industry[] = [
       {
         question: "Do you staff for renewable energy projects specifically?",
         answer:
-          "Yes, renewable energy staffing is one of our fastest-growing practice areas. We place professionals across the full renewable energy project lifecycle including development (site assessors, environmental consultants, permitting specialists), engineering (solar designers, wind resource analysts, electrical engineers, interconnection specialists), construction (project managers, superintendents, commissioning agents, QA/QC inspectors), and operations (plant managers, O&M technicians, performance analysts, asset managers). We staff for utility-scale solar (100+ MW), distributed generation, onshore wind farms, emerging offshore wind projects, and battery energy storage systems (BESS).",
+          "Yes, renewable energy staffing is one of our fastest-growing practice areas. We place professionals across the full renewable energy project lifecycle including development (site assessors, environmental consultants, permitting specialists), engineering (solar designers, wind resource analysts, electrical engineers, interconnection specialists), construction (project managers, QA/QC inspectors, commissioning agents), and operations (plant managers, O&M technicians, performance analysts, asset managers). We staff for utility-scale solar (100+ MW), distributed generation, onshore wind farms, emerging offshore wind projects, and battery energy storage systems (BESS).",
       },
       {
         question:

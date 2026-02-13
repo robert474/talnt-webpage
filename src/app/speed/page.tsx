@@ -160,7 +160,7 @@ const speedFaqs = [
   {
     question: "How much does an unfilled construction role cost per week?",
     answer:
-      "An unfilled project manager or superintendent position costs approximately $15,000+ per week in schedule delays, idle crew costs, and contractor penalties. Over the 126-day industry average, that totals over $250,000 in lost productivity per vacancy.",
+      "An unfilled project manager or QA/QC inspector position costs approximately $15,000+ per week in schedule delays, idle crew costs, and contractor penalties. Over the 126-day industry average, that totals over $250,000 in lost productivity per vacancy.",
   },
   {
     question: "Why is hiring for data center construction so slow?",

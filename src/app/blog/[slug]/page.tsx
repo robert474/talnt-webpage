@@ -102,7 +102,7 @@ const articles: Record<string, React.ReactNode> = {
         <A href="https://www.bls.gov/">Bureau of Labor Statistics</A>, the
         construction sector has maintained a job openings rate above 4% since
         2023 — one of the highest of any industry. In data center construction
-        specifically, the stakes are even higher. A vacant superintendent
+        specifically, the stakes are even higher. A vacant QA/QC inspector
         position on an active hyperscale build doesn't just slow progress; it
         cascades into schedule delays, subcontractor coordination failures, and
         penalty clauses that can cost hundreds of thousands per week.
@@ -131,7 +131,7 @@ const articles: Record<string, React.ReactNode> = {
 
       <H2>Access to Passive Candidates</H2>
       <P>
-        The best superintendents, project managers, and MEP engineers aren't
+        The best QA/QC inspectors, project managers, and MEP engineers aren't
         scrolling job boards. They're on active builds, heads-down, and not
         thinking about their next move — until the right opportunity finds
         them. Staffing agencies spend years cultivating relationships with these
@@ -158,7 +158,7 @@ const articles: Record<string, React.ReactNode> = {
       <P>
         This dramatically reduces the cost of bad hires — which the{" "}
         <A href="https://www.bls.gov/">Department of Labor</A> estimates at 30%
-        of first-year earnings. For a $160K superintendent, that's $48,000 in
+        of first-year earnings. For a $120K QA/QC inspector, that's $36,000 in
         wasted recruiting, onboarding, and lost productivity.
       </P>
 
@@ -257,8 +257,8 @@ const articles: Record<string, React.ReactNode> = {
       <H3>Salary Inflation</H3>
       <P>
         Compensation for data center construction roles has increased 8-15%
-        year-over-year since 2024. Senior superintendents in Northern Virginia
-        now command $180K+ base salary plus $150-$200/day per diem.
+        year-over-year since 2024. QA/QC inspectors in Northern Virginia
+        now command $100K-$140K+ base salary.
         Project managers with hyperscale experience are seeing $175K+ with
         20% bonuses. See our complete{" "}
         <IL href="/blog/2026-data-center-construction-salary-guide">
@@ -739,18 +739,17 @@ const articles: Record<string, React.ReactNode> = {
         in market value.
       </P>
 
-      <H2>Senior Superintendent</H2>
+      <H2>QA/QC Inspector</H2>
       <P>
-        <strong>Base Salary:</strong> $140,000 – $185,000<br />
-        <strong>Per Diem:</strong> $150 – $200/day ($35K-$50K/year)<br />
-        <strong>Total Comp:</strong> $175,000 – $235,000
+        <strong>Base Salary:</strong> $80,000 – $140,000<br />
+        <strong>Bonus:</strong> 5-10%<br />
+        <strong>Total Comp:</strong> $84,000 – $154,000
       </P>
       <P>
-        Superintendents who can manage 200+ person crews on hyperscale builds
-        are arguably the scarcest talent in the industry. Per diem is a major
-        component — at $175/day, that's an additional $45,000 tax-advantaged
-        annually. Northern Virginia commands the highest premiums (+15% over
-        national averages), followed by Phoenix (+10%).
+        QA/QC inspectors who can manage quality programs on hyperscale builds
+        are arguably the scarcest talent in the industry. Northern Virginia
+        commands the highest premiums (+15% over national averages), followed
+        by Phoenix (+10%).
       </P>
 
       <H2>Commissioning Agent (CxA)</H2>
@@ -1334,7 +1333,7 @@ const articles: Record<string, React.ReactNode> = {
         warned repeatedly that labor shortages are the single biggest risk
         to the global data center buildout. When every hyperscaler is
         building simultaneously in the same markets, they're competing for
-        the same electricians, pipe fitters, superintendents, and
+        the same electricians, pipe fitters, QA/QC inspectors, and
         commissioning agents. Poaching is rampant, retention is expensive,
         and project teams turn over mid-build with alarming frequency.
       </P>
@@ -1507,10 +1506,10 @@ const articles: Record<string, React.ReactNode> = {
 
       <H2>The Bottleneck Roles</H2>
 
-      <H3>Senior Superintendents</H3>
+      <H3>QA/QC Inspectors</H3>
       <P>
-        The single hardest role to fill. A superintendent who can manage a
-        200+ person crew on a hyperscale data center build — coordinating
+        The single hardest role to fill. A QA/QC inspector who can manage a
+        quality program on a hyperscale data center build — coordinating
         MEP subcontractors, managing commissioning timelines, and
         maintaining quality standards — takes 15-20 years to develop.
         There is no shortcut, no bootcamp, no accelerated program that
@@ -1583,7 +1582,7 @@ const articles: Record<string, React.ReactNode> = {
       <P>
         Rather than hiring only experienced data center workers, some
         employers are investing in training commercial construction
-        professionals for mission critical work. A superintendent with
+        professionals for mission critical work. A QA/QC inspector with
         hospital or pharmaceutical facility experience already understands
         critical systems — the transition to data centers requires
         incremental training, not starting from zero.
@@ -1654,7 +1653,7 @@ const articles: Record<string, React.ReactNode> = {
         reference points:
       </P>
       <ul className="mb-4 ml-6 list-disc space-y-2 text-gray-700">
-        <li>Senior Superintendent: $140K-$185K base + $35K-$50K per diem</li>
+        <li>QA/QC Inspector: $80K-$140K base</li>
         <li>Project Manager: $130K-$175K base + 10-20% bonus</li>
         <li>Commissioning Agent: $110K-$155K base + travel allowances</li>
         <li>MEP Engineer: $105K-$145K base</li>

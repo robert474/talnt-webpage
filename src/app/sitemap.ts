@@ -127,7 +127,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     'construction-managers',
     'schedulers',
     'mep-engineers',
-    'superintendents',
+    'qa-qc-inspectors',
     'commissioning-agents',
   ]
 
