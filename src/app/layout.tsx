@@ -102,7 +102,7 @@ const organizationSchema: Record<string, unknown> = {
   contactPoint: [
     {
       "@type": "ContactPoint",
-      telephone: "+1-555-123-4567",
+      telephone: "+1-206-755-0724",
       contactType: "customer service",
       areaServed: "US",
       availableLanguage: "English",
@@ -110,10 +110,10 @@ const organizationSchema: Record<string, unknown> = {
   ],
   address: {
     "@type": "PostalAddress",
-    streetAddress: "123 Main Street, Suite 400",
-    addressLocality: "Dallas",
+    streetAddress: "31801 Red Bud Ln, Ste B-182",
+    addressLocality: "Round Rock",
     addressRegion: "TX",
-    postalCode: "75201",
+    postalCode: "78664",
     addressCountry: "US",
   },
 };

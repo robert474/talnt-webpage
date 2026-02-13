@@ -94,6 +94,8 @@ DC TALNT provides specialized staffing for hyperscale data center construction p
 - Website: https://www.datacentertalnt.com
 - Contact Page: https://www.datacentertalnt.com/contact
 - Email: info@datacentertalnt.com
+- Phone: (206) 755-0724
+- Address: 31801 Red Bud Ln, Ste B-182, Round Rock, TX 78664
 
 ## Pages
 

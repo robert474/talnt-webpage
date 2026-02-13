@@ -153,21 +153,21 @@ export default function Footer() {
             <meta itemProp="url" content="https://www.datacentertalnt.com" />
             <div itemProp="address" itemScope itemType="https://schema.org/PostalAddress">
               <p className="font-medium text-gray-300">Address</p>
-              <p itemProp="streetAddress">123 Main Street, Suite 400</p>
+              <p itemProp="streetAddress">31801 Red Bud Ln, Ste B-182</p>
               <p>
-                <span itemProp="addressLocality">Dallas</span>,{" "}
+                <span itemProp="addressLocality">Round Rock</span>,{" "}
                 <span itemProp="addressRegion">TX</span>{" "}
-                <span itemProp="postalCode">75201</span>
+                <span itemProp="postalCode">78664</span>
               </p>
             </div>
             <div>
               <p className="font-medium text-gray-300">Phone</p>
               <a
-                href="tel:+15551234567"
+                href="tel:+12067550724"
                 itemProp="telephone"
                 className="hover:text-white transition-colors duration-200"
               >
-                (555) 123-4567
+                (206) 755-0724
               </a>
             </div>
             <div>
