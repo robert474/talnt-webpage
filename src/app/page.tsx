@@ -401,8 +401,8 @@ export default function HomePage() {
           <div className="mt-10 flex flex-wrap items-center justify-center gap-x-16 gap-y-10 sm:gap-x-20 lg:gap-x-28">
             {[
               { name: "Amazon Web Services", src: "/images/logos/aws.svg", width: 160, height: 80 },
-              { name: "OpenAI", src: "/images/logos/openai.svg", width: 260, height: 80 },
-              { name: "Oracle", src: "/images/logos/oracle.svg", width: 240, height: 80 },
+              { name: "OpenAI", src: "/images/logos/OpenAI_Wordmark_Gif.webp", width: 260, height: 80 },
+              { name: "Oracle", src: "/images/logos/Oracle_ideA555_no_0.svg", width: 240, height: 80 },
             ].map((logo) => (
               <Link key={logo.name} href="/industries/hyperscalers" className="transition-opacity hover:opacity-70">
                 <Image

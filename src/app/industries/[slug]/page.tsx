@@ -15,8 +15,8 @@ import {
 
 const hyperscalerLogos = [
   { name: "Amazon Web Services", src: "/images/logos/aws.svg", width: 200, height: 100 },
-  { name: "OpenAI", src: "/images/logos/openai.svg", width: 320, height: 100 },
-  { name: "Oracle", src: "/images/logos/oracle.svg", width: 280, height: 100 },
+  { name: "OpenAI", src: "/images/logos/OpenAI_Wordmark_Gif.webp", width: 320, height: 100 },
+  { name: "Oracle", src: "/images/logos/Oracle_ideA555_no_0.svg", width: 280, height: 100 },
 ];
 
 function HyperscalerLogos() {
