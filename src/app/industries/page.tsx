@@ -197,9 +197,9 @@ export default function IndustriesPage() {
         <div className="container-page">
           <div className="grid grid-cols-2 gap-8 sm:grid-cols-4">
             {[
-              { value: "500+", label: "Professionals Placed" },
+              { value: "100+", label: "Professionals Placed" },
               { value: "4", label: "Industry Verticals" },
-              { value: "40+", label: "States Covered" },
+              { value: "20+", label: "Markets Covered" },
               { value: "48hr", label: "Avg. First Shortlist" },
             ].map((stat) => (
               <div key={stat.label} className="text-center">

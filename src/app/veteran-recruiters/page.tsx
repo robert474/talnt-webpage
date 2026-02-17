@@ -4,9 +4,9 @@ import { SchemaScript, generateBreadcrumbSchema, generateFAQSchema, generateSpea
 import Button from "@/components/ui/Button";
 
 export const metadata = genMeta({
-  title: "15+ Year Industry Veterans | Our Recruiters | Data Center TALNT",
+  title: "Industry Veteran Recruiters | Our Team | Data Center TALNT",
   description:
-    "DC TALNT recruiters average 15+ years in data center and construction staffing. Their deep networks and hands-on industry knowledge mean faster placements with candidates who actually fit.",
+    "DC TALNT recruiters bring years of specialized recruiting experience in data center and construction staffing. Their deep networks and technical screening skills mean faster placements with candidates who actually fit.",
   path: "/veteran-recruiters",
   keywords: [
     "experienced construction recruiters",
@@ -25,17 +25,17 @@ const recruiterEdge = [
   {
     title: "They've Walked the Job Sites",
     description:
-      "Our recruiters haven't just read about data center construction — they've been on the ground. They've attended OAC meetings, observed commissioning events, and toured facilities mid-build. When a candidate says they've managed phased energization on a Tier IV facility, our team knows what questions to ask next.",
+      "Our recruiters have deep backgrounds in technical recruiting — from companies like Apple, Rackspace, Aerotek, and Duo Security. When a candidate claims they've managed phased energization on a Tier IV facility, our team knows how to vet that claim and find the truth.",
   },
   {
-    title: "15+ Years of Relationships",
+    title: "Deep Industry Networks",
     description:
-      "You can't fake a network that took 15 years to build. Our recruiters have placed hundreds of professionals across every major data center market. That means when we need a senior PM in Ashburn or a CxA lead in Phoenix, we're calling people we've worked with before — not cold-searching LinkedIn.",
+      "You can't fake a network built over years of recruiting in niche industries. Our team has built relationships across every major data center market. That means when we need a senior PM in Ashburn or a CxA lead in Phoenix, we're calling people we've worked with before — not cold-searching LinkedIn.",
   },
   {
     title: "They Know What Good Looks Like",
     description:
-      "After thousands of placements, pattern recognition kicks in. Our team can spot the difference between a candidate who padded their resume and one who actually delivered a 60MW campus on schedule. That instinct saves you weeks of interviewing the wrong people.",
+      "After years of technical recruiting, pattern recognition kicks in. Our team can spot the difference between a candidate who padded their resume and one who actually delivered a 60MW campus on schedule. That instinct saves you weeks of interviewing the wrong people.",
   },
   {
     title: "Trusted by Hiring Managers",
@@ -45,17 +45,17 @@ const recruiterEdge = [
 ];
 
 const stats = [
-  { value: "15+", label: "Years Avg. Experience" },
-  { value: "2,500+", label: "Placements Made" },
-  { value: "96%", label: "Retention Rate" },
-  { value: "40+", label: "States Covered" },
+  { value: "50+", label: "Years Combined Experience" },
+  { value: "20+", label: "Markets Served" },
+  { value: "4", label: "Industries We Focus On" },
+  { value: "Nationwide", label: "Coverage" },
 ];
 
 const recruiterFaqs = [
   {
     question: "How experienced are DC TALNT recruiters?",
     answer:
-      "Every recruiter at DC TALNT averages more than 15 years of specialized experience in data center, mission critical, and construction staffing. They've made over 2,500 combined placements across 40+ states.",
+      "Our recruiters bring years of specialized experience in data center, mission critical, and construction staffing. Their combined experience spans roles at companies like Apple, Rackspace, Aerotek, and Duo Security, giving them deep technical screening capabilities across all major markets.",
   },
   {
     question: "Why does recruiter experience matter for data center hiring?",
@@ -65,7 +65,7 @@ const recruiterFaqs = [
   {
     question: "What is DC TALNT's candidate retention rate?",
     answer:
-      "Our first-year retention rate is 96%. This is because our experienced recruiters don't just match resumes to job descriptions — they assess cultural fit, project scope alignment, and long-term career goals to ensure placements that last.",
+      "We prioritize retention because our experienced recruiters don't just match resumes to job descriptions — they assess cultural fit, project scope alignment, and long-term career goals to ensure placements that last.",
   },
   {
     question: "How is DC TALNT different from generalist staffing agencies?",
@@ -105,13 +105,14 @@ export default function VeteranRecruitersPage() {
             Our Recruiters
           </p>
           <h1 className="mt-4 text-4xl font-bold tracking-tight text-white sm:text-5xl lg:text-6xl text-balance">
-            15+ Year Veterans. Not Junior Sourcers.
+            Industry Veteran Recruiters. Not Junior Sourcers.
           </h1>
           <p className="mx-auto mt-6 max-w-2xl text-lg leading-relaxed text-gray-300">
             Most staffing agencies hand your account to someone two years out of
             college with a LinkedIn Recruiter license. We hand it to someone
-            who&rsquo;s been placing data center professionals since before
-            hyperscale was a word.
+            who&rsquo;s spent their career in recruiting and talent acquisition
+            — with real experience screening for technical roles in data center
+            and construction.
           </p>
         </div>
       </section>
@@ -151,16 +152,16 @@ export default function VeteranRecruitersPage() {
                 </p>
                 <p>
                   That&rsquo;s why our recruiting team isn&rsquo;t staffed with
-                  generalists learning on the job. Every recruiter at DC TALNT
-                  averages more than 15 years of specialized experience in data
-                  center, mission critical, and construction staffing. They know
+                  generalists learning on the job. Our recruiters bring years of
+                  specialized experience in technical recruiting across data
+                  center, mission critical, and construction sectors. They know
                   the technical language, the project lifecycle, the
                   certifications that matter, and — most importantly — the people.
                 </p>
                 <p>
                   When you work with us, your recruiter already has a shortlist
                   in their head before they hang up the phone. That&rsquo;s what
-                  15 years of building relationships in a niche industry gets you.
+                  years of building relationships in a niche industry gets you.
                 </p>
               </div>
             </div>
@@ -222,8 +223,8 @@ export default function VeteranRecruitersPage() {
         <div className="relative z-10 flex h-full items-center">
           <div className="container-page">
             <p className="max-w-lg text-2xl font-bold leading-tight text-white sm:text-3xl drop-shadow-lg">
-              Your recruiter already has a shortlist in their head before they
-              hang up the phone.
+              Your recruiter knows how to screen for real project experience
+              — not just keywords on a resume.
             </p>
           </div>
         </div>

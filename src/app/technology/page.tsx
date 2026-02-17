@@ -6,7 +6,7 @@ import Button from "@/components/ui/Button";
 export const metadata = genMeta({
   title: "Speed Through Technology | Our Systems | Data Center TALNT",
   description:
-    "DC TALNT's technology stack posts jobs in minutes, schedules interviews in hours, and delivers offers in days. See how our systems eliminate the bottlenecks that slow traditional staffing agencies down.",
+    "DC TALNT's technology stack posts jobs in minutes, schedules interviews in hours, and accelerates placements dramatically. See how our systems eliminate the bottlenecks that slow traditional staffing agencies down.",
   path: "/technology",
   keywords: [
     "fast staffing technology",
@@ -37,9 +37,9 @@ const timeline = [
   },
   {
     time: "Days",
-    title: "Offers Extended",
+    title: "Contract Placements Mobilized",
     description:
-      "With pre-vetted candidates, verified credentials, and streamlined feedback loops, the path from first interview to accepted offer takes days, not months. We handle the comp negotiation, counteroffer management, and onboarding paperwork so nothing stalls.",
+      "For contract roles, pre-vetted candidates with verified credentials mean the path from first call to boots on the ground takes days, not weeks. For direct-hire searches, our streamlined feedback loops close positions in weeks, not the months most firms take. We handle comp negotiation, counteroffer management, and onboarding paperwork so nothing stalls.",
   },
 ];
 
@@ -50,7 +50,7 @@ const bottlenecks = [
   },
   {
     problem: "Searching for candidates from scratch every time",
-    solution: "Instant matching against our 10+ year database",
+    solution: "Instant matching against our growing database",
   },
   {
     problem: "Days of email tag to schedule one interview",
@@ -84,12 +84,12 @@ const techFaqs = [
   {
     question: "What bottlenecks does DC TALNT's technology eliminate?",
     answer:
-      "Our tech stack eliminates six common bottlenecks: manual job posting across multiple boards (automated in minutes), searching for candidates from scratch (instant matching against our 10+ year database), days of email tag for scheduling (same-day coordination), weeks for reference checks (pre-verified candidates), slow offer processes (same-week offers), and onboarding paperwork delays (digital onboarding ready before day one).",
+      "Our tech stack eliminates six common bottlenecks: manual job posting across multiple boards (automated in minutes), searching for candidates from scratch (instant matching against our growing database), days of email tag for scheduling (same-day coordination), weeks for reference checks (pre-verified candidates), slow offer processes (same-week offers), and onboarding paperwork delays (digital onboarding ready before day one).",
   },
   {
     question: "What is DC TALNT's average time from job order to hire?",
     answer:
-      "Our average time to fill is 40 days, compared to the industry average of 126 days. That's 86 fewer days of schedule risk on every hire. The first shortlist of qualified candidates is typically delivered within 48 hours.",
+      "We dramatically beat the industry average of 126 days to fill a role. Contract placements can mobilize in days, while direct-hire searches close in weeks, not months. The first shortlist of qualified candidates is typically delivered within 48 hours.",
   },
 ];
 
@@ -215,10 +215,10 @@ export default function TechnologyPage() {
         <div className="container-page">
           <div className="grid grid-cols-2 gap-8 sm:grid-cols-4">
             {[
-              { value: "40", unit: "days", label: "Avg. Time to Fill" },
+              { value: "Days", unit: "", label: "Contract Placement" },
               { value: "48", unit: "hrs", label: "First Shortlist" },
-              { value: "68%", unit: "", label: "Faster Than Industry" },
-              { value: "96%", unit: "", label: "Retention Rate" },
+              { value: "Weeks", unit: "", label: "Direct-Hire Fill" },
+              { value: "126", unit: "days", label: "Industry Average" },
             ].map((stat) => (
               <div key={stat.label} className="text-center">
                 <p className="text-3xl font-bold text-blue-light sm:text-4xl">
@@ -260,11 +260,11 @@ export default function TechnologyPage() {
       <section className="py-16 sm:py-20">
         <div className="container-page text-center">
           <h2 className="text-2xl font-bold text-navy sm:text-3xl">
-            The Result: 40 Days vs. 126
+            The Result: Days and Weeks vs. 126
           </h2>
           <p className="mx-auto mt-4 max-w-2xl text-gray-600">
-            All of this technology and process adds up to one number that
-            matters: 40 days average time-to-fill, compared to the industry
+            All of this technology and process adds up to dramatically
+            faster hiring, compared to the industry
             average of{" "}
             <a
               href="https://thebirmgroup.com/the-data-center-construction-boom-hiring-surge-in-2026/"
@@ -274,8 +274,9 @@ export default function TechnologyPage() {
             >
               126 days
             </a>
-            . That&rsquo;s 86 fewer days of schedule risk
-            on every single hire.
+            . Contract placements mobilize in days. Direct-hire searches
+            close in weeks. That&rsquo;s months of schedule risk
+            eliminated on every hire.
           </p>
           <div className="mt-6">
             <Button href="/speed" variant="outline" size="lg">

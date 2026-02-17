@@ -1979,7 +1979,7 @@ export default async function BlogPostPage({ params }: Props) {
                   <span aria-hidden="true">&rarr;</span> Our Veteran Recruiters
                 </Link>
                 <Link href="/talent-network" className="flex items-center gap-2 rounded-lg border border-gray-100 bg-gray-50 px-4 py-3 text-sm font-medium text-navy hover:bg-blue hover:text-white transition-colors">
-                  <span aria-hidden="true">&rarr;</span> 10+ Year Talent Database
+                  <span aria-hidden="true">&rarr;</span> Our Talent Network
                 </Link>
                 <Link href="/industries/hyperscalers" className="flex items-center gap-2 rounded-lg border border-gray-100 bg-gray-50 px-4 py-3 text-sm font-medium text-navy hover:bg-blue hover:text-white transition-colors">
                   <span aria-hidden="true">&rarr;</span> Hyperscaler Staffing

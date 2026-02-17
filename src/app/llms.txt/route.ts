@@ -10,37 +10,37 @@ Data Center TALNT connects experienced project managers, MEP engineers, QA/QC in
 ## Key Differentiators
 
 ### 1. Veteran Recruiters (The Veteran Advantage)
-- Our recruiters average 15+ years in data center and construction staffing
-- 2,500+ combined career placements across 40+ states
-- They've walked job sites, attended OAC meetings, and observed commissioning events
+- Our recruiters bring years of specialized experience in technical recruiting
+- 50+ years combined recruiting experience across 20+ markets
+- They come from companies like Apple, Rackspace, Aerotek, and Duo Security
 - They can vet a commissioning agent's technical skills in a 15-minute call
 - When they call a VP of Construction, that call gets returned — because there's a track record behind it
 
 ### 2. Exclusive Talent Database (The Database Advantage)
-- 10+ years of recruiting data with every interview on every candidate logged, indexed, and searchable
+- A growing database of recruiting data with every interview logged, indexed, and searchable
 - 70% of candidates in our network are passive — not on job boards
 - Every candidate has detailed interview notes, technical assessments, verified project history, and performance feedback
 - We track: certifications (PMP, CxA, PE, NETA, OSHA), tier/MW experience, compensation history, geographic preferences, availability timelines
 - Deep candidate coverage in every top data center market
 
 ### 3. Speed & Execution (How We Move Fast)
-- Average 40-day time-to-fill vs. the industry average of 126 days (68% faster)
+- Dramatically faster time-to-fill vs. the industry average of 126 days — contract placements in days, direct-hire in weeks
 - Source: The Birm Group — Data Center Construction Boom & Hiring Surge in 2026
 - Step 1: Live Talent Pipeline — pre-screened professionals ready before you call
 - Step 2: Industry-Specialist Recruiters — technical vetting in 15 minutes, not weeks
 - Step 3: 48-Hour First Shortlist — screened and reference-checked candidates in 2 business days
 - Step 4: Streamlined Hiring Process — we handle scheduling, feedback, counteroffers, and onboarding
-- Result: 86 fewer days of schedule risk on every hire
+- Result: Months of schedule risk eliminated on every hire
 
 ### 4. Technology
 - Jobs posted and distributed in minutes (automated, not manual)
-- Instant candidate matching against our 10+ year database
+- Instant candidate matching against our growing database
 - Same-day screening and interview scheduling
 - Pre-verified candidates with references on file
 - Streamlined offers and digital onboarding
 
 ## The Cost of Slow Hiring
-- $15,000+ per week cost of an unfilled PM or QA/QC inspector position
+- $15,000+ per week estimated cost of an unfilled PM or QA/QC inspector position
 - 340,000 unfilled construction positions projected by BLS for end of 2026
 - 82% of construction firms report difficulty filling positions (AGC data)
 - 23,000 experienced workers retiring annually from the industry

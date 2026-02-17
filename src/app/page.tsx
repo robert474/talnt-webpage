@@ -246,23 +246,7 @@ const topMarkets = [
   },
 ] as const;
 
-const monthlyData = [
-  { month: "Jan '25", days: 67 },
-  { month: "Feb", days: 58 },
-  { month: "Mar", days: 62 },
-  { month: "Apr", days: 53 },
-  { month: "May", days: 55 },
-  { month: "Jun", days: 57 },
-  { month: "Jul", days: 38 },
-  { month: "Aug", days: 41 },
-  { month: "Sep", days: 45 },
-  { month: "Oct", days: 51 },
-  { month: "Nov", days: 43 },
-  { month: "Dec", days: 49 },
-  { month: "Jan '26", days: 51 },
-];
 const INDUSTRY_AVG = 126;
-const CHART_MAX = 140;
 
 const faqs: FAQItem[] = [
   {
@@ -273,7 +257,7 @@ const faqs: FAQItem[] = [
   {
     question: "How quickly can you fill a data center construction position?",
     answer:
-      "In most cases we deliver pre-vetted, qualified candidate submittals within 24 to 48 hours of receiving a job order. Our maintained talent network of data center and mission critical professionals enables rapid response times that outpace traditional recruiting agencies. For contract positions, many placements start within one to two weeks. Direct-hire searches typically close in three to six weeks depending on role seniority and location.",
+      "We target delivering pre-vetted, qualified candidate submittals within 48 hours of receiving a job order. Our growing talent network of data center and mission critical professionals enables faster response times than generalist agencies. For contract positions, candidates can often mobilize within days to two weeks. Direct-hire searches typically close in three to six weeks depending on role seniority and location.",
   },
   {
     question:
@@ -290,12 +274,12 @@ const faqs: FAQItem[] = [
     question:
       "What makes Data Center TALNT different from other staffing agencies?",
     answer:
-      "Unlike generalist staffing firms, Data Center TALNT focuses exclusively on data center, mission critical, construction, and utilities sectors. Our recruiters understand Tier classifications, commissioning protocols, MEP system design, and the safety standards that govern critical facility construction. This deep domain expertise means shorter time-to-fill, higher candidate quality, and better retention rates\u2014our placed professionals have a 98% retention rate through their first year.",
+      "Unlike generalist staffing firms, Data Center TALNT focuses exclusively on data center, mission critical, construction, and utilities sectors. Our recruiters come from deep backgrounds in technical recruiting at companies like Apple, Rackspace, and Aerotek, and they understand the certifications, project types, and safety standards that matter in this industry. This focused expertise means shorter time-to-fill and higher candidate quality.",
   },
   {
     question: "How do you vet and qualify candidates?",
     answer:
-      "Every candidate in our network undergoes a rigorous screening process that includes technical interviews with industry-experienced recruiters, verification of certifications and licenses (PMP, CxA, PE, OSHA, NETA, LEED), reference checks with previous supervisors, background checks, and a review of their project portfolio. We confirm hands-on experience with the specific facility types, systems, and tools your projects require.",
+      "Every candidate we submit undergoes a thorough screening process that includes technical interviews with experienced recruiters, verification of certifications and licenses (PMP, CxA, PE, OSHA, NETA, LEED), reference checks with previous supervisors, and a review of their project history. We confirm hands-on experience with the specific facility types, systems, and tools your projects require.",
   },
 ];
 
@@ -320,10 +304,9 @@ const marketsItemList = {
 };
 
 const homeClaims = [
-  { claimText: "Data Center TALNT has placed 500+ professionals in data center and mission critical roles nationwide.", source: "Data Center TALNT" },
-  { claimText: "DC TALNT delivers first candidate shortlists within 48 hours of receiving a job order.", source: "Data Center TALNT" },
-  { claimText: "DC TALNT placed professionals achieve a 98% first-year retention rate.", source: "Data Center TALNT" },
-  { claimText: "The data center construction industry averages 126 days to fill a role; DC TALNT does it in 40.", source: "The Birm Group", sourceUrl: "https://thebirmgroup.com/the-data-center-construction-boom-hiring-surge-in-2026/" },
+  { claimText: "DC TALNT targets first candidate shortlists within 48 hours of receiving a job order.", source: "Data Center TALNT" },
+  { claimText: "The data center construction industry averages 126 days to fill a role.", source: "The Birm Group", sourceUrl: "https://thebirmgroup.com/the-data-center-construction-boom-hiring-surge-in-2026/" },
+  { claimText: "DC TALNT offers contract, contract-to-hire, and direct placement staffing for data center construction roles.", source: "Data Center TALNT" },
 ];
 
 /* -------------------------------------------------------------------------- */
@@ -375,10 +358,10 @@ export default function HomePage() {
         {/* Stats Bar */}
         <div className="mt-14 grid grid-cols-2 gap-6 border-t border-white/15 pt-8 sm:grid-cols-4">
           {[
-            { value: "500+", label: "Professionals Placed" },
+            { value: "50+", label: "Yrs Combined Experience" },
             { value: "20+", label: "Markets Covered" },
-            { value: "48hr", label: "Avg. First Shortlist" },
-            { value: "98%", label: "First-Year Retention" },
+            { value: "48hr", label: "First Shortlist Target" },
+            { value: "4", label: "Industry Verticals" },
           ].map((stat) => (
             <div key={stat.label}>
               <p className="text-3xl font-bold text-blue-light md:text-4xl">
@@ -467,12 +450,12 @@ export default function HomePage() {
                 <p className="text-sm font-semibold uppercase tracking-widest text-blue">
                   Our Recruiters
                 </p>
-                <h3 className="mt-2 text-2xl font-bold text-navy">15+ Year Veterans</h3>
+                <h3 className="mt-2 text-2xl font-bold text-navy">Veteran Recruiters</h3>
                 <p className="mt-3 flex-1 text-sm leading-relaxed text-gray-600">
-                  Our recruiters average 15+ years in data center and
-                  construction staffing. They&rsquo;ve walked job sites, built
-                  networks across every major market, and know the difference
-                  between a resume padder and a real operator.
+                  Our team brings decades of combined recruiting experience from
+                  companies like Apple, Rackspace, Aerotek, and Duo Security.
+                  They know how to screen for real project experience — not just
+                  keywords on a resume.
                 </p>
                 <span className="mt-4 inline-flex items-center gap-1 text-sm font-semibold text-blue group-hover:gap-2 transition-all">
                   Learn More <span aria-hidden="true">&rarr;</span>
@@ -499,11 +482,12 @@ export default function HomePage() {
                 <p className="text-sm font-semibold uppercase tracking-widest text-blue">
                   Our Database
                 </p>
-                <h3 className="mt-2 text-2xl font-bold text-navy">10+ Years of Intel</h3>
+                <h3 className="mt-2 text-2xl font-bold text-navy">Data-Driven Recruiting</h3>
                 <p className="mt-3 flex-1 text-sm leading-relaxed text-gray-600">
-                  Every interview, every placement, every reference — logged and
-                  searchable across a decade. We know about candidates before
-                  they apply, and we find people that other agencies can&rsquo;t.
+                  Every interview, every screening call, every reference —
+                  logged and searchable. Our growing database of candidate
+                  intelligence helps us find people that other agencies
+                  can&rsquo;t.
                 </p>
                 <span className="mt-4 inline-flex items-center gap-1 text-sm font-semibold text-blue group-hover:gap-2 transition-all">
                   Learn More <span aria-hidden="true">&rarr;</span>
@@ -532,9 +516,10 @@ export default function HomePage() {
                 </p>
                 <h3 className="mt-2 text-2xl font-bold text-navy">Built for Speed</h3>
                 <p className="mt-3 flex-1 text-sm leading-relaxed text-gray-600">
-                  Job posts in minutes. Candidate interviews in hours. Offers in
-                  days. Our tech stack eliminates the bottlenecks that make
-                  traditional staffing agencies slow.
+                  Job posts in minutes. Candidate shortlists in hours. Our tech
+                  stack eliminates the bottlenecks that make traditional staffing
+                  agencies slow — whether you need a contract hire this week or a
+                  direct placement next month.
                 </p>
                 <span className="mt-4 inline-flex items-center gap-1 text-sm font-semibold text-blue group-hover:gap-2 transition-all">
                   Learn More <span aria-hidden="true">&rarr;</span>
@@ -588,7 +573,7 @@ export default function HomePage() {
                   126 days
                 </a>
                 {" "}
-                <span className="text-blue">40 days.</span>
+                <span className="text-blue">Weeks, not months.</span>
               </h2>
               <p className="mt-4 max-w-lg text-lg leading-relaxed text-gray-600">
                 The industry averages{" "}
@@ -600,18 +585,19 @@ export default function HomePage() {
                 >
                   126 days
                 </a>{" "}
-                to fill a data center construction
-                role. We do it in 40. That&rsquo;s 86 fewer days of schedule risk,
-                idle crews, and blown budgets on every single hire.
+                to fill a data center construction role. Our pre-screened pipeline
+                and industry-focused recruiters cut that timeline dramatically —
+                contract placements can mobilize in days, and direct-hire searches
+                close in weeks instead of months.
               </p>
 
               {/* Quick stats */}
               <div className="mt-8 grid grid-cols-2 gap-4">
                 {[
-                  { value: "40", unit: "days", label: "Avg. Time to Fill" },
-                  { value: "68%", unit: "", label: "Faster Than Industry" },
-                  { value: "48hr", unit: "", label: "First Shortlist" },
-                  { value: "96%", unit: "", label: "Retention Rate" },
+                  { value: "48hr", unit: "", label: "First Shortlist Target" },
+                  { value: "Contract", unit: "", label: "Mobilize in Days" },
+                  { value: "Direct", unit: "", label: "Weeks, Not Months" },
+                  { value: "126", unit: "days", label: "Industry Average" },
                 ].map((stat) => (
                   <div
                     key={stat.label}
@@ -637,80 +623,65 @@ export default function HomePage() {
               </div>
             </div>
 
-            {/* Right — Bar Chart */}
-            <div className="rounded-2xl border border-gray-200 bg-gray-50 p-4 sm:p-6">
+            {/* Right — Comparison Visual */}
+            <div className="rounded-2xl border border-gray-200 bg-gray-50 p-6 sm:p-8">
               <h3 className="text-center text-sm font-semibold uppercase tracking-widest text-gray-500">
-                Days to Fill — Month by Month
+                How We Cut the Timeline
               </h3>
 
-              <div className="relative mt-6">
-                {/* Industry average line */}
-                <div
-                  className="absolute left-0 right-0 border-t-2 border-dashed border-red-400 z-10"
-                  style={{ top: `${((CHART_MAX - INDUSTRY_AVG) / CHART_MAX) * 100}%` }}
-                >
-                  <span className="absolute -top-5 right-0 rounded bg-red-500 px-2 py-0.5 text-[10px] font-bold text-white">
-                    Industry Avg: 126 days
-                  </span>
-                </div>
-
-                {/* Bars */}
-                <div className="relative flex items-end gap-1 sm:gap-1.5" style={{ height: "280px" }}>
-                  {monthlyData.map((item) => {
-                    const heightPct = (item.days / CHART_MAX) * 100;
-                    return (
-                      <div
-                        key={item.month}
-                        className="group relative flex flex-1 flex-col items-center"
-                        style={{ height: "100%" }}
-                      >
-                        {/* Hover tooltip */}
-                        <div className="pointer-events-none absolute bottom-full mb-2 rounded bg-navy px-2 py-1 text-xs font-bold text-white opacity-0 shadow-lg transition-opacity group-hover:opacity-100 whitespace-nowrap z-20">
-                          {item.days} days
-                        </div>
-
-                        {/* Bar */}
-                        <div className="flex h-full w-full items-end">
-                          <div
-                            className="w-full rounded-t bg-blue transition-all duration-300 hover:bg-blue-dark"
-                            style={{ height: `${heightPct}%` }}
-                          />
-                        </div>
-
-                        {/* Day count */}
-                        <span
-                          className="absolute text-[8px] font-bold text-white sm:text-[10px]"
-                          style={{ bottom: `${heightPct - 6}%` }}
-                        >
-                          {item.days}
-                        </span>
-                      </div>
-                    );
-                  })}
-                </div>
-
-                {/* X-axis labels */}
-                <div className="mt-2 flex gap-1 sm:gap-1.5">
-                  {monthlyData.map((item) => (
-                    <div key={item.month} className="flex-1 text-center">
-                      <span className="text-[7px] leading-tight text-gray-500 sm:text-[9px]">
-                        {item.month}
-                      </span>
+              <div className="mt-8 space-y-8">
+                {/* Industry Average Bar */}
+                <div>
+                  <div className="flex items-baseline justify-between">
+                    <p className="text-sm font-medium text-gray-500">Industry Average</p>
+                    <p className="text-2xl font-bold text-gray-400">126 days</p>
+                  </div>
+                  <div className="mt-2 h-10 w-full rounded-full bg-gray-100 overflow-hidden">
+                    <div className="flex h-full items-center justify-end rounded-full bg-gray-300 pr-4" style={{ width: "100%" }}>
+                      <span className="text-xs font-semibold text-gray-600">4.2 months</span>
                     </div>
-                  ))}
+                  </div>
+                </div>
+
+                {/* DC TALNT Contract Bar */}
+                <div>
+                  <div className="flex items-baseline justify-between">
+                    <p className="text-sm font-semibold text-navy">DC TALNT — Contract</p>
+                    <p className="text-2xl font-bold text-blue">Days to weeks</p>
+                  </div>
+                  <div className="mt-2 h-10 w-full rounded-full bg-gray-100 overflow-hidden">
+                    <div className="flex h-full items-center justify-end rounded-full bg-blue pr-4" style={{ width: "12%" }}>
+                    </div>
+                  </div>
+                </div>
+
+                {/* DC TALNT Direct Hire Bar */}
+                <div>
+                  <div className="flex items-baseline justify-between">
+                    <p className="text-sm font-semibold text-navy">DC TALNT — Direct Hire</p>
+                    <p className="text-2xl font-bold text-blue">Weeks, not months</p>
+                  </div>
+                  <div className="mt-2 h-10 w-full rounded-full bg-gray-100 overflow-hidden">
+                    <div className="flex h-full items-center justify-end rounded-full bg-blue-dark pr-4" style={{ width: "35%" }}>
+                    </div>
+                  </div>
                 </div>
               </div>
 
-              {/* Legend */}
-              <div className="mt-4 flex items-center justify-center gap-5 text-xs">
-                <div className="flex items-center gap-1.5">
-                  <div className="h-2.5 w-5 rounded bg-blue" />
-                  <span className="text-gray-500">DC TALNT</span>
-                </div>
-                <div className="flex items-center gap-1.5">
-                  <div className="h-0.5 w-5 border-t-2 border-dashed border-red-400" />
-                  <span className="text-gray-500">Industry Avg (126d)</span>
-                </div>
+              {/* Callout */}
+              <div className="mt-8 rounded-xl border border-blue/20 bg-blue/5 p-4 text-center">
+                <p className="text-sm text-gray-600">
+                  Contract roles mobilize fast. Direct-hire searches close in weeks.
+                  Either way, you&rsquo;re months ahead of the{" "}
+                  <a
+                    href="https://thebirmgroup.com/the-data-center-construction-boom-hiring-surge-in-2026/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="font-semibold text-blue underline"
+                  >
+                    126-day industry average
+                  </a>.
+                </p>
               </div>
             </div>
           </div>
@@ -852,9 +823,9 @@ export default function HomePage() {
           </h2>
           <p className="mx-auto mt-6 max-w-2xl text-lg leading-relaxed text-white/90">
             One commissioning agent or a full project team — tell us what you
-            need and we&rsquo;ll have vetted candidates in front of you before
-            the end of the week. No long intake meetings. No generic resumes.
-            Just people who&rsquo;ve built exactly what you&rsquo;re building.
+            need and we&rsquo;ll get to work immediately. No long intake meetings.
+            No generic resumes. Just people who&rsquo;ve built exactly what
+            you&rsquo;re building.
           </p>
 
           <div className="mt-10 flex flex-col items-center gap-4 sm:flex-row sm:justify-center">

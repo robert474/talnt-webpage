@@ -210,8 +210,8 @@ export default function EmployersPage() {
         <div className="relative z-10 flex h-full items-center">
           <div className="container-page">
             <p className="max-w-md text-2xl font-bold leading-tight text-white sm:text-3xl drop-shadow-lg">
-              48-hour turnaround on vetted candidate shortlists. That&rsquo;s
-              our standard, not our best case.
+              We target 48-hour turnaround on vetted candidate shortlists —
+              for both contract and direct-hire roles.
             </p>
           </div>
         </div>
@@ -295,20 +295,18 @@ export default function EmployersPage() {
       <section className="bg-sky-50 py-16 sm:py-24">
         <div className="container-page">
           <div className="mx-auto max-w-3xl text-center">
-            <blockquote>
-              <p className="text-xl leading-relaxed text-gray-700 italic sm:text-2xl">
-                &ldquo;We needed six commissioning agents for a hyperscale build
-                in Northern Virginia — yesterday. DC TALNT had all six on site
-                within two weeks, and every single one knew exactly what they
-                were doing. They&rsquo;re the only staffing call we make
-                now.&rdquo;
+            <div className="rounded-xl border border-gray-200 bg-white p-8">
+              <h3 className="text-xl font-bold text-navy sm:text-2xl">
+                Built for the Way You Actually Hire
+              </h3>
+              <p className="mt-4 text-lg leading-relaxed text-gray-600">
+                Whether you need one commissioning agent or a full project
+                team, we tailor the engagement model to your timeline and
+                budget. Contract, contract-to-hire, or direct placement —
+                we&rsquo;ll find the right fit for both the role and the
+                project.
               </p>
-              <footer className="mt-6">
-                <p className="font-semibold text-navy">
-                  &mdash; VP of Construction, National General Contractor
-                </p>
-              </footer>
-            </blockquote>
+            </div>
           </div>
         </div>
       </section>

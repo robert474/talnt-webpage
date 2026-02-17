@@ -6,7 +6,7 @@ import Button from "@/components/ui/Button";
 export const metadata = genMeta({
   title: "Exclusive Talent Network | Proprietary Candidate Database | Data Center TALNT",
   description:
-    "DC TALNT's proprietary talent database spans 10+ years of data center and construction recruiting. Detailed interview notes on every candidate means we find people others can't — before they ever hit a job board.",
+    "DC TALNT's proprietary talent database is built on years of specialized data center and construction recruiting. Detailed interview notes on every candidate means we find people others can't — before they ever hit a job board.",
   path: "/talent-network",
   keywords: [
     "proprietary talent database",
@@ -24,9 +24,9 @@ export const metadata = genMeta({
 
 const databaseAdvantages = [
   {
-    stat: "10+",
-    unit: "years",
-    title: "A Decade of Intelligence",
+    stat: "Every",
+    unit: "interaction",
+    title: "Deep Recruiting Intelligence",
     description:
       "Every interview, every placement, every reference call — logged, indexed, and searchable. When you need a commissioning agent who's led IST on Tier IV facilities in the Southwest, we don't search for one. We pull up the three we already know.",
   },
@@ -45,7 +45,7 @@ const databaseAdvantages = [
       "The best data center construction professionals aren't on job boards — they're on a job site. Our database gives us direct access to passive candidates who aren't actively looking but will take the right call from a recruiter they already trust.",
   },
   {
-    stat: "40+",
+    stat: "20+",
     unit: "markets",
     title: "Nationwide Depth",
     description:
@@ -68,12 +68,12 @@ const networkFaqs = [
   {
     question: "What is DC TALNT's talent database?",
     answer:
-      "DC TALNT's proprietary talent database is a decade-long intelligence system containing detailed records on thousands of data center and construction professionals. Unlike resume databases that go stale, every candidate has logged interview notes, technical assessments, verified project history, and performance feedback from previous placements.",
+      "DC TALNT's proprietary talent database is a growing intelligence system containing detailed records on data center and construction professionals. Unlike resume databases that go stale, every candidate has logged interview notes, technical assessments, verified project history, and performance feedback from previous placements.",
   },
   {
     question: "How many candidates are in DC TALNT's network?",
     answer:
-      "Our database spans 10+ years of specialized recruiting across 40+ U.S. markets. We have deep coverage in every top data center market including Northern Virginia, Phoenix, Dallas-Fort Worth, Chicago, Columbus, Atlanta, and Salt Lake City.",
+      "Our database spans years of specialized recruiting across 20+ U.S. markets. We have deep coverage in every top data center market including Northern Virginia, Phoenix, Dallas-Fort Worth, Chicago, Columbus, Atlanta, and Salt Lake City.",
   },
   {
     question: "What percentage of DC TALNT's candidates are passive candidates?",
@@ -88,7 +88,7 @@ const networkFaqs = [
   {
     question: "How does DC TALNT find candidates that other agencies can't?",
     answer:
-      "Most agencies search LinkedIn and job boards — the same pool everyone else is fishing in. Our 10+ year database gives us direct access to professionals who've been interviewed, assessed, and relationship-managed by our recruiters over time. When we need a senior QA/QC inspector with hyperscale experience, we're pulling up people we already know.",
+      "Most agencies search LinkedIn and job boards — the same pool everyone else is fishing in. Our growing database gives us direct access to professionals who've been interviewed, assessed, and relationship-managed by our recruiters over time. When we need a senior QA/QC inspector with hyperscale experience, we're pulling up people we already know.",
   },
 ];
 
@@ -126,7 +126,7 @@ export default function TalentNetworkPage() {
             We Know About Candidates Before They Apply
           </h1>
           <p className="mx-auto mt-6 max-w-2xl text-lg leading-relaxed text-gray-300">
-            10+ years of specialized data center and construction recruiting
+            Years of specialized data center and construction recruiting
             has built something you can&rsquo;t buy off the shelf — a
             proprietary database with detailed records on thousands of
             professionals, most of whom you&rsquo;ll never find on a job board.
@@ -143,7 +143,7 @@ export default function TalentNetworkPage() {
             </h2>
             <p className="mx-auto mt-3 max-w-2xl text-gray-600">
               Other staffing firms start each search from scratch. We start with
-              a decade of intelligence.
+              deep recruiting intelligence.
             </p>
           </div>
 
@@ -185,7 +185,7 @@ export default function TalentNetworkPage() {
                 Most staffing agencies maintain a pile of resumes that go stale
                 in six months. Our system is different — it&rsquo;s a living
                 record of every interaction our recruiters have had with every
-                candidate over the past decade.
+                candidate over years of specialized recruiting.
               </p>
               <p className="mt-4 text-gray-600 leading-relaxed">
                 That means when you call us looking for a senior QA/QC inspector
@@ -251,7 +251,7 @@ export default function TalentNetworkPage() {
             to reach them is through a recruiter they already know and trust.
           </p>
           <p className="mx-auto mt-4 max-w-2xl text-gray-300">
-            Our 10+ year database means we have existing relationships with
+            Our growing database means we have existing relationships with
             thousands of these passive candidates. When the right opportunity
             comes along, they take our call — because we&rsquo;ve been a
             trusted partner throughout their career.
@@ -290,8 +290,8 @@ export default function TalentNetworkPage() {
           </h2>
           <p className="mx-auto mt-4 max-w-xl text-lg text-blue-100">
             Get access to candidates you won&rsquo;t find on job boards,
-            LinkedIn, or with any other staffing agency. Our decade of
-            recruiting intelligence is your competitive advantage.
+            LinkedIn, or with any other staffing agency. Our recruiting
+            intelligence gives you a competitive advantage.
           </p>
           <div className="mt-8 flex flex-col items-center gap-4 sm:flex-row sm:justify-center">
             <Button href="/contact" variant="secondary" size="lg">

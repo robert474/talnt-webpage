@@ -27,17 +27,17 @@ export const metadata = genMeta({
 /* ------------------------------------------------------------------ */
 
 const stats = [
-  { value: "2,500+", label: "Placements Made" },
-  { value: "96%", label: "Retention Rate" },
-  { value: "40+", label: "States Covered" },
   { value: "50+", label: "Years Combined Experience" },
+  { value: "4", label: "Industry Verticals" },
+  { value: "20+", label: "Markets Covered" },
+  { value: "Nationwide", label: "Coverage" },
 ];
 
 const values = [
   {
     title: "Industry Knowledge",
     description:
-      "Our recruiters don't just read resumes — they've walked job sites, attended commissioning events, and know the difference between a 2N and 2N+1 power architecture. That depth lets us spot the right candidate in a stack of 200.",
+      "Our team comes from deep backgrounds in recruiting and talent acquisition — with experience at companies like Apple, Rackspace, Aerotek, and Duo Security. We combine strong technical screening skills with a genuine understanding of what makes data center and construction projects succeed.",
   },
   {
     title: "Speed to Hire",
@@ -152,8 +152,8 @@ export default function AboutPage() {
           </h1>
           <p className="mx-auto mt-6 max-w-2xl text-lg leading-relaxed text-gray-300 sm:text-xl">
             We didn&rsquo;t start as a staffing agency that wandered into data
-            centers. We started in the industry and built a recruiting firm
-            around what we know.
+            centers. We built a recruiting firm around the industries we
+            know — and the problems we saw firsthand.
           </p>
         </div>
       </section>
@@ -170,27 +170,27 @@ export default function AboutPage() {
               />
               <div className="space-y-5 text-gray-600 leading-relaxed">
                 <p>
-                  Data Center TALNT was founded because we kept watching the same
-                  problem play out on project after project: a general contractor
-                  needs a commissioning agent who&rsquo;s actually led IST events
-                  on Tier IV facilities, but the staffing agency sends someone
-                  who once toured a data center on a vendor visit.
+                  Data Center TALNT was founded because we saw the same problem
+                  playing out across the industry: general contractors need
+                  specialized talent for data center and mission critical builds,
+                  but generalist staffing agencies keep sending candidates who
+                  don&rsquo;t have the right experience.
                 </p>
                 <p>
                   That disconnect costs real money — blown schedules, failed
                   tests, crews standing around while someone gets up to speed.
                   We decided there had to be a better way. So we built a
-                  recruiting operation staffed by people who&rsquo;ve managed
-                  data center builds, coordinated MEP systems, and sat through
-                  enough OAC meetings to know exactly what a project team needs.
+                  recruiting firm that focuses exclusively on the data center,
+                  mission critical, construction, and utilities sectors — and
+                  staffed it with recruiters who know how to screen for real
+                  project experience, not just keywords on a resume.
                 </p>
                 <p>
                   Today, DC TALNT places professionals across every phase of
                   data center and critical infrastructure construction — from
-                  the QA/QC inspector conducting daily inspections to the
-                  commissioning authority signing off on Level 5 integrated
-                  testing. Every placement starts with the same question: has
-                  this person actually done this work before?
+                  QA/QC inspectors and MEP engineers to project managers and
+                  commissioning agents. Every placement starts with the same
+                  question: has this person actually done this work before?
                 </p>
               </div>
             </div>
@@ -301,8 +301,8 @@ export default function AboutPage() {
         <div className="relative z-10 flex h-full items-center">
           <div className="container-page">
             <p className="max-w-lg text-2xl font-bold leading-tight text-white sm:text-3xl drop-shadow-lg">
-              We&rsquo;ve placed over 2,500 professionals on data center and
-              critical infrastructure projects nationwide.
+              Every placement starts with one question: has this person
+              actually done this work before?
             </p>
           </div>
         </div>

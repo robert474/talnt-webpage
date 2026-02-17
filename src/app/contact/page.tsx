@@ -66,9 +66,9 @@ export default function ContactPage() {
     openingHoursSpecification: [
       {
         "@type": "OpeningHoursSpecification",
-        dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
-        opens: "08:00",
-        closes: "18:00",
+        dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
+        opens: "00:00",
+        closes: "23:59",
       },
     ],
     areaServed: {
@@ -326,11 +326,10 @@ export default function ContactPage() {
                   <h3 className="text-sm font-semibold uppercase tracking-wider text-gray-500">
                     Office Hours
                   </h3>
-                  <ul className="mt-2 space-y-1 text-gray-700">
-                    <li>Monday - Friday: 8:00 AM - 6:00 PM ET</li>
-                    <li>Saturday: By appointment</li>
-                    <li>Sunday: Closed</li>
-                  </ul>
+                  <p className="mt-2 text-gray-700 italic">
+                    What are office hours? Data Centers don&rsquo;t sleep and
+                    neither do we.
+                  </p>
                 </div>
 
                 {/* Quick Links */}
