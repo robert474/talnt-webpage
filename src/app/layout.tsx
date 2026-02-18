@@ -110,7 +110,7 @@ const organizationSchema: Record<string, unknown> = {
   ],
   address: {
     "@type": "PostalAddress",
-    streetAddress: "31801 Red Bud Ln, Ste B-182",
+    streetAddress: "1801 Red Bud Ln, Ste B-182",
     addressLocality: "Round Rock",
     addressRegion: "TX",
     postalCode: "78664",

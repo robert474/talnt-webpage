@@ -57,7 +57,7 @@ export default function ContactPage() {
     email: "info@datacentertalnt.com",
     address: {
       "@type": "PostalAddress",
-      streetAddress: "31801 Red Bud Ln, Ste B-182",
+      streetAddress: "1801 Red Bud Ln, Ste B-182",
       addressLocality: "Round Rock",
       addressRegion: "TX",
       postalCode: "78664",
@@ -285,7 +285,7 @@ export default function ContactPage() {
                     Office Address
                   </h3>
                   <address className="mt-2 not-italic leading-relaxed text-gray-700">
-                    31801 Red Bud Ln, Ste B-182
+                    1801 Red Bud Ln, Ste B-182
                     <br />
                     Round Rock, TX 78664
                   </address>

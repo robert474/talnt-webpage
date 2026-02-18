@@ -152,7 +152,7 @@ export default function Footer() {
             <meta itemProp="url" content="https://www.datacentertalnt.com" />
             <div itemProp="address" itemScope itemType="https://schema.org/PostalAddress">
               <p className="font-medium text-gray-300">Address</p>
-              <p itemProp="streetAddress">31801 Red Bud Ln, Ste B-182</p>
+              <p itemProp="streetAddress">1801 Red Bud Ln, Ste B-182</p>
               <p>
                 <span itemProp="addressLocality">Round Rock</span>,{" "}
                 <span itemProp="addressRegion">TX</span>{" "}
