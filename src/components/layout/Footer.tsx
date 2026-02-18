@@ -120,7 +120,7 @@ export default function Footer() {
               alt="Data Center TALNT"
               width={200}
               height={48}
-              className="h-10 w-auto brightness-0 invert"
+              className="h-10 w-auto invert"
             />
           </Link>
           <p className="mt-4 text-sm leading-relaxed text-gray-400">
