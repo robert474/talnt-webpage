@@ -3,12 +3,10 @@ import Image from "next/image";
 import { generateMetadata as genMeta } from "@/lib/metadata";
 import {
   generateOrganizationSchema,
-  generateFAQSchema,
   generateItemListSchema,
   generateClaimSchema,
   generateSpeakableSchema,
   SchemaScript,
-  type FAQItem,
 } from "@/lib/schema";
 import SectionHeading from "@/components/ui/SectionHeading";
 import Button from "@/components/ui/Button";
@@ -248,41 +246,6 @@ const topMarkets = [
 
 const INDUSTRY_AVG = 126;
 
-const faqs: FAQItem[] = [
-  {
-    question: "What types of data center roles do you staff?",
-    answer:
-      "Data Center TALNT staffs a comprehensive range of data center and mission critical roles including project managers, construction managers, MEP engineers (mechanical, electrical, and plumbing), QA/QC inspectors, commissioning agents, schedulers, safety managers, and BIM coordinators. We cover every phase from pre-construction and design through commissioning and turnover for Tier I through Tier IV facilities.",
-  },
-  {
-    question: "How quickly can you fill a data center construction position?",
-    answer:
-      "We target delivering pre-vetted, qualified candidate submittals within 48 hours of receiving a job order. Our growing talent network of data center and mission critical professionals enables faster response times than generalist agencies. For contract positions, candidates can often mobilize within days to two weeks. Direct-hire searches typically close in three to six weeks depending on role seniority and location.",
-  },
-  {
-    question:
-      "Do you provide contract, contract-to-hire, and direct hire staffing?",
-    answer:
-      "Yes. Data Center TALNT offers all three engagement models: contract (temporary) placements for project-based needs, contract-to-hire arrangements that let you evaluate talent before committing, and direct-hire (permanent) searches for long-term team building. We tailor our approach to your project timeline, budget, and hiring strategy.",
-  },
-  {
-    question: "What geographic areas does Data Center TALNT cover?",
-    answer:
-      "We serve clients across all 50 United States with concentrated expertise in the top data center markets: Northern Virginia (Ashburn), Dallas-Fort Worth, Phoenix, Chicago, Silicon Valley, Atlanta, Portland, Columbus, Reno, and Salt Lake City. Whether your project is in a major metro or a rural bluefield site, our nationwide network ensures talent availability where you need it.",
-  },
-  {
-    question:
-      "What makes Data Center TALNT different from other staffing agencies?",
-    answer:
-      "Unlike generalist staffing firms, Data Center TALNT focuses exclusively on data center, mission critical, construction, and utilities sectors. Our recruiters come from deep backgrounds in technical recruiting at companies like Apple, Rackspace, and Aerotek, and they understand the certifications, project types, and safety standards that matter in this industry. This focused expertise means shorter time-to-fill and higher candidate quality.",
-  },
-  {
-    question: "How do you vet and qualify candidates?",
-    answer:
-      "Every candidate we submit undergoes a thorough screening process that includes technical interviews with experienced recruiters, verification of certifications and licenses (PMP, CxA, PE, OSHA, NETA, LEED), reference checks with previous supervisors, and a review of their project history. We confirm hands-on experience with the specific facility types, systems, and tools your projects require.",
-  },
-];
-
 const rolesItemList = {
   name: "Data Center Construction Roles We Place",
   description: "Specialized data center and mission critical facility roles staffed by Data Center TALNT.",
@@ -320,11 +283,10 @@ export default function HomePage() {
       <SchemaScript
         schema={[
           generateOrganizationSchema(),
-          generateFAQSchema(faqs),
           generateItemListSchema(rolesItemList),
           generateItemListSchema(marketsItemList),
           ...generateClaimSchema(homeClaims),
-          generateSpeakableSchema("/", ["[aria-labelledby='why-heading']", "[aria-labelledby='roles-heading']", "[aria-labelledby='faq-heading']"]),
+          generateSpeakableSchema("/", ["[aria-labelledby='why-heading']", "[aria-labelledby='roles-heading']"]),
         ]}
       />
 
@@ -813,73 +775,6 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* ------------------------------------------------------------------ */}
-      {/*  CTA Section                                                        */}
-      {/* ------------------------------------------------------------------ */}
-      <section aria-label="Call to action" className="bg-blue py-20 md:py-28">
-        <div className="container-page text-center">
-          <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl lg:text-5xl text-balance">
-            Your Next Project Won&rsquo;t Staff Itself
-          </h2>
-          <p className="mx-auto mt-6 max-w-2xl text-lg leading-relaxed text-white/90">
-            One commissioning agent or a full project team — tell us what you
-            need and we&rsquo;ll get to work immediately. No long intake meetings.
-            No generic resumes. Just people who&rsquo;ve built exactly what
-            you&rsquo;re building.
-          </p>
-
-          <div className="mt-10 flex flex-col items-center gap-4 sm:flex-row sm:justify-center">
-            <Button href="/contact" variant="secondary" size="lg">
-              Contact Us
-            </Button>
-            <Button
-              href="/employers"
-              variant="outline"
-              size="lg"
-              className="border-white text-white hover:bg-white hover:text-blue"
-            >
-              Submit a Job Order
-            </Button>
-          </div>
-        </div>
-      </section>
-
-      {/* ------------------------------------------------------------------ */}
-      {/*  FAQ Section                                                        */}
-      {/* ------------------------------------------------------------------ */}
-      <section
-        aria-labelledby="faq-heading"
-        className="bg-white py-20 md:py-28"
-      >
-        <div className="container-page">
-          <SectionHeading
-            title="Frequently Asked Questions"
-            subtitle="Common questions about our data center and mission critical staffing services."
-          />
-
-          <div className="mx-auto max-w-3xl divide-y divide-gray-200">
-            {faqs.map((faq) => (
-              <details
-                key={faq.question}
-                className="group py-6 [&_summary::-webkit-details-marker]:hidden"
-              >
-                <summary className="flex cursor-pointer items-start justify-between gap-4 text-left text-lg font-semibold text-navy transition-colors hover:text-blue">
-                  <span>{faq.question}</span>
-                  <span
-                    aria-hidden="true"
-                    className="mt-1 shrink-0 text-gray-400 transition-transform group-open:rotate-45"
-                  >
-                    +
-                  </span>
-                </summary>
-                <p className="mt-4 text-base leading-relaxed text-gray-600">
-                  {faq.answer}
-                </p>
-              </details>
-            ))}
-          </div>
-        </div>
-      </section>
     </>
   );
 }
