@@ -15,14 +15,14 @@ import Button from "@/components/ui/Button";
 export const metadata: Metadata = {
   title: "Industries We Staff | Data Center TALNT",
   description:
-    "DC TALNT provides specialized staffing solutions across data centers, mission critical facilities, construction, and utilities. Connect with pre-vetted engineers, project managers, and skilled tradespeople nationwide.",
+    "Data Center TALNT provides specialized staffing solutions across data centers, mission critical facilities, construction, and utilities. Connect with pre-vetted engineers, project managers, and skilled tradespeople nationwide.",
   alternates: {
     canonical: "https://www.datacentertalnt.com/industries",
   },
   openGraph: {
     title: "Industries We Staff | Data Center TALNT",
     description:
-      "DC TALNT provides specialized staffing solutions across data centers, mission critical facilities, construction, and utilities.",
+      "Data Center TALNT provides specialized staffing solutions across data centers, mission critical facilities, construction, and utilities.",
     url: "https://www.datacentertalnt.com/industries",
     type: "website",
   },
@@ -221,7 +221,7 @@ export default function IndustriesPage() {
           </h2>
           <p className="mx-auto mt-4 max-w-2xl text-lg text-blue-100">
             Whether you need a single commissioning agent or an entire project
-            team, DC TALNT has the network, the expertise, and the speed to
+            team, Data Center TALNT has the network, the expertise, and the speed to
             deliver qualified candidates within days.
           </p>
           <div className="mt-8 flex flex-col items-center justify-center gap-4 sm:flex-row">

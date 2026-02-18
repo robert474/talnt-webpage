@@ -304,9 +304,9 @@ const marketsItemList = {
 };
 
 const homeClaims = [
-  { claimText: "DC TALNT targets first candidate shortlists within 48 hours of receiving a job order.", source: "Data Center TALNT" },
+  { claimText: "Data Center TALNT targets first candidate shortlists within 48 hours of receiving a job order.", source: "Data Center TALNT" },
   { claimText: "The data center construction industry averages 126 days to fill a role.", source: "The Birm Group", sourceUrl: "https://thebirmgroup.com/the-data-center-construction-boom-hiring-surge-in-2026/" },
-  { claimText: "DC TALNT offers contract, contract-to-hire, and direct placement staffing for data center construction roles.", source: "Data Center TALNT" },
+  { claimText: "Data Center TALNT offers contract, contract-to-hire, and direct placement staffing for data center construction roles.", source: "Data Center TALNT" },
 ];
 
 /* -------------------------------------------------------------------------- */
@@ -339,7 +339,7 @@ export default function HomePage() {
             <span className="text-blue-light">America&rsquo;s Data Centers</span>
           </>
         }
-        subtitle="Your next hyperscale campus needs people who've done it before. DC TALNT places project managers, MEP engineers, QA/QC inspectors, and commissioning agents on mission critical builds from Ashburn to Phoenix — and everywhere the concrete is still curing."
+        subtitle="Your next hyperscale campus needs people who've done it before. Data Center TALNT places project managers, MEP engineers, QA/QC inspectors, and commissioning agents on mission critical builds from Ashburn to Phoenix — and everywhere the concrete is still curing."
       >
         <div className="flex flex-wrap gap-4">
           <Button href="/employers" variant="primary" size="lg">
@@ -410,7 +410,7 @@ export default function HomePage() {
       </section>
 
       {/* ------------------------------------------------------------------ */}
-      {/*  Three Differentiators — Why DC TALNT                               */}
+      {/*  Three Differentiators — Why Data Center TALNT                               */}
       {/* ------------------------------------------------------------------ */}
       <section
         aria-labelledby="why-heading"
@@ -643,10 +643,10 @@ export default function HomePage() {
                   </div>
                 </div>
 
-                {/* DC TALNT Contract Bar */}
+                {/* Data Center TALNT Contract Bar */}
                 <div>
                   <div className="flex items-baseline justify-between">
-                    <p className="text-sm font-semibold text-navy">DC TALNT — Contract</p>
+                    <p className="text-sm font-semibold text-navy">Data Center TALNT — Contract</p>
                     <p className="text-2xl font-bold text-blue">Days to weeks</p>
                   </div>
                   <div className="mt-2 h-10 w-full rounded-full bg-gray-100 overflow-hidden">
@@ -655,10 +655,10 @@ export default function HomePage() {
                   </div>
                 </div>
 
-                {/* DC TALNT Direct Hire Bar */}
+                {/* Data Center TALNT Direct Hire Bar */}
                 <div>
                   <div className="flex items-baseline justify-between">
-                    <p className="text-sm font-semibold text-navy">DC TALNT — Direct Hire</p>
+                    <p className="text-sm font-semibold text-navy">Data Center TALNT — Direct Hire</p>
                     <p className="text-2xl font-bold text-blue">Weeks, not months</p>
                   </div>
                   <div className="mt-2 h-10 w-full rounded-full bg-gray-100 overflow-hidden">

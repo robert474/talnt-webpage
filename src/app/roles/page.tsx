@@ -13,14 +13,14 @@ import { generateBreadcrumbSchema } from "@/lib/schema";
 export const metadata: Metadata = {
   title: "Roles We Place | Data Center & Construction Staffing | Data Center TALNT",
   description:
-    "Explore the specialized data center, mission critical, and construction roles DC TALNT recruits for. From project managers and MEP engineers to commissioning agents, we connect employers with proven talent nationwide.",
+    "Explore the specialized data center, mission critical, and construction roles Data Center TALNT recruits for. From project managers and MEP engineers to commissioning agents, we connect employers with proven talent nationwide.",
   alternates: {
     canonical: "https://www.datacentertalnt.com/roles",
   },
   openGraph: {
     title: "Roles We Place | Data Center & Construction Staffing | Data Center TALNT",
     description:
-      "Explore the specialized data center, mission critical, and construction roles DC TALNT recruits for. From project managers and MEP engineers to commissioning agents, we connect employers with proven talent nationwide.",
+      "Explore the specialized data center, mission critical, and construction roles Data Center TALNT recruits for. From project managers and MEP engineers to commissioning agents, we connect employers with proven talent nationwide.",
     url: "https://www.datacentertalnt.com/roles",
     type: "website",
   },
@@ -248,11 +248,11 @@ export default function RolesPage() {
         </div>
       </section>
 
-      {/* Why DC TALNT */}
+      {/* Why Data Center TALNT */}
       <section className="py-16 sm:py-20 lg:py-24" aria-labelledby="why-dctalnt-heading">
         <div className="container-page">
           <SectionHeading
-            title="Why Employers and Candidates Choose DC TALNT"
+            title="Why Employers and Candidates Choose Data Center TALNT"
             subtitle="We're not a generalist staffing agency. Our recruiters have direct experience in data center, mission critical, and construction — and every placement reflects it."
           />
 
@@ -292,7 +292,7 @@ export default function RolesPage() {
           <p className="mx-auto mt-4 max-w-2xl text-lg leading-relaxed text-gray-300">
             Whether you&rsquo;re an employer looking for experienced data
             center and construction professionals, or a candidate ready for
-            your next career-defining project, DC TALNT is your partner.
+            your next career-defining project, Data Center TALNT is your partner.
           </p>
           <div className="mt-8 flex flex-col items-center justify-center gap-4 sm:flex-row">
             <Button variant="primary" size="lg" href="/employers">

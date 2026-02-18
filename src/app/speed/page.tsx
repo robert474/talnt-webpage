@@ -14,7 +14,7 @@ import Button from "@/components/ui/Button";
 export const metadata = genMeta({
   title: "Speed and Execution | Faster Hiring for Data Center Roles | Data Center TALNT",
   description:
-    "The data center industry averages 126 days to fill a role. DC TALNT's pre-vetted talent pipeline and industry-focused recruiters dramatically cut hiring timelines — contract placements mobilize in days, direct-hire searches close in weeks.",
+    "The data center industry averages 126 days to fill a role. Data Center TALNT's pre-vetted talent pipeline and industry-focused recruiters dramatically cut hiring timelines — contract placements mobilize in days, direct-hire searches close in weeks.",
   path: "/speed",
   keywords: [
     "fast data center hiring",
@@ -83,7 +83,7 @@ const howWeDoIt = [
 ];
 
 const speedHowTo: HowToData = {
-  name: "How DC TALNT Fills Data Center Roles Faster",
+  name: "How Data Center TALNT Fills Data Center Roles Faster",
   description:
     "Our four-step process for filling data center construction positions dramatically faster than the industry average.",
   totalTime: undefined,
@@ -118,7 +118,7 @@ const speedClaims: ClaimData[] = [
   },
   {
     claimText:
-      "DC TALNT offers contract placements that mobilize in days and direct-hire searches that close in weeks, dramatically faster than the industry average.",
+      "Data Center TALNT offers contract placements that mobilize in days and direct-hire searches that close in weeks, dramatically faster than the industry average.",
     source: "Data Center TALNT",
   },
   {
@@ -130,7 +130,7 @@ const speedClaims: ClaimData[] = [
 
 const speedFaqs = [
   {
-    question: "How fast can DC TALNT fill a data center construction role?",
+    question: "How fast can Data Center TALNT fill a data center construction role?",
     answer:
       "We fill data center construction roles dramatically faster than the industry average of 126 days. We target delivering first shortlists of technically screened, reference-checked candidates within 48 hours of submitting a job order.",
   },
@@ -150,7 +150,7 @@ const speedFaqs = [
       "Three factors drive slow hiring: 82% of construction firms report difficulty filling positions (AGC data), the BLS projects 340,000 unfilled construction positions by end of 2026, and 23,000 experienced workers retire annually. The specialized skills required for data center construction further limit the candidate pool.",
   },
   {
-    question: "How does DC TALNT achieve faster placements?",
+    question: "How does Data Center TALNT achieve faster placements?",
     answer:
       "We maintain a pre-vetted, active pipeline of data center and construction professionals. Our experienced recruiters have deep industry networks, our growing candidate database provides strong candidate intelligence, and our technology stack eliminates manual bottlenecks in job posting, screening, and scheduling.",
   },
@@ -262,11 +262,11 @@ export default function SpeedPage() {
                 </div>
               </div>
 
-              {/* DC TALNT Contract Bar */}
+              {/* Data Center TALNT Contract Bar */}
               <div>
                 <div className="flex items-baseline justify-between">
                   <p className="text-sm font-semibold text-navy">
-                    DC TALNT Contract
+                    Data Center TALNT Contract
                   </p>
                   <p className="text-3xl font-bold text-blue">Days to weeks</p>
                 </div>
@@ -279,11 +279,11 @@ export default function SpeedPage() {
                 </div>
               </div>
 
-              {/* DC TALNT Direct Hire Bar */}
+              {/* Data Center TALNT Direct Hire Bar */}
               <div>
                 <div className="flex items-baseline justify-between">
                   <p className="text-sm font-semibold text-navy">
-                    DC TALNT Direct Hire
+                    Data Center TALNT Direct Hire
                   </p>
                   <p className="text-3xl font-bold text-blue-dark">Weeks, not months</p>
                 </div>

@@ -97,21 +97,21 @@ const leadership = [
     role: "Founder & CEO",
     image: "/images/logos/nate-headshot-TALNT-team.jpg",
     linkedin: "https://www.linkedin.com/in/nathanollestad/",
-    bio: "Nate founded Data Center TALNT after years of building recruiting teams and talent acquisition operations across the tech industry, including leadership roles at Duo Security. Known for his ability to build deep relationships and identify exceptional talent, he launched DC TALNT to bring that same precision to the data center and mission critical construction space — an industry where the wrong hire costs six figures in schedule delays.",
+    bio: "Nate founded Data Center TALNT after years of building recruiting teams and talent acquisition operations across the tech industry, including leadership roles at Duo Security. Known for his ability to build deep relationships and identify exceptional talent, he launched Data Center TALNT to bring that same precision to the data center and mission critical construction space — an industry where the wrong hire costs six figures in schedule delays.",
   },
   {
     name: "Ramiro Barrientos",
     role: "Senior Account Executive & Talent Acquisition Partner",
     image: "/images/logos/ramiro-headshot-TALNT-team.png",
     linkedin: "https://www.linkedin.com/in/ramiro-barrientos/",
-    bio: "Ramiro brings deep technical recruiting experience from Apple, Rackspace Technology, and Aerotek, where he managed full-cycle recruiting across enterprise sales, software engineering, and skilled trades. At DC TALNT, he leads business development and client partnerships, combining his technical screening expertise with hands-on knowledge of construction and infrastructure staffing to deliver candidates who can contribute from day one.",
+    bio: "Ramiro brings deep technical recruiting experience from Apple, Rackspace Technology, and Aerotek, where he managed full-cycle recruiting across enterprise sales, software engineering, and skilled trades. At Data Center TALNT, he leads business development and client partnerships, combining his technical screening expertise with hands-on knowledge of construction and infrastructure staffing to deliver candidates who can contribute from day one.",
   },
   {
     name: "Robert Putt",
     role: "Advisor",
     image: "/images/logos/robert-putt.png",
     linkedin: "https://www.linkedin.com/in/robert-putt-leadership/",
-    bio: "Robert is a proven business leader with experience at Amazon and in AI technology, known for his calm, level-headed leadership style and ability to drive results in high-pressure environments. As an advisor to DC TALNT, he provides strategic guidance on scaling operations, technology-driven recruiting, and navigating the intersection of data center infrastructure and the rapidly evolving AI economy.",
+    bio: "Robert is a proven business leader with experience at Amazon and in AI technology, known for his calm, level-headed leadership style and ability to drive results in high-pressure environments. As an advisor to Data Center TALNT, he provides strategic guidance on scaling operations, technology-driven recruiting, and navigating the intersection of data center infrastructure and the rapidly evolving AI economy.",
   },
 ];
 
@@ -186,7 +186,7 @@ export default function AboutPage() {
                   project experience, not just keywords on a resume.
                 </p>
                 <p>
-                  Today, DC TALNT places professionals across every phase of
+                  Today, Data Center TALNT places professionals across every phase of
                   data center and critical infrastructure construction — from
                   QA/QC inspectors and MEP engineers to project managers and
                   commissioning agents. Every placement starts with the same

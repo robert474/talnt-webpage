@@ -34,7 +34,7 @@ const benefits = [
   {
     title: "Roles You Won't Find on Job Boards",
     description:
-      "A lot of the best positions never get posted publicly. The hiring manager calls us, we call the right person. Working with DC TALNT puts you in that loop before everyone else.",
+      "A lot of the best positions never get posted publicly. The hiring manager calls us, we call the right person. Working with Data Center TALNT puts you in that loop before everyone else.",
   },
   {
     title: "Recruiters Who Speak Your Language",

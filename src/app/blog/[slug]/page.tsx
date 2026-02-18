@@ -34,7 +34,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     path: `/blog/${post.slug}`,
     ogType: "article",
     publishedTime: post.isoDate,
-    keywords: [...post.keywords, "data center staffing", "DC TALNT blog"],
+    keywords: [...post.keywords, "data center staffing", "Data Center TALNT blog"],
   });
 }
 
@@ -188,7 +188,7 @@ const articles: Record<string, React.ReactNode> = {
         teams simply can't match alone.
       </P>
       <P>
-        <IL href="/contact">Talk to DC TALNT</IL> about building your data
+        <IL href="/contact">Talk to Data Center TALNT</IL> about building your data
         center construction team faster.
       </P>
     </>
@@ -417,7 +417,7 @@ const articles: Record<string, React.ReactNode> = {
       </P>
       <P>
         Need skilled tradespeople for your data center build?{" "}
-        <IL href="/contact">DC TALNT can help</IL>.
+        <IL href="/contact">Data Center TALNT can help</IL>.
       </P>
     </>
   ),
@@ -704,7 +704,7 @@ const articles: Record<string, React.ReactNode> = {
       </P>
       <P>
         Looking for graduates from these programs?{" "}
-        <IL href="/contact">DC TALNT connects employers</IL> with top
+        <IL href="/contact">Data Center TALNT connects employers</IL> with top
         university talent.
       </P>
     </>
@@ -859,7 +859,7 @@ const articles: Record<string, React.ReactNode> = {
       </P>
       <P>
         Want to benchmark your comp or your offers?{" "}
-        <IL href="/contact">Talk to DC TALNT</IL> — we place 100+
+        <IL href="/contact">Talk to Data Center TALNT</IL> — we place 100+
         professionals per quarter and have the most current market data
         in the industry.
       </P>
@@ -991,7 +991,7 @@ const articles: Record<string, React.ReactNode> = {
         for compensation benchmarks by market and role.
       </P>
       <P>
-        <IL href="/locations">Explore DC TALNT opportunities</IL> in all
+        <IL href="/locations">Explore Data Center TALNT opportunities</IL> in all
         10 markets.
       </P>
     </>
@@ -1114,7 +1114,7 @@ const articles: Record<string, React.ReactNode> = {
         Engineering</A> are among the best for developing these skills.
       </P>
       <P>
-        <IL href="/contact">DC TALNT places MEP engineers</IL> in mission
+        <IL href="/contact">Data Center TALNT places MEP engineers</IL> in mission
         critical roles nationwide.
       </P>
     </>
@@ -1175,7 +1175,7 @@ const articles: Record<string, React.ReactNode> = {
         boards. They're on active builds, and they get recruited through:
       </P>
       <ul className="mb-4 ml-6 list-disc space-y-2 text-gray-700">
-        <li>Specialized staffing firms (like <IL href="/">DC TALNT</IL>) with established relationships in the data center construction community</li>
+        <li>Specialized staffing firms (like <IL href="/">Data Center TALNT</IL>) with established relationships in the data center construction community</li>
         <li>Industry events and conferences (<A href="https://www.agc.org/">AGC</A>, DCD, Datacloud)</li>
         <li>Referral networks — the data center construction world is small, and the top performers know each other</li>
         <li>University programs: <A href="https://engineering.purdue.edu/">Purdue</A>, <A href="https://www.arch.tamu.edu/cosc/">Texas A&M</A>, and Virginia Tech produce strong construction management graduates</li>
@@ -1233,7 +1233,7 @@ const articles: Record<string, React.ReactNode> = {
         If you've been searching for more than 30 days, it's time to
         engage a specialized recruiter. The longer a CM position stays open,
         the more it costs in project delays and team strain. A firm like{" "}
-        <IL href="/contact">DC TALNT</IL> can typically deliver qualified
+        <IL href="/contact">Data Center TALNT</IL> can typically deliver qualified
         candidates in 2-4 weeks because we maintain active relationships
         with the professionals you need.
       </P>
@@ -1357,7 +1357,7 @@ const articles: Record<string, React.ReactNode> = {
       </P>
       <P>
         Explore hyperscale construction opportunities with{" "}
-        <IL href="/contact">DC TALNT</IL>.
+        <IL href="/contact">Data Center TALNT</IL>.
       </P>
     </>
   ),
@@ -1484,7 +1484,7 @@ const articles: Record<string, React.ReactNode> = {
       </P>
       <P>
         Need help finding qualified commissioning professionals?{" "}
-        <IL href="/contact">DC TALNT specializes</IL> in placing both CxAs
+        <IL href="/contact">Data Center TALNT specializes</IL> in placing both CxAs
         and CxEs for data center projects nationwide.
       </P>
     </>
@@ -1619,7 +1619,7 @@ const articles: Record<string, React.ReactNode> = {
 
       <P>
         Building your workforce strategy?{" "}
-        <IL href="/contact">DC TALNT</IL> helps employers develop
+        <IL href="/contact">Data Center TALNT</IL> helps employers develop
         sustainable talent pipelines for data center construction.
       </P>
     </>
@@ -1765,7 +1765,7 @@ const articles: Record<string, React.ReactNode> = {
       </P>
       <P>
         Want a confidential market assessment of your current compensation?{" "}
-        <IL href="/contact">Talk to DC TALNT</IL> — we'll tell you
+        <IL href="/contact">Talk to Data Center TALNT</IL> — we'll tell you
         exactly where you stand relative to the market.
       </P>
     </>
@@ -1970,7 +1970,7 @@ export default async function BlogPostPage({ params }: Props) {
 
             {/* Cross-links */}
             <div className="mt-8 rounded-xl border border-gray-200 bg-white p-6">
-              <h3 className="text-lg font-semibold text-navy mb-4">Explore More from DC TALNT</h3>
+              <h3 className="text-lg font-semibold text-navy mb-4">Explore More from Data Center TALNT</h3>
               <div className="grid gap-3 sm:grid-cols-2">
                 <Link href="/speed" className="flex items-center gap-2 rounded-lg border border-gray-100 bg-gray-50 px-4 py-3 text-sm font-medium text-navy hover:bg-blue hover:text-white transition-colors">
                   <span aria-hidden="true">&rarr;</span> Speed &amp; Execution

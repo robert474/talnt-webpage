@@ -58,15 +58,15 @@ const rolesData: Record<string, RoleData> = {
     metaTitle:
       "Data Center Project Manager Staffing | Hire PMs | Data Center TALNT",
     metaDescription:
-      "Hire experienced data center and construction project managers through DC TALNT. We recruit PMP-certified PMs with mission critical facility, hyperscale, and ground-up construction expertise nationwide.",
+      "Hire experienced data center and construction project managers through Data Center TALNT. We recruit PMP-certified PMs with mission critical facility, hyperscale, and ground-up construction expertise nationwide.",
     salaryRange: "$95,000 - $165,000",
     salaryMin: 95000,
     salaryMax: 165000,
     heroTitle: "Data Center Project Manager Staffing",
     description: [
       "Data center project managers orchestrate every phase of mission critical construction, from initial feasibility studies and design coordination through procurement, construction, commissioning, and turnover. Unlike general commercial construction PMs, data center project managers must navigate the rigorous uptime requirements, redundancy standards, and concurrent maintainability demands that define Tier III and Tier IV facilities. They coordinate closely with MEP engineers, commissioning agents, general contractors, and owner representatives to ensure that complex electrical, mechanical, and fire protection systems integrate seamlessly within aggressive timelines.",
-      "At DC TALNT, we recruit project managers who have delivered hyperscale campuses for colocation providers, enterprise data centers for Fortune 500 companies, and edge facilities for telecommunications carriers. Our candidates bring fluency in critical path scheduling, risk management, change order negotiation, and stakeholder communication at the executive level. Many hold PMP certification from the Project Management Institute alongside industry-specific credentials in OSHA safety, LEED sustainability, and lean construction methods.",
-      "The demand for experienced data center PMs continues to accelerate as cloud providers, AI infrastructure developers, and enterprise organizations invest billions in new capacity across North America. DC TALNT helps employers reduce time-to-hire and candidates find roles that match their expertise and career trajectory in this high-growth market.",
+      "At Data Center TALNT, we recruit project managers who have delivered hyperscale campuses for colocation providers, enterprise data centers for Fortune 500 companies, and edge facilities for telecommunications carriers. Our candidates bring fluency in critical path scheduling, risk management, change order negotiation, and stakeholder communication at the executive level. Many hold PMP certification from the Project Management Institute alongside industry-specific credentials in OSHA safety, LEED sustainability, and lean construction methods.",
+      "The demand for experienced data center PMs continues to accelerate as cloud providers, AI infrastructure developers, and enterprise organizations invest billions in new capacity across North America. Data Center TALNT helps employers reduce time-to-hire and candidates find roles that match their expertise and career trajectory in this high-growth market.",
     ],
     responsibilities: [
       "Manage full project lifecycle for data center construction from pre-construction planning through substantial completion and turnover",
@@ -144,7 +144,7 @@ const rolesData: Record<string, RoleData> = {
       },
       {
         question:
-          "How quickly can DC TALNT place a data center project manager?",
+          "How quickly can Data Center TALNT place a data center project manager?",
         answer:
           "Our typical time-to-present for qualified data center PM candidates is 5 to 10 business days. Because we maintain an active pipeline of pre-vetted project management professionals with mission critical experience, we can often present shortlisted candidates faster than internal recruiting teams or generalist staffing agencies. For urgent backfill or program ramp-up needs, we offer expedited search processes.",
       },
@@ -152,7 +152,7 @@ const rolesData: Record<string, RoleData> = {
         question:
           "Do you place project managers for both owners and contractors?",
         answer:
-          "Yes. DC TALNT places project managers on both the owner/developer side and the general contractor/CM side. Owner-side PMs typically focus on program management, vendor oversight, and schedule governance, while contractor-side PMs manage trade coordination, field execution, and subcontractor performance. We understand the distinct skill sets each role demands and match candidates accordingly.",
+          "Yes. Data Center TALNT places project managers on both the owner/developer side and the general contractor/CM side. Owner-side PMs typically focus on program management, vendor oversight, and schedule governance, while contractor-side PMs manage trade coordination, field execution, and subcontractor performance. We understand the distinct skill sets each role demands and match candidates accordingly.",
       },
     ],
     demandTrend:
@@ -168,15 +168,15 @@ const rolesData: Record<string, RoleData> = {
     metaTitle:
       "Data Center Construction Manager Staffing | Hire CMs | Data Center TALNT",
     metaDescription:
-      "Find experienced data center construction managers through DC TALNT. We recruit CMs with ground-up hyperscale, mission critical, and heavy commercial construction expertise for projects nationwide.",
+      "Find experienced data center construction managers through Data Center TALNT. We recruit CMs with ground-up hyperscale, mission critical, and heavy commercial construction expertise for projects nationwide.",
     salaryRange: "$105,000 - $175,000",
     salaryMin: 105000,
     salaryMax: 175000,
     heroTitle: "Data Center Construction Manager Staffing",
     description: [
       "Construction managers in the data center sector are the linchpins of on-site execution. They bridge the gap between the project management office and the field workforce, translating blueprints, specifications, and schedules into the coordinated activities of dozens of subcontractor crews working simultaneously. In mission critical construction, where even minor sequencing errors can cascade into costly rework and commissioning delays, the construction manager's ability to plan, communicate, and adapt in real time is what separates successful projects from troubled ones.",
-      "DC TALNT specializes in recruiting construction managers who have delivered ground-up data center campuses, critical facility expansions, and complex retrofit projects for colocation providers, hyperscale operators, and enterprise end-users. Our candidates have hands-on experience coordinating structural, mechanical, electrical, plumbing, and fire protection trades in environments where active IT loads may be operating in adjacent spaces. They understand the phased energization sequences, clean protocol requirements, and vibration limitations that make data center construction uniquely demanding.",
-      "As the data center construction pipeline continues to grow, experienced construction managers are among the most sought-after professionals in the industry. DC TALNT helps employers hire faster by providing pre-screened CM candidates who are ready to step onto a site and deliver results from day one.",
+      "Data Center TALNT specializes in recruiting construction managers who have delivered ground-up data center campuses, critical facility expansions, and complex retrofit projects for colocation providers, hyperscale operators, and enterprise end-users. Our candidates have hands-on experience coordinating structural, mechanical, electrical, plumbing, and fire protection trades in environments where active IT loads may be operating in adjacent spaces. They understand the phased energization sequences, clean protocol requirements, and vibration limitations that make data center construction uniquely demanding.",
+      "As the data center construction pipeline continues to grow, experienced construction managers are among the most sought-after professionals in the industry. Data Center TALNT helps employers hire faster by providing pre-screened CM candidates who are ready to step onto a site and deliver results from day one.",
     ],
     responsibilities: [
       "Direct daily construction operations on data center sites, ensuring adherence to project schedules, quality standards, and safety protocols",
@@ -255,7 +255,7 @@ const rolesData: Record<string, RoleData> = {
       },
       {
         question:
-          "How does DC TALNT vet construction manager candidates?",
+          "How does Data Center TALNT vet construction manager candidates?",
         answer:
           "Our vetting process for construction managers includes detailed technical interviews covering MEP systems knowledge, scheduling methodology, safety program experience, and subcontractor management capabilities. We verify certifications, conduct reference checks with former project managers and superintendents, and validate project histories against publicly available information. For data center-specific roles, we assess candidates' understanding of redundancy configurations, commissioning processes, and clean build protocols.",
       },
@@ -263,7 +263,7 @@ const rolesData: Record<string, RoleData> = {
         question:
           "Can you staff construction managers for remote or travel-based projects?",
         answer:
-          "Yes. Many data center construction projects require managers who are willing to travel or relocate temporarily. DC TALNT maintains a national pipeline of construction managers open to travel assignments, rotational schedules, and permanent relocation. We match candidates' travel preferences and personal circumstances with project requirements to ensure retention and performance throughout the project lifecycle.",
+          "Yes. Many data center construction projects require managers who are willing to travel or relocate temporarily. Data Center TALNT maintains a national pipeline of construction managers open to travel assignments, rotational schedules, and permanent relocation. We match candidates' travel preferences and personal circumstances with project requirements to ensure retention and performance throughout the project lifecycle.",
       },
     ],
     demandTrend:
@@ -279,13 +279,13 @@ const rolesData: Record<string, RoleData> = {
     metaTitle:
       "MEP Engineer Staffing for Data Centers | Mechanical, Electrical & Plumbing | Data Center TALNT",
     metaDescription:
-      "Hire MEP engineers with data center expertise through DC TALNT. We recruit mechanical engineers for HVAC and cooling, electrical engineers for power distribution, and plumbing engineers for fire protection. BIM coordination and commissioning specialists available.",
+      "Hire MEP engineers with data center expertise through Data Center TALNT. We recruit mechanical engineers for HVAC and cooling, electrical engineers for power distribution, and plumbing engineers for fire protection. BIM coordination and commissioning specialists available.",
     salaryRange: "$90,000 - $160,000",
     salaryMin: 90000,
     salaryMax: 160000,
     heroTitle: "MEP Engineer Staffing for Data Centers & Critical Facilities",
     description: [
-      "MEP engineers are the technical backbone of every data center and mission critical facility. The mechanical, electrical, and plumbing systems they design, specify, and oversee determine whether a facility can achieve and maintain the uptime, energy efficiency, and scalability that modern digital infrastructure demands. At DC TALNT, we understand that MEP engineering in the data center context is fundamentally different from conventional building design—these engineers must account for massive electrical loads measured in megawatts, precision cooling systems that maintain temperatures within fractions of a degree, fire suppression approaches that protect equipment without causing secondary damage, and redundancy architectures that allow full maintenance without service interruption.",
+      "MEP engineers are the technical backbone of every data center and mission critical facility. The mechanical, electrical, and plumbing systems they design, specify, and oversee determine whether a facility can achieve and maintain the uptime, energy efficiency, and scalability that modern digital infrastructure demands. At Data Center TALNT, we understand that MEP engineering in the data center context is fundamentally different from conventional building design—these engineers must account for massive electrical loads measured in megawatts, precision cooling systems that maintain temperatures within fractions of a degree, fire suppression approaches that protect equipment without causing secondary damage, and redundancy architectures that allow full maintenance without service interruption.",
       "Our MEP engineering placements span the full lifecycle and all three core disciplines. On the mechanical side, we recruit HVAC and cooling system engineers who design and commission chilled water plants, computer room air handlers (CRAHs), direct expansion cooling systems, hot aisle/cold aisle containment strategies, rear-door heat exchangers, and emerging liquid cooling and immersion cooling architectures for high-density AI and HPC deployments. These mechanical engineers must balance thermal performance against Power Usage Effectiveness (PUE) targets, often achieving ratios below 1.3 in modern facilities through free cooling economizers, waterside economization, and advanced controls integration. They work closely with computational fluid dynamics (CFD) analysts to validate airflow models and with commissioning agents to verify that cooling systems perform under full load conditions.",
       "On the electrical side, we recruit power distribution engineers who design medium-voltage utility interconnections, main switchgear lineups, automatic transfer switches (ATS), uninterruptible power supply (UPS) systems, power distribution units (PDUs), remote power panels (RPPs), and busway distribution to individual server racks. These electrical engineers must be fluent in redundancy topologies—from basic N+1 configurations to fully fault-tolerant 2N and 2N+1 architectures—and must understand the arc flash hazard analysis, short circuit studies, and protective relay coordination that utility-scale power systems require. Generator sizing, fuel storage calculations, paralleling switchgear design, and battery energy storage system (BESS) integration are increasingly important as data center operators seek greater resilience and grid independence. Our electrical engineering candidates also bring expertise in power monitoring systems, DCIM platform integration, and energy metering to support real-time capacity management. For plumbing engineering, we place specialists in fire protection system design—including pre-action dry pipe, wet pipe, clean agent, and water mist suppression systems—as well as domestic water, sanitary, and storm drainage systems for large data center campuses. Plumbing engineers in the mission critical space must understand the unique requirements of protecting IT equipment while minimizing water exposure risk, coordinating closely with mechanical engineers on chilled water piping, condenser water loops, and cooling tower makeup water systems. In addition, we recruit BIM coordination specialists who use Revit, Navisworks, and other model coordination platforms to detect and resolve MEP clashes before construction begins. BIM coordination is essential in data center construction where mechanical ductwork, electrical conduit, cable tray, plumbing piping, and fire protection lines must share extremely tight ceiling plenums and underfloor distribution paths. Our BIM professionals bridge the gap between design engineering and field installation, producing coordinated construction models that reduce RFIs, minimize rework, and accelerate the construction schedule. Many of our MEP engineering candidates also bring commissioning experience, understanding functional performance testing protocols, Integrated Systems Testing (IST) procedures, and the documentation requirements that data center owners and authorities having jurisdiction (AHJ) demand before facilities go live.",
     ],
@@ -353,9 +353,9 @@ const rolesData: Record<string, RoleData> = {
     faqs: [
       {
         question:
-          "What types of MEP engineers does DC TALNT recruit for data centers?",
+          "What types of MEP engineers does Data Center TALNT recruit for data centers?",
         answer:
-          "DC TALNT recruits across all three MEP disciplines for data center projects. On the mechanical side, we place HVAC and cooling system engineers specializing in chilled water plants, precision air handling, containment strategies, and emerging liquid and immersion cooling technologies. On the electrical side, we recruit power distribution engineers experienced in medium-voltage systems, UPS design, generator sizing, switchgear specification, and battery energy storage integration. For plumbing, we place fire protection engineers who design pre-action, clean agent, and water mist suppression systems, as well as engineers handling domestic water and chilled water piping systems. We also recruit BIM coordination specialists who work across all three disciplines to ensure clash-free designs.",
+          "Data Center TALNT recruits across all three MEP disciplines for data center projects. On the mechanical side, we place HVAC and cooling system engineers specializing in chilled water plants, precision air handling, containment strategies, and emerging liquid and immersion cooling technologies. On the electrical side, we recruit power distribution engineers experienced in medium-voltage systems, UPS design, generator sizing, switchgear specification, and battery energy storage integration. For plumbing, we place fire protection engineers who design pre-action, clean agent, and water mist suppression systems, as well as engineers handling domestic water and chilled water piping systems. We also recruit BIM coordination specialists who work across all three disciplines to ensure clash-free designs.",
       },
       {
         question:
@@ -385,7 +385,7 @@ const rolesData: Record<string, RoleData> = {
         question:
           "How does commissioning overlap with MEP engineering in data centers?",
         answer:
-          "Commissioning and MEP engineering are deeply intertwined in data center construction. MEP engineers establish the design intent, performance criteria, and system specifications that commissioning agents use as the basis for their testing protocols. During the commissioning process, MEP engineers often participate in pre-functional equipment checklists, witness functional performance tests, and help troubleshoot issues identified during Integrated Systems Testing (IST). Many experienced MEP engineers hold commissioning certifications (CxA) and transition between pure design roles and commissioning roles throughout their careers. At DC TALNT, we understand this overlap and recruit candidates who can contribute to both design engineering and commissioning activities.",
+          "Commissioning and MEP engineering are deeply intertwined in data center construction. MEP engineers establish the design intent, performance criteria, and system specifications that commissioning agents use as the basis for their testing protocols. During the commissioning process, MEP engineers often participate in pre-functional equipment checklists, witness functional performance tests, and help troubleshoot issues identified during Integrated Systems Testing (IST). Many experienced MEP engineers hold commissioning certifications (CxA) and transition between pure design roles and commissioning roles throughout their careers. At Data Center TALNT, we understand this overlap and recruit candidates who can contribute to both design engineering and commissioning activities.",
       },
       {
         question:
@@ -407,15 +407,15 @@ const rolesData: Record<string, RoleData> = {
     metaTitle:
       "Data Center Construction Scheduler Staffing | Primavera P6 | Data Center TALNT",
     metaDescription:
-      "Hire expert construction schedulers and planners for data center and mission critical projects. DC TALNT recruits Primavera P6 and CPM scheduling professionals with critical path methodology expertise.",
+      "Hire expert construction schedulers and planners for data center and mission critical projects. Data Center TALNT recruits Primavera P6 and CPM scheduling professionals with critical path methodology expertise.",
     salaryRange: "$80,000 - $135,000",
     salaryMin: 80000,
     salaryMax: 135000,
     heroTitle: "Data Center Construction Scheduler & Planner Staffing",
     description: [
       "Construction schedulers and planners are essential to the successful delivery of data center and mission critical projects, where aggressive timelines and complex interdependencies between mechanical, electrical, plumbing, and IT systems make traditional scheduling approaches inadequate. Data center schedulers must account for long-lead equipment procurement timelines that can stretch 40-60 weeks for generators and switchgear, phased energization sequences that require precise coordination between electrical contractors and commissioning agents, and multi-building campus programs where parallel construction streams share resources and site logistics.",
-      "DC TALNT recruits schedulers and planners who combine mastery of Critical Path Method (CPM) scheduling with deep knowledge of data center construction sequences. Our candidates are proficient in Primavera P6, Microsoft Project, and other enterprise scheduling platforms, and they understand how to build resource-loaded schedules, perform earned value analysis, develop recovery schedules when projects fall behind, and produce the schedule narratives and time impact analyses that construction disputes and claims often require.",
-      "As data center construction programs grow in scale and complexity—with some hyperscale campuses involving ten or more concurrent building phases—the demand for specialized schedulers who understand mission critical construction has outpaced supply. DC TALNT helps employers find planners who can manage program-level master schedules while also drilling into the detailed activities that govern critical path and near-critical path work.",
+      "Data Center TALNT recruits schedulers and planners who combine mastery of Critical Path Method (CPM) scheduling with deep knowledge of data center construction sequences. Our candidates are proficient in Primavera P6, Microsoft Project, and other enterprise scheduling platforms, and they understand how to build resource-loaded schedules, perform earned value analysis, develop recovery schedules when projects fall behind, and produce the schedule narratives and time impact analyses that construction disputes and claims often require.",
+      "As data center construction programs grow in scale and complexity—with some hyperscale campuses involving ten or more concurrent building phases—the demand for specialized schedulers who understand mission critical construction has outpaced supply. Data Center TALNT helps employers find planners who can manage program-level master schedules while also drilling into the detailed activities that govern critical path and near-critical path work.",
     ],
     responsibilities: [
       "Develop and maintain CPM project schedules in Primavera P6 or Microsoft Project for data center construction programs",
@@ -495,11 +495,11 @@ const rolesData: Record<string, RoleData> = {
         question:
           "Do you place schedulers for program-level or project-level roles?",
         answer:
-          "DC TALNT places schedulers at both levels. Project-level schedulers manage individual building or phase schedules, while program-level schedulers oversee master schedules spanning multiple buildings, phases, and sometimes multiple campuses. Program-level roles typically require more experience and command higher compensation, as they involve coordinating shared resources, managing inter-project dependencies, and reporting to senior executives on overall program health.",
+          "Data Center TALNT places schedulers at both levels. Project-level schedulers manage individual building or phase schedules, while program-level schedulers oversee master schedules spanning multiple buildings, phases, and sometimes multiple campuses. Program-level roles typically require more experience and command higher compensation, as they involve coordinating shared resources, managing inter-project dependencies, and reporting to senior executives on overall program health.",
       },
       {
         question:
-          "How quickly can DC TALNT provide qualified scheduler candidates?",
+          "How quickly can Data Center TALNT provide qualified scheduler candidates?",
         answer:
           "We typically present shortlisted scheduler candidates within 7 to 14 business days, depending on the specialization required and the geographic market. Because data center scheduling is a niche skill set, we maintain targeted relationships with qualified professionals and can often accelerate the timeline for employers with urgent needs. Our pre-screening process validates Primavera P6 proficiency, CPM methodology knowledge, and data center construction sequence understanding before candidates are presented.",
       },
@@ -517,15 +517,15 @@ const rolesData: Record<string, RoleData> = {
     metaTitle:
       "Data Center QA/QC Inspector Staffing | Quality Assurance | Data Center TALNT",
     metaDescription:
-      "Hire experienced QA/QC inspectors for data center and mission critical construction through DC TALNT. We recruit certified quality assurance and quality control professionals for MEP, structural, and electrical inspection on hyperscale builds nationwide.",
+      "Hire experienced QA/QC inspectors for data center and mission critical construction through Data Center TALNT. We recruit certified quality assurance and quality control professionals for MEP, structural, and electrical inspection on hyperscale builds nationwide.",
     salaryRange: "$80,000 - $140,000",
     salaryMin: 80000,
     salaryMax: 140000,
     heroTitle: "Data Center QA/QC Inspector Staffing",
     description: [
       "QA/QC inspectors are the quality gatekeepers on data center and mission critical construction projects. They systematically verify that every installation — from structural steel connections and concrete pours to electrical terminations and mechanical piping — meets the exact specifications, codes, and owner requirements before work is covered up or systems are energized. In data center construction, where a single deficient electrical connection can cause an arc flash event or a faulty pipe weld can leak coolant onto millions of dollars in IT equipment, the QA/QC inspector's role is not optional — it is essential to facility reliability and safety.",
-      "DC TALNT recruits QA/QC inspectors who have worked on $50 million to $500 million+ critical facility projects. Our candidates understand the unique quality demands of mission critical construction: AWS/NETA electrical testing standards, ASME and AWS welding inspection requirements, concrete and structural testing protocols, MEP installation verification against Uptime Institute Tier standards, and the documentation rigor required to support commissioning and facility turnover. They bring certifications like CWI (Certified Welding Inspector), ACI (American Concrete Institute), ICC (International Code Council), and NETA alongside hands-on experience catching deficiencies before they become failures.",
-      "The demand for qualified QA/QC inspectors has surged alongside the data center construction boom. As hyperscale operators and colocation providers invest billions in new capacity, the need for professionals who can systematically verify construction quality across mechanical, electrical, structural, and civil disciplines has never been greater. DC TALNT provides employers with access to QA/QC talent that has been pre-vetted for mission critical construction experience and the documentation skills that commissioning authorities and owners require.",
+      "Data Center TALNT recruits QA/QC inspectors who have worked on $50 million to $500 million+ critical facility projects. Our candidates understand the unique quality demands of mission critical construction: AWS/NETA electrical testing standards, ASME and AWS welding inspection requirements, concrete and structural testing protocols, MEP installation verification against Uptime Institute Tier standards, and the documentation rigor required to support commissioning and facility turnover. They bring certifications like CWI (Certified Welding Inspector), ACI (American Concrete Institute), ICC (International Code Council), and NETA alongside hands-on experience catching deficiencies before they become failures.",
+      "The demand for qualified QA/QC inspectors has surged alongside the data center construction boom. As hyperscale operators and colocation providers invest billions in new capacity, the need for professionals who can systematically verify construction quality across mechanical, electrical, structural, and civil disciplines has never been greater. Data Center TALNT provides employers with access to QA/QC talent that has been pre-vetted for mission critical construction experience and the documentation skills that commissioning authorities and owners require.",
     ],
     responsibilities: [
       "Perform daily quality inspections of MEP, structural, and civil work against approved drawings, specifications, and applicable codes on data center construction sites",
@@ -612,7 +612,7 @@ const rolesData: Record<string, RoleData> = {
       },
       {
         question:
-          "How quickly can DC TALNT place a QA/QC inspector?",
+          "How quickly can Data Center TALNT place a QA/QC inspector?",
         answer:
           "Our average time-to-fill for QA/QC inspector roles is 10-18 business days, with pre-vetted candidates available for presentation within 5-7 business days. For urgent needs on active construction sites where quality coverage gaps create schedule risk, we maintain relationships with certified QA/QC professionals between project assignments who can mobilize within one week. Our specialized focus on data center and mission critical construction means we recruit from a targeted pool of quality professionals with the specific certifications and experience that these projects demand.",
       },
@@ -630,15 +630,15 @@ const rolesData: Record<string, RoleData> = {
     metaTitle:
       "Data Center Commissioning Agent Staffing | CxA Recruitment | Data Center TALNT",
     metaDescription:
-      "Hire certified commissioning agents for data center and mission critical projects through DC TALNT. We recruit CxA professionals experienced in IST, functional testing, and Tier III/IV commissioning standards.",
+      "Hire certified commissioning agents for data center and mission critical projects through Data Center TALNT. We recruit CxA professionals experienced in IST, functional testing, and Tier III/IV commissioning standards.",
     salaryRange: "$85,000 - $150,000",
     salaryMin: 85000,
     salaryMax: 150000,
     heroTitle: "Data Center Commissioning Agent Staffing",
     description: [
-      "Commissioning agents serve as the independent quality assurance authority that verifies data center and mission critical facility systems perform as designed before they are placed into service. In an industry where a single system failure can result in millions of dollars in downtime costs per hour, the commissioning agent's role is not merely procedural—it is the final line of defense between construction completion and operational readiness. DC TALNT recruits commissioning professionals who understand the full commissioning lifecycle, from developing the commissioning plan during the design phase through executing Integrated Systems Testing (IST) and supporting the facility's first year of operation.",
+      "Commissioning agents serve as the independent quality assurance authority that verifies data center and mission critical facility systems perform as designed before they are placed into service. In an industry where a single system failure can result in millions of dollars in downtime costs per hour, the commissioning agent's role is not merely procedural—it is the final line of defense between construction completion and operational readiness. Data Center TALNT recruits commissioning professionals who understand the full commissioning lifecycle, from developing the commissioning plan during the design phase through executing Integrated Systems Testing (IST) and supporting the facility's first year of operation.",
       "Our commissioning agent placements include professionals experienced in all levels of data center commissioning: Level 1 through Level 5 testing protocols, single-system functional performance testing, multi-system integration testing, and full-facility IST scenarios that simulate utility failure, generator transfer, and concurrent maintenance conditions. These professionals work across mechanical, electrical, plumbing, fire protection, and building automation systems, verifying that each system and the interactions between systems meet the owner's project requirements (OPR) and the basis of design (BOD).",
-      "The commissioning profession has experienced rapid growth as data center owners increasingly recognize that rigorous commissioning reduces operational risk, accelerates time-to-revenue, and protects their multi-billion-dollar infrastructure investments. DC TALNT connects employers with commissioning agents who bring the technical depth, documentation rigor, and stakeholder communication skills that this high-stakes discipline demands.",
+      "The commissioning profession has experienced rapid growth as data center owners increasingly recognize that rigorous commissioning reduces operational risk, accelerates time-to-revenue, and protects their multi-billion-dollar infrastructure investments. Data Center TALNT connects employers with commissioning agents who bring the technical depth, documentation rigor, and stakeholder communication skills that this high-stakes discipline demands.",
     ],
     responsibilities: [
       "Develop comprehensive commissioning plans, specifications, and testing protocols for data center mechanical, electrical, plumbing, and fire protection systems",
@@ -724,9 +724,9 @@ const rolesData: Record<string, RoleData> = {
       },
       {
         question:
-          "How is DC TALNT different from other staffing agencies for commissioning roles?",
+          "How is Data Center TALNT different from other staffing agencies for commissioning roles?",
         answer:
-          "Most generalist staffing agencies lack the technical expertise to evaluate commissioning agent candidates meaningfully. DC TALNT's recruiters understand commissioning terminology, testing methodologies, and the difference between Level 3 and Level 5 commissioning protocols. We verify candidates' actual commissioning project experience—not just credentials—by asking detailed questions about specific IST scenarios they have led, systems they have tested, and deficiencies they have identified and resolved. This technical depth in our screening process means employers receive candidates who are genuinely qualified, not just keyword-matched.",
+          "Most generalist staffing agencies lack the technical expertise to evaluate commissioning agent candidates meaningfully. Data Center TALNT's recruiters understand commissioning terminology, testing methodologies, and the difference between Level 3 and Level 5 commissioning protocols. We verify candidates' actual commissioning project experience—not just credentials—by asking detailed questions about specific IST scenarios they have led, systems they have tested, and deficiencies they have identified and resolved. This technical depth in our screening process means employers receive candidates who are genuinely qualified, not just keyword-matched.",
       },
     ],
     demandTrend:
@@ -911,7 +911,7 @@ export default async function RolePage({ params }: PageProps) {
             </h1>
 
             <p className="mt-6 text-lg leading-relaxed text-gray-300 sm:text-xl">
-              DC TALNT connects employers with experienced {role.title.toLowerCase()} who
+              Data Center TALNT connects employers with experienced {role.title.toLowerCase()} who
               specialize in data center, mission critical, and construction
               projects nationwide.
             </p>
@@ -1291,7 +1291,7 @@ export default async function RolePage({ params }: PageProps) {
         <div className="container-page">
           <SectionHeading
             title="Related Roles"
-            subtitle="Explore other specialized positions DC TALNT recruits for data center and construction projects."
+            subtitle="Explore other specialized positions Data Center TALNT recruits for data center and construction projects."
           />
 
           <div className="mx-auto grid max-w-5xl gap-6 sm:grid-cols-2 lg:grid-cols-3">
@@ -1344,7 +1344,7 @@ export default async function RolePage({ params }: PageProps) {
             Find the Right {role.title} for Your Next Project
           </h2>
           <p className="mx-auto mt-4 max-w-2xl text-lg leading-relaxed text-gray-300">
-            DC TALNT has the industry network, technical screening expertise, and
+            Data Center TALNT has the industry network, technical screening expertise, and
             track record to deliver {role.title.toLowerCase()} who perform
             from day one. Let us fill your next critical role.
           </p>

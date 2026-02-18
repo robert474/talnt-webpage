@@ -6,7 +6,7 @@ import Button from "@/components/ui/Button";
 export const metadata = genMeta({
   title: "Speed Through Technology | Our Systems | Data Center TALNT",
   description:
-    "DC TALNT's technology stack posts jobs in minutes, schedules interviews in hours, and accelerates placements dramatically. See how our systems eliminate the bottlenecks that slow traditional staffing agencies down.",
+    "Data Center TALNT's technology stack posts jobs in minutes, schedules interviews in hours, and accelerates placements dramatically. See how our systems eliminate the bottlenecks that slow traditional staffing agencies down.",
   path: "/technology",
   keywords: [
     "fast staffing technology",
@@ -72,22 +72,22 @@ const bottlenecks = [
 
 const techFaqs = [
   {
-    question: "How quickly does DC TALNT post and distribute job orders?",
+    question: "How quickly does Data Center TALNT post and distribute job orders?",
     answer:
       "Within minutes. The moment we receive your job order, our system generates a targeted posting, pushes it to relevant channels, and simultaneously searches our internal database for matching candidates. There's no manual data entry or waiting for an account manager.",
   },
   {
-    question: "How long does candidate screening take at DC TALNT?",
+    question: "How long does candidate screening take at Data Center TALNT?",
     answer:
       "Technical screenings happen within hours — the same day we identify matching candidates. Our recruiters get instant alerts when high-match candidates are identified, and interview scheduling is coordinated directly without email back-and-forth.",
   },
   {
-    question: "What bottlenecks does DC TALNT's technology eliminate?",
+    question: "What bottlenecks does Data Center TALNT's technology eliminate?",
     answer:
       "Our tech stack eliminates six common bottlenecks: manual job posting across multiple boards (automated in minutes), searching for candidates from scratch (instant matching against our growing database), days of email tag for scheduling (same-day coordination), weeks for reference checks (pre-verified candidates), slow offer processes (same-week offers), and onboarding paperwork delays (digital onboarding ready before day one).",
   },
   {
-    question: "What is DC TALNT's average time from job order to hire?",
+    question: "What is Data Center TALNT's average time from job order to hire?",
     answer:
       "We dramatically beat the industry average of 126 days to fill a role. Contract placements can mobilize in days, while direct-hire searches close in weeks, not months. The first shortlist of qualified candidates is typically delivered within 48 hours.",
   },

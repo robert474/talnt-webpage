@@ -62,7 +62,7 @@ Data Center TALNT connects experienced project managers, MEP engineers, QA/QC in
 
 ## Hyperscaler Staffing
 
-DC TALNT provides specialized staffing for hyperscale data center construction projects. Our candidates have direct, verified experience on 50 MW to 500+ MW campus builds for companies like Amazon Web Services (AWS), OpenAI, and Oracle Cloud Infrastructure (OCI). We work with the general contractors (Turner, Holder, Fortis, Rosendin), commissioning authorities, and owner's representatives who execute these projects. Key hyperscale roles include: Hyperscale Project Managers, Commissioning Agents (L1-L5), QA/QC Inspectors, Controls/BMS Engineers, Quality Control Managers, and Schedulers. We can mobilize teams of 10-50+ professionals for commissioning surge events on short notice.
+Data Center TALNT provides specialized staffing for hyperscale data center construction projects. Our candidates have direct, verified experience on 50 MW to 500+ MW campus builds for companies like Amazon Web Services (AWS), OpenAI, and Oracle Cloud Infrastructure (OCI). We work with the general contractors (Turner, Holder, Fortis, Rosendin), commissioning authorities, and owner's representatives who execute these projects. Key hyperscale roles include: Hyperscale Project Managers, Commissioning Agents (L1-L5), QA/QC Inspectors, Controls/BMS Engineers, Quality Control Managers, and Schedulers. We can mobilize teams of 10-50+ professionals for commissioning surge events on short notice.
 - Hyperscaler Staffing: https://www.datacentertalnt.com/industries/hyperscalers
 
 ## Roles We Place

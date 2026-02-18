@@ -6,7 +6,7 @@ import Button from "@/components/ui/Button";
 export const metadata = genMeta({
   title: "Industry Veteran Recruiters | Our Team | Data Center TALNT",
   description:
-    "DC TALNT recruiters bring years of specialized recruiting experience in data center and construction staffing. Their deep networks and technical screening skills mean faster placements with candidates who actually fit.",
+    "Data Center TALNT recruiters bring years of specialized recruiting experience in data center and construction staffing. Their deep networks and technical screening skills mean faster placements with candidates who actually fit.",
   path: "/veteran-recruiters",
   keywords: [
     "experienced construction recruiters",
@@ -53,7 +53,7 @@ const stats = [
 
 const recruiterFaqs = [
   {
-    question: "How experienced are DC TALNT recruiters?",
+    question: "How experienced are Data Center TALNT recruiters?",
     answer:
       "Our recruiters bring years of specialized experience in data center, mission critical, and construction staffing. Their combined experience spans roles at companies like Apple, Rackspace, Aerotek, and Duo Security, giving them deep technical screening capabilities across all major markets.",
   },
@@ -63,14 +63,14 @@ const recruiterFaqs = [
       "Data center construction requires specialized knowledge — Tier III/IV classifications, concurrent maintainability, IST protocols, and MEP coordination. Experienced recruiters can vet candidates' technical claims in a single call, saving weeks of interviewing unqualified candidates. They also have networks of passive candidates who won't respond to generic recruiters.",
   },
   {
-    question: "What is DC TALNT's candidate retention rate?",
+    question: "What is Data Center TALNT's candidate retention rate?",
     answer:
       "We prioritize retention because our experienced recruiters don't just match resumes to job descriptions — they assess cultural fit, project scope alignment, and long-term career goals to ensure placements that last.",
   },
   {
-    question: "How is DC TALNT different from generalist staffing agencies?",
+    question: "How is Data Center TALNT different from generalist staffing agencies?",
     answer:
-      "Generalist agencies staff across every industry from admin to warehouse. DC TALNT exclusively focuses on data center, mission critical, and construction roles. Our recruiters understand ASHRAE standards, NCCER certifications, and the difference between a commissioning agent and a commissioning engineer — knowledge that generalist recruiters simply don't have.",
+      "Generalist agencies staff across every industry from admin to warehouse. Data Center TALNT exclusively focuses on data center, mission critical, and construction roles. Our recruiters understand ASHRAE standards, NCCER certifications, and the difference between a commissioning agent and a commissioning engineer — knowledge that generalist recruiters simply don't have.",
   },
 ];
 

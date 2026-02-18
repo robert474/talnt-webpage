@@ -6,7 +6,7 @@ import Button from "@/components/ui/Button";
 export const metadata = genMeta({
   title: "Exclusive Talent Network | Proprietary Candidate Database | Data Center TALNT",
   description:
-    "DC TALNT's proprietary talent database is built on years of specialized data center and construction recruiting. Detailed interview notes on every candidate means we find people others can't — before they ever hit a job board.",
+    "Data Center TALNT's proprietary talent database is built on years of specialized data center and construction recruiting. Detailed interview notes on every candidate means we find people others can't — before they ever hit a job board.",
   path: "/talent-network",
   keywords: [
     "proprietary talent database",
@@ -66,27 +66,27 @@ const whatWeTrack = [
 
 const networkFaqs = [
   {
-    question: "What is DC TALNT's talent database?",
+    question: "What is Data Center TALNT's talent database?",
     answer:
-      "DC TALNT's proprietary talent database is a growing intelligence system containing detailed records on data center and construction professionals. Unlike resume databases that go stale, every candidate has logged interview notes, technical assessments, verified project history, and performance feedback from previous placements.",
+      "Data Center TALNT's proprietary talent database is a growing intelligence system containing detailed records on data center and construction professionals. Unlike resume databases that go stale, every candidate has logged interview notes, technical assessments, verified project history, and performance feedback from previous placements.",
   },
   {
-    question: "How many candidates are in DC TALNT's network?",
+    question: "How many candidates are in Data Center TALNT's network?",
     answer:
       "Our database spans years of specialized recruiting across 20+ U.S. markets. We have deep coverage in every top data center market including Northern Virginia, Phoenix, Dallas-Fort Worth, Chicago, Columbus, Atlanta, and Salt Lake City.",
   },
   {
-    question: "What percentage of DC TALNT's candidates are passive candidates?",
+    question: "What percentage of Data Center TALNT's candidates are passive candidates?",
     answer:
       "Approximately 70% of the candidates in our database are passive — meaning they're currently employed and not actively searching job boards. These professionals are reachable because our recruiters have built trusted relationships over years of working in the industry.",
   },
   {
-    question: "What information does DC TALNT track on each candidate?",
+    question: "What information does Data Center TALNT track on each candidate?",
     answer:
       "We track technical certifications and licenses (PMP, CxA, PE, NETA, OSHA), specific data center tier and MW experience, verified project history with references, detailed interview notes, compensation history and expectations, geographic preferences, performance feedback from placements, and availability timelines.",
   },
   {
-    question: "How does DC TALNT find candidates that other agencies can't?",
+    question: "How does Data Center TALNT find candidates that other agencies can't?",
     answer:
       "Most agencies search LinkedIn and job boards — the same pool everyone else is fishing in. Our growing database gives us direct access to professionals who've been interviewed, assessed, and relationship-managed by our recruiters over time. When we need a senior QA/QC inspector with hyperscale experience, we're pulling up people we already know.",
   },
