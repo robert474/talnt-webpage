@@ -14,8 +14,8 @@ import {
 /* ========================================================================== */
 
 const hyperscalerLogos = [
-  { name: "Amazon Web Services", src: "/images/logos/aws.svg", width: 200, height: 100 },
-  { name: "OpenAI", src: "/images/logos/OpenAI_Wordmark_Gif.webp", width: 320, height: 100 },
+  { name: "Amazon Web Services", src: "/images/logos/aws-logo-rgb.png", width: 280, height: 100 },
+  { name: "OpenAI", src: "/images/logos/OpenAI_Wordmark_Gif.webp", width: 280, height: 100 },
   { name: "Oracle", src: "/images/logos/Oracle_ideA555_no_0.svg", width: 280, height: 100 },
 ];
 
@@ -38,7 +38,7 @@ function HyperscalerLogos() {
                 alt={logo.name}
                 width={logo.width}
                 height={logo.height}
-                className="h-16 w-auto sm:h-20 lg:h-24 object-contain"
+                className="h-16 w-52 sm:h-20 sm:w-60 lg:h-24 lg:w-72 object-contain"
               />
             </div>
           ))}

@@ -383,8 +383,8 @@ export default function HomePage() {
           </p>
           <div className="mt-10 flex flex-wrap items-center justify-center gap-x-16 gap-y-10 sm:gap-x-20 lg:gap-x-28">
             {[
-              { name: "Amazon Web Services", src: "/images/logos/aws.svg", width: 160, height: 80 },
-              { name: "OpenAI", src: "/images/logos/OpenAI_Wordmark_Gif.webp", width: 260, height: 80 },
+              { name: "Amazon Web Services", src: "/images/logos/aws-logo-rgb.png", width: 240, height: 80 },
+              { name: "OpenAI", src: "/images/logos/OpenAI_Wordmark_Gif.webp", width: 240, height: 80 },
               { name: "Oracle", src: "/images/logos/Oracle_ideA555_no_0.svg", width: 240, height: 80 },
             ].map((logo) => (
               <Link key={logo.name} href="/industries/hyperscalers" className="transition-opacity hover:opacity-70">
@@ -393,7 +393,7 @@ export default function HomePage() {
                   alt={logo.name}
                   width={logo.width}
                   height={logo.height}
-                  className="h-14 w-auto sm:h-16 lg:h-20 object-contain"
+                  className="h-14 w-44 sm:h-16 sm:w-52 lg:h-20 lg:w-64 object-contain"
                 />
               </Link>
             ))}
