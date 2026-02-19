@@ -301,7 +301,7 @@ export default function HomePage() {
             <span className="text-blue-light">America&rsquo;s Data Centers</span>
           </>
         }
-        subtitle="Your next hyperscale campus needs people who've done it before. Data Center TALNT places project managers, MEP engineers, QA/QC inspectors, and commissioning agents on mission critical builds from Ashburn to Phoenix — and everywhere the concrete is still curing."
+        subtitle="Your next hyperscale campus needs people who've done it before. Data Center TALNT places project managers, MEP engineers, QA/QC inspectors, schedulers, and commissioning agents on mission critical builds from Ashburn to Phoenix — and everywhere the concrete is still curing."
       >
         <div className="flex flex-wrap gap-4">
           <Button href="/employers" variant="primary" size="lg">
