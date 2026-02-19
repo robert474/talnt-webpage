@@ -26,13 +26,13 @@ export default function AnimatedHero({
   }, [imageUrl]);
 
   return (
-    <section className="relative min-h-[600px] overflow-hidden lg:min-h-[700px]">
+    <section className="relative min-h-[80vh] overflow-hidden lg:min-h-[700px]">
       {/* Animated background image - slow drone-style zoom and pan */}
       <div
         className={`absolute inset-0 transition-opacity duration-1000 ${loaded ? "opacity-100" : "opacity-0"}`}
       >
         <div
-          className="absolute inset-[-10%] animate-hero-drift bg-cover bg-center"
+          className="absolute inset-0 lg:inset-[-10%] lg:animate-hero-drift bg-cover bg-center"
           style={{ backgroundImage: `url(${imageUrl})` }}
         />
       </div>
@@ -42,7 +42,7 @@ export default function AnimatedHero({
       <div className="absolute inset-0 bg-gradient-to-t from-navy via-transparent to-navy/40" />
 
       {/* Content */}
-      <div className="relative z-10 flex min-h-[600px] items-center lg:min-h-[700px]">
+      <div className="relative z-10 flex min-h-[80vh] items-center lg:min-h-[700px]">
         <div className="container-page w-full py-20 md:py-28 lg:py-36">
           <div className="max-w-3xl">
             <h1 className="text-4xl font-extrabold leading-tight tracking-tight text-white md:text-5xl lg:text-6xl text-balance drop-shadow-lg">
