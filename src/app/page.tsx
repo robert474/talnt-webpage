@@ -345,7 +345,7 @@ export default function HomePage() {
           </p>
           <div className="mt-10 flex flex-wrap items-center justify-center gap-x-16 gap-y-10 sm:gap-x-20 lg:gap-x-28">
             {[
-              { name: "Amazon Web Services", src: "/images/logos/aws-logo-rgb.png", width: 240, height: 80 },
+              { name: "Amazon Web Services", src: "/images/logos/Amazon_Web_Services_Logo.svg", width: 240, height: 80 },
               { name: "OpenAI", src: "/images/logos/OpenAI_Wordmark_Gif.webp", width: 240, height: 80 },
               { name: "Oracle", src: "/images/logos/Oracle_ideA555_no_0.svg", width: 240, height: 80 },
             ].map((logo) => (
