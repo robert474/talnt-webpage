@@ -122,7 +122,10 @@ export default function ContactPage() {
                 connect you with the right team member.
               </p>
 
-              <form className="mt-8 space-y-6" action="#" method="POST">
+              <form className="mt-8 space-y-6" action="https://formsubmit.co/info@datacentertalnt.com" method="POST">
+                <input type="hidden" name="_subject" value="New Contact Form Submission - Data Center TALNT" />
+                <input type="hidden" name="_captcha" value="false" />
+                <input type="hidden" name="_next" value="https://www.datacentertalnt.com/contact?submitted=true" />
                 {/* Name & Email */}
                 <div className="grid gap-6 sm:grid-cols-2">
                   <div>
