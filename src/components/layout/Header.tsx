@@ -151,7 +151,7 @@ function MobileMenu({ onClose }: { onClose: () => void }) {
       id="mobile-menu"
       role="navigation"
       aria-label="Mobile navigation"
-      className="fixed inset-0 top-16 z-40 overflow-y-auto bg-white pb-6 lg:hidden"
+      className="border-t border-gray-200 bg-white lg:hidden max-h-[calc(100vh-4rem)] overflow-y-auto"
     >
       <ul className="divide-y divide-gray-100 px-4">
         {navigation.map((group) => (
@@ -254,17 +254,6 @@ export default function Header() {
     setMobileMenuOpen(false);
   }, [pathname]);
 
-  // Lock body scroll when mobile menu is open
-  useEffect(() => {
-    if (mobileMenuOpen) {
-      document.body.style.overflow = "hidden";
-    } else {
-      document.body.style.overflow = "";
-    }
-    return () => {
-      document.body.style.overflow = "";
-    };
-  }, [mobileMenuOpen]);
 
   return (
     <header className="sticky top-0 z-50 border-b border-gray-200 bg-white/90 backdrop-blur-md supports-[backdrop-filter]:bg-white/80">
