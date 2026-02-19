@@ -121,7 +121,7 @@ export default function USMarketMap() {
         ref={svgRef}
         viewBox="0 0 960 600"
         className="w-full h-auto"
-        aria-label="Map of United States showing DC TALNT market locations"
+        aria-label="Map of United States showing Data Center TALNT market locations"
       >
         <g className="states" />
         <g className="borders" />

@@ -48,7 +48,7 @@ export const posts: BlogPost[] = [
     title:
       "Data Center Construction Is Now a $382 Billion Market. Here's What That Means for Hiring.",
     excerpt:
-      "The numbers are staggering: $88 billion in U.S. data center starts tracked for just the first half of 2026, hyperscalers committing $400 billion this year alone, and 82% of firms struggling to fill roles. We unpack the growth, who's building, and why every GC in America is fighting for the same 50 superintendents.",
+      "The numbers are staggering: $88 billion in U.S. data center starts tracked for just the first half of 2026, hyperscalers committing $400 billion this year alone, and 82% of firms struggling to fill roles. We unpack the growth, who's building, and why every GC in America is fighting for the same 50 QA/QC inspectors.",
     date: "February 4, 2026",
     isoDate: "2026-02-04",
     category: "Market Reports",

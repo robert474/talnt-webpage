@@ -7,7 +7,7 @@ export const siteConfig = {
   siteName: "Data Center TALNT",
   siteUrl: "https://www.datacentertalnt.com",
   description:
-    "Data Center TALNT is a specialized staffing and recruitment firm connecting top-tier talent with data center, mission critical, construction, and utilities employers nationwide. We deliver experienced project managers, engineers, superintendents, and commissioning agents to the industries that power modern infrastructure.",
+    "Data Center TALNT is a specialized staffing and recruitment firm connecting top-tier talent with data center, mission critical, construction, and utilities employers nationwide. We deliver experienced project managers, engineers, QA/QC inspectors, and commissioning agents to the industries that power modern infrastructure.",
   defaultOGImage: "/images/og-default.jpg",
   twitterHandle: "@datacentertalnt",
   locale: "en_US",
@@ -22,7 +22,7 @@ export const siteConfig = {
     "commissioning agent recruitment",
     "critical infrastructure talent",
     "project manager staffing",
-    "superintendent recruitment",
+    "QA/QC inspector recruitment",
   ],
 } as const;
 

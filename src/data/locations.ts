@@ -31,7 +31,7 @@ export const locations: Location[] = [
     metaTitle:
       "Data Center Staffing in Northern Virginia | Ashburn & Loudoun County Recruitment",
     metaDescription:
-      "Data center staffing and recruitment in Northern Virginia, the world's largest data center market. We place project managers, MEP engineers, superintendents, and commissioning agents in Ashburn, Loudoun County, and the broader NoVA corridor.",
+      "Data center staffing and recruitment in Northern Virginia, the world's largest data center market. We place project managers, MEP engineers, QA/QC inspectors, and commissioning agents in Ashburn, Loudoun County, and the broader NoVA corridor.",
     description:
       "Northern Virginia, centered on Ashburn and Loudoun County, is the undisputed global capital of data centers. The region hosts more than 35% of all US data center capacity and processes an estimated 70% of global internet traffic through the MAE-East exchange point. With over 3,000 MW of commissioned IT load and a development pipeline exceeding 2,000 MW of additional capacity, Northern Virginia drives more data center construction activity than any other market on earth. Major hyperscalers, colocation providers, and enterprise operators continue to expand across Loudoun, Prince William, and Fairfax counties, creating extraordinary demand for skilled construction professionals at every level. Dominion Energy has committed billions to power infrastructure upgrades to serve this growth, and the talent competition for experienced data center builders is the most intense in the nation.",
     marketHighlights: [
@@ -74,7 +74,7 @@ export const locations: Location[] = [
     metaTitle:
       "Data Center Staffing in Dallas-Fort Worth, TX | DFW Recruitment Agency",
     metaDescription:
-      "Specialized data center staffing in Dallas-Fort Worth, Texas. We recruit project managers, engineers, and superintendents for DFW's rapidly expanding data center market.",
+      "Specialized data center staffing in Dallas-Fort Worth, Texas. We recruit project managers, engineers, and QA/QC inspectors for DFW's rapidly expanding data center market.",
     description:
       "Dallas-Fort Worth has emerged as one of the fastest-growing data center markets in the United States, driven by abundant and affordable power, favorable tax incentives, central geographic location, and a robust fiber network. The DFW metroplex hosts over 800 MW of data center capacity with a rapidly expanding construction pipeline. Areas like Garland, Allen, and Red Oak have become hotspots for hyperscale development, while Richardson's Telecom Corridor continues to house significant enterprise and colocation operations. Texas's deregulated energy market provides competitive electricity pricing, and the absence of state income tax makes the region attractive for both employers and employees in the data center construction sector.",
     marketHighlights: [

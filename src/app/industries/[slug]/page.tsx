@@ -14,8 +14,8 @@ import {
 /* ========================================================================== */
 
 const hyperscalerLogos = [
-  { name: "Amazon Web Services", src: "/images/logos/aws.svg", width: 200, height: 100 },
-  { name: "OpenAI", src: "/images/logos/OpenAI_Wordmark_Gif.webp", width: 320, height: 100 },
+  { name: "Amazon Web Services", src: "/images/logos/aws-logo-rgb.png", width: 280, height: 100 },
+  { name: "OpenAI", src: "/images/logos/OpenAI_Wordmark_Gif.webp", width: 280, height: 100 },
   { name: "Oracle", src: "/images/logos/Oracle_ideA555_no_0.svg", width: 280, height: 100 },
 ];
 
@@ -38,7 +38,7 @@ function HyperscalerLogos() {
                 alt={logo.name}
                 width={logo.width}
                 height={logo.height}
-                className="h-16 w-auto sm:h-20 lg:h-24 object-contain"
+                className="h-16 w-52 sm:h-20 sm:w-60 lg:h-24 lg:w-72 object-contain"
               />
             </div>
           ))}
@@ -108,7 +108,7 @@ const industriesData: Record<string, IndustryData> = {
     description: [
       "The data center industry is experiencing unprecedented growth driven by cloud computing, artificial intelligence workloads, and the global shift toward digital-first business models. The global data center market is projected to reach $945 billion by 2028, and construction spending alone exceeded $50 billion in 2024. Northern Virginia, the world's largest data center market, now boasts more than 2,000 MW of commissioned capacity with another 1,500 MW under construction. Markets like Dallas-Fort Worth, Phoenix, and Atlanta are scaling rapidly to meet demand from hyperscalers including AWS, Microsoft Azure, Google Cloud, and Meta.",
       "This explosive expansion has created a severe talent shortage across every phase of the data center lifecycle. Data Center TALNT was founded to address this gap. Our recruiters specialize exclusively in data center staffing, which means we understand the difference between a Tier III and Tier IV facility, we know why commissioning documentation matters, and we can evaluate whether a candidate's MEP experience translates to critical environment work. We have placed hundreds of professionals in roles spanning pre-construction, construction, commissioning, turnover, and steady-state operations.",
-      "Whether you are a general contractor breaking ground on a 100 MW hyperscale campus, a colocation provider expanding into a new metro, or an enterprise IT team managing an on-premises data hall, DC TALNT delivers qualified candidates who can start contributing from day one. Our data center staffing services cover direct hire, contract, and contract-to-hire engagements across the entire United States, with particularly deep networks in Northern Virginia, Dallas-Fort Worth, Phoenix, Chicago, Hillsboro, and Atlanta.",
+      "Whether you are a general contractor breaking ground on a 100 MW hyperscale campus, a colocation provider expanding into a new metro, or an enterprise IT team managing an on-premises data hall, Data Center TALNT delivers qualified candidates who can start contributing from day one. Our data center staffing services cover direct hire, contract, and contract-to-hire engagements across the entire United States, with particularly deep networks in Northern Virginia, Dallas-Fort Worth, Phoenix, Chicago, Hillsboro, and Atlanta.",
     ],
     keyRoles: [
       {
@@ -130,10 +130,10 @@ const industriesData: Record<string, IndustryData> = {
         href: "/roles/project-manager",
       },
       {
-        name: "Superintendent",
+        name: "QA/QC Inspector",
         description:
-          "Construction superintendents experienced in managing MEP subcontractors, coordinating with commissioning teams, and maintaining quality standards in mission critical environments.",
-        href: "/roles/superintendent",
+          "QA/QC inspectors experienced in managing MEP subcontractors, coordinating with commissioning teams, and maintaining quality standards in mission critical environments.",
+        href: "/roles/qa-qc-inspectors",
       },
       {
         name: "Controls / BMS Technician",
@@ -181,37 +181,37 @@ const industriesData: Record<string, IndustryData> = {
     faqs: [
       {
         question:
-          "What types of data center staffing roles does DC TALNT fill?",
+          "What types of data center staffing roles does Data Center TALNT fill?",
         answer:
-          "DC TALNT places professionals across the entire data center lifecycle, including commissioning agents (Levels 1-5), MEP engineers, project managers, superintendents, controls/BMS technicians, critical facility technicians, electrical engineers, safety managers, estimators, and design engineers. We staff positions for pre-construction planning, ground-up construction, commissioning and turnover, and steady-state operations.",
+          "Data Center TALNT places professionals across the entire data center lifecycle, including commissioning agents (Levels 1-5), MEP engineers, project managers, QA/QC inspectors, controls/BMS technicians, critical facility technicians, electrical engineers, safety managers, estimators, and design engineers. We staff positions for pre-construction planning, ground-up construction, commissioning and turnover, and steady-state operations.",
       },
       {
         question:
-          "How quickly can DC TALNT provide data center staffing candidates?",
+          "How quickly can Data Center TALNT provide data center staffing candidates?",
         answer:
           "For most data center staffing requests, we present qualified candidates within 3 to 5 business days. For urgent needs such as commissioning surge support or emergency backfills, we can often deliver vetted candidates within 24 to 48 hours thanks to our pre-built talent pipelines in major data center markets.",
       },
       {
         question:
-          "Which data center markets does DC TALNT serve?",
+          "Which data center markets does Data Center TALNT serve?",
         answer:
           "We provide data center staffing services nationwide, with especially deep talent networks in Northern Virginia (Ashburn, Manassas, Prince William County), Dallas-Fort Worth, Phoenix (Mesa, Goodyear, Chandler), Chicago, Atlanta, Hillsboro (Oregon), Salt Lake City, Columbus (Ohio), and the Carolinas. We also support emerging markets wherever our clients build.",
       },
       {
         question:
-          "Does DC TALNT staff both data center construction and operations roles?",
+          "Does Data Center TALNT staff both data center construction and operations roles?",
         answer:
-          "Yes. Our data center staffing practice covers both the construction and operations sides of the industry. On the construction side, we place project managers, superintendents, commissioning agents, and MEP tradespeople. On the operations side, we fill critical facility technician, chief engineer, data center manager, and capacity planning roles.",
+          "Yes. Our data center staffing practice covers both the construction and operations sides of the industry. On the construction side, we place project managers, QA/QC inspectors, commissioning agents, and MEP tradespeople. On the operations side, we fill critical facility technician, chief engineer, data center manager, and capacity planning roles.",
       },
       {
         question:
-          "What makes DC TALNT different from other data center staffing agencies?",
+          "What makes Data Center TALNT different from other data center staffing agencies?",
         answer:
-          "Unlike generalist staffing firms, DC TALNT focuses exclusively on data center, mission critical, and related infrastructure industries. Our recruiters have direct experience in or deep knowledge of critical environments, so we screen for the technical competencies, certifications, and safety culture that data center employers require. This specialization results in higher placement success rates and lower turnover.",
+          "Unlike generalist staffing firms, Data Center TALNT focuses exclusively on data center, mission critical, and related infrastructure industries. Our recruiters have direct experience in or deep knowledge of critical environments, so we screen for the technical competencies, certifications, and safety culture that data center employers require. This specialization results in higher placement success rates and lower turnover.",
       },
       {
         question:
-          "Can DC TALNT support large-scale data center commissioning projects?",
+          "Can Data Center TALNT support large-scale data center commissioning projects?",
         answer:
           "Absolutely. We regularly provide commissioning surge teams of 10 to 50+ agents for hyperscale data center projects. Our commissioning staffing capabilities include Level 1 through Level 5 CxAs, commissioning managers, and documentation specialists who can integrate with your existing commissioning authority or general contractor workflows.",
       },
@@ -230,7 +230,7 @@ const industriesData: Record<string, IndustryData> = {
       {
         title: "Flexible Engagement Models",
         description:
-          "Whether you need a single direct-hire engineer, a contract commissioning team for a 6-month turnover, or an ongoing managed staffing program, DC TALNT structures engagements that align with your project timelines and budget.",
+          "Whether you need a single direct-hire engineer, a contract commissioning team for a 6-month turnover, or an ongoing managed staffing program, Data Center TALNT structures engagements that align with your project timelines and budget.",
       },
       {
         title: "Speed Without Sacrifice",
@@ -249,14 +249,14 @@ const industriesData: Record<string, IndustryData> = {
     metaTitle:
       "Mission Critical Facility Staffing & Recruitment | Data Center TALNT",
     metaDescription:
-      "DC TALNT staffs mission critical facilities including hospitals, financial trading floors, government buildings, and telecom hubs with engineers, technicians, and project managers who ensure zero-downtime operations.",
+      "Data Center TALNT staffs mission critical facilities including hospitals, financial trading floors, government buildings, and telecom hubs with engineers, technicians, and project managers who ensure zero-downtime operations.",
     heroTitle: "Mission Critical Facility Staffing",
     heroSubtitle:
       "Hospitals, financial institutions, government facilities, and telecommunications hubs operate under zero-downtime mandates. We place the engineers, technicians, and managers who keep these environments running around the clock.",
     description: [
       "Mission critical facilities are environments where even a momentary power or systems failure can result in loss of life, massive financial damage, or national security risk. These include hospital surgical suites and imaging centers, financial trading floors, federal government data processing centers, 911 dispatch centers, broadcast studios, and pharmaceutical manufacturing cleanrooms. Each of these facilities demands specialized mechanical, electrical, and controls expertise paired with rigorous safety and compliance awareness.",
       "Data Center TALNT brings the same depth of knowledge we apply to data center staffing into the broader mission critical sector. Our recruiters understand the overlap between data center infrastructure and other critical environments, including redundant power systems, precision cooling, fire suppression, and continuous monitoring. We staff professionals who hold relevant certifications such as NFPA 70E, OSHA 30, and facility-specific security clearances where required.",
-      "From new construction of Tier IV hospital power plants to retrofit projects at financial trading facilities, DC TALNT delivers project managers, commissioning agents, critical environment technicians, and MEP engineers who have the demonstrated ability to work in environments where failure is not an option.",
+      "From new construction of Tier IV hospital power plants to retrofit projects at financial trading facilities, Data Center TALNT delivers project managers, commissioning agents, critical environment technicians, and MEP engineers who have the demonstrated ability to work in environments where failure is not an option.",
     ],
     keyRoles: [
       {
@@ -328,11 +328,11 @@ const industriesData: Record<string, IndustryData> = {
         question:
           "How does mission critical staffing differ from general facility staffing?",
         answer:
-          "Mission critical staffing requires candidates with specific experience in redundant power and cooling systems, compliance with stringent safety and regulatory standards (such as Joint Commission for healthcare or FISMA for government), and the ability to perform under high-stakes conditions. DC TALNT screens for these specialized competencies rather than general maintenance skills.",
+          "Mission critical staffing requires candidates with specific experience in redundant power and cooling systems, compliance with stringent safety and regulatory standards (such as Joint Commission for healthcare or FISMA for government), and the ability to perform under high-stakes conditions. Data Center TALNT screens for these specialized competencies rather than general maintenance skills.",
       },
       {
         question:
-          "Does DC TALNT provide staffing for government mission critical facilities?",
+          "Does Data Center TALNT provide staffing for government mission critical facilities?",
         answer:
           "Yes. We staff government mission critical facilities and understand the additional requirements including security clearance processing, FISMA compliance, and agency-specific onboarding procedures. We work with candidates who already hold or are eligible for the necessary clearances.",
       },
@@ -344,7 +344,7 @@ const industriesData: Record<string, IndustryData> = {
       },
       {
         question:
-          "Can DC TALNT staff 24/7 mission critical operations teams?",
+          "Can Data Center TALNT staff 24/7 mission critical operations teams?",
         answer:
           "Absolutely. We regularly build out full shift-coverage teams for mission critical facilities that require around-the-clock staffing. This includes primary technicians, shift leads, and on-call engineers to ensure continuous coverage and rapid incident response.",
       },
@@ -382,13 +382,13 @@ const industriesData: Record<string, IndustryData> = {
     metaTitle:
       "Construction Staffing & Recruitment Agency | Data Center TALNT",
     metaDescription:
-      "DC TALNT is a construction staffing agency placing project managers, superintendents, estimators, safety managers, and skilled tradespeople for ground-up builds, renovations, and tenant improvements nationwide.",
+      "Data Center TALNT is a construction staffing agency placing project managers, QA/QC inspectors, estimators, safety managers, and skilled tradespeople for ground-up builds, renovations, and tenant improvements nationwide.",
     heroTitle: "Construction Staffing Solutions",
     heroSubtitle:
-      "Ground-up builds, large-scale renovations, and tenant improvements all require experienced leadership and skilled tradespeople. We place the project managers, superintendents, and specialists who deliver projects on time and on budget.",
+      "Ground-up builds, large-scale renovations, and tenant improvements all require experienced leadership and skilled tradespeople. We place the project managers, QA/QC inspectors, and specialists who deliver projects on time and on budget.",
     description: [
       "The U.S. construction industry generates over $2 trillion in annual spending, yet consistently faces a skilled labor shortage that threatens project timelines and budgets. The Associated General Contractors of America reports that more than 80% of construction firms struggle to find qualified workers, and the industry needs to attract an estimated 500,000 additional workers each year to meet demand. Data Center TALNT helps general contractors, owners, and developers bridge this gap by providing vetted construction professionals across commercial, industrial, and infrastructure sectors.",
-      "Our construction staffing practice draws on the same rigorous screening methodology we use for data center and mission critical placements. Every candidate is evaluated not only for technical skill and relevant experience but also for safety awareness, communication ability, and cultural fit with your project team. We staff roles from the pre-construction phase through punch list and closeout, including estimators, project engineers, project managers, superintendents, safety managers, and quality control specialists.",
+      "Our construction staffing practice draws on the same rigorous screening methodology we use for data center and mission critical placements. Every candidate is evaluated not only for technical skill and relevant experience but also for safety awareness, communication ability, and cultural fit with your project team. We staff roles from the pre-construction phase through punch list and closeout, including estimators, project engineers, project managers, QA/QC inspectors, safety managers, and quality control specialists.",
     ],
     keyRoles: [
       {
@@ -398,10 +398,10 @@ const industriesData: Record<string, IndustryData> = {
         href: "/roles/project-manager",
       },
       {
-        name: "Superintendent",
+        name: "QA/QC Inspector",
         description:
-          "Field superintendents who coordinate daily construction activities, manage subcontractor crews, enforce safety protocols, and maintain project quality standards.",
-        href: "/roles/superintendent",
+          "QA/QC inspectors who coordinate daily quality inspections, manage subcontractor compliance, enforce safety protocols, and maintain project quality standards.",
+        href: "/roles/qa-qc-inspectors",
       },
       {
         name: "Estimator / Preconstruction Manager",
@@ -451,31 +451,31 @@ const industriesData: Record<string, IndustryData> = {
     faqs: [
       {
         question:
-          "What types of construction staffing does DC TALNT provide?",
+          "What types of construction staffing does Data Center TALNT provide?",
         answer:
-          "DC TALNT provides construction staffing for commercial, industrial, and infrastructure projects. We place project managers, superintendents, estimators, project engineers, safety managers, quality control managers, and MEP coordinators. Our placements cover ground-up construction, renovations, tenant improvements, and specialty projects such as data center and mission critical facility builds.",
+          "Data Center TALNT provides construction staffing for commercial, industrial, and infrastructure projects. We place project managers, QA/QC inspectors, estimators, project engineers, safety managers, quality control managers, and MEP coordinators. Our placements cover ground-up construction, renovations, tenant improvements, and specialty projects such as data center and mission critical facility builds.",
       },
       {
         question:
-          "Does DC TALNT staff both direct hire and contract construction roles?",
+          "Does Data Center TALNT staff both direct hire and contract construction roles?",
         answer:
-          "Yes. We offer direct hire, contract, and contract-to-hire staffing models for construction positions. Many of our clients use contract staffing to bring on superintendents or project managers for the duration of a specific project, then convert high performers to permanent roles.",
+          "Yes. We offer direct hire, contract, and contract-to-hire staffing models for construction positions. Many of our clients use contract staffing to bring on QA/QC inspectors or project managers for the duration of a specific project, then convert high performers to permanent roles.",
       },
       {
         question:
-          "How does DC TALNT screen construction candidates?",
+          "How does Data Center TALNT screen construction candidates?",
         answer:
           "Every construction candidate goes through a multi-step screening process that includes verification of relevant experience and project history, reference checks with prior supervisors, safety record evaluation, certification verification (OSHA 30, first aid/CPR, trade licenses), and a behavioral interview focused on leadership, communication, and problem-solving in the field.",
       },
       {
         question:
-          "Can DC TALNT staff an entire project team?",
+          "Can Data Center TALNT staff an entire project team?",
         answer:
-          "Yes. We frequently assemble complete project teams including a project manager, superintendent, project engineer, safety manager, and QC manager for general contractors and owners who are ramping up for new projects or entering new geographic markets.",
+          "Yes. We frequently assemble complete project teams including a project manager, QA/QC inspector, project engineer, safety manager, and QC manager for general contractors and owners who are ramping up for new projects or entering new geographic markets.",
       },
       {
         question:
-          "Which construction sectors does DC TALNT specialize in?",
+          "Which construction sectors does Data Center TALNT specialize in?",
         answer:
           "While we staff across commercial and industrial construction, our deepest expertise is in data center construction, mission critical facility builds, healthcare construction, and MEP-heavy industrial projects. This focus gives our clients access to candidates with specific experience in the complex mechanical and electrical systems these project types demand.",
       },
@@ -513,13 +513,13 @@ const industriesData: Record<string, IndustryData> = {
     metaTitle:
       "Utilities & Power Staffing | Data Center TALNT",
     metaDescription:
-      "DC TALNT provides utilities staffing for power generation, transmission, distribution, and renewable energy projects. We place lineworkers, relay technicians, substation engineers, and power plant operators nationwide.",
+      "Data Center TALNT provides utilities staffing for power generation, transmission, distribution, and renewable energy projects. We place lineworkers, relay technicians, substation engineers, and power plant operators nationwide.",
     heroTitle: "Utilities & Power Staffing",
     heroSubtitle:
       "Power generation, transmission, distribution, and renewable energy projects require highly specialized talent. We connect utilities employers with lineworkers, relay technicians, substation engineers, and power plant operators across the nation.",
     description: [
       "The U.S. utilities sector is undergoing a generational transformation driven by aging infrastructure, the energy transition toward renewables, grid modernization initiatives, and the massive power demands of new data center construction. The Department of Energy estimates that the nation must invest more than $2.5 trillion in grid infrastructure over the next decade to meet reliability and clean energy goals. At the same time, roughly 25% of the current utility workforce is eligible for retirement within five years, creating a critical need for skilled replacements.",
-      "Data Center TALNT serves utilities employers, engineering firms, and EPC contractors who need experienced professionals for power generation, transmission, and distribution projects. Our recruiters understand the technical demands and safety requirements of high-voltage environments, and we screen every candidate for the certifications, training, and field experience that utilities work requires. From journeyman lineworkers building out new transmission corridors to relay protection engineers commissioning substation upgrades, DC TALNT delivers the specialized workforce your projects demand.",
+      "Data Center TALNT serves utilities employers, engineering firms, and EPC contractors who need experienced professionals for power generation, transmission, and distribution projects. Our recruiters understand the technical demands and safety requirements of high-voltage environments, and we screen every candidate for the certifications, training, and field experience that utilities work requires. From journeyman lineworkers building out new transmission corridors to relay protection engineers commissioning substation upgrades, Data Center TALNT delivers the specialized workforce your projects demand.",
     ],
     keyRoles: [
       {
@@ -583,31 +583,31 @@ const industriesData: Record<string, IndustryData> = {
     faqs: [
       {
         question:
-          "What utilities staffing roles does DC TALNT fill?",
+          "What utilities staffing roles does Data Center TALNT fill?",
         answer:
-          "DC TALNT places professionals across the utilities sector including journeyman lineworkers, apprentice lineworkers, relay protection technicians, substation engineers, transmission line engineers, power plant operators, renewable energy technicians, utility project managers, and GIS/mapping specialists. We staff for investor-owned utilities, municipal utilities, rural electric cooperatives, and EPC contractors.",
+          "Data Center TALNT places professionals across the utilities sector including journeyman lineworkers, apprentice lineworkers, relay protection technicians, substation engineers, transmission line engineers, power plant operators, renewable energy technicians, utility project managers, and GIS/mapping specialists. We staff for investor-owned utilities, municipal utilities, rural electric cooperatives, and EPC contractors.",
       },
       {
         question:
-          "Does DC TALNT staff renewable energy projects?",
+          "Does Data Center TALNT staff renewable energy projects?",
         answer:
           "Yes. We provide staffing for solar, wind, and battery energy storage projects. This includes solar installers and technicians, wind turbine technicians, BESS commissioning specialists, and project managers with renewable energy development experience. The renewable energy sector is one of our fastest-growing practice areas.",
       },
       {
         question:
-          "How does DC TALNT ensure utility worker safety qualifications?",
+          "How does Data Center TALNT ensure utility worker safety qualifications?",
         answer:
           "Safety is paramount in utilities work. We verify OSHA certifications, first aid and CPR training, employer-specific safety orientations, and high-voltage work qualifications. For lineworkers, we confirm journeyman status, CDL licensing, and relevant hot-stick or live-line training. We also review each candidate's safety incident history with previous employers.",
       },
       {
         question:
-          "Can DC TALNT support storm restoration and emergency utility staffing?",
+          "Can Data Center TALNT support storm restoration and emergency utility staffing?",
         answer:
           "Yes. We maintain a network of experienced lineworkers and utility technicians who are available for emergency storm restoration deployments. When severe weather events damage transmission and distribution infrastructure, we can mobilize crews on 24 to 48 hours' notice to support mutual aid and restoration efforts.",
       },
       {
         question:
-          "What geographic areas does DC TALNT cover for utilities staffing?",
+          "What geographic areas does Data Center TALNT cover for utilities staffing?",
         answer:
           "We provide utilities staffing services across the continental United States. Our strongest networks are in the Southeast, Mid-Atlantic, Texas, the Midwest, and the West, but we recruit nationally and can source qualified utility professionals for projects in any state.",
       },
@@ -644,14 +644,14 @@ const industriesData: Record<string, IndustryData> = {
     metaTitle:
       "Hyperscaler Data Center Staffing | AWS, OpenAI, Oracle | Data Center TALNT",
     metaDescription:
-      "DC TALNT provides specialized staffing for hyperscale data center construction projects built for AWS, OpenAI, Oracle, and other leading hyperscalers. We place project managers, commissioning agents, MEP engineers, and superintendents on the largest campus builds in the country.",
+      "Data Center TALNT provides specialized staffing for hyperscale data center construction projects built for AWS, OpenAI, Oracle, and other leading hyperscalers. We place project managers, commissioning agents, MEP engineers, and QA/QC inspectors on the largest campus builds in the country.",
     heroTitle: "Hyperscaler Data Center Staffing",
     heroSubtitle:
-      "The world's largest cloud and AI companies are building data center campuses at an unprecedented pace. DC TALNT places the project managers, commissioning agents, MEP engineers, and superintendents who deliver these mission critical builds on schedule.",
+      "The world's largest cloud and AI companies are building data center campuses at an unprecedented pace. Data Center TALNT places the project managers, commissioning agents, MEP engineers, and QA/QC inspectors who deliver these mission critical builds on schedule.",
     description: [
       "Hyperscale data center construction represents the largest and most complex builds in the industry. Companies like Amazon Web Services (AWS), Microsoft Azure, Google Cloud, Meta, Oracle Cloud Infrastructure (OCI), and OpenAI are investing hundreds of billions of dollars in new data center campuses across the United States. These projects range from 50 MW single-building facilities to 500 MW+ multi-phase campuses that take years to complete and employ thousands of construction professionals at peak activity.",
       "The staffing demands of hyperscale projects are fundamentally different from standard commercial construction. These builds require professionals who understand concurrent maintainability, N+1 and 2N redundancy architectures, phased energization sequences, and the rigorous commissioning protocols that hyperscalers mandate before accepting a facility. A project manager who has delivered a 100 MW campus for AWS operates in a different league than one who has managed office buildings — and hyperscaler clients know the difference immediately.",
-      "DC TALNT has built deep relationships across the hyperscaler ecosystem — with the general contractors, commissioning authorities, and owner's representatives who execute these projects. When a new campus breaks ground in Ashburn, Phoenix, Dallas, or Columbus, the teams managing those builds turn to us because our recruiters understand the specific requirements, certifications, and experience levels that hyperscale construction demands. We don't just fill seats — we place professionals who've been through the hyperscale process before and can contribute from day one.",
+      "Data Center TALNT has built deep relationships across the hyperscaler ecosystem — with the general contractors, commissioning authorities, and owner's representatives who execute these projects. When a new campus breaks ground in Ashburn, Phoenix, Dallas, or Columbus, the teams managing those builds turn to us because our recruiters understand the specific requirements, certifications, and experience levels that hyperscale construction demands. We don't just fill seats — we place professionals who've been through the hyperscale process before and can contribute from day one.",
     ],
     keyRoles: [
       {
@@ -667,10 +667,10 @@ const industriesData: Record<string, IndustryData> = {
         href: "/roles/commissioning-agents",
       },
       {
-        name: "MEP Superintendent",
+        name: "MEP QA/QC Inspector",
         description:
-          "Field superintendents specializing in the mechanical, electrical, and plumbing systems that define hyperscale data centers — including medium-voltage switchgear, chilled water plants, and generator paralleling systems.",
-        href: "/roles/superintendents",
+          "QA/QC inspectors specializing in the mechanical, electrical, and plumbing systems that define hyperscale data centers — including medium-voltage switchgear, chilled water plants, and generator paralleling systems.",
+        href: "/roles/qa-qc-inspectors",
       },
       {
         name: "MEP Engineer",
@@ -730,31 +730,31 @@ const industriesData: Record<string, IndustryData> = {
       },
       {
         question:
-          "Which hyperscaler projects does DC TALNT staff?",
+          "Which hyperscaler projects does Data Center TALNT staff?",
         answer:
-          "DC TALNT provides staffing for data center construction projects built for leading hyperscalers and AI companies, including Amazon Web Services (AWS), OpenAI, and Oracle Cloud Infrastructure (OCI). We work with the general contractors, commissioning authorities, and owner's representatives who execute these builds across the United States.",
+          "Data Center TALNT provides staffing for data center construction projects built for leading hyperscalers and AI companies, including Amazon Web Services (AWS), OpenAI, and Oracle Cloud Infrastructure (OCI). We work with the general contractors, commissioning authorities, and owner's representatives who execute these builds across the United States.",
       },
       {
         question:
-          "What experience do DC TALNT candidates have with hyperscale construction?",
+          "What experience do Data Center TALNT candidates have with hyperscale construction?",
         answer:
           "Our candidates have direct, verified experience on hyperscale data center projects. This includes professionals who have managed phased energization on 100 MW+ campuses, led integrated systems testing (IST) events for hyperscaler acceptance, and coordinated MEP installations across concurrent construction phases. We verify project history and confirm hyperscaler-specific experience before presenting any candidate.",
       },
       {
         question:
-          "How quickly can DC TALNT staff a hyperscale data center project?",
+          "How quickly can Data Center TALNT staff a hyperscale data center project?",
         answer:
           "For hyperscale projects, we typically present qualified candidates within 48 to 72 hours. For commissioning surge events or rapid ramp-ups, we can mobilize teams of 10 to 50+ professionals on short notice because we maintain active relationships with experienced hyperscale construction professionals across all major U.S. markets.",
       },
       {
         question:
-          "What markets does DC TALNT cover for hyperscaler staffing?",
+          "What markets does Data Center TALNT cover for hyperscaler staffing?",
         answer:
           "We provide hyperscaler staffing in every major U.S. data center market, including Northern Virginia (Ashburn), Dallas-Fort Worth, Phoenix (Mesa, Goodyear), Chicago, Columbus (Ohio), Portland/Hillsboro (Oregon), Atlanta, Salt Lake City, Reno, and emerging markets wherever hyperscalers are breaking ground. Our national recruiting reach means we can source talent for any geography.",
       },
       {
         question:
-          "Does DC TALNT work directly with hyperscalers or with their contractors?",
+          "Does Data Center TALNT work directly with hyperscalers or with their contractors?",
         answer:
           "We work across the hyperscaler ecosystem. Our clients include the general contractors building hyperscale campuses (Turner, Holder, Fortis, Rosendin, etc.), the commissioning authorities validating facility performance, the owner's representatives managing the build on behalf of the hyperscaler, and in some cases the hyperscalers' own internal construction teams.",
       },
@@ -951,7 +951,7 @@ export default async function IndustryPage({
             Key Roles We Place
           </h2>
           <p className="mt-4 max-w-3xl text-lg text-slate-600">
-            DC TALNT recruits across every function within the{" "}
+            Data Center TALNT recruits across every function within the{" "}
             {industry.title.toLowerCase()} sector. Below are some of the most
             in-demand positions we fill.
           </p>
@@ -1014,12 +1014,12 @@ export default async function IndustryPage({
       </section>
 
       {/* ================================================================== */}
-      {/*  WHY CHOOSE DC TALNT                                               */}
+      {/*  WHY CHOOSE Data Center TALNT                                               */}
       {/* ================================================================== */}
       <section className="bg-slate-900 py-16 text-white sm:py-24">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">
-            Why Choose DC TALNT for {industry.title}
+            Why Choose Data Center TALNT for {industry.title}
           </h2>
           <div className="mt-10 grid gap-8 sm:grid-cols-2">
             {industry.valueProps.map((prop) => (
@@ -1086,7 +1086,7 @@ export default async function IndustryPage({
             Need {industry.title} Talent?
           </h2>
           <p className="mx-auto mt-4 max-w-2xl text-lg text-sky-100">
-            Tell us about your staffing requirements and a DC TALNT recruiter
+            Tell us about your staffing requirements and a Data Center TALNT recruiter
             specializing in {industry.title.toLowerCase()} will reach out within
             one business day.
           </p>

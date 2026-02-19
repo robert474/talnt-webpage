@@ -12,7 +12,7 @@ import Button from "@/components/ui/Button";
 export const metadata = genMeta({
   title: "Find Data Center & Construction Jobs | Candidates | Data Center TALNT",
   description:
-    "Find your next data center, mission critical, or construction role. Browse open positions for project managers, MEP engineers, superintendents, commissioning agents, and more.",
+    "Find your next data center, mission critical, or construction role. Browse open positions for project managers, MEP engineers, QA/QC inspectors, commissioning agents, and more.",
   path: "/candidates",
   keywords: [
     "data center jobs",
@@ -20,7 +20,7 @@ export const metadata = genMeta({
     "MEP engineer careers",
     "data center career opportunities",
     "commissioning agent jobs",
-    "superintendent jobs data center",
+    "QA/QC inspector jobs data center",
     "mission critical facility jobs",
     "construction staffing jobs",
   ],
@@ -34,7 +34,7 @@ const benefits = [
   {
     title: "Roles You Won't Find on Job Boards",
     description:
-      "A lot of the best positions never get posted publicly. The hiring manager calls us, we call the right person. Working with DC TALNT puts you in that loop before everyone else.",
+      "A lot of the best positions never get posted publicly. The hiring manager calls us, we call the right person. Working with Data Center TALNT puts you in that loop before everyone else.",
   },
   {
     title: "Recruiters Who Speak Your Language",
@@ -83,8 +83,8 @@ const roleTypes = [
       "Design and coordinate the mechanical, electrical, and plumbing systems that keep facilities running.",
   },
   {
-    title: "Superintendents",
-    href: "/roles/superintendents",
+    title: "QA/QC Inspectors",
+    href: "/roles/qa-qc-inspectors",
     description:
       "Manage on-site crews, enforce safety, and drive quality from foundation to turnover.",
   },

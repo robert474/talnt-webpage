@@ -12,9 +12,9 @@ import type { ClaimData, HowToData } from "@/lib/schema";
 import Button from "@/components/ui/Button";
 
 export const metadata = genMeta({
-  title: "Speed and Execution | 40-Day Placements | Data Center TALNT",
+  title: "Speed and Execution | Faster Hiring for Data Center Roles | Data Center TALNT",
   description:
-    "The data center industry averages 126 days to fill a role. DC TALNT does it in 40. See how our pre-vetted talent pipeline and industry-focused recruiters cut hiring timelines by 68% without sacrificing quality.",
+    "The data center industry averages 126 days to fill a role. Data Center TALNT's pre-vetted talent pipeline and industry-focused recruiters dramatically cut hiring timelines — contract placements mobilize in days, direct-hire searches close in weeks.",
   path: "/speed",
   keywords: [
     "fast data center hiring",
@@ -58,24 +58,6 @@ const painPoints = [
   },
 ];
 
-const monthlyData = [
-  { month: "Jan '25", days: 67 },
-  { month: "Feb", days: 58 },
-  { month: "Mar", days: 62 },
-  { month: "Apr", days: 53 },
-  { month: "May", days: 55 },
-  { month: "Jun", days: 57 },
-  { month: "Jul", days: 38 },
-  { month: "Aug", days: 41 },
-  { month: "Sep", days: 45 },
-  { month: "Oct", days: 51 },
-  { month: "Nov", days: 43 },
-  { month: "Dec", days: 49 },
-  { month: "Jan '26", days: 51 },
-];
-
-const INDUSTRY_AVG = 126;
-const CHART_MAX = 140; // ceiling for bar scaling
 
 const howWeDoIt = [
   {
@@ -86,7 +68,7 @@ const howWeDoIt = [
   {
     title: "Industry-Specialist Recruiters",
     description:
-      "Our recruiters have direct experience in data center construction. They can vet a commissioning agent's technical skills in a 15-minute call — saving you weeks of screening candidates who look good on paper but can't perform on site.",
+      "Our recruiters have direct experience in data center construction. They can vet a commissioning agent's technical skills in a focused screening call — saving you time screening candidates who look good on paper but can't perform on site.",
   },
   {
     title: "48-Hour First Shortlist",
@@ -101,10 +83,10 @@ const howWeDoIt = [
 ];
 
 const speedHowTo: HowToData = {
-  name: "How DC TALNT Fills Data Center Roles in 40 Days",
+  name: "How Data Center TALNT Fills Data Center Roles Faster",
   description:
-    "Our four-step process for filling data center construction positions 68% faster than the industry average.",
-  totalTime: "P40D",
+    "Our four-step process for filling data center construction positions dramatically faster than the industry average.",
+  totalTime: undefined,
   steps: [
     {
       name: "Receive Job Order and Post Immediately",
@@ -120,7 +102,7 @@ const speedHowTo: HowToData = {
     },
     {
       name: "Onboard and Ensure Retention",
-      text: "Post-placement, we check in at 30, 60, and 90 days to ensure fit and address any issues early, achieving a 96% first-year retention rate.",
+      text: "Post-placement, we check in at 30, 60, and 90 days to ensure fit and address any issues early, maintaining strong first-year retention.",
     },
   ],
 };
@@ -136,8 +118,8 @@ const speedClaims: ClaimData[] = [
   },
   {
     claimText:
-      "DC TALNT achieves an average time-to-fill of 40 days, 68% faster than industry average.",
-    source: "Data Center TALNT Internal Data",
+      "Data Center TALNT offers contract placements that mobilize in days and direct-hire searches that close in weeks, dramatically faster than the industry average.",
+    source: "Data Center TALNT",
   },
   {
     claimText:
@@ -148,9 +130,9 @@ const speedClaims: ClaimData[] = [
 
 const speedFaqs = [
   {
-    question: "How fast can DC TALNT fill a data center construction role?",
+    question: "How fast can Data Center TALNT fill a data center construction role?",
     answer:
-      "Our average time to fill is 40 days — 68% faster than the industry average of 126 days. Most clients receive their first shortlist of technically screened, reference-checked candidates within 48 hours of submitting a job order.",
+      "We fill data center construction roles dramatically faster than the industry average of 126 days. We target delivering first shortlists of technically screened, reference-checked candidates within 48 hours of submitting a job order.",
   },
   {
     question: "What is the industry average time to hire for data center construction?",
@@ -160,7 +142,7 @@ const speedFaqs = [
   {
     question: "How much does an unfilled construction role cost per week?",
     answer:
-      "An unfilled project manager or superintendent position costs approximately $15,000+ per week in schedule delays, idle crew costs, and contractor penalties. Over the 126-day industry average, that totals over $250,000 in lost productivity per vacancy.",
+      "An unfilled project manager or QA/QC inspector position costs approximately $15,000+ per week in schedule delays, idle crew costs, and contractor penalties. With the industry averaging 126 days to fill a role, the cost of slow hiring adds up fast.",
   },
   {
     question: "Why is hiring for data center construction so slow?",
@@ -168,9 +150,9 @@ const speedFaqs = [
       "Three factors drive slow hiring: 82% of construction firms report difficulty filling positions (AGC data), the BLS projects 340,000 unfilled construction positions by end of 2026, and 23,000 experienced workers retire annually. The specialized skills required for data center construction further limit the candidate pool.",
   },
   {
-    question: "How does DC TALNT achieve faster placements?",
+    question: "How does Data Center TALNT achieve faster placements?",
     answer:
-      "We maintain a pre-vetted, active pipeline of data center and construction professionals. Our 15+ year veteran recruiters have deep industry networks, our proprietary database spans 10+ years of candidate intelligence, and our technology stack eliminates manual bottlenecks in job posting, screening, and scheduling.",
+      "We maintain a pre-vetted, active pipeline of data center and construction professionals. Our experienced recruiters have deep industry networks, our growing candidate database provides strong candidate intelligence, and our technology stack eliminates manual bottlenecks in job posting, screening, and scheduling.",
   },
 ];
 
@@ -224,13 +206,14 @@ export default function SpeedPage() {
             </a>{" "}
             to Fill a Role.
             <br />
-            <span className="text-blue-light">We Take 40.</span>
+            <span className="text-blue-light">We Move Faster.</span>
           </h1>
           <p className="mx-auto mt-6 max-w-2xl text-lg leading-relaxed text-gray-300">
             While your competitors wait four months for a qualified
-            commissioning agent or project manager, your project is already
-            staffed and moving. That&rsquo;s a 68% faster time-to-fill — and
-            it&rsquo;s not a best case. It&rsquo;s our average.
+            commissioning agent or project manager, our pre-screened pipeline
+            and industry-focused recruiters cut that timeline dramatically.
+            Contract placements can mobilize in days. Direct-hire searches
+            close in weeks, not months.
           </p>
           <p className="mx-auto mt-3 max-w-2xl text-sm text-gray-500">
             Source:{" "}
@@ -279,22 +262,36 @@ export default function SpeedPage() {
                 </div>
               </div>
 
-              {/* DC TALNT Bar */}
+              {/* Data Center TALNT Contract Bar */}
               <div>
                 <div className="flex items-baseline justify-between">
                   <p className="text-sm font-semibold text-navy">
-                    Data Center TALNT
+                    Data Center TALNT Contract
                   </p>
-                  <p className="text-3xl font-bold text-blue">40 days</p>
+                  <p className="text-3xl font-bold text-blue">Days to weeks</p>
                 </div>
                 <div className="mt-2 h-10 w-full rounded-full bg-gray-100 overflow-hidden">
                   <div
                     className="flex h-full items-center justify-end rounded-full bg-blue pr-4"
-                    style={{ width: "31.7%" }}
+                    style={{ width: "12%" }}
                   >
-                    <span className="text-xs font-semibold text-white">
-                      40d
-                    </span>
+                  </div>
+                </div>
+              </div>
+
+              {/* Data Center TALNT Direct Hire Bar */}
+              <div>
+                <div className="flex items-baseline justify-between">
+                  <p className="text-sm font-semibold text-navy">
+                    Data Center TALNT Direct Hire
+                  </p>
+                  <p className="text-3xl font-bold text-blue-dark">Weeks, not months</p>
+                </div>
+                <div className="mt-2 h-10 w-full rounded-full bg-gray-100 overflow-hidden">
+                  <div
+                    className="flex h-full items-center justify-end rounded-full bg-blue-dark pr-4"
+                    style={{ width: "35%" }}
+                  >
                   </div>
                 </div>
               </div>
@@ -303,117 +300,45 @@ export default function SpeedPage() {
             {/* Savings callout */}
             <div className="mt-10 rounded-xl border-2 border-blue/20 bg-blue/5 p-6 text-center">
               <p className="text-4xl font-bold text-blue sm:text-5xl">
-                86 days saved
+                Months saved
               </p>
               <p className="mt-2 text-gray-600">
-                That&rsquo;s nearly three months of schedule risk, cost overruns,
-                and lost productivity eliminated from every hire.
+                Whether you need a contract hire mobilized this week or a
+                direct-hire search completed in weeks instead of months,
+                you&rsquo;re dramatically ahead of the 126-day industry average.
               </p>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Monthly Bar Chart */}
+      {/* Contract vs Direct Hire */}
       <section className="bg-sky-50 py-16 sm:py-24">
         <div className="container-page">
           <div className="text-center">
-            <h2 className="text-2xl font-bold text-navy sm:text-3xl">
-              Our Track Record — Month by Month
-            </h2>
-            <p className="mx-auto mt-3 max-w-2xl text-gray-600">
-              Average days to fill across the past 13 months. The red line is
-              the industry average. The blue bars are us.
-            </p>
+            <h2 className="text-2xl font-bold text-navy sm:text-3xl">Two Models. Both Faster.</h2>
+            <p className="mx-auto mt-3 max-w-2xl text-gray-600">We offer contract and direct-hire staffing — and both are built for speed. Here&rsquo;s how they compare.</p>
           </div>
-
-          <div className="mx-auto mt-10 max-w-4xl">
-            {/* Chart container */}
-            <div className="relative">
-              {/* Y-axis labels */}
-              <div className="absolute -left-2 top-0 bottom-8 flex flex-col justify-between text-right sm:-left-8">
-                {[140, 126, 100, 75, 50, 25, 0].map((val) => (
-                  <span
-                    key={val}
-                    className={`text-[10px] sm:text-xs ${
-                      val === 126 ? "font-bold text-red-500" : "text-gray-400"
-                    }`}
-                  >
-                    {val === 126 ? "126" : val}
-                  </span>
-                ))}
-              </div>
-
-              {/* Chart area */}
-              <div className="ml-6 sm:ml-10">
-                {/* Industry average line */}
-                <div
-                  className="absolute left-6 right-0 sm:left-10 border-t-2 border-dashed border-red-400 z-10"
-                  style={{ top: `${((CHART_MAX - INDUSTRY_AVG) / CHART_MAX) * 100}%` }}
-                >
-                  <span className="absolute -top-5 right-0 rounded bg-red-500 px-2 py-0.5 text-[10px] font-bold text-white sm:text-xs">
-                    Industry Avg: 126 days
-                  </span>
-                </div>
-
-                {/* Bars */}
-                <div className="relative flex items-end gap-1.5 sm:gap-2" style={{ height: "320px" }}>
-                  {monthlyData.map((item) => {
-                    const heightPct = (item.days / CHART_MAX) * 100;
-                    return (
-                      <div
-                        key={item.month}
-                        className="group relative flex flex-1 flex-col items-center"
-                        style={{ height: "100%" }}
-                      >
-                        {/* Tooltip */}
-                        <div className="pointer-events-none absolute bottom-full mb-2 rounded bg-navy px-2 py-1 text-xs font-bold text-white opacity-0 shadow-lg transition-opacity group-hover:opacity-100 whitespace-nowrap z-20">
-                          {item.days} days
-                        </div>
-
-                        {/* Bar wrapper - full height, bar grows from bottom */}
-                        <div className="flex h-full w-full items-end">
-                          <div
-                            className="w-full rounded-t bg-blue transition-all duration-300 hover:bg-blue-dark"
-                            style={{ height: `${heightPct}%` }}
-                          />
-                        </div>
-
-                        {/* Day count on bar */}
-                        <span
-                          className="absolute text-[9px] font-bold text-white sm:text-[10px]"
-                          style={{ bottom: `${heightPct - 5}%` }}
-                        >
-                          {item.days}
-                        </span>
-                      </div>
-                    );
-                  })}
-                </div>
-
-                {/* X-axis labels */}
-                <div className="mt-2 flex gap-1.5 sm:gap-2">
-                  {monthlyData.map((item) => (
-                    <div key={item.month} className="flex-1 text-center">
-                      <span className="text-[8px] leading-tight text-gray-500 sm:text-[10px]">
-                        {item.month}
-                      </span>
-                    </div>
-                  ))}
-                </div>
-              </div>
+          <div className="mx-auto mt-12 max-w-3xl grid gap-8 sm:grid-cols-2">
+            <div className="rounded-xl border border-gray-200 bg-white p-6 sm:p-8 shadow-sm">
+              <h3 className="text-xl font-semibold text-navy">Contract Staffing</h3>
+              <p className="mt-1 text-3xl font-bold text-blue">Days to weeks</p>
+              <p className="mt-4 leading-relaxed text-gray-600">Need someone on site fast? Contract placements mobilize quickly from our pre-screened pipeline. We handle payroll, benefits, and compliance so your project keeps moving.</p>
+              <ul className="mt-4 space-y-2 text-sm text-gray-600">
+                <li className="flex items-start gap-2"><span className="text-blue font-bold">&bull;</span> Pre-screened candidates ready to go</li>
+                <li className="flex items-start gap-2"><span className="text-blue font-bold">&bull;</span> Full employer-of-record services</li>
+                <li className="flex items-start gap-2"><span className="text-blue font-bold">&bull;</span> Flexible durations — weeks to years</li>
+              </ul>
             </div>
-
-            {/* Legend */}
-            <div className="mt-6 flex items-center justify-center gap-6 text-sm">
-              <div className="flex items-center gap-2">
-                <div className="h-3 w-6 rounded bg-blue" />
-                <span className="text-gray-600">DC TALNT Days to Fill</span>
-              </div>
-              <div className="flex items-center gap-2">
-                <div className="h-0.5 w-6 border-t-2 border-dashed border-red-400" />
-                <span className="text-gray-600">Industry Average (126 days)</span>
-              </div>
+            <div className="rounded-xl border border-gray-200 bg-white p-6 sm:p-8 shadow-sm">
+              <h3 className="text-xl font-semibold text-navy">Direct Hire</h3>
+              <p className="mt-1 text-3xl font-bold text-blue">Weeks, not months</p>
+              <p className="mt-4 leading-relaxed text-gray-600">Building your permanent team? Our direct-hire searches close in weeks — not the 4+ months the industry averages. We screen hard so you don&rsquo;t waste time on the wrong candidates.</p>
+              <ul className="mt-4 space-y-2 text-sm text-gray-600">
+                <li className="flex items-start gap-2"><span className="text-blue font-bold">&bull;</span> Thorough technical screening</li>
+                <li className="flex items-start gap-2"><span className="text-blue font-bold">&bull;</span> Reference and cert verification</li>
+                <li className="flex items-start gap-2"><span className="text-blue font-bold">&bull;</span> Replacement guarantee included</li>
+              </ul>
             </div>
           </div>
         </div>
@@ -516,10 +441,10 @@ export default function SpeedPage() {
         <div className="container-page">
           <div className="grid grid-cols-2 gap-8 sm:grid-cols-4">
             {[
-              { value: "40", unit: "days", label: "Avg. Time to Fill" },
-              { value: "48", unit: "hrs", label: "First Shortlist" },
-              { value: "96%", unit: "", label: "Retention Rate" },
-              { value: "68%", unit: "", label: "Faster Than Average" },
+              { value: "48", unit: "hrs", label: "First Shortlist Target" },
+              { value: "126", unit: "days", label: "Industry Average" },
+              { value: "4", unit: "", label: "Industry Verticals" },
+              { value: "20+", unit: "", label: "Markets Covered" },
             ].map((stat) => (
               <div key={stat.label} className="text-center">
                 <p className="text-4xl font-bold text-navy sm:text-5xl">
@@ -569,9 +494,8 @@ export default function SpeedPage() {
             Stop Losing Time. Start Building.
           </h2>
           <p className="mx-auto mt-4 max-w-xl text-lg text-blue-100">
-            Tell us what you need. Most clients have their first vetted
-            shortlist within 48 hours — and a hired candidate on site within
-            40 days.
+            Contract placements can mobilize in days. Direct-hire searches
+            close in weeks. Tell us what you need.
           </p>
           <div className="mt-8 flex flex-col items-center gap-4 sm:flex-row sm:justify-center">
             <Button href="/contact" variant="secondary" size="lg">
