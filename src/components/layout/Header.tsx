@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useCallback, useEffect, useRef } from "react";
+import { usePathname } from "next/navigation";
 import Link from "next/link";
 import Image from "next/image";
 import Button from "@/components/ui/Button";
@@ -239,6 +240,7 @@ function MobileMenu({ onClose }: { onClose: () => void }) {
 export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [openDropdown, setOpenDropdown] = useState<string | null>(null);
+  const pathname = usePathname();
 
   const toggleDropdown = useCallback(
     (label: string) => {
@@ -246,6 +248,11 @@ export default function Header() {
     },
     [openDropdown],
   );
+
+  // Close mobile menu on route change
+  useEffect(() => {
+    setMobileMenuOpen(false);
+  }, [pathname]);
 
   // Lock body scroll when mobile menu is open
   useEffect(() => {

@@ -26,7 +26,7 @@ export default function AnimatedHero({
   }, [imageUrl]);
 
   return (
-    <section className="relative min-h-[80vh] overflow-hidden lg:min-h-[700px]">
+    <section className="relative min-h-[80vh] lg:overflow-hidden lg:min-h-[700px]">
       {/* Animated background image - slow drone-style zoom and pan */}
       <div
         className={`absolute inset-0 transition-opacity duration-1000 ${loaded ? "opacity-100" : "opacity-0"}`}
